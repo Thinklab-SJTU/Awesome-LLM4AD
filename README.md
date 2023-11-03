@@ -2,7 +2,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)![GitHub stars](https://img.shields.io/github/stars/Thinklab-SJTU/Awesome-LLM-for-Autonomous-Driving-Resources?color=yellow) ![GitHub forks](https://img.shields.io/github/forks/Thinklab-SJTU/Awesome-LLM-for-Autonomous-Driving-Resources?color=9cf) [![GitHub license](https://img.shields.io/github/license/Thinklab-SJTU/Awesome-LLM-for-Autonomous-Driving-Resources)](https://github.com/Thinklab-SJTU/Awesome-LLM-for-Autonomous-Driving-Resources/blob/main/LICENSE)
 
 This is a collection of research papers about **LLM-for-Autonomous-Driving(LLM4AD)**.
-And the repository will be continuously updated to track the frontier of LLM4AD. *Maintained by members in SJTU-Thinklab: Zhenjie Yang, Xiaosong Jia, Junchi Yan.*
+And the repository will be continuously updated to track the frontier of LLM4AD. *Maintained by SJTU-ReThinklab.*
 
 Welcome to follow and star! If you find any related materials could be helpful, feel free to contact us (yangzhenjie@sjtu.edu.cn or jiaxiaosong@sjtu.edu.cn) or make a PR.
 
@@ -463,11 +463,13 @@ to obtain BEV features.
 If you find our repo is helpful, please consider cite it. (Our survey paper is on the way!)
 
 ```BibTeX
-@misc{llm4adsurvey2023,
-  title={A Survey of Large Language Models for Autonomous Driving},
-  author={Zhenjie Yang*, Xiaosong Jia*, Hongyang Li, Junchi Yan},
-  howpublished={\url{https://github.com/Thinklab-SJTU/Awesome-LLM-for-Autonomous-Driving-Resources}},
-  year={2023}
+@misc{yang2023survey,
+      title={A Survey of Large Language Models for Autonomous Driving}, 
+      author={Zhenjie Yang and Xiaosong Jia and Hongyang Li and Junchi Yan},
+      year={2023},
+      eprint={2311.01043},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
 }
 ```
 
