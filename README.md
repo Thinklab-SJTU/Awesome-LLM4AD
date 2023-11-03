@@ -6,6 +6,22 @@ And the repository will be continuously updated to track the frontier of LLM4AD.
 
 Welcome to follow and star! If you find any related materials could be helpful, feel free to contact us (yangzhenjie@sjtu.edu.cn or jiaxiaosong@sjtu.edu.cn) or make a PR.
 
+## Citation
+Our survey paper is at https://arxiv.org/abs/2311.01043 which includes more detailed discussions and we will continuously update it as well.
+
+If you find our repo is helpful, please consider cite it.
+```BibTeX
+@misc{yang2023survey,
+      title={A Survey of Large Language Models for Autonomous Driving}, 
+      author={Zhenjie Yang and Xiaosong Jia and Hongyang Li and Junchi Yan},
+      year={2023},
+      eprint={2311.01043},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+```
+
+
 ## Table of Contents
 - [Awesome LLM-for-Autonomous-Driving(LLM4AD)](#awesome-llm-for-autonomous-driving-resources)
   - [Table of Contents](#table-of-contents)
@@ -458,20 +474,6 @@ to obtain BEV features.
   - [HAD dataset](https://usa.honda-ri.com/had)
 </details>
 
-## Citation
-
-If you find our repo is helpful, please consider cite it. (Our survey paper is on the way!)
-
-```BibTeX
-@misc{yang2023survey,
-      title={A Survey of Large Language Models for Autonomous Driving}, 
-      author={Zhenjie Yang and Xiaosong Jia and Hongyang Li and Junchi Yan},
-      year={2023},
-      eprint={2311.01043},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI}
-}
-```
 
 ## License
 
