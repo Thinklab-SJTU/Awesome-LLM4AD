@@ -99,6 +99,12 @@ format:
   - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes), which consists of 60K training samples and 15K validation samples with high-quality bounding box annotations from 10 semantic classes.
   - Summary:
     - propose GEODIFFUSION, an embarrassing simple framework to integrate geometric controls into pre-trained diffusion models for detection data generation via text prompts.
+   
+- [SPOT: Scalable 3D Pre-training via Occupancy Prediction for Autonomous Driving](https://openreview.net/forum?id=9zEBK3E9bX)
+  - Keywords: 3D pre-training, object detection, autonomous driving
+  - Task: Detection
+  - Summary:
+    - propose SPOT a scalable 3D pre-training paradigm for LiDAR pretraining.
 </details>
 
 
