@@ -164,7 +164,7 @@ format:
 - <a id="LanguageMPC"></a>[LanguageMPC: Large Language Models as Decision Makers for Autonomous Driving](https://arxiv.org/pdf/2310.03026)
   - Hao Sha, Yao Mu, Yuxuan Jiang, Li Chen, Chenfeng Xu, Ping Luo, Shengbo Eben Li, Masayoshi Tomizuka, Wei Zhan, Mingyu Ding
   - Publisher: Tsinghua University, The University of Hong Kong, University of California, Berkeley
-  - Task: Planning
+  - Task: Planning/Control
   - Code: [official](https://sites.google.com/view/llm-mpc)
   - Env: 
     - [ComplexUrbanScenarios](https://github.com/liuyuqi123/ComplexUrbanScenarios)
@@ -208,7 +208,7 @@ format:
   - Zhenhua Xu, Yujia Zhang, Enze Xie, Zhen Zhao, Yong Guo, Kenneth K. Y. Wong, Zhenguo Li, Hengshuang Zhao
   - Publisher: The University of Hong Kong, Zhejiang University, Huawei Noah’s Ark Lab, University of Sydney
   - Project Page: [official](https://tonyxuqaq.github.io/projects/DriveGPT4/)
-  - Task: Planning + VQA
+  - Task: Planning/Control + VQA
   - Datasets: 
     - [BDD-X dataset](https://github.com/JinkyuKimUCB/BDD-X-dataset).
   - Publish Date: 2023.10.02
@@ -222,11 +222,14 @@ format:
 - <a id="GPT-Driver"></a>[GPT-DRIVER: LEARNING TO DRIVE WITH GPT](https://browse.arxiv.org/abs/2310.01415v1)
   - Jiageng Mao, Yuxi Qian, Hang Zhao, Yue Wang
   - Publisher: University of Southern California, Tsinghua University
-  - Task: Planning
+  - Task: Planning(Fine-tuning Pre-trained Model)
+  - Project: [official](https://pointscoder.github.io/projects/gpt_driver/index.html)
   - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes)
+  - Code: [GPT-Driver](https://github.com/PointsCoder/GPT-Driver)
   - Publish Date: 2023.10.02
   - Summary:
     - Motion planning as a language modeling problem.
+    - Align the output of the LLM with human driving behavior through fine-tuning strategies using the OpenAI fine-tuning API.
     - Leverage the LLM to generate driving trajectories.
   - Metrics:
     - L2 metric and Collision rate
