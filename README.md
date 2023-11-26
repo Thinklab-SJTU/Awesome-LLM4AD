@@ -105,6 +105,14 @@ format:
   - Task: Detection
   - Summary:
     - propose SPOT a scalable 3D pre-training paradigm for LiDAR pretraining.
+
+- [3D DENSE CAPTIONING BEYOND NOUNS: A MIDDLEWARE FOR AUTONOMOUS DRIVING](https://openreview.net/forum?id=8T7m27VC3S)
+  - Keywords: Autonomous Driving, Dense Captioning, Foundation model
+  - Task: Caption， Dataset Construction
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes)
+  - Summary:
+    - Design a scalable rule-based auto-labelling methodology to generate 3D dense captioning.
+    - Construct a large-scale dataset nuDesign based upon nuScenes, which consists of an unprecedented number of 2300k sentences.
 </details>
 
 
@@ -125,6 +133,69 @@ format:
   - summary
   - metrics
 ```
+
+- [ADriver-I: A General World Model for Autonomous Driving](https://arxiv.org/abs/2311.13549)
+  - Fan Jia, Weixin Mao, Yingfei Liu, Yucheng Zhao, Yuqing Wen, Chi Zhang, Xiangyu Zhang, Tiancai Wang
+  - Publisher: MEGVII Technology, Waseda University, University of Science and Technology of China, Mach Drive
+  - Task: Generation + Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes), Largescale private datasets
+  - Publish Date: 2023.11.22
+  - Summary:
+    - ADriver-I takes the vision-action pairs as inputs and autoregressively predicts the control signal of current frame. The generated control signals together with the historical vision-action pairs are further conditioned to predict the future frames. 
+    - MLLM(Multimodal large language model)=[LLaVA-7B-1.5](https://github.com/haotian-liu/LLaVA), VDM(Video Diffusion Model)=[latent-diffusion](https://github.com/CompVis/latent-diffusion)
+  - Metrics:
+    - L1 error including speed and steer angle of current frame.
+    - Quality of Generation: Frechet Inception Distance(FID), Frechet Video Distance(FVD).
+
+- [A Language Agent for Autonomous Driving](https://arxiv.org/abs/2311.10813)
+  - Jiageng Mao, Junjie Ye, Yuxi Qian, Marco Pavone, Yue Wang
+  - University of Southern California, Stanford University, NVIDIA
+  - Task: Generation + Planning
+  - Project: [Agent-Driver](https://usc-gvl.github.io/Agent-Driver/)
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes)
+  - Publish Date: 2023.11.17
+  - Summary:
+    - Agent-Driver integrates a tool library for dynamic perception and prediction, a cognitive memory for human knowledge, and a reasoning engine that emulates human decision-making.
+    - For motion planning, follow GPT-Driver(#GPT-Driver) and fine-tune the LLM with human driving trajectories in the nuScenes training set for one epoch. 
+    - For neural modules, adopte the modules in [UniAD](https://arxiv.org/abs/2212.10156).
+  - Metric:
+    - L2 error (in meters) and collision rate (in percentage).
+
+- [Human-Centric Autonomous Systems With LLMs for User Command Reasoning](https://arxiv.org/abs/2311.08206)
+  - Yi Yang, Qingwen Zhang, Ci Li, Daniel Simões Marta, Nazre Batool, John Folkesson
+  - Publisher: KTH Royal Institute of Technology, Scania AB
+  - Task: QA
+  - Code: [DriveCmd](https://github.com/KTH-RPL/DriveCmd_LLM)
+  - Datasets: [UCU Dataset](https://github.com/LLVM-AD/ucu-dataset)
+  - Publish Date: 2023.11.14
+  - Summary:
+    - Propose to leverage the reasoning capabilities of Large Language Models (LLMs) to infer system requirements from in-cabin users’ commands.
+    - LLVM-AD Workshop @ WACV 2024 
+  - Metric:
+    - Accuracy at the question level(accuracy for each individual question).
+    - Accuracy at the command level(accuracy is only acknowledged if all questions for a particular command are correctly identified).
+
+- [On the Road with GPT-4V(ision): Early Explorations of Visual-Language Model on Autonomous Driving](https://arxiv.org/abs/2311.05332)
+  - Licheng Wen, Xuemeng Yang, Daocheng Fu, Xiaofeng Wang, Pinlong Cai, Xin Li, Tao Ma, Yingxuan Li, Linran Xu, Dengke Shang, Zheng Zhu, Shaoyan Sun, Yeqi Bai, Xinyu Cai, Min Dou, Shuanglu Hu, Botian Shi
+  - Publisher: Shanghai Artificial Intelligence Laboratory,  GigaAI, East China Normal University, The Chinese University of Hong Kong, WeRide.ai
+  - Project: [official](https://github.com/PJLab-ADG/GPT4V-AD-Exploration)
+  - Datasets:
+    - Scenario Understanding: [nuScenes](https://www.nuscenes.org/nuscenes), [BDD-X](https://github.com/JinkyuKimUCB/BDD-X-dataset), [Carla](https://github.com/carla-simulator), [TSDD](http://www.nlpr.ia.ac.cn/pal/trafficdata/detection.html), [Waymo](https://arxiv.org/abs/1912.04838), [DAIR-V2X](https://thudair.baai.ac.cn/index), [CitySim](https://github.com/ozheng1993/UCF-SST-CitySim-Dataset).
+    - Reasoning Capability: [nuScenes](https://www.nuscenes.org/nuscenes), [D2-city](https://arxiv.org/abs/1904.01975), [Carla](https://github.com/carla-simulator), [CODA](https://arxiv.org/abs/2203.07724) and the internet
+    - Act as a driver: Real-world driving scenarios.
+  - Publish Date: 2023.11.9 
+  - Summary:
+    - Conducted a comprehensive and multi-faceted evaluation of the GPT-4V in various autonomous driving scenarios.
+    - Test the capabilities of GPT-4V in Scenario Understanding, Reasoning, Act as a driver.
+
+- [ChatGPT as Your Vehicle Co-Pilot: An Initial Attempt](https://ieeexplore.ieee.org/document/10286969)
+  - Shiyi Wang, Yuxuan Zhu, Zhiheng Li, Yutong Wang, Li Li, Zhengbing He
+  - Publisher: Tsinghua University, Institute of Automation, Chinese Academy of Sciences, Massachusetts Institute of Technology
+  - Task: Planning
+  - Publish Date: 2023.10.17
+  - Summary:
+    - Design a universal framework that embeds LLMs as a vehicle "Co-Pilot" of driving, which can accomplish specific driving tasks with human intention satisfied based on the information provided.
+
 - [MagicDrive: Street View Generation with Diverse 3D Geometry Control](https://arxiv.org/abs/2310.02601)
   - Ruiyuan Gao, Kai Chen, Enze Xie, Lanqing Hong, Zhenguo Li, Dit-Yan Yeung, Qiang Xu
   - Publisher: The Chinese University of Hong Kong, Hong Kong University of Science and Technology, Huawei Noah’s Ark Lab
