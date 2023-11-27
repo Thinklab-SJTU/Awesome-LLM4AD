@@ -12,7 +12,7 @@ Our survey paper is at https://arxiv.org/abs/2311.01043 which includes more deta
 If you find our repo is helpful, please consider cite it.
 ```BibTeX
 @misc{yang2023survey,
-      title={A Survey of Large Language Models for Autonomous Driving}, 
+      title={LLM4Drive: A Survey of Large Language Models for Autonomous Driving}, 
       author={Zhenjie Yang and Xiaosong Jia and Hongyang Li and Junchi Yan},
       year={2023},
       eprint={2311.01043},
