@@ -134,6 +134,35 @@ format:
   - metrics
 ```
 
+- [Dolphins: Multimodal Language Model for Driving](https://arxiv.org/abs/2312.00438)
+  - Yingzi Ma, Yulong Cao, Jiachen Sun, Marco Pavone, Chaowei Xiao
+  - Publisher: University of Wisconsin-Madison, NVIDIA, University of Michigan, Stanford University
+  - Task: VQA
+  - Project: [Dolphins](https://vlm-driver.github.io/)
+  - Code: [Dolphins](https://github.com/vlm-driver/Dolphins)
+  - Datasets: 
+    - Image instruction-following dataset
+      - [GQA](https://cs.stanford.edu/people/dorarad/gqa/about.html)
+      - [MSCOCO](https://cocodataset.org/#home): [VQAv2](https://visualqa.org/), [OK-VQA](https://okvqa.allenai.org/), [TDIUC](https://kushalkafle.com/projects/tdiuc.html), [Visual Genome dataset](https://homes.cs.washington.edu/~ranjay/visualgenome/index.html)
+    - Video instruction-following dataset
+      - [BDD-X](https://github.com/JinkyuKimUCB/BDD-X-dataset)
+  - Publish Date: 2023.12.01
+  - Summary:
+    - Dolphins which is base on OpenFlamingo architecture is a VLM-based conversational driving assistant.
+    - Devise grounded CoT (GCoT) instruction tuning and develop datasets.
+
+- [Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving](https://arxiv.org/abs/2311.17918)
+  - Yuqi Wang, Jiawei He, Lue Fan, Hongxin Li, Yuntao Chen, Zhaoxiang Zhang
+  - Publisher: CASIA, CAIR, HKISI, CAS
+  - Task: Generation
+  - Project: [Drive-WM](https://drive-wm.github.io/)
+  - Code: [Drive-WM](https://github.com/BraveGroup/Drive-WM)
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes), [Waymo Open Dataset](https://waymo.com/open/)
+  - Publish Date: 2023.11.29
+  - Summary:
+    - Drive-WM, a multiview world model, which is capable of generating high-quality, controllable, and consistent multiview videos in autonomous driving scenes.
+    - The first to explore the potential application of the world model in end-to-end planning for autonomous driving.
+
 - [ADriver-I: A General World Model for Autonomous Driving](https://arxiv.org/abs/2311.13549)
   - Fan Jia, Weixin Mao, Yingfei Liu, Yucheng Zhao, Yuqing Wen, Chi Zhang, Xiangyu Zhang, Tiancai Wang
   - Publisher: MEGVII Technology, Waseda University, University of Science and Technology of China, Mach Drive
