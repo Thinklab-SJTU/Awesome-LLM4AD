@@ -134,6 +134,21 @@ format:
   - metrics
 ```
 
+- [Reason2Drive: Towards Interpretable and Chain-based Reasoning for Autonomous Driving](https://arxiv.org/abs/2312.03661)
+  - Ming Nie, Renyuan Peng, Chunwei Wang, Xinyue Cai, Jianhua Han, Hang Xu, Li Zhang
+  - Publisher: Fudan University, Huawei Noah’s Ark Lab
+  - Task: VQA + Datasets
+  - Code: [official](https://github.com/fudan-zvg/Reason2Drive)
+  - Datasets:
+    - [nuScenes](https://www.nuscenes.org/nuscenes)
+    - [Waymo](https://waymo.com/open/)
+    - [ONCE](https://once-for-auto-driving.github.io/index.html)
+  - Publish Date: 2023.12.06
+  - Summary:
+    - Reason2Drive, a benchmark dataset with over 600K video-text pairs, aimed at facilitating the study of interpretable reasoning in complex driving.
+    - Introduce a novel evaluation metric to assess chain-based reasoning performance in autonomous driving environments, and address the semantic ambiguities of existing metrics such as BLEU and CIDEr.
+    - Introduce a straightforward yet effective framework that enhances existing VLMs with two new components: a prior tokenizer and an instructed vision decoder.
+
 - [Dolphins: Multimodal Language Model for Driving](https://arxiv.org/abs/2312.00438)
   - Yingzi Ma, Yulong Cao, Jiachen Sun, Marco Pavone, Chaowei Xiao
   - Publisher: University of Wisconsin-Madison, NVIDIA, University of Michigan, Stanford University
@@ -162,6 +177,16 @@ format:
   - Summary:
     - Drive-WM, a multiview world model, which is capable of generating high-quality, controllable, and consistent multiview videos in autonomous driving scenes.
     - The first to explore the potential application of the world model in end-to-end planning for autonomous driving.
+
+- [Empowering Autonomous Driving with Large Language Models: A Safety Perspective](https://arxiv.org/abs/2312.00812)
+  - Yixuan Wang, Ruochen Jiao, Chengtian Lang, Sinong Simon Zhan, Chao Huang, Zhaoran Wang, Zhuoran Yang, Qi Zhu
+  - Publisher: Northwestern University, University of Liverpool, Yale University
+  - Task: Planning
+  - Env: [HighwayEnv](https://github.com/Farama-Foundation/HighwayEnv)
+  - Code: [official](https://github.com/wangyixu14/llm_conditioned_mpc_ad)
+  - Publish Date: 2023.11.28
+  - Summary:
+    - Deploys the LLM as an intelligent decision-maker in planning, incorporating safety verifiers for contextual safety learning to enhance overall AD performance and safety.
 
 - [ADriver-I: A General World Model for Autonomous Driving](https://arxiv.org/abs/2311.13549)
   - Fan Jia, Weixin Mao, Yingfei Liu, Yucheng Zhao, Yuqing Wen, Chi Zhang, Xiangyu Zhang, Tiancai Wang
