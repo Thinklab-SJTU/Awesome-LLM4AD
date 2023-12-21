@@ -133,6 +133,39 @@ format:
   - summary
   - metrics
 ```
+- [DriveMLM: Aligning Multi-Modal Large Language Models with Behavioral Planning States for Autonomous Driving](https://arxiv.org/abs/2312.09245)
+  - Wenhai Wang, Jiangwei Xie, ChuanYang Hu, Haoming Zou, Jianan Fan, Wenwen Tong, Yang Wen, Silei Wu, Hanming Deng, Zhiqi Li, Hao Tian, Lewei Lu, Xizhou Zhu, Xiaogang Wang, Yu Qiao, Jifeng Dai
+  - Publisher: OpenGVLab, Shanghai AI Laboratory, The Chinese University of Hong Kong, SenseTime Research, Stanford University, Nanjing University, Tsinghua University
+  - Task: Planning + Explanation
+  - Code: [official](https://github.com/OpenGVLab/DriveMLM)
+  - Env: [Carla](https://carla.org/)
+  - Publish Date: 2023.12.14
+  - Summary:
+    - DriveMLM, the first LLM-based AD framework that can perform close-loop
+autonomous driving in realistic simulators.
+    - Design an MLLM planner for decision prediction, and develop a data engine that can effectively generate decision states and corresponding explanation annotation for model training and evaluation.
+    - Achieve 76.1 DS, 0.955 MPI results on CARLA Town05 Long.
+
+- [Large Language Models for Autonomous Driving: Real-World Experiments](https://arxiv.org/abs/2311.12320)
+  - Can Cui, Yunsheng Ma, Xu Cao, Wenqian Ye, Yang Zhou, Kaizhao Liang, Jintai Chen, Juanwu Lu, Zichong Yang, Kuei-Da Liao, Tianren Gao, Erlong Li, Kun Tang, Zhipeng Cao, Tong Zhou, Ao Liu, Xinrui Yan, Shuqi Mei, Jianguo Cao, Ziran Wang, Chao Zheng
+  - Publisher: Purdue University
+  - Publish Date: 2023.12.14
+  - Project: [official](https://www.youtube.com/playlist?list=PLgcRcf9w8BmJfZigDhk1SAfXV0FY65cO7)
+  - Summary:
+    - Introduce a Large Language Model (LLM)-based framework Talk-to-Drive
+(Talk2Drive) to process verbal commands from humans and make autonomous driving decisions with contextual information, satisfying their personalized preferences for safety, efficiency, and comfort.
+
+- [LMDrive: Closed-Loop End-to-End Driving with Large Language Models](https://arxiv.org/abs/2312.07488)
+  - Hao Shao, Yuxuan Hu, Letian Wang, Steven L. Waslander, Yu Liu, Hongsheng Li
+  - Publisher: CUHK MMLab, SenseTime Research, CPII under InnoHK, University of Toronto, Shanghai Artificial Intelligence Laboratory
+  - Task: Planning + Datasets
+  - Code: [official](https://github.com/opendilab/LMDrive)
+  - Env: [Carla](https://carla.org/)
+  - Publish Date: 2023.12.12
+  - Summary:
+    - LMDrive, a novel end-to-end, closed-loop, languagebased autonomous driving framework.
+    - Release 64K clips dataset, including navigation instruction, notice instructions, multi-modal multi-view sensor data, and control signals.
+    - Present the benchmark LangAuto for evaluating the autonomous agents.
 
 - [Reason2Drive: Towards Interpretable and Chain-based Reasoning for Autonomous Driving](https://arxiv.org/abs/2312.03661)
   - Ming Nie, Renyuan Peng, Chunwei Wang, Xinyue Cai, Jianhua Han, Hang Xu, Li Zhang
