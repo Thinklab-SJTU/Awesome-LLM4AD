@@ -133,6 +133,33 @@ format:
   - summary
   - metrics
 ```
+- [DriveLM: Driving with Graph Visual Question Answering](https://arxiv.org/pdf/2312.14150.pdf)
+  - Chonghao Sima, Katrin Renz, Kashyap Chitta, Li Chen, Hanxue Zhang, Chengen Xie, Ping Luo, Andreas Geiger, Hongyang Li
+  - Publisher: OpenDriveLab, University of Tübingen, Tübingen AI Center, University of Hong Kong
+  - Code: [official](https://github.com/OpenDriveLab/DriveLM)
+  - Publish Date: 2023.12.21
+  - Summary:
+    - DriveLM-Task
+      - Graph VQA involves formulating P1-3(Perception, Prediction, Planning) reasoning as a series of questionanswer pairs (QAs) in a directed graph.
+    - DriveLM-Data
+      - DriveLM-Carla
+        - Collect data using CARLA 0.9.14 in the Leaderboard 2.0 framework [17] with a privileged rule-based expert.
+      - Drive-nuScenes
+        - Selecting key frames from video clips, choosing key objects within these key frames, and subsequently annotating the frame-level P1−3 QAs for these key objects. A portion of the Perception QAs are generated from the nuScenes and [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) ground truth, while the remaining QAs are manually annotated.
+    - DriveLM-Agent
+      - DriveLMAgent is built upon a general vision-language model and can therefore exploit underlying knowledge gained during pre-training. 
+
+- [LingoQA: Video Question Answering for Autonomous Driving](https://arxiv.org/abs/2312.14115)
+  - Ana-Maria Marcu, Long Chen, Jan Hünermann, Alice Karnsund, Benoit Hanotte, Prajwal Chidananda, Saurabh Nair, Vijay Badrinarayanan, Alex Kendall, Jamie Shotton, Oleg Sinavski
+  - Publisher: Wayve
+  - Task: VQA + Evaluation/Datasets
+  - Code: [official](https://github.com/wayveai/LingoQA)
+  - Publish Date: 2023.12.21
+  - Summary:
+    - Introduce a novel benchmark for autonomous driving video QA using a learned text classifier for evaluation. 
+    - Introduce a Video QA dataset of central London consisting of 419k samples with its free-form questions and answers.
+    - Establish a new baseline based on Vicuna-1.5-7B for this field with an identified model combination.
+
 - [DriveMLM: Aligning Multi-Modal Large Language Models with Behavioral Planning States for Autonomous Driving](https://arxiv.org/abs/2312.09245)
   - Wenhai Wang, Jiangwei Xie, ChuanYang Hu, Haoming Zou, Jianan Fan, Wenwen Tong, Yang Wen, Silei Wu, Hanming Deng, Zhiqi Li, Hao Tian, Lewei Lu, Xizhou Zhu, Xiaogang Wang, Yu Qiao, Jifeng Dai
   - Publisher: OpenGVLab, Shanghai AI Laboratory, The Chinese University of Hong Kong, SenseTime Research, Stanford University, Nanjing University, Tsinghua University
@@ -152,8 +179,7 @@ autonomous driving in realistic simulators.
   - Publish Date: 2023.12.14
   - Project: [official](https://www.youtube.com/playlist?list=PLgcRcf9w8BmJfZigDhk1SAfXV0FY65cO7)
   - Summary:
-    - Introduce a Large Language Model (LLM)-based framework Talk-to-Drive
-(Talk2Drive) to process verbal commands from humans and make autonomous driving decisions with contextual information, satisfying their personalized preferences for safety, efficiency, and comfort.
+    - Introduce a Large Language Model (LLM)-based framework Talk-to-Drive (Talk2Drive) to process verbal commands from humans and make autonomous driving decisions with contextual information, satisfying their personalized preferences for safety, efficiency, and comfort.
 
 - [LMDrive: Closed-Loop End-to-End Driving with Large Language Models](https://arxiv.org/abs/2312.07488)
   - Hao Shao, Yuxuan Hu, Letian Wang, Steven L. Waslander, Yu Liu, Hongsheng Li
@@ -220,6 +246,19 @@ autonomous driving in realistic simulators.
   - Publish Date: 2023.11.28
   - Summary:
     - Deploys the LLM as an intelligent decision-maker in planning, incorporating safety verifiers for contextual safety learning to enhance overall AD performance and safety.
+
+- [GPT-4V Takes the Wheel: Evaluating Promise and Challenges for Pedestrian Behavior Prediction](https://arxiv.org/abs/2311.14786)
+  - Jia Huang, Peng Jiang, Alvika Gautam, Srikanth Saripalli
+  - Publisher: Texas A&M University, College Station, USA
+  - Task: Evaluation(Pedestrian Behavior Prediction)
+  - Datasets: 
+    - [JAAD](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/)
+    - [PIE](https://data.nvision2.eecs.yorku.ca/PIE_dataset/)
+    - [WiDEVIEW](https://github.com/unmannedlab/UWB_Dataset)
+  - Summary:
+    - Provides a comprehensive evaluation of the potential of GPT-4V for pedestrian behavior prediction in autonomous driving using publicly available datasets.
+    - It still falls short of the state-of-the-art traditional domain-specific models.
+    - While GPT-4V represents a considerable advancement in AI capabilities for pedestrian behavior prediction, ongoing development and refinement are necessary to fully harness its capabilities in practical applications.
 
 - [ADriver-I: A General World Model for Autonomous Driving](https://arxiv.org/abs/2311.13549)
   - Fan Jia, Weixin Mao, Yingfei Liu, Yucheng Zhao, Yuqing Wen, Chi Zhang, Xiangyu Zhang, Tiancai Wang
