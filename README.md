@@ -173,7 +173,7 @@ autonomous driving in realistic simulators.
     - Design an MLLM planner for decision prediction, and develop a data engine that can effectively generate decision states and corresponding explanation annotation for model training and evaluation.
     - Achieve 76.1 DS, 0.955 MPI results on CARLA Town05 Long.
 
-- [Large Language Models for Autonomous Driving: Real-World Experiments](https://arxiv.org/abs/2311.12320)
+- [Large Language Models for Autonomous Driving: Real-World Experiments](https://arxiv.org/abs/2312.09397)
   - Can Cui, Yunsheng Ma, Xu Cao, Wenqian Ye, Yang Zhou, Kaizhao Liang, Jintai Chen, Juanwu Lu, Zichong Yang, Kuei-Da Liao, Tianren Gao, Erlong Li, Kun Tang, Zhipeng Cao, Tong Zhou, Ao Liu, Xinrui Yan, Shuqi Mei, Jianguo Cao, Ziran Wang, Chao Zheng
   - Publisher: Purdue University
   - Publish Date: 2023.12.14
