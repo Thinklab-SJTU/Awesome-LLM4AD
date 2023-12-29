@@ -193,6 +193,25 @@ autonomous driving in realistic simulators.
     - Release 64K clips dataset, including navigation instruction, notice instructions, multi-modal multi-view sensor data, and control signals.
     - Present the benchmark LangAuto for evaluating the autonomous agents.
 
+- [Evaluation of Large Language Models for Decision Making in Autonomous Driving](https://arxiv.org/pdf/2312.06351.pdf)
+  - Kotaro Tanahashi, Yuichi Inoue, Yu Yamaguchi, Hidetatsu Yaginuma, Daiki Shiotsuka, Hiroyuki Shimatani, Kohei Iwamasa, Yoshiaki Inoue, Takafumi Yamaguchi, Koki Igari, Tsukasa Horinouchi, Kento Tokuhiro, Yugo Tokuchi, Shunsuke Aoki
+  - Publisher: Turing Inc., Japan
+  - Task: Evalution
+  - Publish Date: 2023.12.11
+  - Summary:
+    - Evaluate the two core capabilities
+      - the spatial awareness decision-making ability, that is, LLMs can accurately identify the spatial layout based on coordinate information;
+      - the ability to follow traffic rules to ensure that LLMs Ability to strictly abide by traffic laws while driving
+
+- [LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs](https://arxiv.org/abs/2312.04372)
+  - Yunsheng Ma, Can Cui, Xu Cao, Wenqian Ye, Peiran Liu, Juanwu Lu, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Aniket Bera, James M. Rehg, Ziran Wang
+  - Publisher: Purdue University, University of Illinois Urbana-Champaign, University of Virginia, InfoTech Labs, Toyota Motor North American
+  - Task: Benchmark
+  - Publish Date: 2023.12.07
+  - Summary:
+    - LaMPilot is the first interactive environment and dataset designed for evaluating LLM-based agents in a driving context.
+    - It contains 4.9K scenes and is specifically designed to evaluate command tracking tasks in autonomous driving.
+
 - [Reason2Drive: Towards Interpretable and Chain-based Reasoning for Autonomous Driving](https://arxiv.org/abs/2312.03661)
   - Ming Nie, Renyuan Peng, Chunwei Wang, Xinyue Cai, Jianhua Han, Hang Xu, Li Zhang
   - Publisher: Fudan University, Huawei Noah’s Ark Lab
