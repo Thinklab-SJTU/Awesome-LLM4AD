@@ -133,6 +133,49 @@ format:
   - summary
   - metrics
 ```
+- [VLP: Vision Language Planning for Autonomous Driving](https://arxiv.org/abs/2401.05577)
+  - Chenbin Pan, Burhaneddin Yaman, Tommaso Nesti, Abhirup Mallik, Alessandro G Allievi, Senem Velipasalar, Liu Ren
+  - Publisher: Syracuse University, Bosch Research North America & Bosch Center for Artificial Intelligence (BCAI)
+  - Publish Date: 2023.01.14
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes)
+  - Summary:
+    - Propose VLP, a Vision Language Planning model, which is composed of novel components ALP and SLP, aiming to improve the ADS from self-driving BEV reasoning and self-driving decision-making aspects, respectively.
+    - ALP(agent-wise learning paradigm) aligns the produced BEV with a true bird’s-eye-view map.
+    - SLP(selfdriving-car-centric learning paradigm) aligns the ego-vehicle query feature with the ego-vehicle textual planning feature.
+
+- [DME-Driver: Integrating Human Decision Logic and 3D Scene Perception in Autonomous Driving](https://arxiv.org/abs/2401.03641)
+  - Wencheng Han, Dongqian Guo, Cheng-Zhong Xu, and Jianbing Shen
+  - Publisher: SKL-IOTSC, CIS, University of Macau
+  - Publish Date: 2023.01.08
+  - Summary:
+    - DME-Driver = Decision-Maker + Executor + CL
+    - Executor network which is based on UniAD incorporates textual information for the OccFormer and the Planning module.
+    - Decision-Maker which is based on LLaVA process inputs from three different modalities: visual inputs from the current and previous scenes textual inputs in the form of prompts, and current status information detailing the vehicle’s operating state.
+    - CL is a consistency loss mechanism, slightly reducing performance metrics but significantly enhancing decision alignment between Executor and Decision-Maker.
+
+- [Holistic Autonomous Driving Understanding by Bird’s-Eye-View Injected Multi-Modal Large Models](https://arxiv.org/abs/2401.00988)
+  - Xinpeng Ding, Jinahua Han, Hang Xu, Xiaodan Liang, Wei Zhang, Xiaomeng Li
+  - Publisher: Hong Kong University of Science and Technology, Huawei Noah’s Ark Lab, Sun Yat-Sen University
+  - Publish Date: 2023.12.21
+  - Task: Datasets + VQA
+  - Code: [official](https://github.com/xmed-lab/NuInstruct)
+  - Summary:
+    - Introduce NuInstruct, a novel dataset with 91K multi-view video-QA pairs across 17 subtasks, which based on [nuScenes](https://www.nuscenes.org/nuscenes).
+    - Propose BEV-InMLMM to integrate instructionaware BEV features with existing MLLMs, enhancing them with a full suite of information, including temporal, multi-view, and spatial details.
+
+- [LLM-ASSIST: Enhancing Closed-Loop Planning with Language-Based Reasoning](https://arxiv.org/abs/2401.00125)
+  - S P Sharan, Francesco Pittaluga, Vijay Kumar B G, Manmohan Chandraker
+  - Publisher: UT Austin， NEC Labs America， UC San Diego
+  - Publish Date: 2023.12.30
+  - Task: Planning
+  - Env/Datasets: nuPlan Closed-Loop Non-Reactive Challenge
+  - Project: [LLM-ASSIST](https://llmassist.github.io/)
+  - Summary:
+    - LLM-Planner takes over scenarios that PDM-Closed cannot handle
+    - Propose two LLM-based planners.
+      - LLM-ASSIST(unc) considers the most unconstrained version of the planning problem, in which the LLM must directly return a safe future trajectory for the ego car. 
+      - LLM-ASSIST(par) considers a parameterized version of the planning problem, in which the LLM must only return a set of parameters for a rule-based planner, PDM-Closed.
+
 - [DriveLM: Driving with Graph Visual Question Answering](https://arxiv.org/pdf/2312.14150.pdf)
   - Chonghao Sima, Katrin Renz, Kashyap Chitta, Li Chen, Hanxue Zhang, Chengen Xie, Ping Luo, Andreas Geiger, Hongyang Li
   - Publisher: OpenDriveLab, University of Tübingen, Tübingen AI Center, University of Hong Kong
