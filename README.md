@@ -128,7 +128,7 @@ format:
 - [LangProp: A code optimization framework using Language Models applied to driving](https://openreview.net/forum?id=UgTrngiN16)
   - Shu Ishida, Gianluca Corrado, George Fedoseev, Hudson Yeo, Lloyd Russell, Jamie Shotton, João F. Henriques, Anthony Hu
   - Publisher: Wayve Technologies, Visual Geometry Group, University of Oxford
-  - Publish Date: 2023.01.18
+  - Publish Date: 2024.01.18
   - Task: Code generation, Planning
   - Code: [LangProp](https://github.com/shuishida/LangProp)
   - Env: [CARLA](https://github.com/carla-simulator)
@@ -139,7 +139,7 @@ format:
 - [VLP: Vision Language Planning for Autonomous Driving](https://arxiv.org/abs/2401.05577)
   - Chenbin Pan, Burhaneddin Yaman, Tommaso Nesti, Abhirup Mallik, Alessandro G Allievi, Senem Velipasalar, Liu Ren
   - Publisher: Syracuse University, Bosch Research North America & Bosch Center for Artificial Intelligence (BCAI)
-  - Publish Date: 2023.01.14
+  - Publish Date: 2024.01.14
   - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes)
   - Summary:
     - Propose VLP, a Vision Language Planning model, which is composed of novel components ALP and SLP, aiming to improve the ADS from self-driving BEV reasoning and self-driving decision-making aspects, respectively.
@@ -149,7 +149,7 @@ format:
 - [DME-Driver: Integrating Human Decision Logic and 3D Scene Perception in Autonomous Driving](https://arxiv.org/abs/2401.03641)
   - Wencheng Han, Dongqian Guo, Cheng-Zhong Xu, and Jianbing Shen
   - Publisher: SKL-IOTSC, CIS, University of Macau
-  - Publish Date: 2023.01.08
+  - Publish Date: 2024.01.08
   - Summary:
     - DME-Driver = Decision-Maker + Executor + CL
     - Executor network which is based on UniAD incorporates textual information for the OccFormer and the Planning module.
