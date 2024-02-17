@@ -125,6 +125,18 @@ format:
   - summary
   - metrics
 ```
+- [Driving Everywhere with Large Language Model Policy Adaptation](https://arxiv.org/abs/2402.05932)
+  - Boyi Li, Yue Wang, Jiageng Mao, Boris Ivanovic, Sushant Veer, Karen Leung, Marco Pavone
+  - Publisher: NVIDIA, University of Southern California, University of Washington, Stanford University
+  - Publish Date: 2024.02.08
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes)
+  - Project: [LLaDA](https://boyiliee.github.io/llada/)
+  - Summary:
+    - LLaDA is a training-free mechanism to assist human drivers and adapt autonomous driving policies to new environments.
+    - Traffic Rule Extractor (TRE), which aims to organize and filter the inputs (initial plan+unique traffic code) and feed the output into the frozen LLMs to obtain the final new plan. 
+    - LLaDA set GPT-4 as default LLM.
+
 - [LangProp: A code optimization framework using Language Models applied to driving](https://openreview.net/forum?id=UgTrngiN16)
   - Shu Ishida, Gianluca Corrado, George Fedoseev, Hudson Yeo, Lloyd Russell, Jamie Shotton, João F. Henriques, Anthony Hu
   - Publisher: Wayve Technologies, Visual Geometry Group, University of Oxford
