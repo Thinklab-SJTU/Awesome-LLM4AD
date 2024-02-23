@@ -125,6 +125,16 @@ format:
   - summary
   - metrics
 ```
+- [RAG-Driver: Generalisable Driving Explanations with Retrieval-Augmented In-Context Learning in Multi-Modal Large Language Model](https://arxiv.org/abs/2402.10828)
+  - Jianhao Yuan, Shuyang Sun, Daniel Omeiza, Bo Zhao, Paul Newman, Lars Kunze, Matthew Gadd
+  - Publisher:University of Oxford, Beijing Academy of Artificial Intelligence
+  - Publish Date: 2024.02.16
+  - Task: Explainable Driving
+  - Project: [RAG-Driver](https://yuanjianhao508.github.io/RAG-Driver/)
+  - Summary:
+    - RAG-Driver is a Multi-Modal Large Language Model with Retrieval-augmented In-context Learning capacity designed for generalisable and explainable end-to-end driving with strong zero-shot generalisation capacity.
+    - Achieve State-of-the-art action explanation and justification performance in both BDD-X (in-distribution) and SAX (out-distribution) benchmarks. 
+
 - [Driving Everywhere with Large Language Model Policy Adaptation](https://arxiv.org/abs/2402.05932)
   - Boyi Li, Yue Wang, Jiageng Mao, Boris Ivanovic, Sushant Veer, Karen Leung, Marco Pavone
   - Publisher: NVIDIA, University of Southern California, University of Washington, Stanford University
