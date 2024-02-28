@@ -125,9 +125,20 @@ format:
   - summary
   - metrics
 ```
+- [DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models](https://arxiv.org/abs/2402.12289) 
+  - Xiaoyu Tian, Junru Gu, Bailin Li, Yicheng Liu, Chenxu Hu, Yang Wang, Kun Zhan, Peng Jia, Xianpeng Lang, Hang Zhao
+  - Publisher: IIIS, Tsinghua University, Li Auto
+  - Publish Date: 2024.02.25
+  - Task: + Planning
+  - Project: [DriveVLM](https://tsinghua-mars-lab.github.io/DriveVLM/)
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes), [SUP-AD]
+  - Summary:
+    - DriveVLM, a novel autonomous driving system that leverages VLMs for effective scene understanding and planning.
+    - DriveVLM-Dual, a hybrid system that incorporates DriveVLM and a traditional autonomous pipeline. 
+
 - [RAG-Driver: Generalisable Driving Explanations with Retrieval-Augmented In-Context Learning in Multi-Modal Large Language Model](https://arxiv.org/abs/2402.10828)
   - Jianhao Yuan, Shuyang Sun, Daniel Omeiza, Bo Zhao, Paul Newman, Lars Kunze, Matthew Gadd
-  - Publisher:University of Oxford, Beijing Academy of Artificial Intelligence
+  - Publisher: University of Oxford, Beijing Academy of Artificial Intelligence
   - Publish Date: 2024.02.16
   - Task: Explainable Driving
   - Project: [RAG-Driver](https://yuanjianhao508.github.io/RAG-Driver/)
@@ -146,6 +157,15 @@ format:
     - LLaDA is a training-free mechanism to assist human drivers and adapt autonomous driving policies to new environments.
     - Traffic Rule Extractor (TRE), which aims to organize and filter the inputs (initial plan+unique traffic code) and feed the output into the frozen LLMs to obtain the final new plan. 
     - LLaDA set GPT-4 as default LLM.
+
+- [LimSim++](https://arxiv.org/abs/2402.01246)
+  - Daocheng Fu, Wenjie Lei, Licheng Wen, Pinlong Cai, Song Mao, Min Dou, Botian Shi, Yu Qiao
+  - Publisher: Shanghai Artificial Intelligence Laboratory, Zhejiang University
+  - Publish Date: 2024.02.02
+  - Project: [LimSim++](https://pjlab-adg.github.io/limsim_plus/)
+  - Summary:
+    - LimSim++, an extended version of LimSim designed for the application of (M)LLMs in autonomous driving.
+    - Introduce a baseline (M)LLM-driven framework, systematically validated through quantitative experiments across diverse scenarios.
 
 - [LangProp: A code optimization framework using Language Models applied to driving](https://openreview.net/forum?id=UgTrngiN16)
   - Shu Ishida, Gianluca Corrado, George Fedoseev, Hudson Yeo, Lloyd Russell, Jamie Shotton, João F. Henriques, Anthony Hu
@@ -177,6 +197,17 @@ format:
     - Executor network which is based on UniAD incorporates textual information for the OccFormer and the Planning module.
     - Decision-Maker which is based on LLaVA process inputs from three different modalities: visual inputs from the current and previous scenes textual inputs in the form of prompts, and current status information detailing the vehicle’s operating state.
     - CL is a consistency loss mechanism, slightly reducing performance metrics but significantly enhancing decision alignment between Executor and Decision-Maker.
+
+- [AccidentGPT: Accident Analysis and Prevention from V2X Environmental Perception with Multi-modal Large Model](https://arxiv.org/abs/2312.13156)
+  - Lening Wang, Yilong Ren, Han Jiang, Pinlong Cai, Daocheng Fu, Tianqi Wang, Zhiyong Cui, Haiyang Yu, Xuesong Wang, Hanchu Zhou, Helai Huang, Yinhai Wang
+  - Publisher: Beihang University, Shanghai Artificial Intelligence Laboratory, The University of Hong Kong, Zhongguancun Laboratory, Tongji University, Central South University, University of Washington, Seattle
+  - Publish Date: 2023.12.29
+  - Project page: [AccidentGPT](https://accidentgpt.github.io)
+  - Summary:
+    - AccidentGPT, a comprehensive accident analysis and prevention multi-modal large model.
+    - Integrates multi-vehicle collaborative perception for enhanced environmental understanding and collision avoidance.
+    - Offer advanced safety features such as proactive remote safety warnings and blind spot alerts.
+    - Serve traffic police and management agencies by providing real-time intelligent analysis of traffic safety factors.
 
 - [Holistic Autonomous Driving Understanding by Bird’s-Eye-View Injected Multi-Modal Large Models](https://arxiv.org/abs/2401.00988)
   - Xinpeng Ding, Jinahua Han, Hang Xu, Xiaodan Liang, Wei Zhang, Xiaomeng Li
