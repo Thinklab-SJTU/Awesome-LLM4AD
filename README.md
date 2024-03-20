@@ -125,6 +125,42 @@ format:
   - summary
   - metrics
 ```
+
+- [LLM-Assisted Light: Leveraging Large Language Model Capabilities for Human-Mimetic Traffic Signal Control in Complex Urban Environments](https://arxiv.org/abs/2403.08337)
+  - Maonan Wang, Aoyu Pang, Yuheng Kan, Man-On Pun, Chung Shue Chen, Bo Huang
+  - Publisher: The Chinese University of Hong Kong, Shanghai AI Laboratory, SenseTime Group Limited, Nokia Bell Labs
+  - Publish Date: 2024.03.13
+  - Task: Generation
+  - Code: [LLM-Assisted-Light](https://github.com/Traffic-Alpha/LLM-Assisted-Light)
+  - Summary:
+    - LA-Light, a hybrid TSC framework that integrates the human-mimetic reasoning capabilities of LLMs, enabling the signal control algorithm to interpret and respond to complex traffic scenarios with the nuanced judgment typical of human cognition.
+    - A closed-loop traffic signal control system has been developed, integrating LLMs with a comprehensive suite of interoperable tools.
+
+- [DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation](https://arxiv.org/abs/2403.06845)
+  - Guosheng Zhao, Xiaofeng Wang, Zheng Zhu, Xinze Chen, Guan Huang, Xiaoyi Bao, Xingang Wang
+  - Publisher: Institute of Automation, Chinese Academy of Sciences, GigaAI
+  - Publish Date: 2024.03.11
+  - Task: Generation
+  - Project: [DriveDreamer-2](https://drivedreamer2.github.io)
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes)
+  - Summary:
+    - DriveDreamer-2, which builds upon the framework of [DriveDreamer](#DriveDreamer) and incorporates a Large Language Model (LLM) to generate user-defined driving videos.
+    - UniMVM(Unified Multi-View Model) enhances temporal and spatial coherence in the generated driving videos.
+    - HDMap generator ensure the background elements do not conflict with the foreground trajectories.
+    - Utilize the constructed text-to-script dataset to finetune GPT-3.5 into an LLM with specialized trajectory generation knowledge.
+
+- [Editable Scene Simulation for Autonomous Driving via Collaborative LLM-Agents](https://arxiv.org/abs/2402.05746)
+  - Yuxi Wei, Zi Wang, Yifan Lu, Chenxin Xu, Changxing Liu, Hao Zhao, Siheng Chen, Yanfeng Wang
+  - Publisher: Shanghai Jiao Tong University, Shanghai AI Laboratory, Carnegie Mellon University, Tsinghua University
+  - Publish Date: 2024.03.11
+  - Task: Generation
+  - Code: [ChatSim](https://github.com/yifanlu0227/ChatSim)
+  - Datasets: [Waymo](https://waymo.com/open/)
+  - Summary:
+    - ChatSim, the first system that enables editable photo-realistic 3D driving scene simulations via natural language commands with external digital assets.
+    - McNeRF, a novel neural radiance field method that incorporates multi-camera inputs, offering a broader scene rendering. It helps generate photo-realistic outcomes.
+    - McLight, a novel multicamera lighting estimation that blends skydome and surrounding lighting. It makes external digital assets with their realistic textures and materials.
+
 - [DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models](https://arxiv.org/abs/2402.12289) 
   - Xiaoyu Tian, Junru Gu, Bailin Li, Yicheng Liu, Chenxu Hu, Yang Wang, Kun Zhan, Peng Jia, Xianpeng Lang, Hang Zhao
   - Publisher: IIIS, Tsinghua University, Li Auto
@@ -135,6 +171,18 @@ format:
   - Summary:
     - DriveVLM, a novel autonomous driving system that leverages VLMs for effective scene understanding and planning.
     - DriveVLM-Dual, a hybrid system that incorporates DriveVLM and a traditional autonomous pipeline. 
+
+- [GenAD: Generative End-to-End Autonomous Driving](https://arxiv.org/abs/2402.11502)
+  - Wenzhao Zheng, Ruiqi Song, Xianda Guo, Long Chen
+  - University of California, Berkeley, Waytous, Institute of Automation, Chinese Academy of Sciences
+  - Publish Date: 2024.02.20
+  - Task: Generation
+  - Code: [GenAD](https://github.com/wzzheng/GenAD)
+  - Datasets: [nuScenes](https://www.nuscenes.org/nuscenes)
+  - Summary:
+    - GenAD models autonomous driving as a trajectory generation problem to unleash the full potential of endto-end methods. 
+    - Propose an instance-centric scene tokenizer that first transforms the surrounding scenes into map-aware instance tokens.
+    - Employ a variational autoencoder to learn the future trajectory distribution in a structural latent space for trajectory prior modeling and adopt a temporal model to capture the agent and ego movements in the latent space to generate more effective future trajectories. 
 
 - [RAG-Driver: Generalisable Driving Explanations with Retrieval-Augmented In-Context Learning in Multi-Modal Large Language Model](https://arxiv.org/abs/2402.10828)
   - Jianhao Yuan, Shuyang Sun, Daniel Omeiza, Bo Zhao, Paul Newman, Lars Kunze, Matthew Gadd
@@ -589,7 +637,7 @@ UK between 2019 and 2023. It corresponds to approximately 420M unique images.
   - Summary:
     - Provide a comprehensive framework for integrating Large Language Models (LLMs) into AD.
 
-- [DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving](https://arxiv.org/abs/2309.09777)
+- <a id="DriveDreamer"></a>[DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving](https://arxiv.org/abs/2309.09777)
   - Xiaofeng Wang, Zheng Zhu, Guan Huang, Xinze Chen, Jiwen Lu
   - Publisher: GigaAI, Tsinghua University
   - Task: Generation
