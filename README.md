@@ -329,7 +329,7 @@ autonomous driving in realistic simulators.
     - Introduce a Large Language Model (LLM)-based framework Talk-to-Drive (Talk2Drive) to process verbal commands from humans and make autonomous driving decisions with contextual information, satisfying their personalized preferences for safety, efficiency, and comfort.
 
 - [LMDrive: Closed-Loop End-to-End Driving with Large Language Models](https://arxiv.org/abs/2312.07488)
-  - Hao Shao, Yuxuan Hu, Letian Wang, Steven L. Waslander, Yu Liu, Hongsheng Li
+  - Hao Shao, Yuxuan Hu, Letian Wang, Steven L. Waslander, Yu Liu, Hongsheng Li      **CVPR 2024**
   - Publisher: CUHK MMLab, SenseTime Research, CPII under InnoHK, University of Toronto, Shanghai Artificial Intelligence Laboratory
   - Task: Planning + Datasets
   - Code: [official](https://github.com/opendilab/LMDrive)
@@ -612,7 +612,7 @@ UK between 2019 and 2023. It corresponds to approximately 420M unique images.
     - Serve as a valuable neural simulator, allowing the generation of unlimited data.
 
 - [DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models](https://arxiv.org/abs/2309.16292)
-  - Licheng Wen, Daocheng Fu, Xin Li, Xinyu Cai, Tao Ma, Pinlong Cai, Min Dou, Botian Shi, Liang He, Yu Qiao
+  - Licheng Wen, Daocheng Fu, Xin Li, Xinyu Cai, Tao Ma, Pinlong Cai, Min Dou, Botian Shi, Liang He, Yu Qiao   **ICLR 2024**
   - Publisher: Shanghai AI Laboratory, East China Normal University, The Chinese University of Hong Kong
   - Publish Date: 2023.09.28
   - Task: Planning
