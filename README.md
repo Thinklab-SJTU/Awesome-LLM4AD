@@ -126,6 +126,36 @@ format:
   - metrics
 ```
 
+- [Multi-Frame, Lightweight & Efficient Vision-Language Models for Question Answering in Autonomous Driving](https://arxiv.org/abs/2403.19838)
+  - Akshay Gopalkrishnan, Ross Greer, Mohan Trivedi
+  - Publisher: UCSD
+  - Task: QA
+  - Publish Date: 2024.03.28
+  - Code: [official](https://github.com/akshaygopalkr/EM-VLM4AD)
+  - Datasets: [DriveLM](https://github.com/OpenDriveLab/DriveLM)
+  - Summary:
+    - EM-VLM4AD, an efficient, lightweight, multi-frame vision language model which performs Visual Question Answering for autonomous driving.
+    - EM-VLM4AD requires at least 10 times less memory and floating point operations, while also achieving higher BLEU-4, METEOR, CIDEr, and ROGUE scores than the existing baseline on the DriveLM dataset.
+
+- [Engineering Safety Requirements for Autonomous Driving with Large Language Models](https://arxiv.org/abs/2403.16289)
+  - Ali Nouri, Beatriz Cabrero-Daniel, Fredrik Törner, Hȧkan Sivencrona, Christian Berger
+  - Publisher: Chalmers University of Technology, University of Gothenburg, Volvo Cars, Zenseact, University of Gothenburg
+  - Task: QA
+  - Publish Date: 2024.03.24
+  - Summary:
+    - Propose a prototype of a pipeline of prompts and LLMs that receives an item definition and outputs solutions in the form of safety requirements.
+
+- [Hybrid Reasoning Based on Large Language Models for Autonomous Car Driving](https://arxiv.org/abs/2402.13602v3)
+  - Mehdi Azarafza, Mojtaba Nayyeri, Charles Steinmetz, Steffen Staab, Achim Rettberg
+  - Publisher: Univ. of Applied Science Hamm-Lippstadt, University of Stuttgart
+  - Publish Date: 2024.03.18
+  - Task: Reasoning
+  - Env: [Carla](https://github.com/carla-simulator)
+  - Summary:
+    - Combining arithmetic and commonsense elements, utilize the objects detected by YOLOv8.
+    - Regarding the "location of the object," "speed of our car," "distance to the object," and "our car’s direction" are fed into the large language model for mathematical calculations within CARLA.
+    - After formulating these calculations based on overcoming weather conditions, precise control values for brake and speed are generated.
+
 - [LLM-Assisted Light: Leveraging Large Language Model Capabilities for Human-Mimetic Traffic Signal Control in Complex Urban Environments](https://arxiv.org/abs/2403.08337)
   - Maonan Wang, Aoyu Pang, Yuheng Kan, Man-On Pun, Chung Shue Chen, Bo Huang
   - Publisher: The Chinese University of Hong Kong, Shanghai AI Laboratory, SenseTime Group Limited, Nokia Bell Labs
@@ -373,6 +403,17 @@ autonomous driving in realistic simulators.
     - Reason2Drive, a benchmark dataset with over 600K video-text pairs, aimed at facilitating the study of interpretable reasoning in complex driving.
     - Introduce a novel evaluation metric to assess chain-based reasoning performance in autonomous driving environments, and address the semantic ambiguities of existing metrics such as BLEU and CIDEr.
     - Introduce a straightforward yet effective framework that enhances existing VLMs with two new components: a prior tokenizer and an instructed vision decoder.
+
+- [GPT-4 Enhanced Multimodal Grounding for Autonomous Driving: Leveraging Cross-Modal Attention with Large Language Models](https://arxiv.org/abs/2312.03543)
+  - Haicheng Liao, Huanming Shen, Zhenning Li, Chengyue Wang, Guofa Li, Yiming Bie, Chengzhong Xu
+  - Publisher: University of Macau, UESTC, Chongqing University, Jilin University
+  - Task: Detection/Prediction
+  - Code: [official](https://github.com/Petrichor625/Talk2car_CAVG)
+  - Datasets:
+    - [Talk2car](https://github.com/talk2car/Talk2Car)
+  - Publish Date: 2023.12.06
+  - Summaray:
+    - Utilize five encoder Text, Image, Context, and Cross-Modal—with a Multimodal decoder to pridiction object bounding box.
 
 - [Dolphins: Multimodal Language Model for Driving](https://arxiv.org/abs/2312.00438)
   - Yingzi Ma, Yulong Cao, Jiachen Sun, Marco Pavone, Chaowei Xiao
