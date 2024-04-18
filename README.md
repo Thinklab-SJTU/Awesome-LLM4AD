@@ -126,6 +126,16 @@ format:
   - metrics
 ```
 
+- [AGENTSCODRIVER: Large Language Model Empowered Collaborative Driving with Lifelong Learning](https://arxiv.org/pdf/2404.06345.pdf)
+  - Senkang Hu, Zhengru Fang, Zihan Fang, Xianhao Chen, Yuguang Fang
+  - Publisher: City University of Hong Kong, The University of Hong Kong
+  - Task: Planning(Multiple vehicles collaborative)
+  - Publish Date: 2024.04.09
+  - Env: [HighwayEnv](https://github.com/Farama-Foundation/HighwayEnv)
+  - Summary:
+    - AGENTSCODRIVER, an LLM-powered multi-vehicle collaborative driving framework with lifelong learning, which allows different driving agents to communicate with each other and collaboratively drive in complex traffic scenarios.
+    - It features reasoning engine, cognitive memory, reinforcement reflection, and communication module. 
+
 - [Multi-Frame, Lightweight & Efficient Vision-Language Models for Question Answering in Autonomous Driving](https://arxiv.org/abs/2403.19838)
   - Akshay Gopalkrishnan, Ross Greer, Mohan Trivedi
   - Publisher: UCSD
@@ -137,6 +147,25 @@ format:
     - EM-VLM4AD, an efficient, lightweight, multi-frame vision language model which performs Visual Question Answering for autonomous driving.
     - EM-VLM4AD requires at least 10 times less memory and floating point operations, while also achieving higher BLEU-4, METEOR, CIDEr, and ROGUE scores than the existing baseline on the DriveLM dataset.
 
+- [LC-LLM: Explainable Lane-Change Intention and Trajectory Predictions with Large Language Models]
+  - Mingxing Peng, Xusen Guo, Xianda Chen, Meixin Zhu, Kehua Chen, Hao (Frank) Yang, Xuesong Wang, Yinhai Wang
+  - Publisher: The Hong Kong University of Science and Technology, Johns Hopkins University, Tongji University, STAR Lab
+  - Task: Trajectory Prediction
+  - Publish Date: 2024.03.27
+  - Datasets: [highD](https://levelxdata.com/highd-dataset/)
+  - Summary:
+    - LC-LLM, the first Large Language Model for lane change prediction. It leverages the powerful capabilities of LLMs to understand complex interactive scenarios, enhancing the performance of lane change prediction.
+    - LC-LLM achieves explainable predictions. It not only predicts lane change intentions and trajectories but also generates explanations for the prediction results.
+
+- [AIDE: An Automatic Data Engine for Object Detection in Autonomous Driving](https://arxiv.org/abs/2403.17373)
+  - Mingfu Liang, Jong-Chyi Su, Samuel Schulter, Sparsh Garg, Shiyu Zhao, Ying Wu, Manmohan Chandraker
+  - Publisher: Northwestern University, NEC Laboratories America, Rutgers University, UC San Diego
+  - Publish Date: 2024.03.26
+  - Task: Object Detection
+  - Datasets: [Mapillary](https://www.mapillary.com/dataset/vistas), [Cityscapes](https://www.cityscapes-dataset.com/), [nuImages](https://www.nuscenes.org/nuimages), [BDD100k](https://www.vis.xyz/bdd100k/), [Waymo](https://waymo.com/open/), [KITTI](https://www.cvlibs.net/datasets/kitti/)
+  - Summary:
+    - An Automatic Data Engine (AIDE) that can automatically identify the issues, efficiently curate data, improve the model using auto-labeling, and verify the model through generated diverse scenarios.
+
 - [Engineering Safety Requirements for Autonomous Driving with Large Language Models](https://arxiv.org/abs/2403.16289)
   - Ali Nouri, Beatriz Cabrero-Daniel, Fredrik Törner, Hȧkan Sivencrona, Christian Berger
   - Publisher: Chalmers University of Technology, University of Gothenburg, Volvo Cars, Zenseact, University of Gothenburg
@@ -144,6 +173,18 @@ format:
   - Publish Date: 2024.03.24
   - Summary:
     - Propose a prototype of a pipeline of prompts and LLMs that receives an item definition and outputs solutions in the form of safety requirements.
+
+- [LeGo-Drive: Language-enhanced Goal-oriented Closed-Loop End-to-End Autonomous Driving](https://arxiv.org/abs/2403.20116)
+  - Pranjal Paul, Anant Garg, Tushar Choudhary, Arun Kumar Singh, K. Madhava Krishna
+  - Publisher: The International Institute of Information Technology, Hyderabad, University of Tartu, Estonia
+  - Project Page: [LeGo-Drive](https://reachpranjal.github.io/lego-drive/)
+  - Code: [LeGo-Drive](https://github.com/reachpranjal/lego-drive)
+  - Env: [Carla](https://github.com/carla-simulator)
+  - Task: Trajectory Prediction
+  - Publish Date: 2024.03.20
+  - Summary:
+    - A novel planning-guided end-to-end LLM-based goal point navigation solution that predicts and improves the desired state by dynamically interacting with the
+environment and generating a collision-free trajectory.
 
 - [Hybrid Reasoning Based on Large Language Models for Autonomous Car Driving](https://arxiv.org/abs/2402.13602v3)
   - Mehdi Azarafza, Mojtaba Nayyeri, Charles Steinmetz, Steffen Staab, Achim Rettberg
@@ -155,6 +196,27 @@ format:
     - Combining arithmetic and commonsense elements, utilize the objects detected by YOLOv8.
     - Regarding the "location of the object," "speed of our car," "distance to the object," and "our car’s direction" are fed into the large language model for mathematical calculations within CARLA.
     - After formulating these calculations based on overcoming weather conditions, precise control values for brake and speed are generated.
+
+- [Large Language Models Powered Context-aware Motion Prediction](https://arxiv.org/pdf/2403.11057.pdf)
+  - Xiaoji Zheng, Lixiu Wu, Zhijie Yan, Yuanrong Tang, Hao Zhao, Chen Zhong, Bokui Chen, Jiangtao Gong
+  - Publisher: Tsinghua University
+  - Task: Motion Prediction
+  - Publish Data: 2024.03.17
+  - Dataset: [WOMD](https://github.com/waymo-research/waymo-open-dataset)
+  - Summary:
+    - Design and conduct prompt engineering to enable an unfine-tuned GPT4-V to comprehend complex traffic scenarios.
+    - Introduced a novel approach that combines the context information outputted by GPT4-V with [MTR](https://arxiv.org/abs/2209.13508).
+
+- [Generalized Predictive Model for Autonomous Driving](https://arxiv.org/abs/2403.09630)
+  - Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li
+  - Publisher:  OpenDriveLab and Shanghai AI Lab, Hong Kong University of Science and Technology, University of Hong Kong, University of Tubingen, Tubingen AI Center
+  - Task: Datasets + Generation
+  - Code: [DriveAGI](https://github.com/OpenDriveLab/DriveAGI.)
+  - Publish Date: 2024.03.14
+  - Summary:
+    - Introduce the first large-scale video prediction model in the autonomous driving discipline.
+    - The resultant dataset accumulates over 2000 hours of driving videos, spanning areas all over the world with diverse weather conditions and traffic scenarios.
+    - GenAD, inheriting the merits from recent latent diffusion models, handles the challenging dynamics in driving scenes with novel temporal reasoning blocks.
 
 - [LLM-Assisted Light: Leveraging Large Language Model Capabilities for Human-Mimetic Traffic Signal Control in Complex Urban Environments](https://arxiv.org/abs/2403.08337)
   - Maonan Wang, Aoyu Pang, Yuheng Kan, Man-On Pun, Chung Shue Chen, Bo Huang
