@@ -125,6 +125,38 @@ format:
   - summary
   - metrics
 ```
+- [Testing Large Language Models on Driving Theory Knowledge and Skills for Connected Autonomous Vehicles](https://arxiv.org/abs/2407.17211)
+  - Zuoyin Tang, Jianhua He, Dashuai Pei, Kezhong Liu, Tao Gao
+  - Publisher: Aston University, Essex University, Wuhan University of Technology, Chang’An University
+  - Task: Evaluation
+  - Publish Date: 2024.07.24
+  - Data: [UK Driving Theory Test Practice Questions and Answers](https://www.drivinginstructorwebsites.co.uk/uk-driving-theory-test-practice-questions-and-answers)
+  - Summary:
+    - Design and run driving theory tests for several proprietary LLM models (OpenAI GPT models, Baidu Ernie and Ali QWen) and open-source LLM models (Tsinghua MiniCPM-2B and MiniCPM-Llama3-V2.5) with more than 500 multiple-choices theory test questions.
+
+- [KoMA: Knowledge-driven Multi-agent Framework for Autonomous Driving with Large Language Models](https://arxiv.org/abs/2407.14239)
+  - Kemou Jiang, Xuan Cai, Zhiyong Cui, Aoyong Li, Yilong Ren, Haiyang Yu, Hao Yang, Daocheng Fu, Licheng Wen, Pinlong Cai
+  - Publisher: Beihang University, Johns Hopkins University, Shanghai Artificial Intelligence Laboratory
+  - Task: Multi Agent Planning
+  - Env: [HighwayEnv](https://github.com/Farama-Foundation/HighwayEnv)
+  - Project Page: [KoMA](https://jkmhhh.github.io/KoMA/)
+  - Publish Date: 2024.07.19
+  - Summary:
+    - Introduce a knowledge-driven autonomous driving framework KoMA that incorporates multiple agents empowered by LLMs, comprising five integral modules: Environment, Multi-agent Interaction, Multi-step Planning, Shared Memory, and Ranking-based Reflection. 
+  
+- [Asynchronous Large Language Model Enhanced Planner for Autonomous Driving](https://arxiv.org/abs/2406.14556)
+  - Yuan Chen, Zi-han Ding, Ziqin Wang, Yan Wang, Lijun Zhang, Si Liu  **ECCV 2024**
+  - Publisher: Beihang University, Tsinghua University
+  - Task: Planning
+  - Publish Date: 2024.06.20
+  - Code: [AsyncDriver](https://github.com/memberRE/AsyncDriver)
+  - Datasets: [nuPlan Closed-Loop Reactive Hard20](https://www.nuscenes.org/nuplan)
+  - Summary:
+    - AsyncDriver, a novel asynchronous LLM-enhanced framework, in which the inference frequency of LLM is controllable and can be decoupled from that of the real-time planner.
+    - Adaptive Injection Block, which is model-agnostic and can easily integrate scene-associated instruction features into any transformer based
+    real-time planner, enhancing its ability in comprehending and following series of language-based routing instructions.
+    - Compared with existing methods, our approach demonstrates superior closedloop evaluation performance in nuPlan’s challenging scenarios.
+
 - [A Superalignment Framework in Autonomous Driving with Large Language Models](https://arxiv.org/abs/2406.05651)
   - Xiangrui Kong, Thomas Braunl, Marco Fahmi, Yue Wang
   - Publisher: University of Western Australia, Queensland Government, Brisbane, Queensland University of Technology
@@ -268,7 +300,7 @@ environment and generating a collision-free trajectory.
     - Introduced a novel approach that combines the context information outputted by GPT4-V with [MTR](https://arxiv.org/abs/2209.13508).
 
 - [Generalized Predictive Model for Autonomous Driving](https://arxiv.org/abs/2403.09630)
-  - Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li
+  - Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li **ECCV 2024**
   - Publisher:  OpenDriveLab and Shanghai AI Lab, Hong Kong University of Science and Technology, University of Hong Kong, University of Tubingen, Tubingen AI Center
   - Task: Datasets + Generation
   - Code: [DriveAGI](https://github.com/OpenDriveLab/DriveAGI.)
@@ -312,6 +344,15 @@ environment and generating a collision-free trajectory.
     - ChatSim, the first system that enables editable photo-realistic 3D driving scene simulations via natural language commands with external digital assets.
     - McNeRF, a novel neural radiance field method that incorporates multi-camera inputs, offering a broader scene rendering. It helps generate photo-realistic outcomes.
     - McLight, a novel multicamera lighting estimation that blends skydome and surrounding lighting. It makes external digital assets with their realistic textures and materials.
+  
+- [Embodied Understanding of Driving Scenarios](https://arxiv.org/abs/2403.04593)
+  - Yunsong Zhou, Linyan Huang, Qingwen Bu, Jia Zeng, Tianyu Li, Hang Qiu, Hongzi Zhu, Minyi Guo, Yu Qiao, Hongyang Li **ECCV 2024**
+  - Shanghai AI Lab, Shanghai Jiao Tong University, University of California, Riverside
+  - Publish Date: 2024.03.07
+  - Task: Benchmark & Scene Understanding
+  - Code: [ELM](https://github.com/OpenDriveLab/ELM)
+  - Summary:
+    - ELM is an embodied language model for understanding the long-horizon driving scenarios in space and time. 
 
 - [DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models](https://arxiv.org/abs/2402.12289) 
   - Xiaoyu Tian, Junru Gu, Bailin Li, Yicheng Liu, Chenxu Hu, Yang Wang, Kun Zhan, Peng Jia, Xianpeng Lang, Hang Zhao
@@ -325,7 +366,7 @@ environment and generating a collision-free trajectory.
     - DriveVLM-Dual, a hybrid system that incorporates DriveVLM and a traditional autonomous pipeline. 
 
 - [GenAD: Generative End-to-End Autonomous Driving](https://arxiv.org/abs/2402.11502)
-  - Wenzhao Zheng, Ruiqi Song, Xianda Guo, Long Chen
+  - Wenzhao Zheng, Ruiqi Song, Xianda Guo, Long Chen  **ECCV 2024**
   - University of California, Berkeley, Waytous, Institute of Automation, Chinese Academy of Sciences
   - Publish Date: 2024.02.20
   - Task: Generation
@@ -433,7 +474,7 @@ environment and generating a collision-free trajectory.
       - LLM-ASSIST(par) considers a parameterized version of the planning problem, in which the LLM must only return a set of parameters for a rule-based planner, PDM-Closed.
 
 - [DriveLM: Driving with Graph Visual Question Answering](https://arxiv.org/pdf/2312.14150.pdf)
-  - Chonghao Sima, Katrin Renz, Kashyap Chitta, Li Chen, Hanxue Zhang, Chengen Xie, Ping Luo, Andreas Geiger, Hongyang Li
+  - Chonghao Sima, Katrin Renz, Kashyap Chitta, Li Chen, Hanxue Zhang, Chengen Xie, Ping Luo, Andreas Geiger, Hongyang Li **ECCV 2024**
   - Publisher: OpenDriveLab, University of Tübingen, Tübingen AI Center, University of Hong Kong
   - Code: [official](https://github.com/OpenDriveLab/DriveLM)
   - Publish Date: 2023.12.21
@@ -801,7 +842,7 @@ UK between 2019 and 2023. It corresponds to approximately 420M unique images.
     - Provide a comprehensive framework for integrating Large Language Models (LLMs) into AD.
 
 - <a id="DriveDreamer"></a>[DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving](https://arxiv.org/abs/2309.09777)
-  - Xiaofeng Wang, Zheng Zhu, Guan Huang, Xinze Chen, Jiwen Lu
+  - Xiaofeng Wang, Zheng Zhu, Guan Huang, Xinze Chen, Jiwen Lu  **ECCV 2024**
   - Publisher: GigaAI, Tsinghua University
   - Task: Generation
   - Project Page: [official](https://drivedreamer.github.io/)
@@ -957,7 +998,7 @@ format:
     - Introduce a joint model for joint importance level ranking and natural language captions generation to benchmark our dataset.
 
 - [DriveLM: Drive on Language](https://github.com/OpenDriveLab/DriveLM)
-  - Publisher: DriveLM Contributors
+  - Publisher: Sima, Chonghao and Renz, Katrin and Chitta, Kashyap and Chen, Li and Zhang, Hanxue and Xie, Chengen and Luo, Ping and Geiger, Andreas and Li, Hongyang **ECCV 2024**
   - Dataset: [DriveLM](https://github.com/OpenDriveLab/DriveLM/blob/main/docs/getting_started.md#download-data)
   - Publish Date: 2023.08
   - Summary:
