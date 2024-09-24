@@ -126,6 +126,99 @@ format:
   - summary
   - metrics
 ```
+- [LeGEND: A Top-Down Approach to Scenario Generation of Autonomous Driving Systems Assisted by Large Language Models](https://arxiv.org/abs/2409.10066)
+  - Shuncheng Tang, Zhenya Zhang, Jixiang Zhou, Lei Lei, Yuan Zhou, Yinxing Xue **ASE 2024**
+  - Publisher: University of Science and Technology of China, Kyushu University, Zhejiang Sci-Tech University
+  - Task: Generation
+  - Publish Date: 2024.09.16
+  - Code: [LeGEND](https://github.com/MayDGT/LeGEND)
+  - Summary:
+    - LeGEND, a top-down scenario generation approach that can achieve both criticality and diversity of scenarios.
+    - Devise a two-stage transformation, by using an intermediate language, from accident reports to logical scenarios; so, LeGEND involves two LLMs, each in charge of one different stage.
+    - Implement LeGEND and demonstrate its effectiveness on Apollo, and we detect 11 types of critical concrete scenarios that reflect different aspects of system defects.
+
+- [MiniDrive: More Efficient Vision-Language Models with Multi-Level 2D Features as Text Tokens for Autonomous Driving](https://arxiv.org/abs/2409.07267)
+  - Enming Zhang, Xingyuan Dai, Yisheng Lv, Qinghai Miao
+  - Publisher: University of Chinese Academy of Sciences, CASIA
+  - Task: QA
+  - Publish Date: 2024.09.14
+  - Code: [MiniDrive](https://github.com/EMZucas/minidrive)
+  - Summary:
+    - MiniDrive addresses the challenges of efficient deployment and real-time response in VLMs for autonomous driving systems. It can be fully trained simultaneously on an
+    RTX 4090 GPU with 24GB of memory.
+    - Feature Engineering Mixture of Experts (FE-MoE) addresses the challenge of efficiently encoding 2D features from multiple perspectives into text token embeddings, effectively reducing the number of visual feature tokens and minimizing feature redundancy.
+    - Dynamic Instruction Adapter through a residual structure, which addresses the problem of fixed visual tokens for the same image before being input into the language model.
+
+- [OccLLaMA: An Occupancy-Language-Action Generative World Model for Autonomous Driving](https://arxiv.org/abs/2409.03272)
+  - Julong Wei, Shanshuai Yuan, Pengfei Li, Qingda Hu, Zhongxue Gan, Wenchao Ding
+  - Publisher: Fudan University, Tsinghua University
+  - Task: Perception(Occ) + Reasoning
+  - Publish Date: 2024.09.05
+  - Summary:
+    - OccLLaMA, a unified 3D occupancy-language-action generative world model, which unifies VLA-related tasks including but not limited to scene understanding, planning, and 4D occupancy forecasting.
+    - A novel scene tokenizer(VQVAE-like architecture) that efficiently discretize and reconstruct Occ scenes, considering sparsity and classes imbalance.
+
+- [ContextVLM: Zero-Shot and Few-Shot Context Understanding for Autonomous Driving using Vision Language Models](https://arxiv.org/abs/2409.00301)
+  - Shounak Sural, Naren, Ragunathan Rajkumar **ITSC 2024**
+  - Publisher: Carnegie Mellon University
+  - Task: Context Recognition
+  - Code: [ContextVLM](https://github.com/ssuralcmu/ContextVLM)
+  - Publish Date: 2024.08.30
+  - Summary:
+    - DrivingContexts, a large publicly-available datasetwith a combination of hand-annotated and machine annnotated labels to improve VLMs for better context recognition.
+    - ContextVLM uses vision-language models to detect contexts using zero- and few-shot approaches.
+
+- [DriveGenVLM: Real-world Video Generation for Vision Language Model based Autonomous Driving](https://arxiv.org/abs/2408.16647)
+  - Yongjie Fu, Anmol Jain, Xuan Di, Xu Chen, Zhaobin Mo **IAVVC 2024**
+  - Publisher: Columbia University
+  - Task: Generation
+  - Dataset: [Waymo open dataset](https://waymo.com/open/)
+  - Publish Date: 2024.08.29
+  - Summary:
+    - DriveGenVLM employ a video generation framework based on Denoising Diffusion Probabilistic Models to create realistic video sequences that mimic real-world dynamics.
+    - The videos generated are then evaluated for their suitability in Visual Language Models (VLMs) using a pre-trained model called Efficient In-context Learning on Egocentric Videos (EILEV). 
+
+- [Edge-Cloud Collaborative Motion Planning for Autonomous Driving with Large Language Models](https://arxiv.org/abs/2408.09972)
+  - Jiao Chen, Suyan Dai, Fangfang Chen, Zuohong Lv, Jianhua Tang
+  - Publisher: South China University of Technology, Pazhou Lab
+  - Task: Planning + QA
+  - Project Page: [EC-Drive](https://sites.google.com/view/ec-drive)
+  - Publish Date: 2024.08.19
+  - Summary:
+    - EC-Drive, a novel edge-cloud collaborative autonomous driving system.
+
+- [V2X-VLM: End-to-End V2X Cooperative Autonomous Driving Through Large Vision-Language Models](https://arxiv.org/abs/2408.09251)
+  - Junwei You, Haotian Shi, Zhuoyu Jiang, Zilin Huang, Rui Gan, Keshu Wu, Xi Cheng, Xiaopeng Li, Bin Ran
+  - Publisher: University of Wisconsin-Madison, Nanyang Technological University, Texas A&M University, Cornell University
+  - Task: Planning
+  - Projcet Page: [V2X-VLM](https://zilin-huang.github.io/V2X-VLM-website/)
+  - Code: [V2X-VLM](https://github.com/zilin-huang/V2X-VLM)
+  - Dataset: [DAIR-V2X](https://github.com/AIR-THU/DAIR-V2X)
+  - Publish Date: 2024.08.09
+  - Summary:
+    - V2X-VLM, a large vision-language model empowered E2E VICAD framework, which improves the ability of autonomous vehicles to navigate complex traffic scenarios through advanced multimodal understanding and decision-making.
+    - A contrastive learning technique is employed to refine the model’s ability to distinguish between relevant and irrelevant features, which ensures that the model learns robust and discriminative representations of specific driving environments, leading to improved accuracy in trajectory planning in V2X cooperation scenarios.
+
+- [VLM-MPC: Vision Language Foundation Model (VLM)-Guided Model Predictive Controller (MPC) for Autonomous Driving](https://arxiv.org/abs/2408.04821)
+  - Keke Long, Haotian Shi, Jiaxi Liu, Xiaopeng Li
+  - Publisher: University of Wisconsin-Madison
+  - Task: Planning
+  - Publish Date: 2024.08.04
+  - Summary:
+    - It proposed a closed-loop autonomous driving controller that applies VLMs for high-level vehicle control. 
+    - The upper-level VLM uses the vehicle's front camera images, textual scenario description, and experience memory as inputs to generate control parameters needed by the lower-level MPC. 
+    - The lower-level MPC utilizes these parameters, considering vehicle dynamics with engine lag, to achieve realistic vehicle behavior and provide state feedback to the upper level. 
+    - This asynchronous two-layer structure addresses the current issue of slow VLM response speeds.
+
+- [SimpleLLM4AD: An End-to-End Vision-Language Model with Graph Visual Question Answering for Autonomous Driving](https://arxiv.org/abs/2407.21293)
+  - Peiru Zheng, Yun Zhao, Zhan Gong, Hong Zhu, Shaohua Wu **IEIT Systems**
+  - Publisher: University of Wisconsin-Madison
+  - Task: QA
+  - Publish Date: 2024.07.31
+  - Summary:
+    - SimpleLLM4AD reimagines the traditional autonomous driving pipeline by structuring the task into four interconnected stages: perception, prediction, planning, and behavior. 
+    - Each stage is framed as a series of visual question answering (VQA) pairs, which are interlinked to form a Graph VQA (GVQA). This graph-based structure allows the system to reason about each VQA pair systematically, ensuring a coherent flow of information and decision-making from perception to action.
+
 - [Testing Large Language Models on Driving Theory Knowledge and Skills for Connected Autonomous Vehicles](https://arxiv.org/abs/2407.17211)
   - Zuoyin Tang, Jianhua He, Dashuai Pei, Kezhong Liu, Tao Gao
   - Publisher: Aston University, Essex University, Wuhan University of Technology, Chang’An University
@@ -144,7 +237,17 @@ format:
   - Publish Date: 2024.07.19
   - Summary:
     - Introduce a knowledge-driven autonomous driving framework KoMA that incorporates multiple agents empowered by LLMs, comprising five integral modules: Environment, Multi-agent Interaction, Multi-step Planning, Shared Memory, and Ranking-based Reflection. 
-  
+
+- [WOMD-Reasoning: A Large-Scale Language Dataset for Interaction and Driving Intentions Reasoning](https://arxiv.org/abs/2407.04281)
+  - Yiheng Li, Chongjian Ge, Chenran Li, Chenfeng Xu, Masayoshi Tomizuka, Chen Tang, Mingyu Ding, Wei Zhan
+  - Publisher: UC Berkeley, UT Austin
+  - Task: Dataset + Reasoning
+  - Publish Date: 2024.07.05
+  - Datasets: [WOMD-Reasoning](https://waymo.com/open/download)
+  - Summary:
+    - WOMD-Reasoning, a language dataset centered on interaction descriptions and reasoning. It provides extensive insights into critical but previously overlooked interactions induced by traffic rules and human intentions.
+    - Develop an automatic language labeling pipeline, leveraging a rule-based translator to interpret motion data into language descriptions, and a set of manual prompts for ChatGPT to generate Q&A pairs. 
+
 - [Asynchronous Large Language Model Enhanced Planner for Autonomous Driving](https://arxiv.org/abs/2406.14556)
   - Yuan Chen, Zi-han Ding, Ziqin Wang, Yan Wang, Lijun Zhang, Si Liu  **ECCV 2024**
   - Publisher: Beihang University, Tsinghua University
