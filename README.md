@@ -248,6 +248,16 @@ format:
     - WOMD-Reasoning, a language dataset centered on interaction descriptions and reasoning. It provides extensive insights into critical but previously overlooked interactions induced by traffic rules and human intentions.
     - Develop an automatic language labeling pipeline, leveraging a rule-based translator to interpret motion data into language descriptions, and a set of manual prompts for ChatGPT to generate Q&A pairs. 
 
+- [Exploring the Potential of Multi-Modal AI for Driving Hazard Prediction](https://ieeexplore.ieee.org/document/10568360)
+  - Korawat Charoenpitaks, Van-Quang Nguyen, Masanori Suganuma, Masahiro Takahashi, Ryoma Niihara, Takayuki Okatani **IEEE TIV 2024**
+  - Publisher: Tohoku University, RIKEN Center for AIP, DENSO CORPORATION
+  - Task: Prediction
+  - Code: [DHPR](https://github.com/DHPR-dataset/DHPR-dataset)
+  - Publish Date: 2024.06.21
+  - Summary:
+    - DHPR (Driving Hazard Prediction and Reasoning) dataset, consists of 15K dashcam images of street scenes, and each image is associated with a tuple containing car speed, a hypothesized hazard description, and visual entities present in the scene.
+    - Present several baseline methods and evaluate their performance. 
+
 - [Asynchronous Large Language Model Enhanced Planner for Autonomous Driving](https://arxiv.org/abs/2406.14556)
   - Yuan Chen, Zi-han Ding, Ziqin Wang, Yan Wang, Lijun Zhang, Si Liu  **ECCV 2024**
   - Publisher: Beihang University, Tsinghua University
