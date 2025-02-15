@@ -24,13 +24,15 @@ If you find our repo is helpful, please consider cite it.
 
 
 ## Table of Contents
-- [Awesome LLM-for-Autonomous-Driving(LLM4AD)](#awesome-llm-for-autonomous-driving-resources)
+- [Awesome-LLM-for-Autonomous-Driving-Resources](#awesome-llm-for-autonomous-driving-resources)
+  - [Citation](#citation)
   - [Table of Contents](#table-of-contents)
   - [Overview of LLM4AD](#overview-of-llm4ad)
-  - [ICLR 2024 Under Review](#iclr-2024-under-review)
+  - [Motivation of LLM4AD](#motivation-of-llm4ad)
+  - [ICLR 2024 Open Review](#iclr-2024-open-review)
   - [Papers](#papers)
+  - [WorkShop](#workshop)
   - [Datasets](#datasets)
-  - [Citation](#citation)
   - [License](#license)
 
 ## Overview of LLM4AD
@@ -126,6 +128,10 @@ format:
   - summary
   - metrics
 ```
+
+
+
+
 - [LeGEND: A Top-Down Approach to Scenario Generation of Autonomous Driving Systems Assisted by Large Language Models](https://arxiv.org/abs/2409.10066)
   - Shuncheng Tang, Zhenya Zhang, Jixiang Zhou, Lei Lei, Yuan Zhou, Yinxing Xue **ASE 2024**
   - Publisher: University of Science and Technology of China, Kyushu University, Zhejiang Sci-Tech University
@@ -198,6 +204,14 @@ format:
   - Summary:
     - V2X-VLM, a large vision-language model empowered E2E VICAD framework, which improves the ability of autonomous vehicles to navigate complex traffic scenarios through advanced multimodal understanding and decision-making.
     - A contrastive learning technique is employed to refine the model’s ability to distinguish between relevant and irrelevant features, which ensures that the model learns robust and discriminative representations of specific driving environments, leading to improved accuracy in trajectory planning in V2X cooperation scenarios.
+
+- [AgentsCoMerge: Large Language Model Empowered Collaborative Decision Making for Ramp Merging](https://arxiv.org/abs/2408.03624)
+  - Senkang Hu, Zhengru Fang, Zihan Fang, Yiqin Deng, Xianhao Chen, Yuguang Fang, Sam Kwong
+  - Publisher: City University of Hong Kong, The University of Hong Kong, Lingnan University
+  - Task: Multi Agent Planning
+  - Publish Date: 2024.08.07
+  - Summary:
+    - AgentsCoMerge, a large language model empowered collaborative decision making for ramp merging. It includes observation, planning, communication, and reinforcement training modules. Experiments demonstrate its effectiveness in improving multi-agent collaboration and efficiency.
 
 - [VLM-MPC: Vision Language Foundation Model (VLM)-Guided Model Predictive Controller (MPC) for Autonomous Driving](https://arxiv.org/abs/2408.04821)
   - Keke Long, Haotian Shi, Jiaxi Liu, Xiaopeng Li
