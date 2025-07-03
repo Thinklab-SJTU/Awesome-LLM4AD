@@ -1,14 +1,16 @@
 # Awesome-LLM-for-Autonomous-Driving-Resources
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)![GitHub stars](https://img.shields.io/github/stars/Thinklab-SJTU/Awesome-LLM4AD?color=yellow) ![GitHub forks](https://img.shields.io/github/forks/Thinklab-SJTU/Awesome-LLM4AD?color=9cf) [![GitHub license](https://img.shields.io/github/license/Thinklab-SJTU/Awesome-LLM4AD)](https://github.com/Thinklab-SJTU/Awesome-LLM4AD/blob/main/LICENSE)
 
-This is a collection of research papers about **LLM-for-Autonomous-Driving(LLM4AD)**.
-And the repository will be continuously updated to track the frontier of LLM4AD. *Maintained by SJTU-ReThinklab.*
+This is a collection of research papers about **LLM-for-Autonomous-Driving(LLM4AD)**. The repository will be continuously updated to track the frontier of LLM4AD (Large Language Models for Autonomous Driving), which encompasses VLM4AD (Vision-Language Models for AD) and VLA4AD (Vision-Language-Action models for AD) as integral components of this unified paradigm.  *Maintained by SJTU-ReThinklab.*
+
 
 Welcome to follow and star! If you find any related materials could be helpful, feel free to contact us (yangzhenjie@sjtu.edu.cn or jiaxiaosong@sjtu.edu.cn) or make a PR.
 
 ## Citation
 Our survey paper is at https://arxiv.org/abs/2311.01043 which includes more detailed discussions and will be continuously updated. 
-**The GitHub Pages was updated on June 20, 2025.**
+
+**The GitHub Pages was updated on July 03, 2025.**
+
 **The Survey Paper latest version was updated on August 12, 2024.**
 
 If you find our repo is helpful, please consider cite it.
@@ -27,7 +29,6 @@ If you find our repo is helpful, please consider cite it.
 - [Awesome LLM-for-Autonomous-Driving(LLM4AD)](#awesome-llm-for-autonomous-driving-resources)
   - [Table of Contents](#table-of-contents)
   - [Overview of LLM4AD](#overview-of-llm4ad)
-  - [ICLR 2024 Under Review](#iclr-2024-under-review)
   - [Papers](#papers)
   - [Datasets](#datasets)
   - [Citation](#citation)
@@ -129,6 +130,16 @@ format:
   - Summary:
     - AutoDriveRL, a unified training framework that formulates autonomous driving as a structured reasoning process over four core tasks. Each task is independently modeled as a vision-language QA problem and optimized using task-specific reward models, enabling fine-grained reinforcement signals at different reasoning stages.
     - Within this framework, train DriveRX, a cross-task reasoning VLM designed for real-time decision-making.
+
+- [WOMD-Reasoning: A Large-Scale Dataset for Interaction Reasoning in Driving](https://arxiv.org/abs/2407.04281)
+  - Yiheng Li, Cunxin Fan, Chongjian Ge, Zhihao Zhao, Chenran Li, Chenfeng Xu, Huaxiu Yao, Masayoshi Tomizuka, Bolei Zhou, Chen Tang, Mingyu Ding, Wei Zhan **ICML 2025**
+  - Publisher: UC Berkeley, UCLA, UNC-Chapel Hill, UT Austin
+  - Publish Date: 2025.05.25
+  - Code: [WOMD-Reasoning](https://github.com/yhli123/WOMD-Reasoning)
+  - Dataset: [Waymo Open Motion Dataset](https://waymo.com/open/download)
+  - Task: VQA
+  - Summary:
+    - WOMD-Reasoning is a language annotation dataset built on the Waymo Open Motion Dataset (WOMD), with a focus on describing and reasoning interactions and intentions in driving scenarios.
 
 - [FutureSightDrive: Thinking Visually with Spatio-Temporal CoT for Autonomous Driving](https://arxiv.org/abs/2505.17685)
   - Shuang Zeng, Xinyuan Chang, Mengwei Xie, Xinran Liu, Yifan Bai, Zheng Pan, Mu Xu, Xing Wei
