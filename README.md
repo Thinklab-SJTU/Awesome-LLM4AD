@@ -91,6 +91,18 @@ format:
   - Summary:
     - This Paper introduce Vehicle Vision Language Models (V2LMs), fine-tuned VLMs specifically for AV perception task.
 
+- [ReCogDrive: A Reinforced Cognitive Framework for End-to-End Autonomous Driving](https://arxiv.org/abs/2506.08052)
+  - Yongkang Li, Kaixin Xiong, Xiangyu Guo, Fang Li, Sixu Yan, Gangwei Xu, Lijun Zhou, Long Chen, Haiyang Sun, Bing Wang, Guang Chen, Hangjun Ye, Wenyu Liu, Xinggang Wang
+  - Publisher: Huazhong University of Science and Technology, Xiaomi EV
+  - Publish Date: 2025.06.09
+  - Project Page: [ReCogDrive](https://xiaomi-research.github.io/recogdrive/)
+  - Code: [ReCogDrive](https://xiaomi-research.github.io/recogdrive/)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - ReCogDrive, a novel reinforced cognitive framework for End-to-End Autonomous Driving, with a Vision-Language Model (VLM) and a Diffusion-based Planner enhanced by Reinforcement Learning.
+    - ReCogDrive utilizes a three-stage training paradigm, starting with driving pre-training, followed by imitation learning and GRPO reinforcement learning to enhance the planning capabilities of the Vision-Language-Action (VLA) system.
+
 - [STSBench: A Spatio-temporal Scenario Benchmark for Multi-modal Large Language Models in Autonomous Driving](https://arxiv.org/abs/2506.06218)
   - Christian Fruhwirth-Reisinger, Dušan Malić, Wei Lin, David Schinagl, Samuel Schulter, Horst Possegger
   - Publisher:  Graz University of Technology, Christian Doppler Laboratory for Embedded Machine Learning, Johannes Kepler University Linz, Amazon
