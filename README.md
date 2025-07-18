@@ -503,6 +503,16 @@ language models (LLMs).
   - Summary:
     - This study developed a dynamic scene retrieval system using Contrastive Language–Image Pretraining (CLIP) models, which can be optimized for real-time deployment on edge devices.
 
+- [Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives](https://arxiv.org/abs/2501.04003)
+  - Shaoyuan Xie, Lingdong Kong, Yuhao Dong, Chonghao Sima, Wenwei Zhang, Qi Alfred Chen, Ziwei Liu, Liang Pan **ICCV 2025**
+  - Project Page: [DriveBench](https://drive-bench.github.io)
+  - Code: [DriveBench](https://github.com/drive-bench/toolkit)
+  - HuggingFace: [DriveBench](https://huggingface.co/datasets/drive-bench/arena)
+  - Publish Date: 2025.01.07
+  - Task: Benchmark
+  - Summary:
+    - DriveBench, a benchmark dataset designed to evaluate VLM reliability across 17 settings (clean, corrupted, and text-only inputs), encompassing 19, 200 frames, 20, 498 question-answer pairs, three question types, four mainstream driving tasks, and a total of 12 popular VLMs.
+
 - [Generating Traffic Scenarios via In-Context Learning to Learn Better Motion Planner](https://arxiv.org/abs/2412.18086)
   - Aizierjiang Aiersilan **AAAI 2025 Oral**
   - Publisher: University of Macau
