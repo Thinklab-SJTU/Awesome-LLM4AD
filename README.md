@@ -62,6 +62,17 @@ format:
   - metrics
 ```
 
+- [CANVAS: Commonsense-Aware Navigation System for Intuitive Human-Robot Interaction](https://arxiv.org/abs/2410.01273)
+  - Suhwan Choi, Yongjun Cho, Minchan Kim, Jaeyoon Jung, Myunchul Joe, Yubeen Park, Minseo Kim, Sungwoong Kim, Sungjae Lee, Hwiseong Park, Jiwan Chung, Youngjae Yu
+  - Publisher: MAUM.AI, Yonsei University
+  - Publish Date: 2024.10.02
+  - Project Page: [CANVAS](https://worv-ai.github.io/canvas/)
+  - Code: [CANVAS](https://github.com/worv-ai/canvas)
+  - Task: Planning
+  - Datasets: [COMMAND](https://huggingface.co/datasets/maum-ai/COMMAND)
+  - Summary:
+    - CANVAS is a novel framework for commonsense-aware robot navigation that excels in both simulated and real-world environments.
+
 - [A Hierarchical Test Platform for Vision Language Model (VLM)-Integrated Real-World Autonomous Driving](https://arxiv.org/abs/2506.14100)
   - Yupeng Zhou, Can Cui, Juntong Peng, Zichong Yang, Juanwu Lu, Jitesh H Panchal, Bin Yao, Ziran Wang
   - Publisher: Purdue University
