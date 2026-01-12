@@ -1053,7 +1053,7 @@ format:
   - Task: Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/), [Waymo](https://waymo.com/open/)
   - Summary：
-    - AutoDrive-R^2, a novel VLA framework that enhances reasoning and self-reflection for autonomous driving via chain-of-thought (CoT) processing and reinforcement learning.
+    - AutoDrive-$R^2$, a novel VLA framework that enhances reasoning and self-reflection for autonomous driving via chain-of-thought (CoT) processing and reinforcement learning.
     - Introduces the nuScenesR$^2$-6K CoT dataset for supervised fine-tuning, building a four-step logical chain with self-reflection to connect perception to planning.
     - Employs the GRPO reinforcement learning algorithm within a physics-grounded reward framework to optimize for reliable and realistic trajectory planning.
 
