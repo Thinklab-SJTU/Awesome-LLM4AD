@@ -132,6 +132,17 @@ format:
     - The model combines the frozen encoder with a transformer-based adapter and a GRU-based decoder for waypoint generation, optimized with a custom loss for Rater Feedback Score (RFS).
     - Demonstrates superior performance on the Waymo Open E2E Dataset, showing that leveraging a frozen, generalist VLM encoder is more effective for robust driving than full fine-tuning.
 
+- [DrivingGen: A Comprehensive Benchmark for Generative Video World Models in Autonomous Driving](https://arxiv.org/abs/2601.01528)
+  - Yang Zhou, Hao Shao, Letian Wang, Zhuofan Zong, Hongsheng Li, Steven L. Waslander
+  - Publisher: University of Toronto, Shanghai AI Laboratory, The Chinese University of Hong Kong
+  - Publish Date: 2026.01.04
+  - Task: Evaluation
+  - Datasets: [DrivingGen](https://arxiv.org/abs/2601.01528)
+  - Summary：
+    - DrivingGen, the first comprehensive benchmark for generative driving world models, combining a diverse evaluation dataset with a suite of new metrics.
+    - The benchmark assesses visual realism, trajectory plausibility, temporal coherence, and controllability to foster reliable and deployable driving world models.
+    - Evaluation of 14 state-of-the-art models reveals trade-offs between general models and driving-specific ones, offering a unified framework for scalable simulation and planning.
+
 - [Dichotomous Diffusion Policy Optimization](https://arxiv.org/abs/2601.00898)
   - Ruiming Liang, Yinan Zheng, Kexin Zheng, Tianyi Tan, Jianxiong Li, Liyuan Mao, Zhihao Wang, Guang Chen, Hangjun Ye, Jingjing Liu, Jinqiao Wang, Xianyuan Zhan
   - Publish Date: 2025.12.31
@@ -170,6 +181,17 @@ format:
     - Introduces a Gradual Fusion Q-Former to incrementally inject LiDAR features, mitigating catastrophic disturbance to pre-trained VLMs and preserving their existing knowledge base.
     - Develops a spatial-aware question-answering (SA-QA) dataset to explicitly teach the model advanced 3D perception and reasoning capabilities, achieving superior performance on driving benchmarks.
 
+- [DriveLaW:Unifying Planning and Video Generation in a Latent Driving World](https://arxiv.org/abs/2512.23421)
+  - Tianze Xia, Yongkang Li, Lijun Zhou, Jingfeng Yao, Kaixin Xiong, Haiyang Sun, Bing Wang, Kun Ma, Guang Chen, Hangjun Ye, Wenyu Liu, Xinggang Wang
+  - Publisher: Huazhong University of Science and Technology, Xiaomi EV
+  - Publish Date: 2025.12.29
+  - Task: Planning, Generation
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - DriveLaW, a novel paradigm that unifies video generation and motion planning for autonomous driving by directly injecting latent representations from a video generator into a planner.
+    - The framework consists of DriveLaW-Video, a world model for high-fidelity forecasting, and DriveLaW-Act, a diffusion planner for generating consistent trajectories, both optimized via a three-stage progressive training strategy.
+    - Achieves state-of-the-art results, significantly advancing video prediction metrics and setting a new record on the NAVSIM planning benchmark.
+
 - [ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving](https://arxiv.org/abs/2512.22939)
   - Qihang Peng, Xuesong Chen, Chenye Yang, Shaoshuai Shi, Hongsheng Li
   - Publisher: The Chinese University of Hong Kong, Shanghai AI Laboratory
@@ -192,6 +214,27 @@ format:
     - Develops a human-preference dataset and a Value Model to guide interpretable, value-aligned trajectory assessment.
     - Achieves state-of-the-art planning performance, including the lowest collision rate on nuScenes and top results on Bench2Drive.
 
+- [WorldRFT: Latent World Model Planning with Reinforcement Fine-Tuning for Autonomous Driving](https://arxiv.org/abs/2512.19133)
+  - Pengxuan Yang, Ben Lu, Zhongpu Xia, Chao Han, Yinfeng Gao, Teng Zhang, Kun Zhan, XianPeng Lang, Yupeng Zheng, Qichao Zhang
+  - Publish Date: 2025.12.22
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - WorldRFT, a planning-oriented latent world model framework that aligns scene representation learning with planning via hierarchical decomposition and local-aware interactive refinement, augmented by reinforcement learning fine-tuning (RFT).
+    - Introduces Group Relative Policy Optimization (GRPO) with trajectory Gaussianization and collision-aware rewards to fine-tune the driving policy for safety improvements.
+    - Achieves state-of-the-art performance, reducing collision rates by 83% on nuScenes and attaining competitive camera-only performance on NavSim compared to LiDAR-based SOTA methods.
+
+- [InDRiVE: Reward-Free World-Model Pretraining for Autonomous Driving via Latent Disagreement](https://arxiv.org/abs/2512.18850)
+  - Feeza Khan Khanzada, Jaerock Kwon
+  - Publisher: University of Michigan-Dearborn
+  - Publish Date: 2025.12.21
+  - Task: Planning
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - InDRiVE, a DreamerV3-style model-based reinforcement learning agent for autonomous driving that performs reward-free pretraining using only intrinsic motivation derived from latent ensemble disagreement.
+    - The framework uses disagreement as a proxy for epistemic uncertainty to drive exploration and learns a planner-free exploration policy directly from the learned world model.
+    - After intrinsic pretraining, the agent demonstrates strong zero-shot robustness and robust few-shot adaptation for downstream tasks like lane following and collision avoidance in CARLA across various towns and traffic densities.
+
 - [LLaViDA: A Large Language Vision Driving Assistant for Explicit Reasoning and Enhanced Trajectory Planning](https://arxiv.org/abs/2512.18211)
   - Yudong Liu, Spencer Hallyburton, Jiwoo Kim, Yueqian Lin, Yiming Li, Qinsi Wang, Hui Ye, Jingwei Sun, Miroslav Pajic, Yiran Chen, Hai Li
   - Publish Date: 2025.12.20
@@ -202,6 +245,24 @@ format:
     - LLaViDA, a Large Language Vision Driving Assistant that leverages a Vision-Language Model (VLM) for object motion prediction, semantic grounding, and chain-of-thought reasoning for trajectory planning.
     - Employs a two-stage training pipeline of supervised fine-tuning followed by Trajectory Preference Optimization (TPO) to enhance scene understanding and planning.
     - Achieves state-of-the-art performance on the NuScenes benchmark for open-loop trajectory planning, with an average L2 error of 0.31 m and a 0.10% collision rate.
+
+- [Driving in Corner Case: A Real-World Adversarial Closed-Loop Evaluation Platform for End-to-End Autonomous Driving](https://arxiv.org/abs/2512.16055)
+  - Jiaheng Geng, Jiatong Du, Xinyu Zhang, Ye Li, Panqu Wang, Yanjun Huang
+  - Publish Date: 2025.12.18
+  - Task: Evaluation
+  - Summary：
+    - Proposes a closed-loop evaluation platform for end-to-end autonomous driving that generates adversarial interactions in real-world scenes to create safety-critical corner cases.
+    - The platform uses a flow matching-based real-world image generator and an adversarial traffic policy to efficiently model challenging interactions and evaluate models like UniAD and VAD.
+
+- [OccSTeP: Benchmarking 4D Occupancy Spatio-Temporal Persistence](https://arxiv.org/abs/2512.15621)
+  - Yu Zheng, Jie Hu, Kailun Yang, Jiaming Zhang
+  - Publish Date: 2025.12.17
+  - Code: [OccSTeP](https://github.com/FaterYU/OccSTeP)
+  - Task: Evaluation
+  - Summary：
+    - Introduces the concept of 4D Occupancy Spatio-Temporal Persistence (OccSTeP), addressing reactive forecasting ("what will happen next") and proactive forecasting ("what would happen given a specific future action").
+    - Proposes OccSTeP-WM, a tokenizer-free world model with a linear-complexity attention backbone and recurrent state-space module for robust, online inference even with missing or noisy historical input.
+    - Establishes a new OccSTeP benchmark with challenging scenarios, reporting significant gains in semantic mIoU (+6.56%) and occupancy IoU (+9.26%).
 
 - [OmniDrive-R1: Reinforcement-driven Interleaved Multi-modal Chain-of-Thought for Trustworthy Vision-Language Autonomous Driving](https://arxiv.org/abs/2512.14044)
   - Zhenguo Zhang, Haohan Zheng, Yishen Wang, Le Xu, Tianchen Deng, Xuefeng Chen, Qu Chen, Bo Zhang, Wuxiong Huang
@@ -234,6 +295,26 @@ format:
     - DrivePI, a spatial-aware 4D MLLM serving as a unified Vision-Language-Action (VLA) framework for autonomous driving, jointly performs spatial understanding, 3D perception, prediction, and planning through end-to-end optimization.
     - The method integrates point clouds, multi-view images, and language instructions, and uses a data engine to generate text-occupancy and text-flow QA pairs for 4D spatial understanding.
     - With only a 0.5B Qwen2.5 backbone, DrivePI as a single model matches or exceeds existing VLA and specialized VA models in key metrics across nuScenes and OpenOcc benchmarks.
+
+- [From Human Intention to Action Prediction: Intention-Driven End-to-End Autonomous Driving](https://arxiv.org/abs/2512.12302)
+  - Huan Zheng, Yucheng Zhou, Tianyi Yan, Jiayi Su, Hongjun Chen, Dubing Chen, Xingtai Gui, Wencheng Han, Runzhou Tao, Zhongying Qiu, Jianfei Yang, Jianbing Shen
+  - Publish Date: 2025.12.13
+  - Task: End-to-End
+  - Datasets: [Intention-Drive](https://arxiv.org/abs/2512.12302)
+  - Summary：
+    - Introduces Intention-Drive, a comprehensive benchmark and dataset for Intention-Driven End-to-End Autonomous Driving, designed to bridge the gap in interpreting high-level human intentions.
+    - Proposes the Imagined Future Alignment (IFA), a novel evaluation protocol using generative world models to assess semantic goal fulfillment beyond geometric accuracy.
+    - Explores two solution paradigms—an end-to-end vision-language planner and a hierarchical agent-based framework—which demonstrate superior alignment with human intentions compared to existing models.
+
+- [FutureX: Enhance End-to-End Autonomous Driving via Latent Chain-of-Thought World Model](https://arxiv.org/abs/2512.11226)
+  - Hongbin Lin, Yiming Yang, Yifan Zhang, Chaoda Zheng, Jie Feng, Sheng Wang, Zhennan Wang, Shijia Chen, Boyang Wang, Yu Zhang, Xianming Liu, Shuguang Cui, Zhen Li
+  - Publish Date: 2025.12.12
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - FutureX, a CoT-driven pipeline that enhances end-to-end planners via future scene latent reasoning and trajectory refinement.
+    - Introduces an Auto-think Switch to decide between an Instant mode for simple scenes and a Thinking mode for complex reasoning via a Latent World Model.
+    - Demonstrates substantial performance gains, such as a 6.2 PDMS improvement for TransFuser on NAVSIM, by producing more rational plans with fewer collisions.
 
 - [Towards Efficient and Effective Multi-Camera Encoding for End-to-End Driving](https://arxiv.org/abs/2512.10947)
   - Jiawei Yang, Ziyu Chen, Yurong You, Yan Wang, Yiming Li, Yuxiao Chen, Boyi Li, Boris Ivanovic, Marco Pavone, Yue Wang
@@ -285,6 +366,15 @@ format:
     - Introduces a Chain-of-Thought prompting strategy for the VLM to reason over critical traffic elements, generating semantic decision priors that reduce input dimensionality and inject task knowledge into RL.
     - Proposes a consistency loss to align the VLM's semantic plans with the RL agent's continuous control outputs, improving interpretability and training stability.
 
+- [Astra: General Interactive World Model with Autoregressive Denoising](https://arxiv.org/abs/2512.08931)
+  - Yixuan Zhu, Jiaqi Feng, Wenzhao Zheng, Yuan Gao, Xin Tao, Pengfei Wan, Jie Zhou, Jiwen Lu
+  - Publish Date: 2025.12.09
+  - Task: Generation
+  - Summary：
+    - Astra, an interactive general world model that generates real-world futures for diverse scenarios (e.g., autonomous driving, robot grasping) with precise action interactions.
+    - Introduces an autoregressive denoising architecture with temporal causal attention and a noise-augmented history memory to balance responsiveness with temporal coherence.
+    - Proposes an action-aware adapter and a mixture of action experts to enable precise control and versatility across tasks like exploration, manipulation, and camera control.
+
 - [A Multi-Agent LLM Framework for Design Space Exploration in Autonomous Driving Systems](https://arxiv.org/abs/2512.08476)
   - Po-An Shih, Shao-Hua Wang, Yung-Che Li, Chia-Heng Tu, Chih-Han Chang
   - Publish Date: 2025.12.09
@@ -293,6 +383,16 @@ format:
     - A multi-agent, large language model (LLM)-based design space exploration (DSE) framework for autonomous driving systems, integrating multi-modal reasoning with 3D simulation and profiling tools.
     - Automates the interpretation of execution outputs and guides system design exploration using specialized LLM agents for user input, design generation, execution orchestration, and output analysis.
     - Evaluated on a robotaxi case study, the framework identifies more Pareto-optimal, cost-efficient solutions with reduced navigation time compared to a genetic algorithm baseline under the same exploration budget.
+
+- [Spatial Retrieval Augmented Autonomous Driving](https://arxiv.org/abs/2512.06865)
+  - Xiaosong Jia, Chenhe Zhang, Yule Jiang, Songbur Wong, Zhiyuan Zhang, Chen Chen, Shaofeng Zhang, Xuanhe Zhou, Xue Yang, Junchi Yan, Yu-Gang Jiang
+  - Publish Date: 2025.12.07
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes a spatial retrieval paradigm for autonomous driving, using offline retrieved geographic images (e.g., from Google Maps) as an additional input to enhance perception under poor visibility.
+    - Extends the nuScenes dataset with aligned geographic images and establishes baselines across five core tasks: detection, mapping, occupancy prediction, planning, and world modeling.
+    - Demonstrates the plug-and-play nature of the approach, showing performance enhancements for certain tasks without requiring additional sensors.
 
 - [WAM-Diff: A Masked Diffusion VLA Framework with MoE and Online Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/2512.11872)
   - Mingwang Xu, Jiahao Cui, Feipeng Cai, Hanlin Shang, Zhihao Zhu, Shan Luan, Yifang Xu, Neng Zhang, Yaoyi Li, Jia Cai, Siyu Zhu
@@ -388,6 +488,27 @@ format:
     - Introduces DrivePilot, a multi-source visual grounding dataset for autonomous driving, with semantic annotations generated via a RAG and Chain-of-Thought prompted LLM pipeline.
     - Demonstrates state-of-the-art performance, ranking #1 on the Talk2Car leaderboard and outperforming baselines on DrivePilot, MoCAD, and RefCOCO benchmarks, with strong robustness in challenging scenes.
 
+- [Driving Beyond Privilege: Distilling Dense-Reward Knowledge into Sparse-Reward Policies](https://arxiv.org/abs/2512.04279)
+  - Feeza Khan Khanzada, Jaerock Kwon
+  - Publisher: University of Michigan-Dearborn
+  - Publish Date: 2025.12.03
+  - Task: Planning
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - Proposes reward-privileged world model distillation, a two-stage framework where a teacher agent is trained with dense privileged rewards and its latent dynamics are distilled into a student trained solely on sparse task rewards.
+    - Demonstrates that sparse-reward students outperform dense-reward teachers and sparse-from-scratch baselines in CARLA lane-following and overtaking benchmarks, improving generalization on unseen routes.
+
+- [U4D: Uncertainty-Aware 4D World Modeling from LiDAR Sequences](https://arxiv.org/abs/2512.02982)
+  - Xiang Xu, Ao Liang, Youquan Liu, Linfeng Li, Lingdong Kong, Ziwei Liu, Qingshan Liu
+  - Publisher: S-Lab, Nanyang Technological University
+  - Publish Date: 2025.12.02
+  - Task: Perception
+  - Datasets: [Waymo Open Dataset](https://waymo.com/open/)
+  - Summary：
+    - U4D, an uncertainty-aware framework for 4D LiDAR world modeling that estimates spatial uncertainty to localize semantically challenging regions.
+    - It performs generation in a "hard-to-easy" manner through two stages: uncertainty-region modeling and uncertainty-conditioned completion.
+    - Incorporates a mixture of spatio-temporal (MoST) block to ensure temporal coherence, producing geometrically faithful and temporally consistent LiDAR sequences.
+
 - [Lumos: Let there be Language Model System Certification](https://arxiv.org/abs/2512.02966)
   - Isha Chaudhary, Vedaant Jain, Avaljot Singh, Kavya Sachdeva, Sayan Ranu, Gagandeep Singh
   - Publish Date: 2025.12.02
@@ -455,6 +576,47 @@ format:
     - RoadSceneBench, a lightweight benchmark for evaluating visual reasoning of mid-level road semantics, focusing on relational understanding and structural consistency.
     - Proposes Hierarchical Relational Reward Propagation with Temporal Consistency (HRRP-T), a training framework for VLMs to enhance spatial coherence and semantic alignment in reasoning.
 
+- [OpenTwinMap: An Open-Source Digital Twin Generator for Urban Autonomous Driving](https://arxiv.org/abs/2511.21925)
+  - Alex Richardson, Jonathan Sprinkle
+  - Publisher: University of Arizona
+  - Publish Date: 2025.11.26
+  - Task: Generation
+  - Datasets: [OpenStreetMap](https://www.openstreetmap.org)
+  - Summary：
+    - OpenTwinMap, an open-source, Python-based framework for generating high-fidelity 3D urban digital twins from LiDAR scans and OpenStreetMap data.
+    - The framework emphasizes extensibility and parallelization, producing semantically segmented static environment assets for export into Unreal Engine for AV simulation.
+    - It aims to lower the barrier for researchers by providing a flexible and scalable pipeline, with current capabilities including OSM/LiDAR preprocessing, road mesh/terrain generation, and preliminary CARLA integration.
+
+- [LaGen: Towards Autoregressive LiDAR Scene Generation](https://arxiv.org/abs/2511.21256)
+  - Sizhuo Zhou, Xiaosong Jia, Fanrui Zhang, Junjie Li, Juyong Zhang, Yukang Feng, Jianwen Sun, Songbur Wong, Junqi You, Junchi Yan
+  - Publish Date: 2025.11.26
+  - Task: Generation
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - LaGen, the first framework for frame-by-frame autoregressive generation of long-horizon LiDAR scenes, starting from a single-frame LiDAR input.
+    - Introduces a scene decoupling estimation module to enhance interactive object-level generation and a noise modulation module to mitigate long-horizon error accumulation.
+    - Constructs an evaluation protocol on nuScenes, demonstrating superior performance over state-of-the-art LiDAR generation and prediction models, especially on later frames.
+
+- [4DWorldBench: A Comprehensive Evaluation Framework for 3D/4D World Generation Models](https://arxiv.org/abs/2511.19836)
+  - Yiting Lu, Wei Luo, Peiyan Tu, Haoran Li, Hanxin Zhu, Zihao Yu, Xingrui Wang, Xinyi Chen, Xinge Peng, Xin Li, Zhibo Chen
+  - Publisher: University of Science and Technology of China
+  - Publish Date: 2025.11.25
+  - Project Page: [4DWorldBench](https://yeppp27.github.io/4DWorldBench.github.io/)
+  - Task: Reasoning
+  - Datasets: [4DWorldBench](https://yeppp27.github.io/4DWorldBench.github.io/)
+  - Summary：
+    - Introduces 4DWorldBench, a unified benchmark for evaluating 3D/4D World Generation Models across four key dimensions: Perceptual Quality, Condition-4D Alignment, Physical Realism, and 4D Consistency.
+    - Proposes an adaptive evaluation framework that maps multi-modal conditions into a unified textual space and integrates LLM-as-judge, MLLM-as-judge, and network-based methods for comprehensive assessment.
+
+- [AD-R1: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving with Impartial World Models](https://arxiv.org/abs/2511.20325)
+  - Tianyi Yan, Tao Tang, Xingtai Gui, Yongkang Li, Jiasen Zhesng, Weiyao Huang, Lingdong Kong, Wencheng Han, Xia Zhou, Xueyang Zhang, Yifei Zhan, Kun Zhan, Cheng-zhong Xu, Jianbing Shen
+  - Publish Date: 2025.11.25
+  - Task: End-to-End
+  - Summary：
+    - Introduces a framework for post-training policy refinement for autonomous driving using an Impartial World Model, designed to overcome optimistic bias in world models used for RL.
+    - Proposes a novel Counterfactual Synthesis data pipeline to generate a curriculum of plausible collisions and off-road events, teaching the model to honestly forecast danger.
+    - Demonstrates that the framework, using the Impartial World Model as an internal critic, significantly reduces safety violations in simulation and outperforms baselines on a new Risk Foreseeing Benchmark.
+
 - [Learning from Risk: LLM-Guided Generation of Safety-Critical Scenarios with Prior Knowledge](https://arxiv.org/abs/2511.20726)
   - Yuhang Wang, Heye Huang, Zhenhua Xu, Kailai Sun, Baoshen Guo, Jinhua Zhao
   - Publish Date: 2025.11.25
@@ -494,6 +656,17 @@ format:
     - Consolidates eight public autonomous driving datasets into a standardized, Chain-of-Thought reasoning-based format for training.
     - Achieves state-of-the-art performance, superior generalization, and excellent inference speed through supervised learning and reinforcement learning fine-tuning.
 
+- [Map-World: Masked Action planning and Path-Integral World Model for Autonomous Driving](https://arxiv.org/abs/2511.20156)
+  - Bin Hu, Zijian Lu, Haicheng Liao, Chengran Yuan, Bin Rao, Yongkang Li, Guofa Li, Zhiyong Cui, Cheng-zhong Xu, Zhenning Li
+  - Publisher: Huazhong University of Science and Technology, Xiaomi EV
+  - Publish Date: 2025.11.25
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - MAP-World, a prior-free multi-modal planning framework that couples masked action planning with a path-weighted world model for autonomous driving.
+    - The Masked Action Planning (MAP) module treats future ego motion as masked sequence completion, generating diverse, temporally consistent trajectories without anchor libraries or teacher policies.
+    - A lightweight world model rolls out future BEV semantics for each candidate, and training uses trajectory probabilities as path weights to learn from the full distribution of plausible futures, achieving state-of-the-art performance on NAVSIM.
+
 - [Percept-WAM: Perception-Enhanced World-Awareness-Action Model for Robust End-to-End Autonomous Driving](https://arxiv.org/abs/2511.19221)
   - Jianhua Han, Meng Tian, Jiangtong Zhu, Fan He, Huixin Zhang, Sitong Guo, Dechang Zhu, Hao Tang, Pei Xu, Yuze Guo, Minzhe Niu, Haojie Zhu, Qichao Dong, Xuechao Yan, Siyuan Dong, Lu Hou, Qingqiu Huang, Xiaosong Jia, Hang Xu
   - Publish Date: 2025.11.24
@@ -513,6 +686,17 @@ format:
     - Introduces Foresight Intelligence as the capability to anticipate future events and presents FSU-QA, a new Visual Question-Answering dataset designed to evaluate this ability.
     - Conducts a comprehensive study showing current Vision-Language Models struggle with foresight reasoning, and demonstrates FSU-QA can effectively enhance this capability through fine-tuning.
 
+- [GuideFlow: Constraint-Guided Flow Matching for Planning in End-to-End Autonomous Driving](https://arxiv.org/abs/2511.18729)
+  - Lin Liu, Caiyan Jia, Guanyi Yu, Ziying Song, JunQiao Li, Feiyang Jia, Peiliang Wu, Xiaoshuai Hao, Yandan Luo
+  - Publish Date: 2025.11.24
+  - Code: [GuideFlow](https://github.com/liulin815/GuideFlow)
+  - Task: Planning
+  - Datasets: [Bench2Drive](), [NuScenes](), [NAVSIM](https://github.com/autonomousvision/navsim), [ADV-NuScenes]()
+  - Summary：
+    - GuideFlow, a novel planning framework for End-to-End Autonomous Driving that leverages Constrained Flow Matching to explicitly model the flow matching process, mitigating multimodal trajectory mode collapse.
+    - The framework directly enforces explicit constraints within the flow matching generation process and unifies training with an Energy-Based Model (EBM) to robustly satisfy physical constraints.
+    - GuideFlow parameterizes driving aggressiveness as a control signal during generation, enabling precise manipulation of trajectory style, and achieves state-of-the-art results on benchmarks like NavSim.
+
 - [QuickLAP: Quick Language-Action Preference Learning for Autonomous Driving Agents](https://arxiv.org/abs/2511.17855)
   - Jordan Abi Nader, David Lee, Nathaniel Dennler, Andreea Bobu
   - Publisher: MIT-CLEAR-Lab
@@ -524,6 +708,17 @@ format:
     - QuickLAP, a Bayesian framework that fuses physical and language feedback to infer reward functions in real time for autonomous driving agents.
     - The method uses LLMs to extract reward feature attention masks from language, integrating them with physical corrections via a closed-form update rule for fast, robust reward learning.
     - In a semi-autonomous driving simulator, QuickLAP reduces reward learning error by over 70% compared to baselines and is preferred by users for understandability and collaborative behavior.
+
+- [LiSTAR: Ray-Centric World Models for 4D LiDAR Sequences in Autonomous Driving](https://arxiv.org/abs/2511.16049)
+  - Pei Liu, Songtao Wang, Lang Zhang, Xingyue Peng, Yuandong Lyu, Jiaxin Deng, Songxin Lu, Weiliang Ma, Xueyang Zhang, Yifei Zhan, XianPeng Lang, Jun Ma
+  - Publish Date: 2025.11.20
+  - Project Page: [LiSTAR](https://ocean-luna.github.io/LiSTAR.gitub.io)
+  - Task: Prediction
+  - Datasets: [Waymo](https://waymo.com/open)
+  - Summary：
+    - LiSTAR, a novel generative world model for synthesizing high-fidelity and controllable 4D LiDAR data, operating directly on the sensor's native geometry.
+    - Introduces a Hybrid-Cylindrical-Spherical (HCS) representation to preserve data fidelity and a Spatio-Temporal Attention with Ray-Centric Transformer (START) for robust temporal coherence.
+    - Proposes a 4D point cloud-aligned voxel layout and a discrete Masked Generative START (MaskSTART) framework for efficient, high-resolution, and layout-guided compositional generation.
 
 - [Is Your VLM for Autonomous Driving Safety-Ready? A Comprehensive Benchmark for Evaluating External and In-Cabin Risks](https://arxiv.org/abs/2511.14592)
   - Xianhui Meng, Yuchen Zhang, Zhijian Huang, Zheng Lu, Ziling Ji, Yaoyao Yin, Hongyuan Zhang, Guangfeng Jiang, Yandan Lin, Long Chen, Hangjun Ye, Li Zhang, Jun Liu, Xiaoshuai Hao
@@ -556,6 +751,16 @@ format:
     - Introduces TLS-Assist, a modular redundancy layer that augments LLM-based autonomous driving agents with explicit traffic light and sign recognition to enforce traffic rules.
     - The plug-and-play framework converts detections into structured natural language messages injected into the LLM input, supporting both single-view and multi-view camera setups.
     - Demonstrates relative driving performance improvements of up to 14% over LMDrive and 7% over BEVDriver on the LangAuto benchmark in CARLA, while reducing traffic infractions.
+
+- [CorrectAD: A Self-Correcting Agentic System to Improve End-to-end Planning in Autonomous Driving](https://arxiv.org/abs/2511.13297)
+  - Enhui Ma, Lijun Zhou, Tao Tang, Jiahuan Zhang, Junpeng Jiang, Zhan Zhang, Dong Han, Kun Zhan, Xueyang Zhang, XianPeng Lang, Haiyang Sun, Xia Zhou, Di Lin, Kaicheng Yu
+  - Publish Date: 2025.11.17
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes CorrectAD, a self-correcting agentic system to improve end-to-end planning by addressing the long-tail problem of rare, safety-critical failures.
+    - Introduces a PM-Agent to formulate data requirements and DriveSora, a generative model to create spatiotemporally consistent videos aligned with 3D layouts for data simulation.
+    - The model-agnostic pipeline corrects a significant portion of failure cases, reducing collision rates by 39% on nuScenes and 27% on an in-house dataset.
 
 - [VLMs Guided Interpretable Decision Making for Autonomous Driving](https://arxiv.org/abs/2511.13881)
   - Xin Hu, Taotao Jing, Renran Tian, Zhengming Ding
@@ -675,6 +880,16 @@ format:
     - It introduces the Chain of Causation (CoC) dataset, built via a hybrid auto-labeling and human-in-the-loop pipeline, and a modular architecture combining a reasoning VLM with a diffusion-based trajectory decoder.
     - The model uses a multi-stage training strategy with supervised fine-tuning and reinforcement learning, achieving improved planning accuracy and safety in simulation and real-time on-vehicle deployment.
 
+- [Beyond Imitation: Constraint-Aware Trajectory Generation with Flow Matching For End-to-End Autonomous Driving](https://arxiv.org/abs/2510.26292)
+  - Lin Liu, Guanyi Yu, Ziying Song, Junqiao Li, Caiyan Jia, Feiyang Jia, Peiliang Wu, Yandan Luo
+  - Publish Date: 2025.10.30
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes CATG, a novel planning framework leveraging Constrained Flow Matching to address mode collapse in imitation learning and integrate safety/kinematic constraints directly into generation.
+    - Explicitly imposes constraints within the flow matching process and parameterizes driving aggressiveness as a control signal for trajectory style manipulation.
+    - Achieved 2nd place on the NavSim v2 challenge with an EPDMS score of 51.31 and received the Innovation Award.
+
 - [Enhancing Vision-Language Models for Autonomous Driving through Task-Specific Prompting and Spatial Reasoning](https://arxiv.org/abs/2510.24152)
   - Aodi Wu, Xubo Luo
   - Publisher: University of Chinese Academy of Sciences, Central South University
@@ -705,6 +920,30 @@ format:
     - WM-MoE, a world model-based motion forecasting framework unifying perception, memory, and decision-making to address high-risk corner-case scenarios.
     - Leverages LLMs with a lightweight temporal tokenizer for long-horizon reasoning and introduces a Mixture-of-Experts (MoE) to decompose complex corner cases.
     - Introduces the nuScenes-corner benchmark and shows state-of-the-art performance across multiple datasets under corner-case and data-missing conditions.
+
+- [Rethinking Driving World Model as Synthetic Data Generator for Perception Tasks](https://arxiv.org/abs/2510.19195)
+  - Kai Zeng, Zhanqian Wu, Kaixin Xiong, Xiaobao Wei, Xiangyu Guo, Zhenxin Zhu, Kalok Ho, Lijun Zhou, Bohan Zeng, Ming Lu, Haiyang Sun, Bing Wang, Guang Chen, Hangjun Ye, Wentao Zhang
+  - Publisher: Huazhong University of Science and Technology, Xiaomi EV
+  - Publish Date: 2025.10.22
+  - Project Page: [Dream4Drive](https://wm-research.github.io/Dream4Drive/)
+  - Code: [Dream4Drive](https://github.com/wm-research/Dream4Drive)
+  - Task: Perception
+  - Datasets: [DriveObj3D](https://github.com/wm-research/Dream4Drive)
+  - Summary：
+    - Introduces Dream4Drive, a synthetic data generation framework that decomposes videos into 3D-aware guidance maps and renders 3D assets to produce edited, multi-view photorealistic videos for training perception models.
+    - Enables scalable generation of multi-view corner cases to significantly boost corner case perception in autonomous driving.
+    - Contributes a large-scale 3D asset dataset, DriveObj3D, covering typical driving scenario categories to enable diverse 3D-aware video editing.
+
+- [OmniNWM: Omniscient Driving Navigation World Models](https://arxiv.org/abs/2510.18313)
+  - Bohan Li, Zhuang Ma, Dalong Du, Baorui Peng, Zhujin Liang, Zhenqiang Liu, Chao Ma, Yueming Jin, Hao Zhao, Wenjun Zeng, Xin Jin
+  - Publisher: Tsinghua University, Shanghai AI Laboratory, University of Chinese Academy of Sciences, Shanghai Jiao Tong University
+  - Publish Date: 2025.10.21
+  - Project Page: [OmniNWM](https://arlo0o.github.io/OmniNWM/)
+  - Task: Navigation
+  - Summary：
+    - OmniNWM, an omniscient panoramic navigation world model that addresses state, action, and reward dimensions within a unified framework for autonomous driving.
+    - It jointly generates panoramic videos of RGB, semantics, metric depth, and 3D occupancy, with a flexible forcing strategy for long-horizon auto-regressive generation.
+    - Introduces a normalized panoramic Plucker ray-map for precise trajectory control and leverages generated 3D occupancy to define rule-based dense rewards for driving compliance and safety.
 
 - [Robust Driving QA through Metadata-Grounded Context and Task-Specific Prompts](https://arxiv.org/abs/2510.19001)
   - Seungjun Yu, Junsung Park, Youngsun Lim, Hyunjung Shim
@@ -744,6 +983,26 @@ format:
     - Introduces a VLA module for semantically grounded trajectories, an E2E module for physical feasibility, and a metric-guided trajectory scorer to align their outputs.
     - Achieves an EPDMS of 49.12 on the ICCV 2025 Autonomous Grand Challenge leaderboard.
 
+- [Vision-Centric 4D Occupancy Forecasting and Planning via Implicit Residual World Models](https://arxiv.org/abs/2510.16729)
+  - Jianbiao Mei, Yu Yang, Xuemeng Yang, Licheng Wen, Jiajun Lv, Botian Shi, Yong Liu
+  - Publish Date: 2025.10.19
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes IR-WM, an Implicit Residual World Model that focuses on modeling the current state and evolution of the world for vision-centric autonomous driving, avoiding full scene reconstruction.
+    - Introduces a residual prediction approach using BEV features as a temporal prior and an alignment module to mitigate error accumulation over time.
+    - Demonstrates that implicit future states from world models improve planning accuracy, achieving top performance on nuScenes for 4D occupancy forecasting and trajectory planning.
+
+- [Advancing Off-Road Autonomous Driving: The Large-Scale ORAD-3D Dataset and Comprehensive Benchmarks](https://arxiv.org/abs/2510.16500)
+  - Chen Min, Jilin Mei, Heng Zhai, Shuai Wang, Tong Sun, Fanjie Kong, Haoyang Li, Fangyuan Mao, Fuyang Liu, Shuo Wang, Yiming Nie, Qi Zhu, Liang Xiao, Dawei Zhao, Yu Hu
+  - Publish Date: 2025.10.18
+  - Code: [ORAD-3D](https://github.com/chaytonmin/ORAD-3D)
+  - Task: Generation
+  - Datasets: [ORAD-3D](https://github.com/chaytonmin/ORAD-3D)
+  - Summary：
+    - Presents ORAD-3D, the largest dataset for off-road autonomous driving, covering diverse terrains, weather conditions, and illumination levels.
+    - Establishes a comprehensive benchmark suite for five fundamental tasks: 2D free-space detection, 3D occupancy prediction, path planning, vision-language model-driven driving, and world modeling for off-road environments.
+
 - [VDRive: Leveraging Reinforced VLA and Diffusion Policy for End-to-end Autonomous Driving](https://arxiv.org/abs/2510.15446)
   - Ziang Guo, Zufeng Zhang
   - Publish Date: 2025.10.17
@@ -771,6 +1030,37 @@ format:
     - Proposes DriveVLA-W0, a training paradigm using world modeling to predict future images, providing dense self-supervised signals to learn driving environment dynamics.
     - Introduces a lightweight action expert for real-time inference, built on representations learned from world modeling.
     - Demonstrates significant performance gains over baselines and shows the approach amplifies the data scaling law, with accelerating gains as training dataset size increases.
+
+- [CoIRL-AD: Collaborative-Competitive Imitation-Reinforcement Learning in Latent World Models for Autonomous Driving](https://arxiv.org/abs/2510.12560)
+  - Xiaoji Zheng, Ziyuan Yang, Yanhao Chen, Yuhang Peng, Yuanrong Tang, Gengyuan Liu, Bokui Chen, Jiangtao Gong
+  - Publish Date: 2025.10.14
+  - Code: [CoIRL-AD](https://github.com/SEU-zxj/CoIRL-AD)
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes CoIRL-AD, a competitive dual-policy framework that enables IL and RL agents to interact during training, moving beyond the conventional two-stage paradigm.
+    - Introduces a competition-based mechanism to facilitate knowledge exchange while preventing gradient conflicts.
+    - Experiments show an 18% reduction in collision rate compared to baselines, with stronger generalization and improved performance on long-tail scenarios.
+
+- [Flow Matching-Based Autonomous Driving Planning with Advanced Interactive Behavior Modeling](https://arxiv.org/abs/2510.11083)
+  - Tianyi Tan, Yinan Zheng, Ruiming Liang, Zexu Wang, Kexin Zheng, Jinliang Zheng, Jianxiong Li, Xianyuan Zhan, Jingjing Liu
+  - Publish Date: 2025.10.13
+  - Task: Planning
+  - Datasets: [nuPlan](https://www.nuscenes.org/nuplan), [interPlan](https://github.com/autonomousvision/interplan)
+  - Summary：
+    - Proposes Flow Planner, a framework for autonomous driving planning that addresses modeling interactive behaviors through innovations in data modeling, architecture, and learning.
+    - Introduces fine-grained trajectory tokenization and a specialized architecture for efficient temporal/spatial fusion to better capture interactive behaviors.
+    - Incorporates flow matching with classifier-free guidance for multi-modal behavior generation, dynamically reweighting agent interactions for coherent response strategies.
+
+- [Game-Theoretic Risk-Shaped Reinforcement Learning for Safe Autonomous Driving](https://arxiv.org/abs/2510.10960)
+  - Dong Hu, Fenqing Hu, Lidong Yang, Chao Huang
+  - Publish Date: 2025.10.13
+  - Code: [GTR2L](https://github.com/DanielHu197/GTR2L)
+  - Task: Planning
+  - Summary：
+    - Proposes a novel game-theoretic risk-shaped RL (GTR2L) framework for safe autonomous driving, incorporating a multi-level game-theoretic world model to predict interactive behaviors and risks.
+    - Features an adaptive rollout horizon based on predictive uncertainty and an uncertainty-aware barrier mechanism for flexible safety boundary modulation.
+    - Demonstrates superior performance in safety-critical scenarios, outperforming state-of-the-art baselines and human drivers in success rate, collision reduction, and efficiency.
 
 - [Align2Act: Instruction-Tuned Models for Human-Aligned Autonomous Driving](https://arxiv.org/abs/2510.10503)
   - Kanishkha Jaisankar, Sunidhi Tandel
@@ -800,6 +1090,27 @@ format:
     - Introduces GTR-Bench, a novel benchmark for evaluating geographic temporal reasoning of moving targets in a large-scale camera network, requiring perspective switches between maps and videos and joint reasoning across non-overlapping video views.
     - Evaluations show a significant performance gap between state-of-the-art VLMs and human performance on geo-temporal reasoning, revealing key deficiencies in context utilization, temporal forecasting, and map-video alignment.
     - The benchmark provides insights into spatial-temporal intelligence for applications like autonomous driving and embodied AI, with the code and benchmark to be released publicly.
+
+- [CVD-STORM: Cross-View Video Diffusion with Spatial-Temporal Reconstruction Model for Autonomous Driving](https://arxiv.org/abs/2510.07944)
+  - Tianrui Zhang, Yichen Liu, Zilin Guo, Yuxin Guo, Jingcheng Ni, Chenjing Ding, Dan Xu, Lewei Lu, Zehuan Wu
+  - Publisher: Sensetime
+  - Publish Date: 2025.10.09
+  - Project Page: [CVD-STORM](https://sensetime-fvg.github.io/CVD-STORM)
+  - Task: Generation
+  - Summary：
+    - CVD-STORM, a cross-view video diffusion model with a spatial-temporal reconstruction VAE for generating long-term, multi-view videos with 4D reconstruction under various control inputs.
+    - The approach fine-tunes the VAE with an auxiliary 4D reconstruction task to enhance 3D structure and temporal encoding, then integrates it into the video diffusion process to improve generation quality.
+    - The model shows improvements in FID and FVD metrics, and its jointly-trained Gaussian Splatting Decoder reconstructs dynamic scenes for geometric information and scene understanding.
+
+- [Drive&Gen: Co-Evaluating End-to-End Driving and Video Generation Models](https://arxiv.org/abs/2510.06209)
+  - Jiahao Wang, Zhenpei Yang, Yijing Bai, Yingwei Li, Yuliang Zou, Bo Sun, Abhijit Kundu, Jose Lezama, Luna Yue Huang, Zehao Zhu, Jyh-Jing Hwang, Dragomir Anguelov, Mingxing Tan, Chiyu Max Jiang
+  - Publisher: Google Research, Waymo
+  - Publish Date: 2025.10.07
+  - Task: Generation
+  - Summary：
+    - Proposes Drive&Gen, bridging driving models and generative world models to evaluate video realism for E2E planner evaluation using novel statistical measures.
+    - Exploits video generation controllability to investigate distribution gaps affecting E2E planner performance and biases.
+    - Shows synthetic data from video generation models is a cost-effective alternative to real data, improving E2E model generalization beyond existing Operational Design Domains.
 
 - [Work Zones challenge VLM Trajectory Planning: Toward Mitigation and Robust Autonomous Driving](https://arxiv.org/abs/2510.02803)
   - Yifan Liao, Zhen Sun, Xiaoyun Qiu, Zixiao Zhao, Wenbing Tang, Xinlei He, Xinhu Zheng, Tianwei Zhang, Xinyi Huang, Xingshuo Han
@@ -862,6 +1173,18 @@ format:
     - Introduces Max-V1, a novel one-stage end-to-end autonomous driving framework that reconceptualizes driving as a generalized language and formulates trajectory planning as next waypoint prediction.
     - Proposes a single-pass generation paradigm leveraging a Vision-Language Model (VLM) for direct trajectory prediction from front-view camera input, supervised by a principled strategy from statistical modeling.
     - Achieves state-of-the-art performance on nuScenes with over 30% improvement, demonstrating strong generalization and cross-vehicle robustness through imitation learning on large-scale expert demonstrations.
+
+- [Learning to Sample: Reinforcement Learning-Guided Sampling for Autonomous Vehicle Motion Planning](https://arxiv.org/abs/2509.24313)
+  - Korbinian Moller, Roland Stroop, Mattia Piccinini, Alexander Langmann, Johannes Betz
+  - Publisher: Technical University of Munich (TUM)
+  - Publish Date: 2025.09.29
+  - Code: [Learning-to-Sample](https://github.com/TUM-AVS/Learning-to-Sample)
+  - Task: Planning
+  - Datasets: [CommonRoad](https://commonroad.in.tum.de/)
+  - Summary：
+    - A hybrid framework for sampling-based motion planning that uses a reinforcement learning agent to guide sampling toward promising regions of the action space, while keeping trajectory generation and evaluation analytical and verifiable.
+    - Integrates the RL sampler with a world model based on a decodable deep set encoder to handle variable numbers of traffic participants and reconstructable latent representations.
+    - Evaluated in CommonRoad, showing up to 99% fewer required samples and 84% runtime reduction while maintaining planning success and collision-free rates.
 
 - [Preventing Robotic Jailbreaking via Multimodal Domain Adaptation](https://arxiv.org/abs/2509.23281)
   - Francesco Marchiori, Rohan Sinha, Christopher Agia, Alexander Robey, George J. Pappas, Mauro Conti, Marco Pavone
@@ -1077,6 +1400,16 @@ format:
     - Incorporates a large language model (LLM) at inference to guide strategy selection for dynamic, instruction-aware planning without model switching.
     - Achieves state-of-the-art performance on the nuPlan benchmark, with generated trajectories showing clear diversity to satisfy multi-modal driving requirements.
 
+- [Seeing Clearly, Forgetting Deeply: Revisiting Fine-Tuned Video Generators for Driving Simulation](https://arxiv.org/abs/2508.16512)
+  - Chun-Peng Chang, Chen-Yu Wang, Julian Schmidt, Holger Caesar, Alain Pagani
+  - Publish Date: 2025.08.22
+  - Task: Generation
+  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Investigates the trade-off in fine-tuning video generators for driving simulation, where visual fidelity improves but spatial accuracy for dynamic elements may degrade.
+    - Attributes this degradation to a shift in alignment between visual quality and dynamic understanding objectives in the repetitive context of driving scenes.
+    - Shows that simple continual learning strategies, like replay from diverse domains, can preserve spatial accuracy while maintaining strong visual quality.
+
 - [Prune2Drive: A Plug-and-Play Framework for Accelerating Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2508.13305)
   - Minhao Xiong, Zichen Wen, Zhuangcheng Gu, Xuyang Liu, Rui Zhang, Hengrui Kang, Jiabing Yang, Junyuan Zhang, Weijia Li, Conghui He, Yafei Wang, Linfeng Zhang
   - Publish Date: 2025.08.18
@@ -1147,6 +1480,15 @@ format:
     - The framework employs a three-stage paradigm: VLA architecture pretraining via imitation learning, building a lightweight reward world model via IRL, and enhancing planning via specialized PPO reinforcement learning.
     - Achieves state-of-the-art performance on the NAVSIM v2 end-to-end driving benchmark and is the 1st runner up in the CVPR2025 Autonomous Grand Challenge.
 
+- [LiDARCrafter: Dynamic 4D World Modeling from LiDAR Sequences](https://arxiv.org/abs/2508.03692)
+  - Ao Liang, Youquan Liu, Yu Yang, Dongyue Lu, Linfeng Li, Lingdong Kong, Huaici Zhao, Wei Tsang Ooi
+  - Publish Date: 2025.08.05
+  - Task: Generation
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - LiDARCrafter, a unified framework for 4D LiDAR generation and editing from free-form natural language, parsing instructions into ego-centric scene graphs to condition a tri-branch diffusion network.
+    - The framework includes an autoregressive module for generating temporally coherent 4D LiDAR sequences and establishes a comprehensive benchmark for standardized evaluation across scene-, object-, and sequence-level metrics.
+
 - [Mapillary Vistas Validation for Fine-Grained Traffic Signs: A Benchmark Revealing Vision-Language Model Limitations](https://arxiv.org/abs/2508.02047)
   - Sparsh Garg, Abhishek Aich
   - Publisher: NEC Laboratories America
@@ -1167,6 +1509,17 @@ format:
     - Bench2ADVLM, a unified hierarchical closed-loop evaluation framework for real-time, interactive assessment of Vision-Language Models (VLMs) in autonomous driving across simulation and physical platforms.
     - Introduces a dual-system adaptation architecture for simulation and a physical control abstraction layer to bridge simulation and reality, enabling closed-loop testing on physical vehicles.
     - Features a self-reflective scenario generation module to automatically explore model behavior and uncover potential failure modes for safety-critical scenario generation.
+
+- [Beyond Simulation: Benchmarking World Models for Planning and Causality in Autonomous Driving](https://arxiv.org/abs/2508.01922)
+  - Hunter Schofield, Mohammed Elmahgiubi, Kasra Rezaee, Jinjun Shan
+  - Publisher: York University
+  - Publish Date: 2025.08.03
+  - Task: Evaluation
+  - Datasets: [Waymo Open Dataset](https://waymo.com/open/)
+  - Summary：
+    - Proposes new metrics to evaluate the robustness of world models as traffic simulators, specifically for their use as pseudo-environments for policy training.
+    - Extends the Waymo Open Sim-Agents Challenge (WOSAC) evaluation to include agents causal to the ego vehicle, revealing scenarios where top models fail under trajectory replay.
+    - Analyzes state-of-the-art world models under these new metrics to assess their sensitivity to uncontrollable objects and suitability for policy training.
 
 - [Edge-Based Multimodal Sensor Data Fusion with Vision Language Models (VLMs) for Real-time Autonomous Vehicle Accident Avoidance](https://arxiv.org/abs/2508.01057)
   - Fengze Yang, Bo Yu, Yang Zhou, Xuewen Luo, Zhengzhong Tu, Chenxi Liu
@@ -1197,6 +1550,16 @@ format:
     - FastDriveVLA, a novel reconstruction-based vision token pruning framework for autonomous driving, featuring a plug-and-play visual token pruner called ReconPruner that prioritizes foreground information via MAE-style pixel reconstruction.
     - Introduces an adversarial foreground-background reconstruction strategy to train ReconPruner and a new large-scale dataset, nuScenes-FG, with 241K image-mask pairs of annotated foreground regions.
     - Achieves state-of-the-art results on the nuScenes open-loop planning benchmark across different pruning ratios, enabling efficient end-to-end driving by reducing the computational cost of long visual tokens in VLA models.
+
+- [FASTopoWM: Fast-Slow Lane Segment Topology Reasoning with Latent World Models](https://arxiv.org/abs/2507.23325)
+  - Yiming Yang, Hongbin Lin, Yueru Luo, Suzhong Fu, Chao Zheng, Xinrui Yan, Shuqi Mei, Kun Tang, Shuguang Cui, Zhen Li
+  - Publish Date: 2025.07.31
+  - Task: Perception, Reasoning
+  - Datasets: [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2)
+  - Summary：
+    - FASTopoWM, a novel fast-slow lane segment topology reasoning framework augmented with latent world models for comprehensive BEV road scene understanding.
+    - The framework enables parallel supervision of historical and new queries to reduce pose estimation failure impact and introduces latent query and BEV world models for improved temporal perception.
+    - Demonstrates state-of-the-art performance on the OpenLane-V2 benchmark for lane segment detection and centerline perception.
 
 - [Vision-Language Cross-Attention for Real-Time Autonomous Driving](https://arxiv.org/abs/2507.23064)
   - Santosh Patapati, Trisanth Srinivasan, Murari Ambati
@@ -1287,6 +1650,28 @@ format:
     - Introduces a novel LLM-agent based framework for augmenting real-world traffic scenarios using natural language descriptions to generate challenging test cases for autonomous driving planners.
     - Employs an agentic design to enable fine-grained control over scenario generation and maintain high performance with smaller, cost-effective LLMs, sidestepping the need for massive datasets or manual expert augmentation.
 
+- [Orbis: Overcoming Challenges of Long-Horizon Prediction in Driving World Models](https://arxiv.org/abs/2507.13162)
+  - Arian Mousakhan, Sudhanshu Mittal, Silvio Galesso, Karim Farid, Thomas Brox
+  - Publisher: University of Freiburg
+  - Publish Date: 2025.07.17
+  - Project Page: [Orbis](https://lmb-freiburg.github.io/orbis.github.io/)
+  - Code: [Orbis](https://lmb-freiburg.github.io/orbis.github.io/)
+  - Task: Prediction
+  - Summary：
+    - A driving world model designed to overcome challenges in long-horizon generation and generalization to difficult scenarios, using simple design choices without additional supervision or sensors.
+    - Achieves state-of-the-art performance with only 469M parameters trained on 280h of video data, excelling in challenging scenarios like turning maneuvers and urban traffic.
+    - Introduces a hybrid tokenizer for a side-by-side comparison, concluding that a continuous autoregressive model is less brittle and more powerful than a model built on discrete tokens.
+
+- [World Model-Based End-to-End Scene Generation for Accident Anticipation in Autonomous Driving](https://arxiv.org/abs/2507.12762)
+  - Yanchen Guan, Haicheng Liao, Chengyue Wang, Xingcheng Liu, Jiaxun Zhang, Zhenning Li
+  - Publish Date: 2025.07.17
+  - Task: Generation
+  - Datasets: [New Benchmark Dataset](https://arxiv.org/abs/2507.12762)
+  - Summary：
+    - Proposes a framework combining generative scene augmentation with adaptive temporal reasoning for reliable accident anticipation, addressing data scarcity and missing object-level cues.
+    - Develops a video generation pipeline using a world model guided by domain-informed prompts to create high-resolution, statistically consistent driving scenarios, enriching edge cases.
+    - Constructs a dynamic prediction model with strengthened graph convolutions and dilated temporal operators to handle data incompleteness and visual noise, and releases a new benchmark dataset.
+
 - [ReAL-AD: Towards Human-Like Reasoning in End-to-End Autonomous Driving](https://arxiv.org/abs/2507.12499)
   - Yuhang Lu, Jiadong Tu, Yuexin Ma, Xinge Zhu
   - Publisher: 4DV Lab
@@ -1328,6 +1713,26 @@ format:
     - LeAD, a dual-rate autonomous driving architecture integrating imitation learning-based end-to-end frameworks with large language model (LLM) augmentation for enhanced scenario comprehension and decision-making.
     - The system uses a high-frequency E2E subsystem for real-time cycles and a low-frequency LLM module that employs multi-modal perception fusion and chain-of-thought reasoning to handle complex scenarios and edge cases.
 
+- [NRSeg: Noise-Resilient Learning for BEV Semantic Segmentation via Driving World Models](https://arxiv.org/abs/2507.04002)
+  - Siyu Li, Fei Teng, Yihong Cao, Kailun Yang, Zhiyong Li, Yaonan Wang
+  - Publish Date: 2025.07.05
+  - Code: [NRSeg](https://github.com/lynn-yu/NRSeg)
+  - Task: Perception
+  - Summary：
+    - Proposes NRSeg, a noise-resilient learning framework for BEV semantic segmentation to harness synthetic data from driving world models.
+    - Introduces a Perspective-Geometry Consistency Metric (PGCM) to evaluate the guidance capability of generated data and a Bi-Distribution Parallel Prediction (BiDPP) module to enhance model robustness.
+    - Achieves state-of-the-art performance with mIoU improvements of 13.8% and 11.4% in unsupervised and semi-supervised BEV segmentation tasks, respectively.
+
+- [FMOcc: TPV-Driven Flow Matching for 3D Occupancy Prediction with Selective State Space Model](https://arxiv.org/abs/2507.02250)
+  - Jiangxia Chen, Tongyuan Huang, Ke Song
+  - Publish Date: 2025.07.03
+  - Task: Prediction
+  - Datasets: [Occ3D-nuScenes](https://github.com/OpenDriveLab/Occ3D), [OpenOcc](https://github.com/OpenDriveLab/OpenOcc)
+  - Summary：
+    - Proposes FMOcc, a Tri-perspective View (TPV) refinement occupancy network with a flow matching selective state space model for few-frame 3D occupancy prediction.
+    - Introduces a Flow Matching SSM module (FMSSM) to generate missing features and a TPV SSM layer with Plane Selective SSM (PS3M) to selectively filter TPV features, enhancing efficiency and prediction for distant scenes.
+    - Designs a Mask Training (MT) method to improve robustness against sensor data loss, achieving state-of-the-art results on Occ3D-nuScenes and OpenOcc datasets.
+
 - [VLAD: A VLM-Augmented Autonomous Driving Framework with Hierarchical Planning and Interpretable Decision Process](https://arxiv.org/abs/2507.01284)
   - Cristian Gariboldi, Hayato Tokida, Ken Kinjo, Yuki Asada, Alexander Carballo
   - Publish Date: 2025.07.02
@@ -1347,6 +1752,18 @@ format:
     - A novel framework leveraging Large Language Models (LLMs) for few-shot code generation to automatically synthesize diverse and safety-critical driving scenarios within the CARLA simulator.
     - Integrates a video generation pipeline using Cosmos-Transfer1 with ControlNet to convert rendered simulation scenes into realistic driving videos, bridging the simulation-to-real appearance gap.
     - Enables controllable generation of rare edge cases, such as occluded pedestrian crossings or sudden vehicle cut-ins, for simulation-based testing of autonomous vehicles.
+
+- [World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model](https://arxiv.org/abs/2507.00603)
+  - Yupeng Zheng, Pengxuan Yang, Zebin Xing, Qichao Zhang, Yuhang Zheng, Yinfeng Gao, Pengfei Li, Teng Zhang, Zhongpu Xia, Peng Jia, Dongbin Zhao
+  - Publisher: University of Chinese Academy of Sciences
+  - Publish Date: 2025.07.01
+  - Code: [World4Drive](https://github.com/ucaszyp/World4Drive)
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - World4Drive, an end-to-end autonomous driving framework that uses vision foundation models to build latent world models for generating and evaluating multi-modal planning trajectories without perception annotations.
+    - The framework extracts scene features and intentions, generates trajectories, predicts future states in latent space, and uses a selector module to choose the best trajectory via self-supervised alignment.
+    - Achieves state-of-the-art performance on nuScenes and NavSim benchmarks with significant reductions in L2 error and collision rate, and faster training convergence.
 
 - [Box-QAymo: Box-Referring VQA Dataset for Autonomous Driving](https://arxiv.org/abs/2507.00525)
   - Djamahl Etchegaray, Yuxia Fu, Zi Huang, Yadan Luo
@@ -1377,6 +1794,19 @@ format:
     - Introduces the first large-scale real-world dataset explicitly curated for personalized end-to-end autonomous driving (E2EAD), integrating scene topology with dynamic context and semantics via a fine-tuned vision-language model.
     - Proposes a hybrid annotation pipeline combining behavioral analysis, heuristics, and VLM reasoning, refined through human-in-the-loop verification.
     - Establishes the first standardized benchmark for evaluating personalized E2EAD models, showing that incorporating driving preferences improves behavioral alignment with human demonstrations.
+
+- [Epona: Autoregressive Diffusion World Model for Autonomous Driving](https://arxiv.org/abs/2506.24113)
+  - Kaiwen Zhang, Zhenyu Tang, Xiaotao Hu, Xingang Pan, Xiaoyang Guo, Yuan Liu, Jingwei Huang, Li Yuan, Qian Zhang, Xiao-Xiao Long, Xun Cao, Wei Yin
+  - Publisher: Tsinghua University
+  - Publish Date: 2025.06.30
+  - Project Page: [Epona](https://github.com/Kevin-thu/Epona/)
+  - Code: [Epona](https://github.com/Kevin-thu/Epona/)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Epona, an autoregressive diffusion world model for autonomous driving that enables localized spatiotemporal distribution modeling via decoupled spatiotemporal factorization and modular trajectory/video prediction.
+    - Introduces a novel chain-of-forward training strategy to address error accumulation in autoregressive loops, achieving state-of-the-art performance with 7.4% FVD improvement and minutes-longer prediction duration.
+    - The learned world model serves as a real-time motion planner, outperforming strong end-to-end planners on NAVSIM benchmarks.
 
 - [DriveMRP: Enhancing Vision-Language Models with Synthetic Motion Data for Motion Risk Prediction](https://arxiv.org/abs/2507.02948)
   - Zhiyi Hou, Enhui Ma, Fang Li, Zhiyi Lai, Kalok Ho, Zhanqian Wu, Lijun Zhou, Long Chen, Chitian Sun, Haiyang Sun, Bing Wang, Guang Chen, Hangjun Ye, Kaicheng Yu
