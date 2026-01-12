@@ -102,6 +102,143 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [A Unified Perception-Language-Action Framework for Adaptive Autonomous Driving](https://arxiv.org/abs/2507.23540)
+  - Yi Zhang, Erik Leo Haß, Kuo-Yi Chao, Nenad Petrovic, Yinglei Song, Chengdong Wu, Alois Knoll
+  - Publisher: Technical University of Munich
+  - Publish Date: 2025.07.31
+  - Task: Planning
+  - Summary：
+    - Proposes a unified Perception-Language-Action (PLA) framework integrating multi-sensor fusion with an LLM-augmented Vision-Language-Action architecture for autonomous driving.
+    - Features a GPT-4.1-powered reasoning core to couple perception with natural language understanding for context-aware, explainable, and safety-bounded decision-making.
+    - Demonstrates superior performance in trajectory tracking, speed prediction, and adaptive planning in complex urban scenarios like intersections with construction zones.
+
+- [FastDriveVLA: Efficient End-to-End Driving via Plug-and-Play Reconstruction-based Token Pruning](https://arxiv.org/abs/2507.23318)
+  - Jiajun Cao, Qizhe Zhang, Peidong Jia, Xuhui Zhao, Bo Lan, Xiaoan Zhang, Zhuo Li, Xiaobao Wei, Sixiang Chen, Liyun Li, Xianming Liu, Ming Lu, Yang Wang, Shanghang Zhang
+  - Publish Date: 2025.07.31
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - FastDriveVLA, a novel reconstruction-based vision token pruning framework for autonomous driving, featuring a plug-and-play visual token pruner called ReconPruner that prioritizes foreground information via MAE-style pixel reconstruction.
+    - Introduces an adversarial foreground-background reconstruction strategy to train ReconPruner and a new large-scale dataset, nuScenes-FG, with 241K image-mask pairs of annotated foreground regions.
+    - Achieves state-of-the-art results on the nuScenes open-loop planning benchmark across different pruning ratios, enabling efficient end-to-end driving by reducing the computational cost of long visual tokens in VLA models.
+
+- [Vision-Language Cross-Attention for Real-Time Autonomous Driving](https://arxiv.org/abs/2507.23064)
+  - Santosh Patapati, Trisanth Srinivasan, Murari Ambati
+  - Publish Date: 2025.07.30
+  - Task: End-to-End
+  - Datasets: [MD-NEX Outdoor-Driving](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - XYZ-Drive, a single vision-language model for autonomous driving that reads a front-camera frame, an overhead map, and a waypoint to output steering and speed.
+    - It uses a lightweight goal-centered cross-attention layer to fuse waypoint, image, and map tokens before processing with a fine-tuned LLaMA-3.2 11B model.
+    - The model achieves 95% success on the MD-NEX benchmark, surpassing prior methods, and ablations confirm the importance of each modality and the fusion mechanism.
+
+- [SafeDriveRAG: Towards Safe Autonomous Driving with Knowledge Graph-based Retrieval-Augmented Generation](https://arxiv.org/abs/2507.21585)
+  - Hao Ye, Mengshi Qi, Zhaohong Liu, Liang Liu, Huadong Ma
+  - Publish Date: 2025.07.29
+  - Code: [SafeDriveRAG](https://github.com/Lumos0507/SafeDriveRAG)
+  - Task: VQA
+  - Datasets: [SafeDrive228K](https://github.com/Lumos0507/SafeDriveRAG)
+  - Summary：
+    - Introduces SafeDrive228K, a large-scale multimodal VQA benchmark with 228K examples across 18 sub-tasks for evaluating traffic safety comprehension in driving scenarios.
+    - Proposes a plug-and-play multimodal knowledge graph-based retrieval-augmented generation (RAG) framework with a multi-scale subgraph retrieval algorithm.
+    - Demonstrates that the RAG framework significantly improves performance on safety-critical tasks across five mainstream VLMs.
+
+- [DriveAgent-R1: Advancing VLM-based Autonomous Driving with Active Perception and Hybrid Thinking](https://arxiv.org/abs/2507.20879)
+  - Weicheng Zheng, Xiaofei Mao, Nanfei Ye, Pengxiang Li, Kun Zhan, Xianpeng Lang, Hang Zhao
+  - Publish Date: 2025.07.28
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - DriveAgent-R1, the first autonomous driving agent with active perception for planning, proactively invokes tools for visual reasoning to ground decisions in visual evidence.
+    - Introduces a hybrid thinking framework that adaptively switches between text-only reasoning and tool-augmented visual reasoning based on scene complexity.
+    - Trained via a three-stage progressive strategy with a core Cascaded Reinforcement Learning phase, achieving competitive performance with 3B parameters on Drive-Internal and nuScenes datasets.
+
+- [VESPA: Towards un(Human)supervised Open-World Pointcloud Labeling for Autonomous Driving](https://arxiv.org/abs/2507.20397)
+  - Levente Tempfli, Esteban Rivera, Markus Lienkamp
+  - Publisher: Technical University of Munich
+  - Publish Date: 2025.07.27
+  - Task: Perception
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - VESPA, a multimodal autolabeling pipeline that fuses LiDAR geometry with camera semantics for scalable 3D pseudolabel generation without ground-truth or HD maps.
+    - Leverages vision-language models (VLMs) for open-vocabulary object labeling and detection refinement directly in the point cloud domain, supporting novel category discovery.
+
+- [VLMPlanner: Integrating Visual Language Models with Motion Planning](https://arxiv.org/abs/2507.20342)
+  - Zhipeng Tang, Sha Zhang, Jiajun Deng, Chenjie Wang, Guoliang You, Yuting Huang, Xinrui Lin, Yanyong Zhang
+  - Publish Date: 2025.07.27
+  - Task: Planning
+  - Datasets: [nuPlan](https://www.nuscenes.org/nuplan)
+  - Summary：
+    - VLMPlanner, a hybrid framework combining a learning-based real-time planner with a vision-language model (VLM) that reasons over raw multi-view images for robust trajectory generation.
+    - Introduces a Context-Adaptive Inference Gate (CAI-Gate) to dynamically adjust VLM inference frequency based on scene complexity, balancing performance and computational efficiency.
+    - Evaluated on the nuPlan benchmark, demonstrating superior planning in scenarios with intricate road conditions and dynamic elements.
+
+- [BEV-LLM: Leveraging Multimodal BEV Maps for Scene Captioning in Autonomous Driving](https://arxiv.org/abs/2507.19370)
+  - Felix Brandstaetter, Erik Schuetz, Katharina Winter, Fabian Flohr
+  - Publish Date: 2025.07.25
+  - Task: Perception
+  - Datasets: [nuCaption](https://www.nuscenes.org/nuimages), [nuView](https://www.nuscenes.org/nuimages), [GroundView](https://www.nuscenes.org/nuimages)
+  - Summary：
+    - BEV-LLM, a lightweight model for 3D scene captioning in autonomous driving, leveraging BEVFusion to combine LiDAR and multi-view images with a novel absolute positional encoding.
+    - Achieves competitive performance on nuCaption, surpassing state-of-the-art by up to 5% in BLEU scores, using a small 1B parameter base model.
+    - Introduces and benchmarks two new datasets, nuView and GroundView, to better assess scene captioning across diverse driving scenarios and object grounding.
+
+- [Policy Disruption in Reinforcement Learning: Adversarial Attack with Large Language Models and Critical State Identification](https://arxiv.org/abs/2507.18113)
+  - Junyong Jiang, Buwei Tian, Chenxing Xu, Songze Li, Lu Dong
+  - Publish Date: 2025.07.24
+  - Task: Planning
+  - Summary：
+    - Proposes an adversarial attack method where existing agents guide a target policy to output suboptimal actions without altering the environment.
+    - Introduces a reward iteration optimization framework that leverages LLMs to generate adversarial rewards tailored to the target agent's vulnerabilities.
+    - Designs a critical state identification algorithm to pinpoint the agent's most vulnerable states, leading to significant performance degradation.
+
+- [BetterCheck: Towards Safeguarding VLMs for Automotive Perception Systems](https://arxiv.org/abs/2507.17722)
+  - Malsha Ashani Mahawatta Dona, Beatriz Cabrero-Daniel, Yinan Yu, Christian Berger
+  - Publisher: University of Gothenburg
+  - Publish Date: 2025.07.23
+  - Task: Perception
+  - Datasets: [Waymo Open Dataset](https://waymo.com/open/)
+  - Summary：
+    - Proposes BetterCheck, a method for detecting hallucinations in Vision-Language Models (VLMs) to safeguard their use in automotive perception systems.
+    - Systematically assesses the performance of 3 state-of-the-art VLMs on diverse traffic situations from the Waymo Open Dataset, finding they exhibit strong understanding but remain prone to hallucination.
+
+- [VLM-UDMC: VLM-Enhanced Unified Decision-Making and Motion Control for Urban Autonomous Driving](https://arxiv.org/abs/2507.15266)
+  - Haichao Liu, Haoren Guo, Pei Liu, Benshan Ma, Yuxiang Zhang, Jun Ma, Tong Heng Lee
+  - Publish Date: 2025.07.21
+  - Code: [VLM-UDMC](https://github.com/henryhcliu/vlmudmc.git)
+  - Task: Planning, Control
+  - Summary：
+    - Proposes VLM-UDMC, a vision-language model-enhanced framework for unified decision-making and motion control in urban autonomous driving, incorporating scene reasoning and risk-aware insights.
+    - Features a two-step reasoning policy with Retrieval-Augmented Generation (RAG) in an upper-level slow system to dynamically reconfigure motion planning based on real-time environmental changes.
+    - Employs a lightweight multi-kernel decomposed LSTM for real-time trajectory prediction of traffic participants and validates the framework through simulations and real-world experiments.
+
+- [AGENTS-LLM: Augmentative GENeration of Challenging Traffic Scenarios with an Agentic LLM Framework](https://arxiv.org/abs/2507.13729)
+  - Yu Yao, Salil Bhatnagar, Markus Mazzola, Vasileios Belagiannis, Igor Gilitschenski, Luigi Palmieri, Simon Razniewski, Marcel Hallgarten
+  - Publish Date: 2025.07.18
+  - Task: Planning
+  - Summary：
+    - Introduces a novel LLM-agent based framework for augmenting real-world traffic scenarios using natural language descriptions to generate challenging test cases for autonomous driving planners.
+    - Employs an agentic design to enable fine-grained control over scenario generation and maintain high performance with smaller, cost-effective LLMs, sidestepping the need for massive datasets or manual expert augmentation.
+
+- [LaViPlan : Language-Guided Visual Path Planning with RLVR](https://arxiv.org/abs/2507.12911)
+  - Hayeon Oh
+  - Publish Date: 2025.07.17
+  - Task: Planning
+  - Summary：
+    - Proposes LaViPlan, a framework using Reinforcement Learning with Verifiable Rewards (RLVR) to fine-tune Vision-Language Models (VLMs) for aligning language-based reasoning with low-level trajectory planning in autonomous driving.
+    - Demonstrates improved planning performance on in-domain and out-of-domain datasets, addressing the generalization challenge in out-of-distribution scenarios.
+
+- [ReAL-AD: Towards Human-Like Reasoning in End-to-End Autonomous Driving](https://arxiv.org/abs/2507.12499)
+  - Yuhang Lu, Jiadong Tu, Yuexin Ma, Xinge Zhu
+  - Publisher: 4DV Lab
+  - Publish Date: 2025.07.16
+  - Project Page: [ReAL-AD](https://4dvlab.github.io/project_page/realad)
+  - Task: End-to-End
+  - Summary：
+    - Proposes ReAL-AD, a Reasoning-Augmented Learning framework that structures decision-making based on a three-tier human cognitive model: Driving Strategy, Driving Decision, and Driving Operation.
+    - Integrates Vision-Language Models (VLMs) to enhance situational awareness and introduces a Strategic Reasoning Injector, Tactical Reasoning Integrator, and Hierarchical Trajectory Decoder for hierarchical reasoning and trajectory execution.
+    - Extensive evaluations show the framework improves planning accuracy and safety by over 30%, making end-to-end autonomous driving more interpretable and aligned with human-like reasoning.
+
 - [Unreal is all you need: Multimodal ISAC Data Simulation with Only One Engine](https://arxiv.org/abs/2507.08716)
   - Kongwu Huang, Shiyi Mu, Jun Jiang, Yuan Gao, Shugong Xu
   - Publisher: Shanghai University
