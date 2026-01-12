@@ -102,6 +102,222 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [NuRisk: A Visual Question Answering Dataset for Agent-Level Risk Assessment in Autonomous Driving](https://arxiv.org/abs/2509.25944)
+  - Yuan Gao, Mattia Piccinini, Roberto Brusnicki, Yuchen Zhang, Johannes Betz
+  - Publisher: Technical University of Munich
+  - Publish Date: 2025.09.30
+  - Task: VQA
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Waymo](https://waymo.com/open/), [CommonRoad](https://commonroad.in.tum.de/)
+  - Summary：
+    - Proposes NuRisk, a comprehensive Visual Question Answering (VQA) dataset for agent-level risk assessment in autonomous driving, built on real-world data from nuScenes and Waymo and supplemented with safety-critical scenarios from the CommonRoad simulator.
+    - The dataset provides Bird-Eye-View (BEV) based sequential images with quantitative, agent-level risk annotations, designed to enable and benchmark spatio-temporal reasoning.
+    - Benchmarks show standard VLMs struggle with explicit spatio-temporal reasoning on this task, while a fine-tuned 7B VLM agent improves accuracy and reduces latency, establishing NuRisk as a critical benchmark for advancing reasoning in autonomous driving.
+
+- [FuncPoison: Poisoning Function Library to Hijack Multi-agent Autonomous Driving Systems](https://arxiv.org/abs/2509.24408)
+  - Yuzhen Long, Songze Li
+  - Publisher: University of California, Los Angeles
+  - Publish Date: 2025.09.29
+  - Task: Planning
+  - Summary：
+    - Introduces FuncPoison, a novel poisoning-based attack that targets the shared function library in LLM-driven multi-agent autonomous driving systems to manipulate agent behavior.
+    - Exploits weaknesses in text-based tool selection and standardized command formats to inject malicious tools, causing cascading errors that degrade system trajectory accuracy.
+    - Demonstrates the attack's effectiveness in evading defenses and highlights the function library as a critical, under-explored attack surface for system reliability.
+
+- [Less is More: Lean yet Powerful Vision-Language Model for Autonomous Driving](https://arxiv.org/abs/2510.00060)
+  - Sheng Yang, Tong Zhan, Guancheng Chen, Yanfeng Lu, Jian Wang
+  - Publish Date: 2025.09.29
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Introduces Max-V1, a novel one-stage end-to-end autonomous driving framework that reconceptualizes driving as a generalized language and formulates trajectory planning as next waypoint prediction.
+    - Proposes a single-pass generation paradigm leveraging a Vision-Language Model (VLM) for direct trajectory prediction from front-view camera input, supervised by a principled strategy from statistical modeling.
+    - Achieves state-of-the-art performance on nuScenes with over 30% improvement, demonstrating strong generalization and cross-vehicle robustness through imitation learning on large-scale expert demonstrations.
+
+- [Preventing Robotic Jailbreaking via Multimodal Domain Adaptation](https://arxiv.org/abs/2509.23281)
+  - Francesco Marchiori, Rohan Sinha, Christopher Agia, Alexander Robey, George J. Pappas, Mauro Conti, Marco Pavone
+  - Publisher: University of Padua, Stanford University, University of Pennsylvania
+  - Publish Date: 2025.09.27
+  - Project Page: [J-DAPT](https://j-dapt.github.io)
+  - Task: Reasoning
+  - Datasets: [Waymo Open Dataset](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Introduces J-DAPT, a lightweight framework for multimodal jailbreak detection in robotic environments using attention-based fusion and domain adaptation.
+    - Integrates textual and visual embeddings to capture semantic intent and environmental grounding, aligning general-purpose jailbreak data with domain-specific references.
+    - Evaluations across autonomous driving, maritime robotics, and quadruped navigation show J-DAPT boosts detection accuracy to nearly 100% with minimal overhead.
+
+- [BEV-VLM: Trajectory Planning via Unified BEV Abstraction](https://arxiv.org/abs/2509.25249)
+  - Guancheng Chen, Sheng Yang, Tong Zhan, Jian Wang
+  - Publish Date: 2025.09.27
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Introduces BEV-VLM, a framework for trajectory planning that uses Vision-Language Models with Bird's-Eye View feature maps as visual inputs.
+    - Utilizes a unified BEV-HD Map format from fused multi-modal sensor data for a geometrically consistent scene description.
+    - Demonstrates 44.8% improvements in planning accuracy and complete collision avoidance on the nuScenes dataset.
+
+- [MTRDrive: Memory-Tool Synergistic Reasoning for Robust Autonomous Driving in Corner Cases](https://arxiv.org/abs/2509.20843)
+  - Ziang Luo, Kangan Qian, Jiahua Wang, Yuechen Luo, Jinyu Miao, Zheng Fu, Yunlong Wang, Sicong Jiang, Zilin Huang, Yifei Hu, Yuhao Yang, Hao Ye, Mengmeng Yang, Xiaojian Dong, Kun Jiang, Diange Yang
+  - Publish Date: 2025.09.25
+  - Task: End-to-End
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Introduces MTRDrive, a framework integrating procedural driving experiences with a dynamic toolkit to enhance generalization and proactive decision-making for end-to-end autonomous driving.
+    - Proposes a closed-loop system combining a memory-based experience retrieval mechanism with dynamic toolkits to improve reasoning and decision-making.
+    - Achieves state-of-the-art performance on the NAVSIM benchmark and demonstrates strong zero-shot generalization on a new Roadwork-VLM benchmark.
+
+- [Universal Camouflage Attack on Vision-Language Models for Autonomous Driving](https://arxiv.org/abs/2509.20196)
+  - Dehong Kong, Sifan Yu, Siyuan Liang, Jiawei Liang, Jianhou Gan, Aishan Liu, Wenqi Ren
+  - Publish Date: 2025.09.24
+  - Task: End-to-End
+  - Summary：
+    - Proposes the first Universal Camouflage Attack (UCA) framework for Vision-Language Models in Autonomous Driving, generating physically realizable camouflage textures that generalize across commands and model architectures.
+    - Introduces a feature divergence loss (FDL) targeting encoder and projection layer vulnerabilities, along with a multi-scale learning strategy for robustness to viewpoint and scale changes in real-world scenarios.
+    - Demonstrates strong attack performance, inducing incorrect driving commands across various VLM-AD models and significantly surpassing existing methods, with high robustness under diverse dynamic conditions.
+
+- [Discrete Diffusion for Reflective Vision-Language-Action Models in Autonomous Driving](https://arxiv.org/abs/2509.20109)
+  - Pengxiang Li, Yinan Zheng, Yue Wang, Huimin Wang, Hang Zhao, Jingjing Liu, Xianyuan Zhan, Kun Zhan, Xianpeng Lang
+  - Publish Date: 2025.09.24
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Introduces ReflectDrive, a learning-based framework integrating a reflection mechanism for safe trajectory generation via discrete diffusion, addressing limitations of imitation learning in Vision-Language-Action models.
+    - Proposes a safety-aware reflection mechanism that performs iterative self-correction without gradient computation, using local search to identify unsafe tokens and inpainting-based regeneration for safe anchors.
+    - Evaluated on the NAVSIM benchmark, demonstrating significant advantages in safety-critical trajectory generation for autonomous driving systems.
+
+- [Orchestrate, Generate, Reflect: A VLM-Based Multi-Agent Collaboration Framework for Automated Driving Policy Learning](https://arxiv.org/abs/2509.17042)
+  - Zengqi Peng, Yusen Xie, Yubin Wang, Rui Yang, Qifeng Chen, Jun Ma
+  - Publish Date: 2025.09.21
+  - Task: Planning
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - Proposes OGR, a novel automated driving policy learning framework that leverages a vision-language model (VLM)-based multi-agent collaboration system to automate the design of reward functions and training curricula.
+    - Introduces a hierarchical agent system with an orchestrator, generation, and reflection module, enhanced by a memory module and a parallel generation scheme with human-in-the-loop augmentation for robust policy evolution.
+    - Demonstrates superior performance, generalizability across urban scenarios in CARLA, and compatibility with various RL algorithms, with real-world experiments validating its practical viability.
+
+- [Are VLMs Ready for Lane Topology Awareness in Autonomous Driving?](https://arxiv.org/abs/2509.16654)
+  - Xin Chen, Jia He, Maozheng Li, Dongliang Xu, Tianyu Wang, Yixiao Chen, Zhixin Lin, Yue Yao
+  - Publish Date: 2025.09.20
+  - Task: VQA
+  - Summary：
+    - Systematically evaluates Vision-Language Models (VLMs) on their capability for road topology understanding, a key requirement for safe autonomous driving.
+    - Proposes four diagnostic VQA tasks based on bird's-eye-view lane representations to capture essential components of spatial topology reasoning.
+    - Finds that spatial reasoning remains a fundamental bottleneck for current VLMs, with performance correlating with model size, reasoning token length, and provided examples.
+
+- [CoReVLA: A Dual-Stage End-to-End Autonomous Driving Framework for Long-Tail Scenarios via Collect-and-Refine](https://arxiv.org/abs/2509.15968)
+  - Shiyu Fang, Yiming Cui, Haoyang Liang, Chen Lv, Peng Hang, Jian Sun
+  - Publish Date: 2025.09.19
+  - Code: [CoReVLA](https://github.com/FanGShiYuu/CoReVLA)
+  - Task: End-to-End
+  - Datasets: [Bench2Drive](https://github.com/FanGShiYuu/CoReVLA)
+  - Summary：
+    - CoReVLA, a continual learning end-to-end autonomous driving framework that improves performance in long-tail, safety-critical scenarios via a dual-stage process of data Collection and behavior Refinement.
+    - The framework is fine-tuned on driving QA data, collects driver takeover data in CAVE simulation, and is refined via Direct Preference Optimization (DPO) to learn from human preferences and avoid reward hacking.
+    - On the Bench2Drive benchmark, CoReVLA achieves a Driving Score of 72.18 and a Success Rate of 50%, outperforming state-of-the-art methods in long-tail scenarios.
+
+- [AdaThinkDrive: Adaptive Thinking via Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/2509.13769)
+  - Yuechen Luo, Fang Li, Shaoqing Xu, Zhiyi Lai, Lei Yang, Qimao Chen, Ziang Luo, Zixun Xie, Shengyin Jiang, Jiaxin Liu, Long Chen, Bing Wang, Zhi-xin Yang
+  - Publish Date: 2025.09.17
+  - Task: End-to-End
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - AdaThinkDrive, a novel Vision-Language-Action (VLA) framework with a dual-mode reasoning mechanism (fast answering and slow thinking) for adaptive reasoning in autonomous driving.
+    - Introduces an Adaptive Think Reward strategy with Group Relative Policy Optimization (GRPO) to reward the model for selectively applying Chain of Thought (CoT) reasoning.
+    - Achieves state-of-the-art performance on the Navsim benchmark (PDMS of 90.3) while reducing inference time by 14% compared to an always-reasoning baseline.
+
+- [Large Foundation Models for Trajectory Prediction in Autonomous Driving: A Comprehensive Survey](https://arxiv.org/abs/2509.10570)
+  - Wei Dai, Shengen Wu, Wei Wu, Zhenhao Wang, Sisuo Lyu, Haicheng Liao, Limin Yu, Weiping Ding, Runwei Guan, Yutao Yue
+  - Publish Date: 2025.09.11
+  - Task: Prediction
+  - Summary：
+    - A systematic survey on Large Foundation Models (LFMs), including LLMs and MLLMs, for trajectory prediction in autonomous driving, highlighting their role in enabling interpretable contextual reasoning.
+    - Covers core methodologies like trajectory-language mapping, multimodal fusion, and constraint-based reasoning, along with tasks, metrics, datasets, and key challenges.
+    - Discusses future research directions such as low-latency inference, causality-aware modeling, and motion foundation models.
+
+- [TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models](https://arxiv.org/abs/2509.07962)
+  - Zongzheng Zhang, Haobo Xu, Zhuo Yang, Chenghao Yue, Zehao Lin, Huan-ang Gao, Ziwei Wang, Hao Zhao
+  - Publish Date: 2025.09.09
+  - Task: Control
+  - Summary：
+    - Explores Torque-aware Vision-Language-Action (VLA) models to integrate force/torque signals for contact-rich robotic manipulation, addressing a gap in current VLAs.
+    - Systematically studies the design space for incorporating torque, finding torque adapters in the decoder outperform encoder insertion.
+    - Proposes predicting torque as an auxiliary output, inspired by autonomous driving paradigms, to improve performance and build a physically grounded internal representation.
+
+- [DepthVision: Enabling Robust Vision-Language Models with GAN-Based LiDAR-to-RGB Synthesis for Autonomous Driving](https://arxiv.org/abs/2509.07463)
+  - Sven Kirchner, Nils Purschke, Ross Greer, Alois C. Knoll
+  - Publisher: Technical University of Munich
+  - Publish Date: 2025.09.09
+  - Task: Perception
+  - Summary：
+    - DepthVision, a multimodal framework enabling Vision-Language Models (VLMs) to exploit LiDAR data without architectural changes or retraining by synthesizing dense RGB-like images from sparse LiDAR point clouds.
+    - Introduces a Luminance-Aware Modality Adaptation (LAMA) module that fuses synthesized and real camera images by dynamically weighting each modality based on ambient lighting to compensate for degradation like darkness or motion blur.
+    - The design turns LiDAR into a drop-in visual surrogate when RGB is unreliable, extending the operational envelope of existing VLMs, with evaluations showing substantial improvements in low-light scene understanding over RGB-only baselines.
+
+- [OccVLA: Vision-Language-Action Model with Implicit 3D Occupancy Supervision](https://arxiv.org/abs/2509.05578)
+  - Ruixun Liu, Lingyu Kong, Derun Li, Hang Zhao
+  - Publish Date: 2025.09.06
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes OccVLA, a framework integrating 3D occupancy representations into multimodal reasoning for autonomous driving, using occupancy as both a predictive output and supervisory signal.
+    - Learns fine-grained spatial structures from 2D visual inputs without explicit 3D inputs or extra inference overhead, as occupancy predictions can be skipped.
+    - Achieves state-of-the-art results on nuScenes for trajectory planning and superior performance on 3D visual question-answering tasks.
+
+- [LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation](https://arxiv.org/abs/2509.05263)
+  - Yinglin Duan, Zhengxia Zou, Tongwei Gu, Wei Jia, Zhan Zhao, Luyi Xu, Xinzhu Liu, Yenan Lin, Hao Jiang, Kang Chen, Shuang Qiu
+  - Publish Date: 2025.09.05
+  - Project Page: [Demo Video](https://youtu.be/8VWZXpERR18)
+  - Task: Simulation
+  - Summary：
+    - LatticeWorld, a 3D world generation framework that leverages lightweight LLMs (LLaMA-2-7B) and Unreal Engine 5 to create large-scale interactive worlds from multimodal textual and visual instructions.
+    - The framework streamlines industrial 3D environment production, achieving over a 90× increase in efficiency while maintaining high creative quality compared to traditional manual methods.
+
+- [SAM-LLM: Interpretable Lane Change Trajectory Prediction via Parametric Finetuning](https://arxiv.org/abs/2509.03462)
+  - Zhuo Cao, Yunxiao Shi, Min Xu
+  - Publish Date: 2025.09.03
+  - Task: Prediction
+  - Summary：
+    - Introduces SAM-LLM, a hybrid architecture that combines Large Language Models (LLMs) for contextual reasoning with a kinematic Sinusoidal Acceleration Model (SAM) for physical precision in autonomous driving trajectory prediction.
+    - For lane changes, the model outputs interpretable physical parameters (e.g., lateral displacement, duration) instead of raw coordinates, enabling continuous, plausible trajectories with an 80% reduction in output size compared to coordinate-based methods.
+    - Achieves state-of-the-art intention prediction accuracy of 98.73%, matching traditional LLM predictors while offering superior explainability and computational efficiency.
+
+- [KEPT: Knowledge-Enhanced Prediction of Trajectories from Consecutive Driving Frames with Vision-Language Models](https://arxiv.org/abs/2509.02966)
+  - Yujin Wang, Tianyi Wang, Quanfeng Liu, Wenxian Fan, Junfeng Jiao, Christian Claudel, Yunbing Yan, Bingzhao Gao, Jianqiang Wang, Hong Chen
+  - Publish Date: 2025.09.03
+  - Task: Prediction
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - KEPT, a knowledge-enhanced VLM framework for predicting ego trajectories directly from consecutive front-view driving frames.
+    - Integrates a temporal frequency-spatial fusion video encoder with a k-means & HNSW retrieval-augmented generation pipeline, using retrieved knowledge in chain-of-thought prompts with planning constraints.
+    - Employs a triple-stage fine-tuning paradigm to align the VLM backbone, achieving state-of-the-art open-loop performance on nuScenes.
+
+- [Do LLM Modules Generalize? A Study on Motion Generation for Autonomous Driving](https://arxiv.org/abs/2509.02754)
+  - Mingyi Wang, Jingke Wang, Tengju Ye, Junbo Chen, Kaicheng Yu
+  - Publish Date: 2025.09.02
+  - Task: Prediction
+  - Datasets: [Waymo Sim Agents](https://waymo.com/open/)
+  - Summary：
+    - A comprehensive evaluation of five key LLM modules for transfer to autonomous driving motion generation: tokenizer design, positional embedding, pre-training paradigms, post-training strategies, and test-time computation.
+    - Demonstrates that appropriately adapted LLM modules can significantly improve performance on the Waymo Sim Agents benchmark, achieving competitive results.
+    - Identifies which techniques transfer effectively, analyzes reasons for failures, and discusses necessary adaptations for the autonomous driving domain.
+
+- [2nd Place Solution for CVPR2024 E2E Challenge: End-to-End Autonomous Driving Using Vision Language Model](https://arxiv.org/abs/2509.02659)
+  - Zilong Guo, Yi Luo, Long Sha, Dongxu Wang, Panqu Wang, Chenyang Xu, Yi Yang
+  - Publish Date: 2025.09.02
+  - Task: End-to-End
+  - Summary：
+    - A camera-only end-to-end autonomous driving solution that combines architectural design with Vision Language Models (VLMs), achieving 2nd place in the CVPR2024 E2E Challenge.
+    - Demonstrates that integrating knowledgeable VLMs into an end-to-end framework yields impressive performance, highlighting the potential of vision-based approaches for driving tasks.
+
+- [AutoDrive-R$^2$: Incentivizing Reasoning and Self-Reflection Capacity for VLA Model in Autonomous Driving](https://arxiv.org/abs/2509.01944)
+  - Zhenlong Yuan, Chengxuan Qian, Jing Tang, Rui Chen, Zijian Song, Lei Sun, Xiangxiang Chu, Yujun Cai, Dapeng Zhang, Shuo Li
+  - Publish Date: 2025.09.02
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Waymo](https://waymo.com/open/)
+  - Summary：
+    - AutoDrive-R$^2$, a novel VLA framework that enhances reasoning and self-reflection for autonomous driving via chain-of-thought (CoT) processing and reinforcement learning.
+    - Introduces the nuScenesR$^2$-6K CoT dataset for supervised fine-tuning, building a four-step logical chain with self-reflection to connect perception to planning.
+    - Employs the GRPO reinforcement learning algorithm within a physics-grounded reward framework to optimize for reliable and realistic trajectory planning.
+
 - [OmniReason: A Temporal-Guided Vision-Language-Action Framework for Autonomous Driving](https://arxiv.org/abs/2509.00789)
   - Pei Liu, Qingtian Ning, Xinyan Lu, Haipeng Liu, Weiliang Ma, Dangen She, Peng Jia, Xianpeng Lang, Jun Ma
   - Publish Date: 2025.08.31
