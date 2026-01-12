@@ -106,7 +106,7 @@ format:
   - Publisher: Washington University in St. Louis, Bosch Research
   - Publish Date: 2026.01.07
   - Project Page: [UniDrive-WM](https://unidrive-wm.github.io/UniDrive-WM)
-  - Task: Planning
+  - Task: Planning, Generation
   - Datasets: [Bench2Drive](https://bench2drive.github.io/)
   - Summary：
     - UniDrive-WM, a unified VLM-based world model that jointly performs driving-scene understanding, trajectory planning, and trajectory-conditioned future image generation within a single architecture.
