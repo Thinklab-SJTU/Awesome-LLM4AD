@@ -102,6 +102,238 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [Seeing before Observable: Potential Risk Reasoning in Autonomous Driving via Vision Language Models](https://arxiv.org/abs/2511.22928)
+  - Jiaxin Liu, Xiangyu Yan, Liang Peng, Lei Yang, Lingjun Zhang, Yuechen Luo, Yueming Tao, Ashton Yu Xuan Tan, Mu Li, Lei Zhang, Ziqi Zhan, Sai Guo, Hong Wang, Jun Li
+  - Publish Date: 2025.11.28
+  - Task: Reasoning
+  - Datasets: [PotentialRiskQA](https://arxiv.org/abs/2511.22928)
+  - Summary：
+    - Introduces PotentialRiskQA, a novel vision-language dataset for reasoning about potential risks in driving before they become observable, with structured annotations of scene descriptions, precursors, and inferred outcomes.
+    - Proposes PR-Reasoner, a vision-language-model-based framework tailored for onboard potential risk reasoning, which shows significant performance gains when fine-tuned on the new dataset.
+
+- [CoT4AD: A Vision-Language-Action Model with Explicit Chain-of-Thought Reasoning for Autonomous Driving](https://arxiv.org/abs/2511.22532)
+  - Zhaohui Wang, Tengbo Yu, Hao Tang
+  - Publish Date: 2025.11.27
+  - Task: Reasoning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - CoT4AD, a novel Vision-Language-Action (VLA) framework that introduces explicit Chain-of-Thought (CoT) reasoning to enhance numerical and causal reasoning for autonomous driving.
+    - It integrates a perception-question-prediction-action CoT during training to align reasoning and action spaces, and performs implicit CoT reasoning during inference for robust decision-making.
+    - Demonstrates state-of-the-art performance in open-loop and closed-loop evaluations on benchmarks like nuScenes and Bench2Drive.
+
+- [RoadSceneBench: A Lightweight Benchmark for Mid-Level Road Scene Understanding](https://arxiv.org/abs/2511.22466)
+  - Xiyan Liu, Han Wang, Yuhu Wang, Junjie Cai, Zhe Cao, Jianzhong Yang, Zhen Lu
+  - Publish Date: 2025.11.27
+  - Project Page: [RoadSceneBench](https://github.com/XiyanLiu/RoadSceneBench)
+  - Code: [RoadSceneBench](https://github.com/XiyanLiu/RoadSceneBench)
+  - Task: Reasoning
+  - Datasets: [RoadSceneBench](https://github.com/XiyanLiu/RoadSceneBench)
+  - Summary：
+    - RoadSceneBench, a lightweight benchmark for evaluating visual reasoning of mid-level road semantics, focusing on relational understanding and structural consistency.
+    - Proposes Hierarchical Relational Reward Propagation with Temporal Consistency (HRRP-T), a training framework for VLMs to enhance spatial coherence and semantic alignment in reasoning.
+
+- [Learning from Risk: LLM-Guided Generation of Safety-Critical Scenarios with Prior Knowledge](https://arxiv.org/abs/2511.20726)
+  - Yuhang Wang, Heye Huang, Zhenhua Xu, Kailai Sun, Baoshen Guo, Jinhua Zhao
+  - Publish Date: 2025.11.25
+  - Task: Simulation
+  - Datasets: [CARLA](https://carla.org/), [SMARTS](https://github.com/huawei-noah/SMARTS)
+  - Summary：
+    - A high-fidelity scenario generation framework integrating a conditional variational autoencoder (CVAE) with a large language model (LLM) for autonomous driving safety validation.
+    - The CVAE learns latent traffic structures to generate physically consistent base scenarios, while the LLM acts as an adversarial reasoning engine to guide generation across varying risk levels.
+    - The framework increases coverage of high-risk and long-tail events, improves consistency with real-world traffic, and exposes autonomous systems to more challenging interactions than rule- or data-driven methods.
+
+- [DeeAD: Dynamic Early Exit of Vision-Language Action for Efficient Autonomous Driving](https://arxiv.org/abs/2511.20720)
+  - Haibo HU, Lianming Huang, Nan Guan, Chun Jason Xue
+  - Publish Date: 2025.11.25
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://github.com/OpenDriveLab/Bench2Drive)
+  - Summary：
+    - DeeAD, a training-free, action-guided early-exit framework that accelerates VLA planning by evaluating the physical feasibility of intermediate trajectories against lightweight planning priors.
+    - Introduces a multi-hop controller to adaptively skip redundant transformer layers based on score change rates, achieving up to 28% layer sparsity and 29% latency reduction.
+    - Integrates into existing VLA models (e.g., ORION) without retraining, preserving planning quality and safety on the Bench2Drive benchmark.
+
+- [CoC-VLA: Delving into Adversarial Domain Transfer for Explainable Autonomous Driving via Chain-of-Causality Visual-Language-Action Model](https://arxiv.org/abs/2511.19914)
+  - Dapeng Zhang, Fei Shen, Rui Zhao, Yinda Chen, Peng Zhi, Chenyang Li, Rui Zhou, Qingguo Zhou
+  - Publish Date: 2025.11.25
+  - Task: End-to-End
+  - Summary：
+    - Proposes CoC-VLA, a VLM-guided, end-to-end adversarial transfer framework for autonomous driving that transfers long-tail handling capabilities from simulation to real-world deployment.
+    - The framework comprises a teacher VLM, a student VLM, and a discriminator, utilizing a shared Chain-of-Causality Visual-Language Model (CoC VLM) base architecture for chain-of-thought reasoning.
+    - Introduces a novel adversarial training strategy with a discriminator to facilitate the transfer of capabilities from simulated to real-world environments.
+
+- [Reasoning-VLA: A Fast and General Vision-Language-Action Reasoning Model for Autonomous Driving](https://arxiv.org/abs/2511.19912)
+  - Dapeng Zhang, Zhenlong Yuan, Zhangquan Chen, Chih-Ting Liao, Yinda Chen, Fei Shen, Qingguo Zhou, Tat-Seng Chua
+  - Publish Date: 2025.11.25
+  - Task: End-to-End
+  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/), [KITTI](http://www.cvlibs.net/datasets/kitti/), [Argoverse](https://www.argoverse.org/), [BDD100K](https://bdd-data.berkeley.edu/), [CARLA](https://carla.org/)
+  - Summary：
+    - A general and fast Vision-Language-Action (VLA) framework for autonomous driving that uses learnable action queries interacting with reasoning-enhanced features to generate continuous trajectories in parallel.
+    - Consolidates eight public autonomous driving datasets into a standardized, Chain-of-Thought reasoning-based format for training.
+    - Achieves state-of-the-art performance, superior generalization, and excellent inference speed through supervised learning and reinforcement learning fine-tuning.
+
+- [Percept-WAM: Perception-Enhanced World-Awareness-Action Model for Robust End-to-End Autonomous Driving](https://arxiv.org/abs/2511.19221)
+  - Jianhua Han, Meng Tian, Jiangtong Zhu, Fan He, Huixin Zhang, Sitong Guo, Dechang Zhu, Hao Tang, Pei Xu, Yuze Guo, Minzhe Niu, Haojie Zhu, Qichao Dong, Xuechao Yan, Siyuan Dong, Lu Hou, Qingqiu Huang, Xiaosong Jia, Hang Xu
+  - Publish Date: 2025.11.24
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Percept-WAM, a perception-enhanced World-Awareness-Action Model that implicitly integrates 2D/3D scene understanding within a single vision-language model (VLM) for robust end-to-end autonomous driving.
+    - Introduces World-PV and World-BEV tokens to unify 2D/3D perception tasks, and a grid-conditioned prediction mechanism with IoU-aware scoring and parallel autoregressive decoding for improved stability in long-tail and complex scenarios.
+    - Achieves strong performance on perception benchmarks (e.g., 51.7/58.9 mAP on COCO, nuScenes BEV detection) and improves planning performance on nuScenes and NAVSIM, surpassing prior methods like DiffusionDrive.
+
+- [Thinking Ahead: Foresight Intelligence in MLLMs and World Models](https://arxiv.org/abs/2511.18735)
+  - Zhantao Gong, Liaoyuan Fan, Qing Guo, Xun Xu, Xulei Yang, Shijie Li
+  - Publish Date: 2025.11.24
+  - Task: VQA
+  - Datasets: [FSU-QA](https://arxiv.org/abs/2511.18735)
+  - Summary：
+    - Introduces Foresight Intelligence as the capability to anticipate future events and presents FSU-QA, a new Visual Question-Answering dataset designed to evaluate this ability.
+    - Conducts a comprehensive study showing current Vision-Language Models struggle with foresight reasoning, and demonstrates FSU-QA can effectively enhance this capability through fine-tuning.
+
+- [QuickLAP: Quick Language-Action Preference Learning for Autonomous Driving Agents](https://arxiv.org/abs/2511.17855)
+  - Jordan Abi Nader, David Lee, Nathaniel Dennler, Andreea Bobu
+  - Publisher: MIT-CLEAR-Lab
+  - Publish Date: 2025.11.22
+  - Code: [QuickLAP](https://github.com/MIT-CLEAR-Lab/QuickLAP)
+  - Task: Planning
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - QuickLAP, a Bayesian framework that fuses physical and language feedback to infer reward functions in real time for autonomous driving agents.
+    - The method uses LLMs to extract reward feature attention masks from language, integrating them with physical corrections via a closed-form update rule for fast, robust reward learning.
+    - In a semi-autonomous driving simulator, QuickLAP reduces reward learning error by over 70% compared to baselines and is preferred by users for understandability and collaborative behavior.
+
+- [Is Your VLM for Autonomous Driving Safety-Ready? A Comprehensive Benchmark for Evaluating External and In-Cabin Risks](https://arxiv.org/abs/2511.14592)
+  - Xianhui Meng, Yuchen Zhang, Zhijian Huang, Zheng Lu, Ziling Ji, Yaoyao Yin, Hongyuan Zhang, Guangfeng Jiang, Yandan Lin, Long Chen, Hangjun Ye, Li Zhang, Jun Liu, Xiaoshuai Hao
+  - Publish Date: 2025.11.18
+  - Task: VQA
+  - Datasets: [DSBench](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Introduces DSBench, the first comprehensive Driving Safety Benchmark to assess a Vision-Language Model's (VLM) awareness of both external environmental risks and in-cabin driving behavior safety in a unified manner.
+    - The benchmark covers 10 key categories and 28 sub-categories, revealing significant performance degradation of VLMs in complex safety-critical situations.
+    - Constructs a large dataset of 98K safety-focused instances, showing that fine-tuning on this data significantly enhances VLM safety performance for autonomous driving.
+
+- [Enhancing End-to-End Autonomous Driving with Risk Semantic Distillaion from VLM](https://arxiv.org/abs/2511.14499)
+  - Jack Qin, Zhitao Wang, Yinan Zheng, Keyu Chen, Yang Zhou, Yuanxin Zhong, Siyuan Cheng
+  - Publish Date: 2025.11.18
+  - Task: End-to-End
+  - Datasets: [Bench2Drive](https://github.com/bench2drive/bench2drive)
+  - Summary：
+    - Introduces Risk Semantic Distillation (RSD), a framework that leverages Vision-Language Models (VLMs) to enhance End-to-End Autonomous Driving backbones by providing risk attention for key objects to improve generalization.
+    - Proposes RiskHead, a plug-in module that distills causal risk estimates from VLMs into Bird's-Eye-View (BEV) features to generate interpretable risk-attention maps, enabling richer spatial and risk representations.
+    - Demonstrates significant improvements in perception and planning on the Bench2Drive benchmark by aligning BEV features with human-like risk-aware driving behavior for complex and dynamic environments.
+
+- [Enhancing LLM-based Autonomous Driving with Modular Traffic Light and Sign Recognition](https://arxiv.org/abs/2511.14391)
+  - Fabian Schmidt, Noushiq Mohammed Kayilan Abdul Nazar, Markus Enzweiler, Abhinav Valada
+  - Publisher: University of Stuttgart, Esslingen University of Applied Sciences
+  - Publish Date: 2025.11.18
+  - Code: [TLS-Assist](https://github.com/iis-esslingen/TLS-Assist)
+  - Task: Planning
+  - Datasets: [LangAuto](https://github.com/wayveai/LangAuto)
+  - Summary：
+    - Introduces TLS-Assist, a modular redundancy layer that augments LLM-based autonomous driving agents with explicit traffic light and sign recognition to enforce traffic rules.
+    - The plug-and-play framework converts detections into structured natural language messages injected into the LLM input, supporting both single-view and multi-view camera setups.
+    - Demonstrates relative driving performance improvements of up to 14% over LMDrive and 7% over BEVDriver on the LangAuto benchmark in CARLA, while reducing traffic infractions.
+
+- [VLMs Guided Interpretable Decision Making for Autonomous Driving](https://arxiv.org/abs/2511.13881)
+  - Xin Hu, Taotao Jing, Renran Tian, Zhengming Ding
+  - Publish Date: 2025.11.17
+  - Task: Planning
+  - Summary：
+    - Proposes a new approach that shifts the role of Vision-Language Models (VLMs) from direct decision generators to semantic enhancers for more reliable and interpretable autonomous driving.
+    - Introduces a multi-modal interactive architecture that fuses visual and linguistic features for accurate decision-making and textual explanations, along with a post-hoc refinement module using VLMs to enhance prediction reliability.
+    - Demonstrates state-of-the-art performance on two autonomous driving benchmarks, offering a promising direction for integrating VLMs into reliable AD systems.
+
+- [Prompt-Driven Domain Adaptation for End-to-End Autonomous Driving via In-Context RL](https://arxiv.org/abs/2511.12755)
+  - Aleesha Khurram, Amir Moeini, Shangtong Zhang, Rohan Chandra
+  - Publish Date: 2025.11.16
+  - Task: End-to-End
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - Proposes a few-shot prompt-driven domain adaptation method for closed-loop autonomous driving using in-context reinforcement learning (ICRL), requiring no model updates or additional data collection in the target domain.
+    - Extends prompt-driven DA to closed-loop driving by using general trajectories observed during inference, advancing beyond prior methods limited to perception tasks.
+    - Experiments in CARLA show ICRL yields safer, more efficient, and more comfortable driving policies in adverse weather compared to state-of-the-art prompt-driven DA baselines.
+
+- [Are LLMs The Way Forward? A Case Study on LLM-Guided Reinforcement Learning for Decentralized Autonomous Driving](https://arxiv.org/abs/2511.12751)
+  - Timur Anvar, Jeffrey Chen, Yuyan Wang, Rohan Chandra
+  - Publish Date: 2025.11.16
+  - Task: Planning, Control
+  - Summary：
+    - Investigates whether small, locally deployed LLMs (< 14B parameters) can support autonomous highway driving through reward shaping for RL, rather than direct control.
+    - Presents a case study comparing RL-only, LLM-only, and hybrid LLM-RL approaches for decentralized autonomous driving in complex scenarios like dense highways and merges.
+    - Finds hybrid approaches fall between RL-only (moderate success) and LLM-only (high success but poor efficiency), with LLM-influenced methods showing a systematic conservative bias and model-dependent variability.
+
+- [VLA-R: Vision-Language Action Retrieval toward Open-World End-to-End Autonomous Driving](https://arxiv.org/abs/2511.12405)
+  - Hyunki Seong, Seongwoo Moon, Hojin Ahn, Jehun Kang, David Hyunchul Shim
+  - Publish Date: 2025.11.16
+  - Task: End-to-End
+  - Summary：
+    - VLA-R, an open-world end-to-end autonomous driving framework that integrates open-world perception with a novel vision-action retrieval paradigm.
+    - Leverages a frozen vision-language model for open-world detection/segmentation and a Q-Former bottleneck to bridge perception and action domains.
+    - Introduces a vision-action contrastive learning scheme to align vision-language and action embeddings for effective open-world reasoning and action retrieval.
+
+- [CARScenes: Semantic VLM Dataset for Safe Autonomous Driving](https://arxiv.org/abs/2511.10701)
+  - Yuankai He, Weisong Shi
+  - Publisher: University of Delaware
+  - Publish Date: 2025.11.12
+  - Project Page: [CARScenes](https://github.com/Croquembouche/CAR-Scenes)
+  - Code: [CARScenes](https://github.com/Croquembouche/CAR-Scenes)
+  - Task: Perception
+  - Datasets: [Argoverse](https://www.argoverse.org/), [Cityscapes](https://www.cityscapes-dataset.com/), [KITTI](http://www.cvlibs.net/datasets/kitti/), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - CAR-Scenes is a frame-level semantic dataset for training and evaluating Vision-Language Models (VLMs) for interpretable, scene-level understanding in autonomous driving.
+    - The dataset provides 5,192 annotated images with a 28-category knowledge base, covering 350+ attributes related to environment, road users, and vehicle behavior, annotated via a GPT-4o-assisted pipeline with human verification.
+    - It includes tools for semantic retrieval, risk-aware scenario mining, and reproducible baselines, releasing annotation and analysis scripts to support explainable, data-centric workflows for intelligent vehicles.
+
+- [FLAD: Federated Learning for LLM-based Autonomous Driving in Vehicle-Edge-Cloud Networks](https://arxiv.org/abs/2511.09025)
+  - Tianao Xiang, Mingjian Zhi, Yuanguo Bi, Lin Cai, Yuhao Chen
+  - Publisher: University of Victoria, University of Toronto
+  - Publish Date: 2025.11.12
+  - Task: End-to-End
+  - Summary：
+    - FLAD, a Federated Learning framework for LLM-based Autonomous Driving, designed to address challenges of high computation/transmission costs and data privacy in collaborative model training.
+    - Introduces a cloud-edge-vehicle collaborative architecture, an intelligent parallelized training with communication scheduling, and a knowledge distillation method to personalize LLMs for heterogeneous edge data.
+    - Prototyped on a testbed with NVIDIA Jetsons, demonstrating efficient use of distributed vehicular resources and superior end-to-end AD performance.
+
+- [A Low-Rank Method for Vision Language Model Hallucination Mitigation in Autonomous Driving](https://arxiv.org/abs/2511.06496)
+  - Keke Long, Jiacheng Guo, Tianyun Zhang, Hongkai Yu, Xiaopeng Li
+  - Publish Date: 2025.11.09
+  - Task: Perception
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes a self-contained low-rank method to automatically rank multiple VLM-generated captions by hallucination level using only the captions, without external references or model access.
+    - Constructs a sentence-embedding matrix, decomposes it into low-rank consensus and sparse residual, and uses residual magnitude to select the most hallucination-free caption.
+    - Achieves 87% selection accuracy on nuScenes, improves over baselines, shows strong correlation with human judgment, and reduces inference time by 51-67% for real-time application.
+
+- [VLDrive: Vision-Augmented Lightweight MLLMs for Efficient Language-grounded Autonomous Driving](https://arxiv.org/abs/2511.06256)
+  - Ruifei Zhang, Wei Zhang, Xiao Tan, Sibei Yang, Xiang Wan, Xiaonan Luo, Guanbin Li
+  - Publish Date: 2025.11.09
+  - Code: [VLDrive](https://github.com/ReaFly/VLDrive)
+  - Task: End-to-End
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - VLDrive, a novel lightweight MLLM architecture for language-grounded autonomous driving, featuring enhanced vision components to address limitations in visual representation.
+    - It introduces compact visual tokens via cycle-consistent dynamic visual pruning and memory-enhanced feature aggregation, and a distance-decoupled instruction attention mechanism for improved visual-linguistic learning.
+    - Achieves state-of-the-art driving performance in CARLA simulator while reducing parameters by 81% (from 7B to 1.3B), with substantial improvements in driving scores across various distances.
+
+- [AdaDrive: Self-Adaptive Slow-Fast System for Language-Grounded Autonomous Driving](https://arxiv.org/abs/2511.06253)
+  - Ruifei Zhang, Junlin Xie, Wei Zhang, Weikai Chen, Xiao Tan, Xiang Wan, Guanbin Li
+  - Publish Date: 2025.11.09
+  - Code: [AdaDrive](https://github.com/ReaFly/AdaDrive)
+  - Task: Planning
+  - Summary：
+    - AdaDrive, an adaptively collaborative slow-fast framework that optimally determines when and how LLMs contribute to decision-making for language-grounded autonomous driving.
+    - Introduces an adaptive activation loss to dynamically invoke the LLM only in complex scenarios and an adaptive fusion strategy to modulate a continuous, scaled LLM influence based on scene complexity.
+
+- [SAFe-Copilot: Unified Shared Autonomy Framework](https://arxiv.org/abs/2511.04664)
+  - Phat Nguyen, Erfan Aasi, Shiva Sreeram, Guy Rosman, Andrew Silva, Sertac Karaman, Daniela Rus
+  - Publisher: Massachusetts Institute of Technology
+  - Publish Date: 2025.11.06
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
+  - Summary：
+    - A unified shared autonomy framework that integrates human input and autonomous planners at a high level of abstraction using Vision Language Models (VLMs) to infer driver intent.
+    - The framework synthesizes coherent strategies to mediate between human and autonomous control, achieving strong alignment in human-subject surveys and improved performance on the Bench2Drive benchmark.
+
 - [Dynamic Model Selection for Trajectory Prediction via Pairwise Ranking and Meta-Features](https://arxiv.org/abs/2511.00126)
   - Lu Bowen
   - Publish Date: 2025.10.31
