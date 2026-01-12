@@ -92,15 +92,294 @@ format:
     - It transfers VLA generalization to efficient vision-based networks via knowledge distillation, achieving robust performance and real-time efficiency.
     - Establishes a new state-of-the-art on the NAVSIM benchmark (PDMS score of 92.4) and shows strong zero-shot generalization on nuScenes.
 
+- [Dichotomous Diffusion Policy Optimization](https://arxiv.org/abs/2601.00898)
+  - Ruiming Liang, Yinan Zheng, Kexin Zheng, Tianyi Tan, Jianxiong Li, Liyuan Mao, Zhihao Wang, Guang Chen, Hangjun Ye, Jingjing Liu, Jinqiao Wang, Xianyuan Zhan
+  - Publish Date: 2025.12.31
+  - Task: Planning, Control, End-to-End
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes DIPOLE (Dichotomous diffusion Policy improvement), a novel RL algorithm for stable and controllable diffusion policy optimization by decomposing the optimal policy into a pair of dichotomous policies for reward maximization and minimization.
+    - Enables flexible control over greediness during inference by linearly combining the scores of the learned dichotomous policies.
+    - Demonstrates effectiveness in offline and offline-to-online RL settings (ExORL, OGBench) and for training a large vision-language-action model for end-to-end autonomous driving on the NAVSIM benchmark.
+
+- [LSRE: Latent Semantic Rule Encoding for Real-Time Semantic Risk Detection in Autonomous Driving](https://arxiv.org/abs/2512.24712)
+  - Qian Cheng, Weitao Zhou, Cheng Jing, Nanshan Deng, Junze Wen, Zhaoyang Liu, Kun Jiang, Diange Yang
+  - Publish Date: 2025.12.31
+  - Task: Perception
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - LSRE, a Latent Semantic Rule Encoding framework that converts sparsely sampled VLM judgments into decision boundaries within a recurrent world model's latent space for real-time semantic risk assessment.
+    - Enables real-time semantic risk detection at 10 Hz without per-frame VLM queries, achieving accuracy comparable to a large VLM baseline with earlier hazard anticipation and low latency.
+    - Demonstrates generalization to rarely seen semantic-similar test cases, indicating language-guided latent classification is an effective mechanism for semantic safety monitoring.
+
+- [Counterfactual VLA: Self-Reflective Vision-Language-Action Model with Adaptive Reasoning](https://arxiv.org/abs/2512.24426)
+  - Zhenghao "Mark" Peng, Wenhao Ding, Yurong You, Yuxiao Chen, Wenjie Luo, Thomas Tian, Yulong Cao, Apoorva Sharma, Danfei Xu, Boris Ivanovic, Boyi Li, Bolei Zhou, Yan Wang, Marco Pavone
+  - Publish Date: 2025.12.30
+  - Task: Planning
+  - Summary：
+    - Introduces Counterfactual VLA (CF-VLA), a self-reflective VLA framework that enables reasoning about and revising planned actions before execution via counterfactual reasoning.
+    - Proposes a rollout-filter-label pipeline to mine high-value scenes and label counterfactual reasoning traces for efficient training.
+    - Demonstrates improvements in trajectory accuracy (up to 17.6%) and safety metrics (20.5%), with adaptive reasoning enabled only in challenging scenarios.
+
+- [Spatial-aware Vision Language Model for Autonomous Driving](https://arxiv.org/abs/2512.24331)
+  - Weijie Wei, Zhipeng Luo, Ling Feng, Venice Erin Liong
+  - Publish Date: 2025.12.30
+  - Task: End-to-End
+  - Summary：
+    - LVLDrive (LiDAR-Vision-Language), a novel framework designed to upgrade existing Vision-Language Models (VLMs) with robust 3D metric spatial understanding for autonomous driving by incorporating LiDAR point clouds as an extra input modality.
+    - Introduces a Gradual Fusion Q-Former to incrementally inject LiDAR features, mitigating catastrophic disturbance to pre-trained VLMs and preserving their existing knowledge base.
+    - Develops a spatial-aware question-answering (SA-QA) dataset to explicitly teach the model advanced 3D perception and reasoning capabilities, achieving superior performance on driving benchmarks.
+
+- [ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving](https://arxiv.org/abs/2512.22939)
+  - Qihang Peng, Xuesong Chen, Chenye Yang, Shaoshuai Shi, Hongsheng Li
+  - Publisher: The Chinese University of Hong Kong, Shanghai AI Laboratory
+  - Publish Date: 2025.12.28
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - ColaVLA, a unified vision-language-action framework that transfers reasoning from text to a latent space for efficient trajectory planning.
+    - Introduces a Cognitive Latent Reasoner for compact, decision-oriented scene understanding and a Hierarchical Parallel Planner for single-pass, causality-consistent trajectory generation.
+    - Achieves state-of-the-art performance on the nuScenes benchmark in open-loop and closed-loop settings with improved efficiency and robustness.
+
+- [KnowVal: A Knowledge-Augmented and Value-Guided Autonomous Driving System](https://arxiv.org/abs/2512.20299)
+  - Zhongyu Xia, Wenhao Chen, Yongtao Wang, Ming-Hsuan Yang
+  - Publish Date: 2025.12.23
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://bench2drive.github.io/)
+  - Summary：
+    - Proposes KnowVal, an autonomous driving system integrating visual-language reasoning with a comprehensive driving knowledge graph and an LLM-based retrieval mechanism.
+    - Develops a human-preference dataset and a Value Model to guide interpretable, value-aligned trajectory assessment.
+    - Achieves state-of-the-art planning performance, including the lowest collision rate on nuScenes and top results on Bench2Drive.
+
+- [LLaViDA: A Large Language Vision Driving Assistant for Explicit Reasoning and Enhanced Trajectory Planning](https://arxiv.org/abs/2512.18211)
+  - Yudong Liu, Spencer Hallyburton, Jiwoo Kim, Yueqian Lin, Yiming Li, Qinsi Wang, Hui Ye, Jingwei Sun, Miroslav Pajic, Yiran Chen, Hai Li
+  - Publish Date: 2025.12.20
+  - Code: [LLaViDA](https://github.com/)
+  - Task: Planning
+  - Datasets: [NuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - LLaViDA, a Large Language Vision Driving Assistant that leverages a Vision-Language Model (VLM) for object motion prediction, semantic grounding, and chain-of-thought reasoning for trajectory planning.
+    - Employs a two-stage training pipeline of supervised fine-tuning followed by Trajectory Preference Optimization (TPO) to enhance scene understanding and planning.
+    - Achieves state-of-the-art performance on the NuScenes benchmark for open-loop trajectory planning, with an average L2 error of 0.31 m and a 0.10% collision rate.
+
+- [OmniDrive-R1: Reinforcement-driven Interleaved Multi-modal Chain-of-Thought for Trustworthy Vision-Language Autonomous Driving](https://arxiv.org/abs/2512.14044)
+  - Zhenguo Zhang, Haohan Zheng, Yishen Wang, Le Xu, Tianchen Deng, Xuefeng Chen, Qu Chen, Bo Zhang, Wuxiong Huang
+  - Publish Date: 2025.12.16
+  - Task: Reasoning
+  - Datasets: [DriveLMM-o1](https://github.com/OpenDriveLab/DriveLMM)
+  - Summary：
+    - OmniDrive-R1, an end-to-end VLM framework for autonomous driving, introduces an interleaved Multi-modal Chain-of-Thought (iMCoT) mechanism to unify perception and reasoning.
+    - The core innovation is a Reinforcement-driven visual grounding capability, enabled by a two-stage RL pipeline and the Clip-GRPO algorithm, which uses an annotation-free, process-based grounding reward.
+    - The model significantly improves reasoning, raising the overall score from 51.77% to 80.35% and final answer accuracy from 37.81% to 73.62% on DriveLMM-o1 compared to the Qwen2.5VL-7B baseline.
+
+- [MindDrive: A Vision-Language-Action Model for Autonomous Driving via Online Reinforcement Learning](https://arxiv.org/abs/2512.13636)
+  - Haoyu Fu, Diankun Zhang, Zongchuang Zhao, Jianfeng Cui, Hongwei Xie, Bing Wang, Guang Chen, Dingkang Liang, Xiang Bai
+  - Publish Date: 2025.12.15
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://github.com/OpenDriveLab/Bench2Drive)
+  - Summary：
+    - MindDrive, a Vision-Language-Action (VLA) framework for autonomous driving that uses online reinforcement learning to address limitations of Imitation Learning like distribution shift.
+    - It features an LLM with two LoRA parameter sets: a Decision Expert for reasoning and an Action Expert to map decisions to trajectories, enabling trial-and-error learning over discrete linguistic decisions.
+    - Achieves a Driving Score of 78.04 and Success Rate of 55.09% on the Bench2Drive benchmark using the lightweight Qwen-0.5B LLM.
+
+- [DrivePI: Spatial-aware 4D MLLM for Unified Autonomous Driving Understanding, Perception, Prediction and Planning](https://arxiv.org/abs/2512.12799)
+  - Zhe Liu, Runhui Huang, Rui Yang, Siming Yan, Zining Wang, Lu Hou, Di Lin, Xiang Bai, Hengshuang Zhao
+  - Publish Date: 2025.12.14
+  - Code: [DrivePI](https://github.com/happinesslz/DrivePI)
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - DrivePI, a spatial-aware 4D MLLM serving as a unified Vision-Language-Action (VLA) framework for autonomous driving, jointly performs spatial understanding, 3D perception, prediction, and planning through end-to-end optimization.
+    - The method integrates point clouds, multi-view images, and language instructions, and uses a data engine to generate text-occupancy and text-flow QA pairs for 4D spatial understanding.
+    - With only a 0.5B Qwen2.5 backbone, DrivePI as a single model matches or exceeds existing VLA and specialized VA models in key metrics across nuScenes and OpenOcc benchmarks.
+
+- [Towards Efficient and Effective Multi-Camera Encoding for End-to-End Driving](https://arxiv.org/abs/2512.10947)
+  - Jiawei Yang, Ziyu Chen, Yurong You, Yan Wang, Yiming Li, Yuxiao Chen, Boyi Li, Boris Ivanovic, Marco Pavone, Yue Wang
+  - Publisher: Stanford University, NVIDIA
+  - Publish Date: 2025.12.11
+  - Task: End-to-End
+  - Summary：
+    - Presents Flex, an efficient and effective geometry-agnostic scene encoder for multi-camera data in end-to-end autonomous driving, using a small set of learnable scene tokens to jointly encode information across cameras and timesteps.
+    - Achieves 2.2x greater inference throughput and improved driving performance on a large-scale proprietary dataset compared to state-of-the-art methods, challenging the necessity of explicit 3D inductive biases like BEV or occupancy.
+    - Demonstrates that the compact scene tokens develop an emergent capability for scene decomposition without explicit supervision, offering a more scalable and data-driven path for future systems.
+
+- [SpaceDrive: Infusing Spatial Awareness into VLM-based Autonomous Driving](https://arxiv.org/abs/2512.10719)
+  - Peizheng Li, Zhenghao Zhang, David Holtz, Hang Yu, Yutong Yang, Yuzhi Lai, Rui Song, Andreas Geiger, Andreas Zell
+  - Publisher: University of Tübingen
+  - Publish Date: 2025.12.11
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - SpaceDrive, a spatial-aware VLM-based driving framework that treats spatial information as explicit positional encodings instead of textual digit tokens for joint semantic and spatial reasoning.
+    - Employs a universal positional encoder for 3D coordinates from multi-view depth, historical ego-states, and text prompts, enhancing visual tokens and enabling direct trajectory coordinate regression.
+    - Achieves state-of-the-art open-loop performance on nuScenes and a Driving Score of 78.02 on the Bench2Drive closed-loop benchmark among VLM-based methods.
+
+- [Latent Chain-of-Thought World Modeling for End-to-End Driving](https://arxiv.org/abs/2512.10226)
+  - Shuhan Tan, Kashyap Chitta, Yuxiao Chen, Ran Tian, Yurong You, Yan Wang, Wenjie Luo, Yulong Cao, Philipp Krahenbuhl, Marco Pavone, Boris Ivanovic
+  - Publish Date: 2025.12.11
+  - Task: End-to-End
+  - Summary：
+    - Latent-CoT-Drive (LCDrive): a model that expresses chain-of-thought (CoT) reasoning in a latent language that captures possible outcomes of driving actions, unifying reasoning and decision making in an action-aligned latent space.
+    - The model reasons by interleaving action-proposal tokens and world model tokens, which are grounded in a learned latent world model to express future outcomes.
+    - The approach is cold-started with supervision from ground-truth future rollouts and then post-trained with closed-loop reinforcement learning, achieving faster inference and better trajectory quality on a large-scale end-to-end driving benchmark.
+
+- [UniUGP: Unifying Understanding, Generation, and Planing For End-to-end Autonomous Driving](https://arxiv.org/abs/2512.09864)
+  - Hao Lu, Ziyang Liu, Guangfeng Jiang, Yuanfei Luo, Sheng Chen, Yangang Zhang, Ying-Cong Chen
+  - Publish Date: 2025.12.10
+  - Task: End-to-End
+  - Summary：
+    - Proposes UniUGP, a unified Understanding-Generation-Planning framework that synergizes scene reasoning, future video generation, and trajectory planning through a hybrid expert architecture.
+    - Introduces a four-stage training strategy across multiple AD datasets to progressively build capabilities, demonstrating state-of-the-art performance and superior generalization to long-tail scenarios.
+
+- [COVLM-RL: Critical Object-Oriented Reasoning for Autonomous Driving Using VLM-Guided Reinforcement Learning](https://arxiv.org/abs/2512.09349)
+  - Lin Li, Yuxin Cai, Jianwu Fang, Jianru Xue, Chen Lv
+  - Publish Date: 2025.12.10
+  - Task: End-to-End
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - COVLM-RL, a novel end-to-end driving framework integrating Critical Object-oriented reasoning with VLM-guided Reinforcement Learning to address generalization, efficiency, and interpretability.
+    - Introduces a Chain-of-Thought prompting strategy for the VLM to reason over critical traffic elements, generating semantic decision priors that reduce input dimensionality and inject task knowledge into RL.
+    - Proposes a consistency loss to align the VLM's semantic plans with the RL agent's continuous control outputs, improving interpretability and training stability.
+
+- [A Multi-Agent LLM Framework for Design Space Exploration in Autonomous Driving Systems](https://arxiv.org/abs/2512.08476)
+  - Po-An Shih, Shao-Hua Wang, Yung-Che Li, Chia-Heng Tu, Chih-Han Chang
+  - Publish Date: 2025.12.09
+  - Task: Planning
+  - Summary：
+    - A multi-agent, large language model (LLM)-based design space exploration (DSE) framework for autonomous driving systems, integrating multi-modal reasoning with 3D simulation and profiling tools.
+    - Automates the interpretation of execution outputs and guides system design exploration using specialized LLM agents for user input, design generation, execution orchestration, and output analysis.
+    - Evaluated on a robotaxi case study, the framework identifies more Pareto-optimal, cost-efficient solutions with reduced navigation time compared to a genetic algorithm baseline under the same exploration budget.
+
+- [WAM-Diff: A Masked Diffusion VLA Framework with MoE and Online Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/2512.11872)
+  - Mingwang Xu, Jiahao Cui, Feipeng Cai, Hanlin Shang, Zhihao Zhu, Shan Luan, Yifang Xu, Neng Zhang, Yaoyi Li, Jia Cai, Siyu Zhu
+  - Publisher: Fudan University
+  - Publish Date: 2025.12.06
+  - Project Page: [WAM-Diff](https://github.com/fudan-generative-vision/WAM-Diff)
+  - Code: [WAM-Diff](https://github.com/fudan-generative-vision/WAM-Diff)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - WAM-Diff, a Vision-Language-Action (VLA) framework that employs masked diffusion to iteratively refine a discrete sequence for future ego-trajectory generation in autonomous driving.
+    - Features three key innovations: adaptation of masked diffusion for flexible decoding, scalable capacity via a sparse Mixture of Experts (MoE) trained on motion prediction and VQA, and online reinforcement learning using Group Sequence Policy Optimization (GSPO).
+    - Achieves state-of-the-art performance on NAVSIM benchmarks (91.0 PDMS on v1, 89.7 EPDMS on v2), demonstrating masked diffusion as a promising alternative to autoregressive and continuous diffusion policies.
+
+- [Are AI-Generated Driving Videos Ready for Autonomous Driving? A Diagnostic Evaluation Framework](https://arxiv.org/abs/2512.06376)
+  - Xinhao Xiang, Abhijeet Rastogi, Jiawei Zhang
+  - Publish Date: 2025.12.06
+  - Task: Simulation
+  - Datasets: [ADGV-Bench](https://arxiv.org/abs/2512.06376)
+  - Summary：
+    - Presents a diagnostic framework to evaluate the reliability of AI-generated driving videos (AIGVs) for training and evaluating autonomous driving models.
+    - Introduces ADGV-Bench, a benchmark with human annotations and dense labels for perception tasks, and ADGVE, a driving-aware evaluator for scoring video quality.
+    - Shows that filtering raw AIGVs with the proposed evaluator improves video quality metrics and downstream AD model performance, turning AIGVs into a beneficial data complement.
+
 - [WAM-Flow: Parallel Coarse-to-Fine Motion Planning via Discrete Flow Matching for Autonomous Driving](https://arxiv.org/abs/2512.06112)
   - Yifang Xu, Jiahao Cui, Feipeng Cai, Zhihao Zhu, Hanlin Shang, Shan Luan, Mingwang Xu, Neng Zhang, Yaoyi Li, Jia Cai, Siyu Zhu
   - Publisher: Fudan University, Yinwang
-  - Publish Date: 2025.12.11
+  - Publish Date: 2025.12.05
   - Code: [WAM-Flow](https://github.com/fudan-generative-vision/WAM-Flow)
   - Task: Planning
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/nuscenes)
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
+
+- [BeLLA: End-to-End Birds Eye View Large Language Assistant for Autonomous Driving](https://arxiv.org/abs/2512.06096)
+  - Karthik Mohan, Sonam Singh, Amit Arvind Kale
+  - Publish Date: 2025.12.05
+  - Task: VQA
+  - Datasets: [NuScenes-QA](https://www.nuscenes.org/), [DriveLM](https://drivelm.github.io/)
+  - Summary：
+    - BeLLA, an end-to-end architecture connecting unified 360° BEV representations with a large language model for question answering in autonomous driving.
+    - Outperforms existing approaches on tasks requiring spatial reasoning, such as relative object positioning and behavioral understanding, achieving up to +9.3% absolute improvement.
+    - Evaluated on NuScenes-QA and DriveLM benchmarks, demonstrating competitive performance across a diverse range of questions.
+
+- [From Segments to Scenes: Temporal Understanding in Autonomous Driving via Vision-Language Model](https://arxiv.org/abs/2512.05277)
+  - Kevin Cannons, Saeed Ranjbar Alvar, Mohammad Asiful Hossain, Ahmad Rezaei, Mohsen Gholami, Alireza Heidarikhazaei, Zhou Weimin, Yong Zhang, Mohammad Akbari
+  - Publish Date: 2025.12.04
+  - Project Page: [TAD](https://huggingface.co/datasets/vbdai/TAD)
+  - Code: [TAD](https://github.com/vbdi/tad_bench)
+  - Task: Reasoning
+  - Datasets: [TAD](https://huggingface.co/datasets/vbdai/TAD)
+  - Summary：
+    - Introduces the Temporal Understanding in Autonomous Driving (TAD) benchmark, comprising nearly 6,000 QA pairs across 7 tasks, to evaluate VLMs on ego-centric driving footage.
+    - Benchmarks 9 generalist and specialist models, finding substandard accuracy due to imperfect fine-grained motion understanding.
+    - Proposes two training-free solutions, Scene-CoT and TCogMap, which improve average accuracy on TAD by up to 17.72% when integrated with existing VLMs.
+
+- [E3AD: An Emotion-Aware Vision-Language-Action Model for Human-Centric End-to-End Autonomous Driving](https://arxiv.org/abs/2512.04733)
+  - Yihong Tang, Haicheng Liao, Tong Nie, Junlin He, Ao Qu, Kehua Chen, Wei Ma, Zhenning Li, Lijun Sun, Chengzhong Xu
+  - Publish Date: 2025.12.04
+  - Task: End-to-End
+  - Summary：
+    - Proposes E3AD, an emotion-aware Vision-Language-Action (VLA) framework for Open-Domain End-to-End (OD-E2E) autonomous driving, which interprets free-form commands, infers passenger emotion, and plans trajectories.
+    - Introduces a continuous Valence-Arousal-Dominance (VAD) emotion model and a dual-pathway spatial reasoning module for enhanced semantic understanding and human-like spatial cognition.
+    - Employs a consistency-oriented training scheme combining modality pretraining with preference-based alignment, achieving state-of-the-art results in emotion estimation and improved visual grounding and planning.
+
+- [dVLM-AD: Enhance Diffusion Vision-Language-Model for Driving via Controllable Reasoning](https://arxiv.org/abs/2512.04459)
+  - Yingzi Ma, Yulong Cao, Wenhao Ding, Shuibai Zhang, Yan Wang, Boris Ivanovic, Ming Jiang, Marco Pavone, Chaowei Xiao
+  - Publish Date: 2025.12.04
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [WOD-E2E](https://waymo.com/open/)
+  - Summary：
+    - dVLM-AD, a diffusion-based vision-language model that unifies perception, structured reasoning, and low-level planning for end-to-end driving.
+    - Introduces a controllable and reliable framework using discrete diffusion with bidirectional attention, addressing consistency and controllability issues in autoregressive VLMs.
+    - Achieves improved behavior-trajectory consistency and planning performance on long-tail scenarios, outperforming AR-based baselines.
+
+- [MindDrive: An All-in-One Framework Bridging World Models and Vision-Language Model for End-to-End Autonomous Driving](https://arxiv.org/abs/2512.04441)
+  - Bin Sun, Yaoguang Cao, Yan Wang, Rui Wang, Jiachen Shang, Xiejie Feng, Jiayi Lu, Jia Shi, Shichun Yang, Xiaoyu Yan, Ziying Song
+  - Publish Date: 2025.12.04
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - MindDrive, a harmonized framework integrating high-quality trajectory generation with comprehensive decision reasoning for End-to-End Autonomous Driving.
+    - Proposes a structured reasoning paradigm of "context simulation - candidate generation - multi-objective trade-off", featuring a Future-aware Trajectory Generator (FaTG) and a VLM-oriented Evaluator (VLoE).
+    - Achieves state-of-the-art performance on NAVSIM benchmarks, enhancing safety, compliance, and generalization through reasoned, human-aligned decision making.
+
+- [Think Before You Drive: World Model-Inspired Multimodal Grounding for Autonomous Vehicles](https://arxiv.org/abs/2512.03454)
+  - Haicheng Liao, Huanming Shen, Bonan Wang, Yongkang Li, Yihong Tang, Chengyue Wang, Dingyi Zhuang, Kehua Chen, Hai Yang, Chengzhong Xu, Zhenning Li
+  - Publish Date: 2025.12.03
+  - Task: Perception
+  - Datasets: [Talk2Car](https://github.com/talk2car/Talk2Car), [DrivePilot](https://github.com/), [MoCAD](https://github.com/), [RefCOCO/+/g](https://github.com/)
+  - Summary：
+    - Proposes ThinkDeeper, a framework for visual grounding in autonomous driving that uses a Spatial-Aware World Model (SA-WM) to reason about future spatial states for disambiguating context-dependent instructions.
+    - Introduces DrivePilot, a multi-source visual grounding dataset for autonomous driving, with semantic annotations generated via a RAG and Chain-of-Thought prompted LLM pipeline.
+    - Demonstrates state-of-the-art performance, ranking #1 on the Talk2Car leaderboard and outperforming baselines on DrivePilot, MoCAD, and RefCOCO benchmarks, with strong robustness in challenging scenes.
+
+- [Lumos: Let there be Language Model System Certification](https://arxiv.org/abs/2512.02966)
+  - Isha Chaudhary, Vedaant Jain, Avaljot Singh, Kavya Sachdeva, Sayan Ranu, Gagandeep Singh
+  - Publish Date: 2025.12.02
+  - Task: Reasoning
+  - Summary：
+    - Introduces Lumos, the first principled framework for specifying and formally certifying Language Model System (LMS) behaviors, using an imperative probabilistic programming DSL over graphs.
+    - Demonstrates Lumos by specifying the first safety specifications for vision-language models (VLMs) in autonomous driving, revealing critical safety failures in a state-of-the-art VLM.
+    - Provides a modular and extensible language-based framework that can encode complex relational and temporal specifications, enabling LMS certification to adapt to evolving threats.
+
+- [VLM as Strategist: Adaptive Generation of Safety-critical Testing Scenarios via Guided Diffusion](https://arxiv.org/abs/2512.02844)
+  - Xinzheng Wu, Junyi Chen, Naiting Zhong, Yong Shen
+  - Publish Date: 2025.12.02
+  - Task: Simulation
+  - Summary：
+    - Proposes a safety-critical testing scenario generation framework integrating Vision Language Models (VLMs) with adaptive guided diffusion models for autonomous driving systems.
+    - Establishes a three-layer hierarchical architecture: a VLM strategic layer for objective determination, a tactical layer for guidance formulation, and an operational layer for guided diffusion execution.
+    - Introduces an adaptive guided diffusion method enabling real-time, precise control of background vehicles in closed-loop simulation for generating realistic, diverse, and interactive safety-critical scenarios.
+
+- [OpenREAD: Reinforced Open-Ended Reasoning for End-to-End Autonomous Driving with LLM-as-Critic](https://arxiv.org/abs/2512.01830)
+  - Songyan Zhang, Wenhui Huang, Zhan Chen, Chua Jiahao Collister, Qihang Huang, Chen Lv
+  - Publish Date: 2025.12.01
+  - Task: End-to-End
+  - Summary：
+    - OpenREAD, an OPEN-ended REasoning reinforced vision-language model (VLM)-based autonomous driving (AD) framework that enables end-to-end reinforcement fine-tuning (RFT) from high-level reasoning to low-level trajectory planning.
+    - Proposes using a large language model (LLM) as a critic in RFT to quantify reasoning quality for open-ended questions, addressing the challenge of reward modeling for scene understanding.
+    - Constructs large-scale Chain-of-Thought (CoT) annotations on driving knowledge datasets and shows that joint end-to-end RFT yields substantial improvements in both upstream and downstream tasks, achieving state-of-the-art performance on reasoning and planning benchmarks.
+
+- [RoboDriveVLM: A Novel Benchmark and Baseline towards Robust Vision-Language Models for Autonomous Driving](https://arxiv.org/abs/2512.01300)
+  - Dacheng Liao, Mengshi Qi, Peng Shu, Zhining Zhang, Yuxin Lin, Liang Liu, Huadong Ma
+  - Publish Date: 2025.12.01
+  - Task: End-to-End
+  - Datasets: [RoboDriveBench](https://arxiv.org/abs/2512.01300)
+  - Summary：
+    - Introduces RoboDriveBench, the first robustness benchmark for VLM-based end-to-end autonomous driving, evaluating 11 simulated scenarios with sensor and prompt corruptions.
+    - Proposes RoboDriveVLM, a novel VLM-based framework that enhances robustness by mapping multimodal data (e.g., lidar, radar) into a unified latent space.
+    - Introduces a Test-Time Adaptation method based on cross-modal knowledge distillation to improve system robustness for real-world deployment.
 
 - [Seeing before Observable: Potential Risk Reasoning in Autonomous Driving via Vision Language Models](https://arxiv.org/abs/2511.22928)
   - Jiaxin Liu, Xiangyu Yan, Liang Peng, Lei Yang, Lingjun Zhang, Yuechen Luo, Yueming Tao, Ashton Yu Xuan Tan, Mu Li, Lei Zhang, Ziqi Zhan, Sai Guo, Hong Wang, Jun Li
