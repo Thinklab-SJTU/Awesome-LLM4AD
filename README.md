@@ -183,15 +183,6 @@ format:
     - Achieves competitive performance on nuCaption, surpassing state-of-the-art by up to 5% in BLEU scores, using a small 1B parameter base model.
     - Introduces and benchmarks two new datasets, nuView and GroundView, to better assess scene captioning across diverse driving scenarios and object grounding.
 
-- [Policy Disruption in Reinforcement Learning: Adversarial Attack with Large Language Models and Critical State Identification](https://arxiv.org/abs/2507.18113)
-  - Junyong Jiang, Buwei Tian, Chenxing Xu, Songze Li, Lu Dong
-  - Publish Date: 2025.07.24
-  - Task: Planning
-  - Summary：
-    - Proposes an adversarial attack method where existing agents guide a target policy to output suboptimal actions without altering the environment.
-    - Introduces a reward iteration optimization framework that leverages LLMs to generate adversarial rewards tailored to the target agent's vulnerabilities.
-    - Designs a critical state identification algorithm to pinpoint the agent's most vulnerable states, leading to significant performance degradation.
-
 - [BetterCheck: Towards Safeguarding VLMs for Automotive Perception Systems](https://arxiv.org/abs/2507.17722)
   - Malsha Ashani Mahawatta Dona, Beatriz Cabrero-Daniel, Yinan Yu, Christian Berger
   - Publisher: University of Gothenburg
@@ -219,14 +210,6 @@ format:
   - Summary：
     - Introduces a novel LLM-agent based framework for augmenting real-world traffic scenarios using natural language descriptions to generate challenging test cases for autonomous driving planners.
     - Employs an agentic design to enable fine-grained control over scenario generation and maintain high performance with smaller, cost-effective LLMs, sidestepping the need for massive datasets or manual expert augmentation.
-
-- [LaViPlan : Language-Guided Visual Path Planning with RLVR](https://arxiv.org/abs/2507.12911)
-  - Hayeon Oh
-  - Publish Date: 2025.07.17
-  - Task: Planning
-  - Summary：
-    - Proposes LaViPlan, a framework using Reinforcement Learning with Verifiable Rewards (RLVR) to fine-tune Vision-Language Models (VLMs) for aligning language-based reasoning with low-level trajectory planning in autonomous driving.
-    - Demonstrates improved planning performance on in-domain and out-of-domain datasets, addressing the generalization challenge in out-of-distribution scenarios.
 
 - [ReAL-AD: Towards Human-Like Reasoning in End-to-End Autonomous Driving](https://arxiv.org/abs/2507.12499)
   - Yuhang Lu, Jiadong Tu, Yuexin Ma, Xinge Zhu
