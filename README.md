@@ -62,6 +62,36 @@ format:
   - metrics
 ```
 
+- [Modular Autonomy with Conversational Interaction: An LLM-driven Framework for Decision Making in Autonomous Driving](https://arxiv.org/abs/2601.05806)
+  - Marvin Seegert, Korbinian Moller, Johannes Betz
+  - Publisher: Technical University of Munich
+  - Publish Date: 2026.01.09
+  - Task: Planning
+  - Summary：
+    - Proposes an LLM-driven framework for conversational interaction in Autonomous Driving Systems (ADS), integrating an LLM-based interaction layer with the Autoware software stack.
+    - Introduces a three-component methodology: a taxonomization of interaction categories, an application-centric Domain Specific Language (DSL) for command translation, and a safety-preserving validation layer.
+    - Employs a two-stage LLM architecture to ensure high transparency and provide execution feedback, with evaluation confirming timing efficiency and translation robustness.
+
+- [SGDrive: Scene-to-Goal Hierarchical World Cognition for Autonomous Driving](https://arxiv.org/abs/2601.05640)
+  - Jingyu Li, Junjie Wu, Dongnan Hu, Xiangkai Huang, Bin Sun, Zhihui Hao, Xianpeng Lang, Xiatian Zhu, Li Zhang
+  - Publish Date: 2026.01.09
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes SGDrive, a novel framework that structures a Vision-Language Model's (VLM) representation learning around a driving-specific scene-agent-goal hierarchy to mirror human driving cognition.
+    - Addresses limitations of generalist VLMs by providing structured spatial-temporal representations for safe trajectory planning, integrating multi-level information into a compact format.
+    - Achieves state-of-the-art performance among camera-only methods on the NAVSIM benchmark, validating the effectiveness of hierarchical knowledge structuring for adapting VLMs to autonomous driving.
+
+- [LatentVLA: Efficient Vision-Language Models for Autonomous Driving via Latent Action Prediction](https://arxiv.org/abs/2601.05611)
+  - Chengen Xie, Bin Sun, Tianyu Li, Junjie Wu, Zhihui Hao, XianPeng Lang, Hongyang Li
+  - Publish Date: 2026.01.09
+  - Task: End-to-End
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - LatentVLA, a novel framework using self-supervised latent action prediction to train Vision-Language-Action (VLA) models without language annotations, eliminating linguistic bias.
+    - It transfers VLA generalization to efficient vision-based networks via knowledge distillation, achieving robust performance and real-time efficiency.
+    - Establishes a new state-of-the-art on the NAVSIM benchmark (PDMS score of 92.4) and shows strong zero-shot generalization on nuScenes.
+
 - [WAM-Flow: Parallel Coarse-to-Fine Motion Planning via Discrete Flow Matching for Autonomous Driving](https://arxiv.org/abs/2512.06112)
   - Yifang Xu, Jiahao Cui, Feipeng Cai, Zhihao Zhu, Hanlin Shang, Shan Luan, Mingwang Xu, Neng Zhang, Yaoyi Li, Jia Cai, Siyu Zhu
   - Publisher: Fudan University, Yinwang
