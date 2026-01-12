@@ -92,6 +92,46 @@ format:
     - It transfers VLA generalization to efficient vision-based networks via knowledge distillation, achieving robust performance and real-time efficiency.
     - Establishes a new state-of-the-art on the NAVSIM benchmark (PDMS score of 92.4) and shows strong zero-shot generalization on nuScenes.
 
+- [ThinkDrive: Chain-of-Thought Guided Progressive Reinforcement Learning Fine-Tuning for Autonomous Driving](https://arxiv.org/abs/2601.04714)
+  - Chang Zhao, Zheming Yang, Yunqing Hu, Qi Guo, Zijian Wang, Pengcheng Li, Wen Ji
+  - Publish Date: 2026.01.08
+  - Task: Planning
+  - Summary：
+    - ThinkDrive, a Chain-of-Thought (CoT) guided progressive reinforcement learning fine-tuning framework for autonomous driving that synergizes explicit reasoning with difficulty-aware adaptive policy optimization.
+    - The method employs a two-stage training strategy: first performing supervised fine-tuning (SFT) using CoT explanations, then applying progressive RL with a difficulty-aware adaptive policy optimizer.
+    - Evaluation on a public dataset shows ThinkDrive outperforms strong RL baselines and a 2B-parameter model trained with this method surpasses the larger GPT-4o on the exam metric.
+
+- [UniDrive-WM: Unified Understanding, Planning and Generation World Model For Autonomous Driving](https://arxiv.org/abs/2601.04453)
+  - Zhexiao Xiong, Xin Ye, Burhan Yaman, Sheng Cheng, Yiren Lu, Jingru Luo, Nathan Jacobs, Liu Ren
+  - Publisher: Washington University in St. Louis, Bosch Research
+  - Publish Date: 2026.01.07
+  - Project Page: [UniDrive-WM](https://unidrive-wm.github.io/UniDrive-WM)
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
+  - Summary：
+    - UniDrive-WM, a unified VLM-based world model that jointly performs driving-scene understanding, trajectory planning, and trajectory-conditioned future image generation within a single architecture.
+    - The model's predicted trajectory conditions a VLM-based image generator to produce plausible future frames, providing supervisory signals that enhance understanding and iteratively refine trajectory generation.
+    - Experiments on Bench2Drive show improvements of 5.9% in L2 trajectory error and 9.2% in collision rate over previous methods, demonstrating advantages of integrating reasoning, planning, and generative modeling.
+
+- [A Vision-Language-Action Model with Visual Prompt for OFF-Road Autonomous Driving](https://arxiv.org/abs/2601.03519)
+  - Liangdong Zhang, Yiming Nie, Haoyang Li, Fanjie Kong, Baobao Zhang, Shunxin Huang, Kai Fu, Chen Min, Liang Xiao
+  - Publish Date: 2026.01.07
+  - Task: Planning
+  - Datasets: [RELLIS-3D](https://github.com/unmannedlab/RELLIS-3D)
+  - Summary：
+    - Proposes OFF-EMMA, an end-to-end multimodal framework for off-road autonomous driving, addressing insufficient spatial perception and unstable reasoning in VLA models.
+    - Introduces a visual prompt block using semantic segmentation masks to enhance spatial understanding and a chain-of-thought with self-consistency (COT-SC) reasoning strategy to improve planning robustness.
+
+- [FROST-Drive: Scalable and Efficient End-to-End Driving with a Frozen Vision Encoder](https://arxiv.org/abs/2601.03460)
+  - Zeyu Dong, Yimin Zhu, Yu Wu, Yu Sun
+  - Publish Date: 2026.01.06
+  - Task: End-to-End
+  - Datasets: [Waymo Open E2E Dataset](https://waymo.com/open/)
+  - Summary：
+    - FROST-Drive, a novel End-to-End (E2E) architecture that preserves the generalization of a pretrained Vision-Language Model (VLM) by keeping its vision encoder frozen.
+    - The model combines the frozen encoder with a transformer-based adapter and a GRU-based decoder for waypoint generation, optimized with a custom loss for Rater Feedback Score (RFS).
+    - Demonstrates superior performance on the Waymo Open E2E Dataset, showing that leveraging a frozen, generalist VLM encoder is more effective for robust driving than full fine-tuning.
+
 - [Dichotomous Diffusion Policy Optimization](https://arxiv.org/abs/2601.00898)
   - Ruiming Liang, Yinan Zheng, Kexin Zheng, Tianyi Tan, Jianxiong Li, Liyuan Mao, Zhihao Wang, Guang Chen, Hangjun Ye, Jingjing Liu, Jinqiao Wang, Xianyuan Zhan
   - Publish Date: 2025.12.31
