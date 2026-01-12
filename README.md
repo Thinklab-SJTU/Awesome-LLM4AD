@@ -102,6 +102,44 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [When Digital Twins Meet Large Language Models: Realistic, Interactive, and Editable Simulation for Autonomous Driving](https://arxiv.org/abs/2507.00319)
+  - Tanmay Vilas Samak, Chinmay Vilas Samak, Bing Li, Venkat Krovi
+  - Publish Date: 2025.06.30
+  - Task: Simulation
+  - Summary：
+    - A unified framework for creating high-fidelity digital twins to accelerate autonomous driving research, balancing dynamical fidelity, photorealistic rendering, context-relevant scenario orchestration, and real-time performance.
+    - Leverages physics-based and data-driven techniques for real2sim reconstruction with geometric/photorealistic accuracy and infuses assets with physical properties for real-time dynamical simulation.
+    - Incorporates a large language model (LLM) interface to flexibly edit driving scenarios online via natural language prompts, demonstrating high structural similarity, frame rates, and prompt handling capabilities.
+
+- [StyleDrive: Towards Driving-Style Aware Benchmarking of End-To-End Autonomous Driving](https://arxiv.org/abs/2506.23982)
+  - Ruiyang Hao, Bowen Jing, Haibao Yu, Zaiqing Nie
+  - Publish Date: 2025.06.30
+  - Task: End-to-End
+  - Datasets: [StyleDrive](https://arxiv.org/abs/2506.23982)
+  - Summary：
+    - Introduces the first large-scale real-world dataset explicitly curated for personalized end-to-end autonomous driving (E2EAD), integrating scene topology with dynamic context and semantics via a fine-tuned vision-language model.
+    - Proposes a hybrid annotation pipeline combining behavioral analysis, heuristics, and VLM reasoning, refined through human-in-the-loop verification.
+    - Establishes the first standardized benchmark for evaluating personalized E2EAD models, showing that incorporating driving preferences improves behavioral alignment with human demonstrations.
+
+- [DriveMRP: Enhancing Vision-Language Models with Synthetic Motion Data for Motion Risk Prediction](https://arxiv.org/abs/2507.02948)
+  - Zhiyi Hou, Enhui Ma, Fang Li, Zhiyi Lai, Kalok Ho, Zhanqian Wu, Lijun Zhou, Long Chen, Chitian Sun, Haiyang Sun, Bing Wang, Guang Chen, Hangjun Ye, Kaicheng Yu
+  - Publish Date: 2025.06.28
+  - Task: Prediction
+  - Datasets: [DriveMRP-10K](https://arxiv.org/abs/2507.02948)
+  - Summary：
+    - Introduces DriveMRP, a method to enhance Vision-Language Model (VLM) motion risk prediction by synthesizing high-risk motion data via a Bird's-Eye View (BEV) based simulation.
+    - Proposes the DriveMRP-Agent framework with a novel information injection strategy for global context, ego perspective, and trajectory projection to improve spatial reasoning.
+    - Demonstrates significant performance gains, boosting accident recognition accuracy from 27.13% to 88.03% on synthetic data and from 29.42% to 68.50% in zero-shot real-world evaluation.
+
+- [Integrating Multi-Modal Sensors: A Review of Fusion Techniques for Intelligent Vehicles](https://arxiv.org/abs/2506.21885)
+  - Chuheng Wei, Ziye Qin, Ziyan Zhang, Guoyuan Wu, Matthew J. Barth
+  - Publish Date: 2025.06.27
+  - Task: Perception
+  - Summary：
+    - Provides a systematic review of deep learning-based multi-sensor fusion strategies, categorized into data-level, feature-level, and decision-level approaches.
+    - Discusses key multi-modal datasets and their applicability in addressing real-world challenges like adverse weather and complex urban environments.
+    - Explores emerging trends including the integration of VLMs and LLMs, and the role of sensor fusion in enhancing end-to-end autonomous driving systems.
+
 - [Case-based Reasoning Augmented Large Language Model Framework for Decision Making in Realistic Safety-Critical Driving Scenarios](https://arxiv.org/abs/2506.20531)
   - Wenbin Gan, Minh-Son Dao, Koji Zettsu
   - Publisher: NICT, University of Hyogo
