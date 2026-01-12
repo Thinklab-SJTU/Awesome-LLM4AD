@@ -143,17 +143,6 @@ format:
     - LeAD, a dual-rate autonomous driving architecture integrating imitation learning-based end-to-end frameworks with large language model (LLM) augmentation for enhanced scenario comprehension and decision-making.
     - The system uses a high-frequency E2E subsystem for real-time cycles and a low-frequency LLM module that employs multi-modal perception fusion and chain-of-thought reasoning to handle complex scenarios and edge cases.
 
-- [MVL-Loc: Leveraging Vision-Language Model for Generalizable Multi-Scene Camera Relocalization](https://arxiv.org/abs/2507.04509)
-  - Zhendong Xiao, Wu Wei, Shujie Ji, Shan Yang, Changhao Chen
-  - Publisher: (Inferred from context: Authors' affiliations not specified in abstract)
-  - Publish Date: 2025.07.06
-  - Task: Perception
-  - Datasets: [7Scenes](https://www.microsoft.com/en-us/research/project/rgb-d-dataset-7-scenes/), [Cambridge Landmarks](https://www.repository.cam.ac.uk/handle/1810/251342)
-  - Summary：
-    - MVL-Loc, a novel end-to-end multi-scene 6-DoF camera relocalization framework that leverages pretrained world knowledge from vision-language models (VLMs) for generalization across indoor and outdoor settings.
-    - Employs natural language as a directive tool to guide multi-scene learning, facilitating semantic understanding of complex scenes and capturing spatial relationships among objects.
-    - Demonstrates state-of-the-art performance and robustness on the 7Scenes and Cambridge Landmarks datasets, with improved accuracy in both positional and orientational estimates.
-
 - [VLAD: A VLM-Augmented Autonomous Driving Framework with Hierarchical Planning and Interpretable Decision Process](https://arxiv.org/abs/2507.01284)
   - Cristian Gariboldi, Hayato Tokida, Ken Kinjo, Yuki Asada, Alexander Carballo
   - Publish Date: 2025.07.02
