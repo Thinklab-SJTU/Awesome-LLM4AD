@@ -102,6 +102,76 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [ImagiDrive: A Unified Imagination-and-Planning Framework for Autonomous Driving](https://arxiv.org/abs/2508.11428)
+  - Jingyu Li, Bozhou Zhang, Xin Jin, Jiankang Deng, Xiatian Zhu, Li Zhang
+  - Publish Date: 2025.08.15
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - ImagiDrive, a novel end-to-end autonomous driving framework that integrates a VLM-based driving agent with a DWM-based scene imaginer in a unified imagination-and-planning loop.
+    - Introduces an early stopping mechanism and a trajectory selection strategy to address efficiency and predictive accuracy challenges in the integration of action-level decisions with high-fidelity pixel-level predictions.
+
+- [STRIDE-QA: Visual Question Answering Dataset for Spatiotemporal Reasoning in Urban Driving Scenes](https://arxiv.org/abs/2508.10427)
+  - Keishi Ishihara, Kento Sasaki, Tsubasa Takahashi, Daiki Shiono, Yu Yamaguchi
+  - Publish Date: 2025.08.14
+  - Task: VQA
+  - Datasets: [STRIDE-QA](https://arxiv.org/abs/2508.10427)
+  - Summary：
+    - STRIDE-QA, a large-scale visual question answering (VQA) dataset for physically grounded spatiotemporal reasoning from an ego-centric perspective, constructed from 100 hours of multi-sensor driving data in Tokyo.
+    - The dataset offers 16 million QA pairs over 285K frames with dense, automatically generated annotations, supporting object-centric and ego-centric reasoning through three novel QA tasks requiring spatial localization and temporal prediction.
+    - Benchmarks show VLMs fine-tuned on STRIDE-QA achieve dramatic performance gains (55% spatial localization, 28% prediction consistency) compared to near-zero scores from general-purpose VLMs, establishing a foundation for reliable VLMs in autonomous systems.
+
+- [VISTA: Vision-Language Imitation of Situational Thinking and Attention for Human-Like Driver Focus in Dynamic Environments](https://arxiv.org/abs/2508.05852)
+  - Kaiser Hamid, Khandakar Ashrafi Akbar, Nade Liang
+  - Publish Date: 2025.08.07
+  - Task: Perception
+  - Datasets: [BDD-A](https://bdd-data.berkeley.edu/)
+  - Summary：
+    - A vision-language framework that models drivers' gaze shifts through natural language, using few-shot and zero-shot learning on single RGB images.
+    - Fine-tunes LLaVA on curated BDD-A captions to align visual perception with attention-centric scene understanding, integrating low-level cues and top-down context.
+    - Generates driver visual attention allocation and shifting predictions in natural language, offering a new direction for explainable AI in autonomous driving.
+
+- [IRL-VLA: Training an Vision-Language-Action Policy via Reward World Model](https://arxiv.org/abs/2508.06571)
+  - Anqing Jiang, Yu Gao, Yiru Wang, Zhigang Sun, Shuo Wang, Yuwen Heng, Hao Sun, Shichen Tang, Lijuan Zhu, Jinhao Chai, Jijun Wang, Zichong Gu, Hao Jiang, Li Sun
+  - Publish Date: 2025.08.07
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - IRL-VLA, a novel close-loop Reinforcement Learning framework for autonomous driving using an Inverse Reinforcement Learning reward world model with a Vision-Language-Action (VLA) policy.
+    - The framework employs a three-stage paradigm: VLA architecture pretraining via imitation learning, building a lightweight reward world model via IRL, and enhancing planning via specialized PPO reinforcement learning.
+    - Achieves state-of-the-art performance on the NAVSIM v2 end-to-end driving benchmark and is the 1st runner up in the CVPR2025 Autonomous Grand Challenge.
+
+- [Mapillary Vistas Validation for Fine-Grained Traffic Signs: A Benchmark Revealing Vision-Language Model Limitations](https://arxiv.org/abs/2508.02047)
+  - Sparsh Garg, Abhishek Aich
+  - Publisher: NEC Laboratories America
+  - Publish Date: 2025.08.04
+  - Code: [relabeling](https://github.com/nec-labs-ma/relabeling)
+  - Task: Perception
+  - Datasets: [Mapillary Vistas](https://www.mapillary.com/dataset/vistas)
+  - Summary：
+    - Presents a new validation set for fine-grained traffic signs, Mapillary Vistas Validation for Traffic Signs (MVV), with pixel-level instance masks and expert annotations.
+    - Benchmarks VLMs against DINOv2, showing DINOv2's superior performance on fine-grained recognition and other categories like vehicles and humans.
+    - Reveals significant limitations in current VLMs for fine-grained visual understanding and establishes DINOv2 as a strong baseline for autonomous driving perception.
+
+- [Bench2ADVLM: A Closed-Loop Benchmark for Vision-language Models in Autonomous Driving](https://arxiv.org/abs/2508.02028)
+  - Tianyuan Zhang, Ting Jin, Lu Wang, Jiangfan Liu, Siyuan Liang, Mingchuan Zhang, Aishan Liu, Xianglong Liu
+  - Publish Date: 2025.08.04
+  - Task: Benchmarking, Planning
+  - Summary：
+    - Bench2ADVLM, a unified hierarchical closed-loop evaluation framework for real-time, interactive assessment of Vision-Language Models (VLMs) in autonomous driving across simulation and physical platforms.
+    - Introduces a dual-system adaptation architecture for simulation and a physical control abstraction layer to bridge simulation and reality, enabling closed-loop testing on physical vehicles.
+    - Features a self-reflective scenario generation module to automatically explore model behavior and uncover potential failure modes for safety-critical scenario generation.
+
+- [Edge-Based Multimodal Sensor Data Fusion with Vision Language Models (VLMs) for Real-time Autonomous Vehicle Accident Avoidance](https://arxiv.org/abs/2508.01057)
+  - Fengze Yang, Bo Yu, Yang Zhou, Xuewen Luo, Zhengzhong Tu, Chenxi Liu
+  - Publish Date: 2025.08.01
+  - Task: Planning
+  - Datasets: [DeepAccident](https://github.com/sisl/DeepAccident)
+  - Summary：
+    - Proposes REACT, a real-time V2X-integrated trajectory optimization framework for autonomous driving based on a fine-tuned lightweight Vision-Language Model (VLM).
+    - Integrates infrastructure hazard alerts with onboard sensor data, using visual embeddings and contextual reasoning to generate safety-oriented trajectories.
+    - Employs Residual Trajectory Fusion (RTF) and edge-adaptation strategies for efficient deployment, achieving state-of-the-art performance on the DeepAccident benchmark.
+
 - [A Unified Perception-Language-Action Framework for Adaptive Autonomous Driving](https://arxiv.org/abs/2507.23540)
   - Yi Zhang, Erik Leo Haß, Kuo-Yi Chao, Nenad Petrovic, Yinglei Song, Chengdong Wu, Alois Knoll
   - Publisher: Technical University of Munich
