@@ -118,7 +118,7 @@ format:
   - Publish Date: 2025.07.11
   - Project Page: [Great-MCD](https://github.com/hkw-xg/Great-MCD)
   - Code: [Great-MCD](https://github.com/hkw-xg/Great-MCD)
-  - Task: Perception
+  - Task: Simulation
   - Datasets: [Great-MSD](https://github.com/hkw-xg/Great-MCD)
   - Summary：
     - Proposes Great-X, a single-engine multimodal data twin platform that reconstructs Sionna's ray-tracing within Unreal Engine and integrates with autonomous driving tools for efficient, synchronized simulation of CSI, RGB, Radar, and LiDAR data.
