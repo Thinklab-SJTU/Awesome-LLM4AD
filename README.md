@@ -650,6 +650,17 @@ language models (LLMs).
   - Summary:
     - Introduce an innovative application of foundation models, enabling Unmanned Ground Vehicles (UGVs) equipped with an RGB-D camera to navigate to designated destinations based on human language instructions.
 
+- [CANVAS: Commonsense-Aware Navigation System for Intuitive Human-Robot Interaction](https://arxiv.org/abs/2410.01273)
+  - Suhwan Choi, Yongjun Cho, Minchan Kim, Jaeyoon Jung, Myunchul Joe, Yubeen Park, Minseo Kim, Sungwoong Kim, Sungjae Lee, Hwiseong Park, Jiwan Chung, Youngjae Yu
+  - Publisher: MAUM.AI, Yonsei University
+  - Publish Date: 2024.10.02
+  - Project Page: [CANVAS](https://worv-ai.github.io/canvas/)
+  - Code: [CANVAS](https://github.com/worv-ai/canvas)
+  - Task: Planning
+  - Datasets: [COMMAND](https://huggingface.co/datasets/maum-ai/COMMAND)
+  - Summary:
+    - CANVAS is a novel framework for commonsense-aware robot navigation that excels in both simulated and real-world environments.
+
 - [LeGEND: A Top-Down Approach to Scenario Generation of Autonomous Driving Systems Assisted by Large Language Models](https://arxiv.org/abs/2409.10066)
   - Shuncheng Tang, Zhenya Zhang, Jixiang Zhou, Lei Lei, Yuan Zhou, Yinxing Xue **ASE 2024**
   - Publisher: University of Science and Technology of China, Kyushu University, Zhejiang Sci-Tech University
