@@ -116,7 +116,7 @@ format:
   - Yuqi Wang, Xinghang Li, Wenxuan Wang, Junbo Zhang, Yingyan Li, Yuntao Chen, Xinlong Wang, Zhaoxiang Zhang
   - Publish Date: 2025.06.24
   - Task: Control
-  - Datasets: [CALVIN](https://github.com/mees/calvin), [LIBERO](https://libero-project.github.io/), [Simplenv-Bridge](https://github.com/facebookresearch/simplenv), [ALOHA](https://mobile-aloha.github.io/)
+  - Datasets: [CALVIN](https://github.com/mees/calvin), [LIBERO](https://libero-project.github.io/), [Simplenv-Bridge](https://simpler-env.github.io/), [ALOHA](https://mobile-aloha.github.io/)
   - Summary：
     - UniVLA, a unified and native multimodal VLA model that autoregressively models vision, language, and action signals as discrete token sequences for flexible multimodal task learning.
     - Incorporates world modeling during post-training to capture causal dynamics from videos, facilitating effective transfer to downstream policy learning, especially for long-horizon tasks.
