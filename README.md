@@ -174,6 +174,7 @@ format:
   - Qihang Peng, Xuesong Chen, Chenye Yang, Shaoshuai Shi, Hongsheng Li
   - Publisher: The Chinese University of Hong Kong, Shanghai AI Laboratory
   - Publish Date: 2025.12.28
+  - Project Page: [ColaVLA](https://pqh22.github.io/projects/ColaVLA/index.html)
   - Task: Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
@@ -215,8 +216,9 @@ format:
 - [MindDrive: A Vision-Language-Action Model for Autonomous Driving via Online Reinforcement Learning](https://arxiv.org/abs/2512.13636)
   - Haoyu Fu, Diankun Zhang, Zongchuang Zhao, Jianfeng Cui, Hongwei Xie, Bing Wang, Guang Chen, Dingkang Liang, Xiang Bai
   - Publish Date: 2025.12.15
+  - Project Page: [ReCogDrive](https://xiaomi-mlab.github.io/MindDrive/)
   - Task: Planning
-  - Datasets: [Bench2Drive](https://github.com/OpenDriveLab/Bench2Drive)
+  - Datasets: [MindDrive](https://github.com/OpenDriveLab/Bench2Drive)
   - Summary：
     - MindDrive, a Vision-Language-Action (VLA) framework for autonomous driving that uses online reinforcement learning to address limitations of Imitation Learning like distribution shift.
     - It features an LLM with two LoRA parameter sets: a Decision Expert for reasoning and an Action Expert to map decisions to trajectories, enabling trial-and-error learning over discrete linguistic decisions.
@@ -237,6 +239,7 @@ format:
   - Jiawei Yang, Ziyu Chen, Yurong You, Yan Wang, Yiming Li, Yuxiao Chen, Boyi Li, Boris Ivanovic, Marco Pavone, Yue Wang
   - Publisher: Stanford University, NVIDIA
   - Publish Date: 2025.12.11
+  - Project Page: [Towards Efficient and Effective Multi-Camera Encoding for End-to-End Driving](https://jiawei-yang.github.io/Flex/)
   - Task: End-to-End
   - Summary：
     - Presents Flex, an efficient and effective geometry-agnostic scene encoder for multi-camera data in end-to-end autonomous driving, using a small set of learnable scene tokens to jointly encode information across cameras and timesteps.
@@ -266,6 +269,7 @@ format:
 - [UniUGP: Unifying Understanding, Generation, and Planing For End-to-end Autonomous Driving](https://arxiv.org/abs/2512.09864)
   - Hao Lu, Ziyang Liu, Guangfeng Jiang, Yuanfei Luo, Sheng Chen, Yangang Zhang, Ying-Cong Chen
   - Publish Date: 2025.12.10
+  - Project Page: [UniUGP](https://seed-uniugp.github.io/)
   - Task: End-to-End
   - Summary：
     - Proposes UniUGP, a unified Understanding-Generation-Planning framework that synergizes scene reasoning, future video generation, and trajectory planning through a hybrid expert architecture.
@@ -414,7 +418,7 @@ format:
 - [RoboDriveVLM: A Novel Benchmark and Baseline towards Robust Vision-Language Models for Autonomous Driving](https://arxiv.org/abs/2512.01300)
   - Dacheng Liao, Mengshi Qi, Peng Shu, Zhining Zhang, Yuxin Lin, Liang Liu, Huadong Ma
   - Publish Date: 2025.12.01
-  - Task: End-to-End
+  - Task: Evaluation
   - Datasets: [RoboDriveBench](https://arxiv.org/abs/2512.01300)
   - Summary：
     - Introduces RoboDriveBench, the first robustness benchmark for VLM-based end-to-end autonomous driving, evaluating 11 simulated scenarios with sensor and prompt corruptions.
@@ -445,7 +449,7 @@ format:
   - Publish Date: 2025.11.27
   - Project Page: [RoadSceneBench](https://github.com/XiyanLiu/RoadSceneBench)
   - Code: [RoadSceneBench](https://github.com/XiyanLiu/RoadSceneBench)
-  - Task: Reasoning
+  - Task: Evaluation
   - Datasets: [RoadSceneBench](https://github.com/XiyanLiu/RoadSceneBench)
   - Summary：
     - RoadSceneBench, a lightweight benchmark for evaluating visual reasoning of mid-level road semantics, focusing on relational understanding and structural consistency.
@@ -589,19 +593,6 @@ format:
     - VLA-R, an open-world end-to-end autonomous driving framework that integrates open-world perception with a novel vision-action retrieval paradigm.
     - Leverages a frozen vision-language model for open-world detection/segmentation and a Q-Former bottleneck to bridge perception and action domains.
     - Introduces a vision-action contrastive learning scheme to align vision-language and action embeddings for effective open-world reasoning and action retrieval.
-
-- [CARScenes: Semantic VLM Dataset for Safe Autonomous Driving](https://arxiv.org/abs/2511.10701)
-  - Yuankai He, Weisong Shi
-  - Publisher: University of Delaware
-  - Publish Date: 2025.11.12
-  - Project Page: [CARScenes](https://github.com/Croquembouche/CAR-Scenes)
-  - Code: [CARScenes](https://github.com/Croquembouche/CAR-Scenes)
-  - Task: Perception
-  - Datasets: [Argoverse](https://www.argoverse.org/), [Cityscapes](https://www.cityscapes-dataset.com/), [KITTI](http://www.cvlibs.net/datasets/kitti/), [nuScenes](https://www.nuscenes.org/)
-  - Summary：
-    - CAR-Scenes is a frame-level semantic dataset for training and evaluating Vision-Language Models (VLMs) for interpretable, scene-level understanding in autonomous driving.
-    - The dataset provides 5,192 annotated images with a 28-category knowledge base, covering 350+ attributes related to environment, road users, and vehicle behavior, annotated via a GPT-4o-assisted pipeline with human verification.
-    - It includes tools for semantic retrieval, risk-aware scenario mining, and reproducible baselines, releasing annotation and analysis scripts to support explainable, data-centric workflows for intelligent vehicles.
 
 - [FLAD: Federated Learning for LLM-based Autonomous Driving in Vehicle-Edge-Cloud Networks](https://arxiv.org/abs/2511.09025)
   - Tianao Xiang, Mingjian Zhi, Yuanguo Bi, Lin Cai, Yuhao Chen
@@ -804,7 +795,7 @@ format:
   - Qinghongbing Xie, Zhaoyuan Xia, Feng Zhu, Lijun Gong, Ziyue Li, Rui Zhao, Long Zeng
   - Publish Date: 2025.10.09
   - Code: [GTR-Bench](https://github.com/X-Luffy/GTR-Bench)
-  - Task: Reasoning
+  - Task: Evaluation
   - Summary：
     - Introduces GTR-Bench, a novel benchmark for evaluating geographic temporal reasoning of moving targets in a large-scale camera network, requiring perspective switches between maps and videos and joint reasoning across non-overlapping video views.
     - Evaluations show a significant performance gap between state-of-the-art VLMs and human performance on geo-temporal reasoning, revealing key deficiencies in context utilization, temporal forecasting, and map-video alignment.
@@ -972,15 +963,6 @@ format:
     - Covers core methodologies like trajectory-language mapping, multimodal fusion, and constraint-based reasoning, along with tasks, metrics, datasets, and key challenges.
     - Discusses future research directions such as low-latency inference, causality-aware modeling, and motion foundation models.
 
-- [TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models](https://arxiv.org/abs/2509.07962)
-  - Zongzheng Zhang, Haobo Xu, Zhuo Yang, Chenghao Yue, Zehao Lin, Huan-ang Gao, Ziwei Wang, Hao Zhao
-  - Publish Date: 2025.09.09
-  - Task: Control
-  - Summary：
-    - Explores Torque-aware Vision-Language-Action (VLA) models to integrate force/torque signals for contact-rich robotic manipulation, addressing a gap in current VLAs.
-    - Systematically studies the design space for incorporating torque, finding torque adapters in the decoder outperform encoder insertion.
-    - Proposes predicting torque as an auxiliary output, inspired by autonomous driving paradigms, to improve performance and build a physically grounded internal representation.
-
 - [DepthVision: Enabling Robust Vision-Language Models with GAN-Based LiDAR-to-RGB Synthesis for Autonomous Driving](https://arxiv.org/abs/2509.07463)
   - Sven Kirchner, Nils Purschke, Ross Greer, Alois C. Knoll
   - Publisher: Technical University of Munich
@@ -1069,6 +1051,7 @@ format:
 - [DriveQA: Passing the Driving Knowledge Test](https://arxiv.org/abs/2508.21824)
   - Maolin Wei, Wanzhou Liu, Eshed Ohn-Bar
   - Publish Date: 2025.08.29
+  - Project Page: [DriveQA](https://driveqaiccv.github.io/)
   - Task: VQA
   - Datasets: [nuScenes](https://www.nuscenes.org/), [BDD](https://bdd-data.berkeley.edu/)
   - Summary：
@@ -1136,6 +1119,7 @@ format:
 - [STRIDE-QA: Visual Question Answering Dataset for Spatiotemporal Reasoning in Urban Driving Scenes](https://arxiv.org/abs/2508.10427)
   - Keishi Ishihara, Kento Sasaki, Tsubasa Takahashi, Daiki Shiono, Yu Yamaguchi
   - Publish Date: 2025.08.14
+  - Project Page: [STRIDE-QA](https://turingmotors.github.io/stride-qa/)
   - Task: VQA
   - Datasets: [STRIDE-QA](https://arxiv.org/abs/2508.10427)
   - Summary：
@@ -1318,7 +1302,6 @@ format:
   - Kongwu Huang, Shiyi Mu, Jun Jiang, Yuan Gao, Shugong Xu
   - Publisher: Shanghai University
   - Publish Date: 2025.07.11
-  - Project Page: [Great-MCD](https://github.com/hkw-xg/Great-MCD)
   - Code: [Great-MCD](https://github.com/hkw-xg/Great-MCD)
   - Task: Generation
   - Datasets: [Great-MSD](https://github.com/hkw-xg/Great-MCD)
@@ -1398,21 +1381,12 @@ format:
 - [DriveMRP: Enhancing Vision-Language Models with Synthetic Motion Data for Motion Risk Prediction](https://arxiv.org/abs/2507.02948)
   - Zhiyi Hou, Enhui Ma, Fang Li, Zhiyi Lai, Kalok Ho, Zhanqian Wu, Lijun Zhou, Long Chen, Chitian Sun, Haiyang Sun, Bing Wang, Guang Chen, Hangjun Ye, Kaicheng Yu
   - Publish Date: 2025.06.28
+  - Code: [DriveMRP](https://github.com/SII-HZY/DriveMRP)
   - Task: Prediction
-  - Datasets: [DriveMRP-10K](https://arxiv.org/abs/2507.02948)
   - Summary：
     - Introduces DriveMRP, a method to enhance Vision-Language Model (VLM) motion risk prediction by synthesizing high-risk motion data via a Bird's-Eye View (BEV) based simulation.
     - Proposes the DriveMRP-Agent framework with a novel information injection strategy for global context, ego perspective, and trajectory projection to improve spatial reasoning.
     - Demonstrates significant performance gains, boosting accident recognition accuracy from 27.13% to 88.03% on synthetic data and from 29.42% to 68.50% in zero-shot real-world evaluation.
-
-- [Integrating Multi-Modal Sensors: A Review of Fusion Techniques for Intelligent Vehicles](https://arxiv.org/abs/2506.21885)
-  - Chuheng Wei, Ziye Qin, Ziyan Zhang, Guoyuan Wu, Matthew J. Barth
-  - Publish Date: 2025.06.27
-  - Task: Perception
-  - Summary：
-    - Provides a systematic review of deep learning-based multi-sensor fusion strategies, categorized into data-level, feature-level, and decision-level approaches.
-    - Discusses key multi-modal datasets and their applicability in addressing real-world challenges like adverse weather and complex urban environments.
-    - Explores emerging trends including the integration of VLMs and LLMs, and the role of sensor fusion in enhancing end-to-end autonomous driving systems.
 
 - [Case-based Reasoning Augmented Large Language Model Framework for Decision Making in Realistic Safety-Critical Driving Scenarios](https://arxiv.org/abs/2506.20531)
   - Wenbin Gan, Minh-Son Dao, Koji Zettsu
@@ -3078,6 +3052,18 @@ format:
   - keyword
   - experiment environments or tasks
 ```
+
+- [CARScenes: Semantic VLM Dataset for Safe Autonomous Driving](https://arxiv.org/abs/2511.10701)
+  - Yuankai He, Weisong Shi
+  - Publisher: University of Delaware
+  - Publish Date: 2025.11.12
+  - Project Page: [CARScenes](https://github.com/Croquembouche/CAR-Scenes)
+  - Code: [CARScenes](https://github.com/Croquembouche/CAR-Scenes)
+  - Summary：
+    - CAR-Scenes is a frame-level semantic dataset for training and evaluating Vision-Language Models (VLMs) for interpretable, scene-level understanding in autonomous driving.
+    - The dataset provides 5,192 annotated images with a 28-category knowledge base, covering 350+ attributes related to environment, road users, and vehicle behavior, annotated via a GPT-4o-assisted pipeline with human verification.
+    - It includes tools for semantic retrieval, risk-aware scenario mining, and reproducible baselines, releasing annotation and analysis scripts to support explainable, data-centric workflows for intelligent vehicles.
+
 - [CoVLA: Comprehensive Vision-Language-Action Dataset for Autonomous Driving](https://arxiv.org/pdf/2408.10845)
   - Hidehisa Arai, Keita Miwa, Kento Sasaki, Yu Yamaguchi, Kohei Watanabe, Shunsuke Aoki, Issei Yamamoto **WACV 2025 Oral**
   - Publisher: Turing Inc.
