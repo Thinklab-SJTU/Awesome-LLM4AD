@@ -102,6 +102,93 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [OmniReason: A Temporal-Guided Vision-Language-Action Framework for Autonomous Driving](https://arxiv.org/abs/2509.00789)
+  - Pei Liu, Qingtian Ning, Xinyan Lu, Haipeng Liu, Weiliang Ma, Dangen She, Peng Jia, Xianpeng Lang, Jun Ma
+  - Publish Date: 2025.08.31
+  - Task: Reasoning
+  - Summary：
+    - OmniReason, a temporal-guided Vision-Language-Action (VLA) framework for autonomous driving, introduces robust spatiotemporal reasoning by jointly modeling dynamic 3D environments and decision-making.
+    - It proposes OmniReason-Data, large-scale VLA datasets with dense spatiotemporal annotations generated via a hallucination-mitigated auto-labeling pipeline for physical plausibility and temporal coherence.
+    - It develops the OmniReason-Agent architecture with a sparse temporal memory module and an explanation generator, using spatiotemporal knowledge distillation to capture causal reasoning patterns for interpretable, temporally-aware driving.
+
+- [DriveQA: Passing the Driving Knowledge Test](https://arxiv.org/abs/2508.21824)
+  - Maolin Wei, Wanzhou Liu, Eshed Ohn-Bar
+  - Publish Date: 2025.08.29
+  - Task: VQA
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [BDD](https://bdd-data.berkeley.edu/)
+  - Summary：
+    - DriveQA, an extensive open-source text and vision-based benchmark that exhaustively covers traffic regulations and scenarios for evaluating LLMs and MLLMs.
+    - Experiments show fine-tuning on DriveQA improves model accuracy in regulatory sign recognition and intersection decision-making, and pretraining on it enhances downstream driving task performance on real-world datasets.
+
+- [DrivingGaussian++: Towards Realistic Reconstruction and Editable Simulation for Surrounding Dynamic Driving Scenes](https://arxiv.org/abs/2508.20965)
+  - Yajiao Xiong, Xiaoyu Zhou, Yongtao Wan, Deqing Sun, Ming-Hsuan Yang
+  - Publish Date: 2025.08.28
+  - Project Page: [DrivingGaussian++](https://xiong-creator.github.io/DrivingGaussian_plus.github.io)
+  - Task: Simulation
+  - Summary：
+    - DrivingGaussian++, an efficient framework for realistic reconstruction and controllable editing of surrounding dynamic autonomous driving scenes, using incremental 3D Gaussians for static background and a composite dynamic Gaussian graph for moving objects.
+    - Integrates a LiDAR prior for detailed, consistent scene reconstruction and supports training-free controllable editing (texture, weather, object manipulation) by leveraging multi-view images, depth priors, and large language models (LLMs) for motion trajectory generation.
+
+- [Drive As You Like: Strategy-Level Motion Planning Based on A Multi-Head Diffusion Model](https://arxiv.org/abs/2508.16947)
+  - Fan Ding, Xuewen Luo, Hwa Hui Tew, Ruturaj Reddy, Xikun Wang, Junn Yong Loo
+  - Publish Date: 2025.08.23
+  - Task: Planning
+  - Datasets: [nuPlan](https://www.nuscenes.org/nuplan)
+  - Summary：
+    - Proposes a diffusion-based multi-head trajectory planner (M-diffusion planner) fine-tuned with Group Relative Policy Optimization (GRPO) to learn diverse policy-specific driving behaviors.
+    - Incorporates a large language model (LLM) at inference to guide strategy selection for dynamic, instruction-aware planning without model switching.
+    - Achieves state-of-the-art performance on the nuPlan benchmark, with generated trajectories showing clear diversity to satisfy multi-modal driving requirements.
+
+- [GM-Skip: Metric-Guided Transformer Block Skipping for Efficient Vision-Language Models](https://arxiv.org/abs/2508.18227)
+  - Lianming Huang, Haibo Hu, Qiao Li, Xin He, Nan Guan, Chun Jason Xue
+  - Publisher: The Hong Kong Polytechnic University, City University of Hong Kong
+  - Publish Date: 2025.08.20
+  - Task: Perception
+  - Datasets: [COCO](https://cocodataset.org/), [CODA](https://coda-dataset.github.io/)
+  - Summary：
+    - GM-Skip, a flexible and metric-adaptive framework for Transformer block skipping to accelerate VLM inference while preserving output quality.
+    - It uses a greedy, metric-guided block selection strategy and a reverse-order deletion mechanism to identify and skip redundant layers while preserving early foundational blocks.
+    - Experiments show it improves inference speed, achieving up to 45.4% latency reduction in real-world autonomous vehicle deployment with Autoware.Universe.
+
+- [Structured Prompting and Multi-Agent Knowledge Distillation for Traffic Video Interpretation and Risk Inference](https://arxiv.org/abs/2508.13439)
+  - Yunxiang Yang, Ningning Xu, Jidong J. Yang
+  - Publish Date: 2025.08.19
+  - Task: Reasoning
+  - Summary：
+    - Introduces a structured prompting and knowledge distillation framework using two large VLMs (GPT-4o and o3-mini) to generate high-quality traffic scene annotations and risk assessments.
+    - Distills this knowledge into a compact 3B-scale student model, VISTA, which understands low-resolution traffic videos and generates risk-aware captions.
+    - Demonstrates that VISTA achieves strong performance on captioning metrics, enabling efficient deployment for real-time risk monitoring on edge devices.
+
+- [Prune2Drive: A Plug-and-Play Framework for Accelerating Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2508.13305)
+  - Minhao Xiong, Zichen Wen, Zhuangcheng Gu, Xuyang Liu, Rui Zhang, Hengrui Kang, Jiabing Yang, Junyuan Zhang, Weijia Li, Conghui He, Yafei Wang, Linfeng Zhang
+  - Publish Date: 2025.08.18
+  - Task: End-to-End
+  - Datasets: [DriveLM](https://github.com/OpenDriveLab/DriveLM), [DriveLMM-o1](https://github.com/OpenDriveLab/DriveLM)
+  - Summary：
+    - Prune2Drive, a plug-and-play visual token pruning framework for multi-view VLMs in autonomous driving, addressing computational overhead from high-resolution, multi-view images.
+    - Introduces a diversity-aware token selection mechanism inspired by farthest point sampling and a view-adaptive pruning controller to learn optimal pruning ratios per camera view.
+    - Achieves significant speedups and memory savings (e.g., 6.40× speedup, 13.4% of original FLOPs with 10% tokens) while maintaining task performance on DriveLM and DriveLMM-o1 benchmarks.
+
+- [ViLaD: A Large Vision Language Diffusion Framework for End-to-End Autonomous Driving](https://arxiv.org/abs/2508.12603)
+  - Can Cui, Yupeng Zhou, Juntong Peng, Sung-Yeon Park, Zichong Yang, Prashanth Sankaranarayanan, Jiaru Zhang, Ruqi Zhang, Ziran Wang
+  - Publish Date: 2025.08.18
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Introduces ViLaD, a novel Large Vision Language Diffusion (LVLD) framework for end-to-end autonomous driving that uses a masked diffusion model for parallel generation of driving decisions, reducing latency.
+    - The framework supports bidirectional reasoning and progressive easy-first generation, outperforming autoregressive VLM baselines in planning accuracy and speed on nuScenes.
+    - Demonstrates practical viability through real-world deployment on an autonomous vehicle for an interactive parking task, achieving a near-zero failure rate.
+
+- [LMAD: Integrated End-to-End Vision-Language Model for Explainable Autonomous Driving](https://arxiv.org/abs/2508.12404)
+  - Nan Song, Bozhou Zhang, Xiatian Zhu, Jiankang Deng, Li Zhang
+  - Publish Date: 2025.08.17
+  - Task: End-to-End
+  - Datasets: [DriveLM](https://github.com/DrivelM/DriveLM), [nuScenes-QA](https://www.nuscenes.org/nuscenes#download)
+  - Summary：
+    - Proposes LMAD, a novel vision-language framework for autonomous driving that emulates modern end-to-end paradigms with comprehensive scene understanding and a task-specialized VLM structure.
+    - Introduces preliminary scene interaction and specialized expert adapters within the driving task structure to better align VLMs with autonomous driving scenarios.
+    - The approach is designed to be fully compatible with existing VLMs and seamlessly integrate with planning-oriented driving systems, setting a new standard in explainable autonomous driving.
+
 - [ImagiDrive: A Unified Imagination-and-Planning Framework for Autonomous Driving](https://arxiv.org/abs/2508.11428)
   - Jingyu Li, Bozhou Zhang, Xin Jin, Jiankang Deng, Xiatian Zhu, Li Zhang
   - Publish Date: 2025.08.15
