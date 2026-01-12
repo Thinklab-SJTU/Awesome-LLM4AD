@@ -1047,14 +1047,14 @@ format:
     - A camera-only end-to-end autonomous driving solution that combines architectural design with Vision Language Models (VLMs), achieving 2nd place in the CVPR2024 E2E Challenge.
     - Demonstrates that integrating knowledgeable VLMs into an end-to-end framework yields impressive performance, highlighting the potential of vision-based approaches for driving tasks.
 
-- [AutoDrive-$R^2$: Incentivizing Reasoning and Self-Reflection Capacity for VLA Model in Autonomous Driving](https://arxiv.org/abs/2509.01944)
+- [AutoDrive-R²: Incentivizing Reasoning and Self-Reflection Capacity for VLA Model in Autonomous Driving](https://arxiv.org/abs/2509.01944)
   - Zhenlong Yuan, Chengxuan Qian, Jing Tang, Rui Chen, Zijian Song, Lei Sun, Xiangxiang Chu, Yujun Cai, Dapeng Zhang, Shuo Li
   - Publish Date: 2025.09.02
   - Task: Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/), [Waymo](https://waymo.com/open/)
   - Summary：
-    - AutoDrive-$R^2$, a novel VLA framework that enhances reasoning and self-reflection for autonomous driving via chain-of-thought (CoT) processing and reinforcement learning.
-    - Introduces the nuScenesR$^2$-6K CoT dataset for supervised fine-tuning, building a four-step logical chain with self-reflection to connect perception to planning.
+    - AutoDrive-R², a novel VLA framework that enhances reasoning and self-reflection for autonomous driving via chain-of-thought (CoT) processing and reinforcement learning.
+    - Introduces the nuScenesR²-6K CoT dataset for supervised fine-tuning, building a four-step logical chain with self-reflection to connect perception to planning.
     - Employs the GRPO reinforcement learning algorithm within a physics-grounded reward framework to optimize for reliable and realistic trajectory planning.
 
 - [OmniReason: A Temporal-Guided Vision-Language-Action Framework for Autonomous Driving](https://arxiv.org/abs/2509.00789)
