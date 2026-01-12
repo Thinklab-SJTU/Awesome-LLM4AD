@@ -102,6 +102,66 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [Case-based Reasoning Augmented Large Language Model Framework for Decision Making in Realistic Safety-Critical Driving Scenarios](https://arxiv.org/abs/2506.20531)
+  - Wenbin Gan, Minh-Son Dao, Koji Zettsu
+  - Publisher: NICT, University of Hyogo
+  - Publish Date: 2025.06.25
+  - Task: Planning, Reasoning
+  - Summary：
+    - Presents a Case-Based Reasoning Augmented LLM (CBR-LLM) framework for evasive maneuver decision-making in complex, safety-critical driving scenarios.
+    - Integrates semantic scene understanding from dashcam videos with retrieval of relevant past driving cases to generate context-sensitive, human-aligned maneuver recommendations.
+    - Demonstrates improved decision accuracy, justification quality, and alignment with human experts across multiple LLMs, with risk-aware prompting and similarity-based case retrieval enhancing performance.
+
+- [Unified Vision-Language-Action Model](https://arxiv.org/abs/2506.19850)
+  - Yuqi Wang, Xinghang Li, Wenxuan Wang, Junbo Zhang, Yingyan Li, Yuntao Chen, Xinlong Wang, Zhaoxiang Zhang
+  - Publish Date: 2025.06.24
+  - Task: Control
+  - Datasets: [CALVIN](https://github.com/mees/calvin), [LIBERO](https://libero-project.github.io/), [Simplenv-Bridge](https://github.com/facebookresearch/simplenv), [ALOHA](https://mobile-aloha.github.io/)
+  - Summary：
+    - UniVLA, a unified and native multimodal VLA model that autoregressively models vision, language, and action signals as discrete token sequences for flexible multimodal task learning.
+    - Incorporates world modeling during post-training to capture causal dynamics from videos, facilitating effective transfer to downstream policy learning, especially for long-horizon tasks.
+    - Achieves new state-of-the-art results on simulation benchmarks (e.g., 95.5% on LIBERO) and demonstrates broad applicability on real-world ALOHA manipulation and autonomous driving.
+
+- [Drive-R1: Bridging Reasoning and Planning in VLMs for Autonomous Driving with Reinforcement Learning](https://arxiv.org/abs/2506.18234)
+  - Yue Li, Meng Tian, Dechang Zhu, Jiangtong Zhu, Zhenyu Lin, Zhiwei Xiong, Xinhai Zhao
+  - Publish Date: 2025.06.23
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [DriveLM-nuScenes](https://github.com/OpenDriveLab/DriveLM)
+  - Summary：
+    - Proposes Drive-R1, a domain-specific VLM designed to bridge scenario reasoning and motion planning for autonomous driving.
+    - Employs a two-stage training approach: supervised fine-tuning on a dataset with chain-of-thought reasoning, followed by reinforcement learning to align reasoning paths with planning outcomes.
+
+- [DRAMA-X: A Fine-grained Intent Prediction and Risk Reasoning Benchmark For Driving](https://arxiv.org/abs/2506.17590)
+  - Mihir Godbole, Xiangbo Gao, Zhengzhong Tu
+  - Publisher: University of California, Berkeley, University of Michigan
+  - Publish Date: 2025.06.21
+  - Task: Prediction, Reasoning
+  - Datasets: [DRAMA](https://usa.honda-ri.com/drama)
+  - Summary：
+    - Introduces DRAMA-X, a fine-grained benchmark for evaluating multi-class intent prediction and risk reasoning in safety-critical driving scenarios, constructed from the DRAMA dataset via an automated annotation pipeline.
+    - Proposes SGG-Intent, a lightweight, training-free reasoning framework that uses a VLM-backed scene graph generator and an LLM for compositional reasoning to perform object detection, intent prediction, risk assessment, and action suggestion.
+    - Provides structured evaluation of four interrelated autonomous driving tasks and demonstrates that scene-graph-based reasoning enhances intent and risk prediction, especially with explicit contextual modeling.
+
+- [NetRoller: Interfacing General and Specialized Models for End-to-End Autonomous Driving](https://arxiv.org/abs/2506.14589)
+  - Ren Xin, Hongji Liu, Xiaodong Mei, Wenru Liu, Maosheng Ye, Zhili Chen, Jun Ma
+  - Publish Date: 2025.06.17
+  - Code: [NetRoller](https://github.com/Rex-sys-hk/NetRoller)
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes NetRoller, an adapter with novel mechanisms to seamlessly integrate General Models (GMs) like LLMs with Specialized Models (SMs) for autonomous driving, addressing asynchronous system challenges.
+    - Introduces a three-stage interfacing approach: harvesting efficient LLM representations via early stopping, robust cross-modality translation, and performance enhancement of SMs via Query Shift and Feature Shift mechanisms.
+    - Demonstrates significant improvements in human similarity and safety for planning, and precision in detection/mapping tasks on nuScenes, enabling SMs to operate at native frequencies with GM situational awareness.
+
+- [ADRD: LLM-Driven Autonomous Driving Based on Rule-based Decision Systems](https://arxiv.org/abs/2506.14299)
+  - Fanzhi Zeng, Siqi Wang, Chuzhao Zhu, Li Li
+  - Publish Date: 2025.06.17
+  - Task: Planning
+  - Summary：
+    - ADRD, a novel framework that leverages LLMs to generate executable, rule-based decision systems for interpretable autonomous driving.
+    - The framework integrates three core modules: an Information Module, an Agents Module, and a Testing Module to iteratively generate and refine driving tactics.
+    - Demonstrates superior performance in interpretability, response speed, and driving performance compared to traditional RL and advanced LLM-based methods.
+
 - [A Hierarchical Test Platform for Vision Language Model (VLM)-Integrated Real-World Autonomous Driving](https://arxiv.org/abs/2506.14100)
   - Yupeng Zhou, Can Cui, Juntong Peng, Zichong Yang, Juanwu Lu, Jitesh H Panchal, Bin Yao, Ziran Wang
   - Publisher: Purdue University
