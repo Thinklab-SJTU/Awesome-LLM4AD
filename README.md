@@ -102,16 +102,6 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
-- [ViTCoT: Video-Text Interleaved Chain-of-Thought for Boosting Video Understanding in Large Language Models](https://arxiv.org/abs/2507.09876)
-  - Yongheng Zhang, Xu Liu, Ruihan Tao, Qiguang Chen, Hao Fei, Wanxiang Che, Libo Qin
-  - Publish Date: 2025.07.14
-  - Task: Reasoning
-  - Datasets: [ViTIB](https://github.com/autonomousvision/navsim)
-  - Summary：
-    - Introduces ViTCoT, a novel Video-Text Interleaved Chain-of-Thought paradigm for video reasoning that interleaves visual re-examination with textual reasoning, mimicking human cognitive processes.
-    - Constructs the Video-Text Interleaved Benchmark (ViTIB), created using MLLMs for key-video selection and manually verified, to support this new reasoning paradigm.
-    - Demonstrates through extensive experiments that ViTCoT significantly outperforms traditional text-only CoT and effectively activates more neuron values in MLLMs for enhanced video understanding.
-
 - [Unreal is all you need: Multimodal ISAC Data Simulation with Only One Engine](https://arxiv.org/abs/2507.08716)
   - Kongwu Huang, Shiyi Mu, Jun Jiang, Yuan Gao, Shugong Xu
   - Publisher: Shanghai University
