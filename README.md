@@ -102,6 +102,89 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [ViTCoT: Video-Text Interleaved Chain-of-Thought for Boosting Video Understanding in Large Language Models](https://arxiv.org/abs/2507.09876)
+  - Yongheng Zhang, Xu Liu, Ruihan Tao, Qiguang Chen, Hao Fei, Wanxiang Che, Libo Qin
+  - Publish Date: 2025.07.14
+  - Task: Reasoning
+  - Datasets: [ViTIB](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Introduces ViTCoT, a novel Video-Text Interleaved Chain-of-Thought paradigm for video reasoning that interleaves visual re-examination with textual reasoning, mimicking human cognitive processes.
+    - Constructs the Video-Text Interleaved Benchmark (ViTIB), created using MLLMs for key-video selection and manually verified, to support this new reasoning paradigm.
+    - Demonstrates through extensive experiments that ViTCoT significantly outperforms traditional text-only CoT and effectively activates more neuron values in MLLMs for enhanced video understanding.
+
+- [Unreal is all you need: Multimodal ISAC Data Simulation with Only One Engine](https://arxiv.org/abs/2507.08716)
+  - Kongwu Huang, Shiyi Mu, Jun Jiang, Yuan Gao, Shugong Xu
+  - Publisher: Shanghai University
+  - Publish Date: 2025.07.11
+  - Project Page: [Great-MCD](https://github.com/hkw-xg/Great-MCD)
+  - Code: [Great-MCD](https://github.com/hkw-xg/Great-MCD)
+  - Task: Perception
+  - Datasets: [Great-MSD](https://github.com/hkw-xg/Great-MCD)
+  - Summary：
+    - Proposes Great-X, a single-engine multimodal data twin platform that reconstructs Sionna's ray-tracing within Unreal Engine and integrates with autonomous driving tools for efficient, synchronized simulation of CSI, RGB, Radar, and LiDAR data.
+    - Constructs an open-source, large-scale, low-altitude UAV multimodal synaesthesia dataset named Great-MSD and proposes a baseline CSI-based UAV 3D localization algorithm, demonstrating its feasibility across different CSI simulation engines.
+
+- [VisioPath: Vision-Language Enhanced Model Predictive Control for Safe Autonomous Navigation in Mixed Traffic](https://arxiv.org/abs/2507.06441)
+  - Shanting Wang, Panagiotis Typaldos, Chenjun Li, Andreas A. Malikopoulos
+  - Publish Date: 2025.07.08
+  - Task: Planning, Control
+  - Datasets: [SUMO](https://www.eclipse.org/sumo/)
+  - Summary：
+    - A novel framework combining vision-language models (VLMs) with model predictive control (MPC) for safe autonomous driving in dynamic traffic.
+    - Leverages a bird's-eye view pipeline and zero-shot VLM to extract structured vehicle information, constructing elliptical collision-avoidance potential fields for trajectory planning.
+    - Implements a finite-horizon optimal control problem solved via differential dynamic programming with adaptive regularization and an event-triggered MPC loop, including a safety verification layer.
+
+- [LeAD: The LLM Enhanced Planning System Converged with End-to-end Autonomous Driving](https://arxiv.org/abs/2507.05754)
+  - Yuhang Zhang, Jiaqi Liu, Chengkai Xu, Peng Hang, Jian Sun
+  - Publish Date: 2025.07.08
+  - Task: Planning
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - LeAD, a dual-rate autonomous driving architecture integrating imitation learning-based end-to-end frameworks with large language model (LLM) augmentation for enhanced scenario comprehension and decision-making.
+    - The system uses a high-frequency E2E subsystem for real-time cycles and a low-frequency LLM module that employs multi-modal perception fusion and chain-of-thought reasoning to handle complex scenarios and edge cases.
+
+- [MVL-Loc: Leveraging Vision-Language Model for Generalizable Multi-Scene Camera Relocalization](https://arxiv.org/abs/2507.04509)
+  - Zhendong Xiao, Wu Wei, Shujie Ji, Shan Yang, Changhao Chen
+  - Publisher: (Inferred from context: Authors' affiliations not specified in abstract)
+  - Publish Date: 2025.07.06
+  - Task: Perception
+  - Datasets: [7Scenes](https://www.microsoft.com/en-us/research/project/rgb-d-dataset-7-scenes/), [Cambridge Landmarks](https://www.repository.cam.ac.uk/handle/1810/251342)
+  - Summary：
+    - MVL-Loc, a novel end-to-end multi-scene 6-DoF camera relocalization framework that leverages pretrained world knowledge from vision-language models (VLMs) for generalization across indoor and outdoor settings.
+    - Employs natural language as a directive tool to guide multi-scene learning, facilitating semantic understanding of complex scenes and capturing spatial relationships among objects.
+    - Demonstrates state-of-the-art performance and robustness on the 7Scenes and Cambridge Landmarks datasets, with improved accuracy in both positional and orientational estimates.
+
+- [VLAD: A VLM-Augmented Autonomous Driving Framework with Hierarchical Planning and Interpretable Decision Process](https://arxiv.org/abs/2507.01284)
+  - Cristian Gariboldi, Hayato Tokida, Ken Kinjo, Yuki Asada, Alexander Carballo
+  - Publish Date: 2025.07.02
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - VLAD, a vision-language autonomous driving model integrating a fine-tuned VLM with the VAD end-to-end system, using custom QA datasets to enhance spatial reasoning.
+    - The system generates high-level navigational commands and interpretable natural language explanations for driving decisions, improving transparency.
+    - Evaluation on nuScenes shows a 31.82% reduction in average collision rates compared to baseline methods.
+
+- [LLM-based Realistic Safety-Critical Driving Video Generation](https://arxiv.org/abs/2507.01264)
+  - Yongjie Fu, Ruijian Zha, Pei Tian, Xuan Di
+  - Publish Date: 2025.07.02
+  - Task: Simulation
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - A novel framework leveraging Large Language Models (LLMs) for few-shot code generation to automatically synthesize diverse and safety-critical driving scenarios within the CARLA simulator.
+    - Integrates a video generation pipeline using Cosmos-Transfer1 with ControlNet to convert rendered simulation scenes into realistic driving videos, bridging the simulation-to-real appearance gap.
+    - Enables controllable generation of rare edge cases, such as occluded pedestrian crossings or sudden vehicle cut-ins, for simulation-based testing of autonomous vehicles.
+
+- [Box-QAymo: Box-Referring VQA Dataset for Autonomous Driving](https://arxiv.org/abs/2507.00525)
+  - Djamahl Etchegaray, Yuxia Fu, Zi Huang, Yadan Luo
+  - Publish Date: 2025.07.01
+  - Project Page: [Box-QAymo](https://djamahl99.github.io/qaymo-pages/)
+  - Task: VQA
+  - Datasets: [Box-QAymo](https://djamahl99.github.io/qaymo-pages/)
+  - Summary：
+    - Introduces Box-QAymo, a box-referring VQA dataset and benchmark for evaluating and finetuning VLMs on spatial and temporal reasoning over user-specified objects in driving scenes.
+    - Proposes a hierarchical evaluation protocol covering binary sanity checks, attribute prediction, motion understanding, and spatiotemporal reasoning over inter-object dynamics.
+    - Provides a foundation for developing more robust and interpretable autonomous driving systems that can communicate effectively with users under real-world conditions.
+
 - [When Digital Twins Meet Large Language Models: Realistic, Interactive, and Editable Simulation for Autonomous Driving](https://arxiv.org/abs/2507.00319)
   - Tanmay Vilas Samak, Chinmay Vilas Samak, Bing Li, Venkat Krovi
   - Publish Date: 2025.06.30
