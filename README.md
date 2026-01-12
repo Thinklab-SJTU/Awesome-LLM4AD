@@ -102,18 +102,6 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
-- [Foundation Models for Trajectory Planning in Autonomous Driving: A Review of Progress and Open Challenges](https://arxiv.org/abs/2512.00021)
-  - Kemal Oksuz, Alexandru Buburuzan, Anthony Knittel, Yuhan Yao, Puneet K. Dokania
-  - Publisher: Five AI
-  - Publish Date: 2025.10.31
-  - Project Page: [FMs-for-driving-trajectories](https://github.com/fiveai/FMs-for-driving-trajectories)
-  - Code: [FMs-for-driving-trajectories](https://github.com/fiveai/FMs-for-driving-trajectories)
-  - Task: Planning
-  - Summary：
-    - A comprehensive review of 37 recently proposed foundation-model-based approaches for trajectory planning in autonomous driving, using a unifying taxonomy.
-    - Critically evaluates architectural design choices, methodological strengths, and inherent capabilities and limitations of these unified approaches.
-    - Assesses the openness of source code and datasets for the surveyed methods, providing a catalog via an accompanying webpage.
-
 - [Dynamic Model Selection for Trajectory Prediction via Pairwise Ranking and Meta-Features](https://arxiv.org/abs/2511.00126)
   - Lu Bowen
   - Publish Date: 2025.10.31
