@@ -306,7 +306,7 @@ format:
 - [Are AI-Generated Driving Videos Ready for Autonomous Driving? A Diagnostic Evaluation Framework](https://arxiv.org/abs/2512.06376)
   - Xinhao Xiang, Abhijeet Rastogi, Jiawei Zhang
   - Publish Date: 2025.12.06
-  - Task: Simulation
+  - Task: Generation
   - Datasets: [ADGV-Bench](https://arxiv.org/abs/2512.06376)
   - Summary：
     - Presents a diagnostic framework to evaluate the reliability of AI-generated driving videos (AIGVs) for training and evaluating autonomous driving models.
@@ -396,7 +396,7 @@ format:
 - [VLM as Strategist: Adaptive Generation of Safety-critical Testing Scenarios via Guided Diffusion](https://arxiv.org/abs/2512.02844)
   - Xinzheng Wu, Junyi Chen, Naiting Zhong, Yong Shen
   - Publish Date: 2025.12.02
-  - Task: Simulation
+  - Task: Generation
   - Summary：
     - Proposes a safety-critical testing scenario generation framework integrating Vision Language Models (VLMs) with adaptive guided diffusion models for autonomous driving systems.
     - Establishes a three-layer hierarchical architecture: a VLM strategic layer for objective determination, a tactical layer for guidance formulation, and an operational layer for guided diffusion execution.
@@ -454,7 +454,7 @@ format:
 - [Learning from Risk: LLM-Guided Generation of Safety-Critical Scenarios with Prior Knowledge](https://arxiv.org/abs/2511.20726)
   - Yuhang Wang, Heye Huang, Zhenhua Xu, Kailai Sun, Baoshen Guo, Jinhua Zhao
   - Publish Date: 2025.11.25
-  - Task: Simulation
+  - Task: Generation
   - Datasets: [CARLA](https://carla.org/), [SMARTS](https://github.com/huawei-noah/SMARTS)
   - Summary：
     - A high-fidelity scenario generation framework integrating a conditional variational autoencoder (CVAE) with a large language model (LLM) for autonomous driving safety validation.
@@ -794,7 +794,7 @@ format:
 - [LinguaSim: Interactive Multi-Vehicle Testing Scenario Generation via Natural Language Instruction Based on Large Language Models](https://arxiv.org/abs/2510.08046)
   - Qingyuan Shi, Qingwen Meng, Hao Cheng, Qing Xu, Jianqiang Wang
   - Publish Date: 2025.10.09
-  - Task: Simulation
+  - Task: Generation
   - Summary：
     - LinguaSim, an LLM-based framework that converts natural language into realistic, interactive 3D scenarios for autonomous vehicle testing and training, ensuring both dynamic vehicle interactions and faithful alignment between input descriptions and generated scenarios.
     - A feedback calibration module refines generation precision, improving fidelity to user intent and reducing excessive aggressiveness (crash rate from 46.9% to 6.3%).
@@ -1005,7 +1005,7 @@ format:
   - Yinglin Duan, Zhengxia Zou, Tongwei Gu, Wei Jia, Zhan Zhao, Luyi Xu, Xinzhu Liu, Yenan Lin, Hao Jiang, Kang Chen, Shuang Qiu
   - Publish Date: 2025.09.05
   - Project Page: [Demo Video](https://youtu.be/8VWZXpERR18)
-  - Task: Simulation
+  - Task: Generation
   - Summary：
     - LatticeWorld, a 3D world generation framework that leverages lightweight LLMs (LLaMA-2-7B) and Unreal Engine 5 to create large-scale interactive worlds from multimodal textual and visual instructions.
     - The framework streamlines industrial 3D environment production, achieving over a 90× increase in efficiency while maintaining high creative quality compared to traditional manual methods.
@@ -1079,7 +1079,7 @@ format:
   - Yajiao Xiong, Xiaoyu Zhou, Yongtao Wan, Deqing Sun, Ming-Hsuan Yang
   - Publish Date: 2025.08.28
   - Project Page: [DrivingGaussian++](https://xiong-creator.github.io/DrivingGaussian_plus.github.io)
-  - Task: Simulation
+  - Task: Generation
   - Summary：
     - DrivingGaussian++, an efficient framework for realistic reconstruction and controllable editing of surrounding dynamic autonomous driving scenes, using incremental 3D Gaussians for static background and a composite dynamic Gaussian graph for moving objects.
     - Integrates a LiDAR prior for detailed, consistent scene reconstruction and supports training-free controllable editing (texture, weather, object manipulation) by leveraging multi-view images, depth priors, and large language models (LLMs) for motion trajectory generation.
@@ -1320,7 +1320,7 @@ format:
   - Publish Date: 2025.07.11
   - Project Page: [Great-MCD](https://github.com/hkw-xg/Great-MCD)
   - Code: [Great-MCD](https://github.com/hkw-xg/Great-MCD)
-  - Task: Simulation
+  - Task: Generation
   - Datasets: [Great-MSD](https://github.com/hkw-xg/Great-MCD)
   - Summary：
     - Proposes Great-X, a single-engine multimodal data twin platform that reconstructs Sionna's ray-tracing within Unreal Engine and integrates with autonomous driving tools for efficient, synchronized simulation of CSI, RGB, Radar, and LiDAR data.
@@ -1358,7 +1358,7 @@ format:
 - [LLM-based Realistic Safety-Critical Driving Video Generation](https://arxiv.org/abs/2507.01264)
   - Yongjie Fu, Ruijian Zha, Pei Tian, Xuan Di
   - Publish Date: 2025.07.02
-  - Task: Simulation
+  - Task: Generation
   - Datasets: [CARLA](https://carla.org/)
   - Summary：
     - A novel framework leveraging Large Language Models (LLMs) for few-shot code generation to automatically synthesize diverse and safety-critical driving scenarios within the CARLA simulator.
@@ -1379,7 +1379,7 @@ format:
 - [When Digital Twins Meet Large Language Models: Realistic, Interactive, and Editable Simulation for Autonomous Driving](https://arxiv.org/abs/2507.00319)
   - Tanmay Vilas Samak, Chinmay Vilas Samak, Bing Li, Venkat Krovi
   - Publish Date: 2025.06.30
-  - Task: Simulation
+  - Task: Generation
   - Summary：
     - A unified framework for creating high-fidelity digital twins to accelerate autonomous driving research, balancing dynamical fidelity, photorealistic rendering, context-relevant scenario orchestration, and real-time performance.
     - Leverages physics-based and data-driven techniques for real2sim reconstruction with geometric/photorealistic accuracy and infuses assets with physical properties for real-time dynamical simulation.
