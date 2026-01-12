@@ -85,7 +85,7 @@ format:
 - [LatentVLA: Efficient Vision-Language Models for Autonomous Driving via Latent Action Prediction](https://arxiv.org/abs/2601.05611)
   - Chengen Xie, Bin Sun, Tianyu Li, Junjie Wu, Zhihui Hao, XianPeng Lang, Hongyang Li
   - Publish Date: 2026.01.09
-  - Task: End-to-End
+  - Task: Planning
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - LatentVLA, a novel framework using self-supervised latent action prediction to train Vision-Language-Action (VLA) models without language annotations, eliminating linguistic bias.
@@ -135,7 +135,7 @@ format:
 - [Dichotomous Diffusion Policy Optimization](https://arxiv.org/abs/2601.00898)
   - Ruiming Liang, Yinan Zheng, Kexin Zheng, Tianyi Tan, Jianxiong Li, Liyuan Mao, Zhihao Wang, Guang Chen, Hangjun Ye, Jingjing Liu, Jinqiao Wang, Xianyuan Zhan
   - Publish Date: 2025.12.31
-  - Task: Planning, Control, End-to-End
+  - Task: End-to-End
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - Proposes DIPOLE (Dichotomous diffusion Policy improvement), a novel RL algorithm for stable and controllable diffusion policy optimization by decomposing the optimal policy into a pair of dichotomous policies for reward maximization and minimization.
@@ -164,7 +164,7 @@ format:
 - [Spatial-aware Vision Language Model for Autonomous Driving](https://arxiv.org/abs/2512.24331)
   - Weijie Wei, Zhipeng Luo, Ling Feng, Venice Erin Liong
   - Publish Date: 2025.12.30
-  - Task: End-to-End
+  - Task: Perception
   - Summary：
     - LVLDrive (LiDAR-Vision-Language), a novel framework designed to upgrade existing Vision-Language Models (VLMs) with robust 3D metric spatial understanding for autonomous driving by incorporating LiDAR point clouds as an extra input modality.
     - Introduces a Gradual Fusion Q-Former to incrementally inject LiDAR features, mitigating catastrophic disturbance to pre-trained VLMs and preserving their existing knowledge base.
@@ -205,7 +205,7 @@ format:
 - [OmniDrive-R1: Reinforcement-driven Interleaved Multi-modal Chain-of-Thought for Trustworthy Vision-Language Autonomous Driving](https://arxiv.org/abs/2512.14044)
   - Zhenguo Zhang, Haohan Zheng, Yishen Wang, Le Xu, Tianchen Deng, Xuefeng Chen, Qu Chen, Bo Zhang, Wuxiong Huang
   - Publish Date: 2025.12.16
-  - Task: Reasoning
+  - Task: End-to-End
   - Datasets: [DriveLMM-o1](https://github.com/OpenDriveLab/DriveLMM)
   - Summary：
     - OmniDrive-R1, an end-to-end VLM framework for autonomous driving, introduces an interleaved Multi-modal Chain-of-Thought (iMCoT) mechanism to unify perception and reasoning.
@@ -575,7 +575,7 @@ format:
 - [Are LLMs The Way Forward? A Case Study on LLM-Guided Reinforcement Learning for Decentralized Autonomous Driving](https://arxiv.org/abs/2511.12751)
   - Timur Anvar, Jeffrey Chen, Yuyan Wang, Rohan Chandra
   - Publish Date: 2025.11.16
-  - Task: Planning, Control
+  - Task: Planning
   - Summary：
     - Investigates whether small, locally deployed LLMs (< 14B parameters) can support autonomous highway driving through reward shaping for RL, rather than direct control.
     - Presents a case study comparing RL-only, LLM-only, and hybrid LLM-RL approaches for decentralized autonomous driving in complex scenarios like dense highways and merges.
@@ -728,7 +728,7 @@ format:
 - [SAVANT: Semantic Analysis with Vision-Augmented Anomaly deTection](https://arxiv.org/abs/2510.18034)
   - Roberto Brusnicki, David Pop, Yuan Gao, Mattia Piccinini, Johannes Betz
   - Publish Date: 2025.10.20
-  - Task: Detection
+  - Task: Perception
   - Summary：
     - Introduces SAVANT, a structured reasoning framework for detecting anomalous driving scenarios through layered scene analysis and a two-phase pipeline of structured scene description extraction and multi-modal evaluation.
     - Achieves high accuracy and recall on real-world driving scenarios, enabling a fine-tuned 7B open-source model to surpass proprietary models while enabling local, low-cost deployment.
@@ -824,7 +824,7 @@ format:
   - Haibo Hu, Lianming Huang, Xinyu Wang, Yufei Cui, Shangyu Wu, Nan Guan, Chun Jason Xue
   - Publish Date: 2025.10.02
   - Code: [Nav-EE](https://anonymous.4open.science/r/Nav-EE-BBC4)
-  - Task: Navigation
+  - Task: Planning
   - Datasets: [CODA](https://github.com/OpenDriveLab/CODA), [Waymo](https://waymo.com/open/), [BOSCH](https://www.bosch-mobility.com/en/solutions/automated-driving/)
   - Summary：
     - Proposes Nav-EE, a navigation-guided early-exit framework for Vision-Language Models (VLMs) in autonomous driving, which precomputes task-specific exit layers offline and applies them dynamically online based on navigation priors.
@@ -877,7 +877,7 @@ format:
   - Publisher: University of Padua, Stanford University, University of Pennsylvania
   - Publish Date: 2025.09.27
   - Project Page: [J-DAPT](https://j-dapt.github.io)
-  - Task: Reasoning
+  - Task: Planning
   - Datasets: [Waymo Open Dataset](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Introduces J-DAPT, a lightweight framework for multimodal jailbreak detection in robotic environments using attention-based fusion and domain adaptation.
@@ -1178,7 +1178,7 @@ format:
 - [Bench2ADVLM: A Closed-Loop Benchmark for Vision-language Models in Autonomous Driving](https://arxiv.org/abs/2508.02028)
   - Tianyuan Zhang, Ting Jin, Lu Wang, Jiangfan Liu, Siyuan Liang, Mingchuan Zhang, Aishan Liu, Xianglong Liu
   - Publish Date: 2025.08.04
-  - Task: Benchmarking, Planning
+  - Task: Evaluation
   - Summary：
     - Bench2ADVLM, a unified hierarchical closed-loop evaluation framework for real-time, interactive assessment of Vision-Language Models (VLMs) in autonomous driving across simulation and physical platforms.
     - Introduces a dual-system adaptation architecture for simulation and a physical control abstraction layer to bridge simulation and reality, enabling closed-loop testing on physical vehicles.
@@ -1289,7 +1289,7 @@ format:
   - Haichao Liu, Haoren Guo, Pei Liu, Benshan Ma, Yuxiang Zhang, Jun Ma, Tong Heng Lee
   - Publish Date: 2025.07.21
   - Code: [VLM-UDMC](https://github.com/henryhcliu/vlmudmc.git)
-  - Task: Planning, Control
+  - Task: Planning
   - Summary：
     - Proposes VLM-UDMC, a vision-language model-enhanced framework for unified decision-making and motion control in urban autonomous driving, incorporating scene reasoning and risk-aware insights.
     - Features a two-step reasoning policy with Retrieval-Augmented Generation (RAG) in an upper-level slow system to dynamically reconfigure motion planning based on real-time environmental changes.
@@ -1329,7 +1329,7 @@ format:
 - [VisioPath: Vision-Language Enhanced Model Predictive Control for Safe Autonomous Navigation in Mixed Traffic](https://arxiv.org/abs/2507.06441)
   - Shanting Wang, Panagiotis Typaldos, Chenjun Li, Andreas A. Malikopoulos
   - Publish Date: 2025.07.08
-  - Task: Planning, Control
+  - Task: Planning
   - Datasets: [SUMO](https://www.eclipse.org/sumo/)
   - Summary：
     - A novel framework combining vision-language models (VLMs) with model predictive control (MPC) for safe autonomous driving in dynamic traffic.
@@ -1418,7 +1418,7 @@ format:
   - Wenbin Gan, Minh-Son Dao, Koji Zettsu
   - Publisher: NICT, University of Hyogo
   - Publish Date: 2025.06.25
-  - Task: Planning, Reasoning
+  - Task: Planning
   - Summary：
     - Presents a Case-Based Reasoning Augmented LLM (CBR-LLM) framework for evasive maneuver decision-making in complex, safety-critical driving scenarios.
     - Integrates semantic scene understanding from dashcam videos with retrieval of relevant past driving cases to generate context-sensitive, human-aligned maneuver recommendations.
@@ -1427,7 +1427,7 @@ format:
 - [Unified Vision-Language-Action Model](https://arxiv.org/abs/2506.19850)
   - Yuqi Wang, Xinghang Li, Wenxuan Wang, Junbo Zhang, Yingyan Li, Yuntao Chen, Xinlong Wang, Zhaoxiang Zhang
   - Publish Date: 2025.06.24
-  - Task: Control
+  - Task: Planning
   - Datasets: [CALVIN](https://github.com/mees/calvin), [LIBERO](https://libero-project.github.io/), [Simplenv-Bridge](https://simpler-env.github.io/), [ALOHA](https://mobile-aloha.github.io/)
   - Summary：
     - UniVLA, a unified and native multimodal VLA model that autoregressively models vision, language, and action signals as discrete token sequences for flexible multimodal task learning.
@@ -1447,7 +1447,7 @@ format:
   - Mihir Godbole, Xiangbo Gao, Zhengzhong Tu
   - Publisher: University of California, Berkeley, University of Michigan
   - Publish Date: 2025.06.21
-  - Task: Prediction, Reasoning
+  - Task: Evaluation
   - Datasets: [DRAMA](https://usa.honda-ri.com/drama)
   - Summary：
     - Introduces DRAMA-X, a fine-grained benchmark for evaluating multi-class intent prediction and risk reasoning in safety-critical driving scenarios, constructed from the DRAMA dataset via an automated annotation pipeline.
