@@ -102,6 +102,206 @@ format:
   - Summary:
     - The paper introduces the first discrete flow matching architecture for autonomous driving, which achieves low-latency, parallel, and coarse-to-fine motion planning.
 
+- [Foundation Models for Trajectory Planning in Autonomous Driving: A Review of Progress and Open Challenges](https://arxiv.org/abs/2512.00021)
+  - Kemal Oksuz, Alexandru Buburuzan, Anthony Knittel, Yuhan Yao, Puneet K. Dokania
+  - Publisher: Five AI
+  - Publish Date: 2025.10.31
+  - Project Page: [FMs-for-driving-trajectories](https://github.com/fiveai/FMs-for-driving-trajectories)
+  - Code: [FMs-for-driving-trajectories](https://github.com/fiveai/FMs-for-driving-trajectories)
+  - Task: Planning
+  - Summary：
+    - A comprehensive review of 37 recently proposed foundation-model-based approaches for trajectory planning in autonomous driving, using a unifying taxonomy.
+    - Critically evaluates architectural design choices, methodological strengths, and inherent capabilities and limitations of these unified approaches.
+    - Assesses the openness of source code and datasets for the surveyed methods, providing a catalog via an accompanying webpage.
+
+- [Dynamic Model Selection for Trajectory Prediction via Pairwise Ranking and Meta-Features](https://arxiv.org/abs/2511.00126)
+  - Lu Bowen
+  - Publish Date: 2025.10.31
+  - Task: Prediction
+  - Datasets: [nuPlan](https://www.nuscenes.org/nuplan)
+  - Summary：
+    - Proposes a dynamic multi-expert gating framework that adaptively selects the most reliable trajectory predictor among a physics-informed LSTM, a Transformer, and a fine-tuned GameFormer on a per-sample basis.
+    - Formulates trajectory expert selection as a pairwise-ranking problem over internal model signals (meta-features), optimizing decision quality without requiring post-hoc calibration.
+    - Evaluated on nuPlan-mini, the LLM-enhanced tri-expert gate achieves a 9.5% reduction in Final Displacement Error over GameFormer and demonstrates consistent improvements in open-loop simulations.
+
+- [Token Is All You Need: Cognitive Planning through Belief-Intent Co-Evolution](https://arxiv.org/abs/2511.05540)
+  - Shiyao Sang
+  - Publish Date: 2025.10.30
+  - Task: Planning
+  - Datasets: [nuPlan](https://www.nuscenes.org/nuplan)
+  - Summary：
+    - Proposes that effective planning arises from the co-evolution of belief and intent within a minimal set of semantically rich tokens, challenging the need for exhaustive scene modeling.
+    - Demonstrates that sparse intent tokens achieve strong performance, and conditioning trajectory decoding on predicted future tokens yields a 21.6% improvement in ADE, showing performance emerges from cognitive planning.
+    - Observes the emergence of cognitive consistency and temporal fuzziness through training, establishing a new paradigm where intelligence lies in the tokenized duality of belief and intent.
+
+- [Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail](https://arxiv.org/abs/2511.00088)
+  - Yan Wang, Wenjie Luo, Junjie Bai, Yulong Cao, Tong Che, Ke Chen, Yuxiao Chen, Jenna Diamond, Yifan Ding, Wenhao Ding, Liang Feng, Greg Heinrich, Jack Huang, Peter Karkus, Boyi Li, Pinyi Li, Tsung-Yi Lin, Dongran Liu, Ming-Yu Liu, Langechuan Liu, Zhijian Liu, Jason Lu, Yunxiang Mao, Pavlo Molchanov, Lindsey Pavao, Zhenghao Peng, Mike Ranzinger, Ed Schmerling, Shida Shen, Yunfei Shi, Sarah Tariq, Ran Tian, Tilman Wekel, Xinshuo Weng, Tianjun Xiao, Eric Yang, Xiaodong Yang, Yurong You, Xiaohui Zeng, Wenyuan Zhang, Boris Ivanovic, Marco Pavone
+  - Publisher: NVIDIA
+  - Publish Date: 2025.10.30
+  - Code: [Alpamayo-R1](https://github.com/NVlabs/alpamayo)
+  - Task: Planning
+  - Summary：
+    - Alpamayo-R1 (AR1) is a vision-language-action model (VLA) that integrates Chain of Causation reasoning with trajectory planning for complex, long-tail driving scenarios.
+    - It introduces the Chain of Causation (CoC) dataset, built via a hybrid auto-labeling and human-in-the-loop pipeline, and a modular architecture combining a reasoning VLM with a diffusion-based trajectory decoder.
+    - The model uses a multi-stage training strategy with supervised fine-tuning and reinforcement learning, achieving improved planning accuracy and safety in simulation and real-time on-vehicle deployment.
+
+- [Enhancing Vision-Language Models for Autonomous Driving through Task-Specific Prompting and Spatial Reasoning](https://arxiv.org/abs/2510.24152)
+  - Aodi Wu, Xubo Luo
+  - Publisher: University of Chinese Academy of Sciences, Central South University
+  - Publish Date: 2025.10.28
+  - Code: [UCAS-CSU-phase2](https://github.com/wuaodi/UCAS-CSU-phase2)
+  - Task: VQA
+  - Datasets: RoboSense Challenge
+  - Summary：
+    - A systematic framework for autonomous driving scene understanding, built on a Mixture-of-Prompts router, task-specific prompts with spatial reasoning, a visual assembly module, and optimized inference parameters.
+    - Implemented on Qwen2.5-VL-72B, achieving 70.87% accuracy on clean data and 72.85% on corrupted data in the RoboSense Challenge at IROS 2025.
+
+- [Towards Physics-informed Spatial Intelligence with Human Priors: An Autonomous Driving Pilot Study](https://arxiv.org/abs/2510.21160)
+  - Guanlin Wu, Boyan Su, Yang Zhao, Pu Wang, Yichen Lin, Hao Frank Yang
+  - Publish Date: 2025.10.24
+  - Task: Perception
+  - Datasets: [SIGBench](https://arxiv.org/abs/2510.21160)
+  - Summary：
+    - Introduces Spatial Intelligence Grid (SIG), a structured, grid-based schema to explicitly encode object layouts, relations, and physically grounded priors for foundation-model reasoning in autonomous driving.
+    - Derives SIG-informed evaluation metrics to quantify a model's intrinsic Visual-Spatial Intelligence (VSI), separating spatial capability from language priors.
+    - Releases SIGBench, a benchmark of 1.4K driving frames annotated with ground-truth SIG labels and human gaze traces to support VSI tasks.
+
+- [Addressing Corner Cases in Autonomous Driving: A World Model-based Approach with Mixture of Experts and LLMs](https://arxiv.org/abs/2510.21867)
+  - Haicheng Liao, Bonan Wang, Junxian Yang, Chengyue Wang, Zhengbin He, Guohui Zhang, Chengzhong Xu, Zhenning Li
+  - Publish Date: 2025.10.23
+  - Task: Prediction
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [NGSIM](https://ops.fhwa.dot.gov/trafficanalysistools/ngsim.htm), [HighD](https://www.highd-dataset.com/), [MoCAD](https://mocad-dataset.github.io/)
+  - Summary：
+    - WM-MoE, a world model-based motion forecasting framework unifying perception, memory, and decision-making to address high-risk corner-case scenarios.
+    - Leverages LLMs with a lightweight temporal tokenizer for long-horizon reasoning and introduces a Mixture-of-Experts (MoE) to decompose complex corner cases.
+    - Introduces the nuScenes-corner benchmark and shows state-of-the-art performance across multiple datasets under corner-case and data-missing conditions.
+
+- [Robust Driving QA through Metadata-Grounded Context and Task-Specific Prompts](https://arxiv.org/abs/2510.19001)
+  - Seungjun Yu, Junsung Park, Youngsun Lim, Hyunjung Shim
+  - Publish Date: 2025.10.21
+  - Task: VQA
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - A two-phase vision-language QA system for autonomous driving that answers high-level perception, prediction, and planning questions using a large multimodal LLM.
+    - The system conditions the model on multi-camera inputs, temporal history, and chain-of-thought prompts, enhanced by a self-consistency ensemble for reliability.
+    - Phase-2 augments prompts with scene metadata and task-specific instructions, significantly improving accuracy and demonstrating robustness under severe visual corruption.
+
+- [SAVANT: Semantic Analysis with Vision-Augmented Anomaly deTection](https://arxiv.org/abs/2510.18034)
+  - Roberto Brusnicki, David Pop, Yuan Gao, Mattia Piccinini, Johannes Betz
+  - Publish Date: 2025.10.20
+  - Task: Detection
+  - Summary：
+    - Introduces SAVANT, a structured reasoning framework for detecting anomalous driving scenarios through layered scene analysis and a two-phase pipeline of structured scene description extraction and multi-modal evaluation.
+    - Achieves high accuracy and recall on real-world driving scenarios, enabling a fine-tuned 7B open-source model to surpass proprietary models while enabling local, low-cost deployment.
+    - Addresses data scarcity by automatically labeling over 9,640 real-world images with high accuracy, providing a practical path for reliable semantic monitoring in autonomous systems.
+
+- [SimpleVSF: VLM-Scoring Fusion for Trajectory Prediction of End-to-End Autonomous Driving](https://arxiv.org/abs/2510.17191)
+  - Peiru Zheng, Yun Zhao, Zhan Gong, Hong Zhu, Shaohua Wu
+  - Publish Date: 2025.10.20
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - SimpleVSF, a novel framework that enhances end-to-end planning by leveraging the cognitive capabilities of Vision-Language Models (VLMs) and advanced trajectory fusion techniques.
+    - Utilizes conventional scorers and novel VLM-enhanced scorers, with a robust weight fusioner for quantitative aggregation and a VLM-based fusioner for qualitative, context-aware decision-making.
+    - The leading approach in the ICCV 2025 NAVSIM v2 End-to-End Driving Challenge, demonstrating state-of-the-art performance in safety, comfort, and efficiency.
+
+- [DiffVLA++: Bridging Cognitive Reasoning and End-to-End Driving through Metric-Guided Alignment](https://arxiv.org/abs/2510.17148)
+  - Yu Gao, Anqing Jiang, Yiru Wang, Wang Jijun, Hao Jiang, Zhigang Sun, Heng Yuwen, Wang Shuo, Hao Zhao, Sun Hao
+  - Publish Date: 2025.10.20
+  - Task: End-to-End
+  - Summary：
+    - DiffVLA++, an enhanced autonomous driving framework that bridges cognitive reasoning and end-to-end planning through metric-guided alignment.
+    - Introduces a VLA module for semantically grounded trajectories, an E2E module for physical feasibility, and a metric-guided trajectory scorer to align their outputs.
+    - Achieves an EPDMS of 49.12 on the ICCV 2025 Autonomous Grand Challenge leaderboard.
+
+- [VDRive: Leveraging Reinforced VLA and Diffusion Policy for End-to-end Autonomous Driving](https://arxiv.org/abs/2510.15446)
+  - Ziang Guo, Zufeng Zhang
+  - Publish Date: 2025.10.17
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - VDRive, a novel pipeline for end-to-end autonomous driving that models state-action mapping for interpretable and robust decision making.
+    - Combines a Vision Language Action Model (VLA) for contextual state understanding with a generative diffusion policy-based action head for geometric action generation.
+    - Employs a reinforcement learning fine-tuning pipeline with an actor-critic framework, achieving state-of-the-art performance on Bench2Drive and nuScenes benchmarks.
+
+- [DriveCritic: Towards Context-Aware, Human-Aligned Evaluation for Autonomous Driving with Vision-Language Models](https://arxiv.org/abs/2510.13108)
+  - Jingyu Song, Zhenxin Li, Shiyi Lan, Xinglong Sun, Nadine Chang, Maying Shen, Joshua Chen, Katherine A. Skinner, Jose M. Alvarez
+  - Publish Date: 2025.10.15
+  - Task: Planning
+  - Summary：
+    - Introduces DriveCritic, a novel framework for context-aware, human-aligned evaluation of autonomous driving planners, featuring a curated dataset of challenging scenarios annotated with human preferences and a Vision-Language Model (VLM) based evaluator.
+    - The DriveCritic model is fine-tuned using a two-stage supervised and reinforcement learning pipeline to adjudicate between trajectory pairs by integrating visual and symbolic context, significantly outperforming existing metrics in matching human preferences.
+
+- [DriveVLA-W0: World Models Amplify Data Scaling Law in Autonomous Driving](https://arxiv.org/abs/2510.12796)
+  - Yingyan Li, Shuyao Shang, Weisong Liu, Bing Zhan, Haochen Wang, Yuqi Wang, Yuntao Chen, Xiaoman Wang, Yasong An, Chufeng Tang, Lu Hou, Lue Fan, Zhaoxiang Zhang
+  - Publish Date: 2025.10.14
+  - Task: End-to-End
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes DriveVLA-W0, a training paradigm using world modeling to predict future images, providing dense self-supervised signals to learn driving environment dynamics.
+    - Introduces a lightweight action expert for real-time inference, built on representations learned from world modeling.
+    - Demonstrates significant performance gains over baselines and shows the approach amplifies the data scaling law, with accelerating gains as training dataset size increases.
+
+- [Align2Act: Instruction-Tuned Models for Human-Aligned Autonomous Driving](https://arxiv.org/abs/2510.10503)
+  - Kanishkha Jaisankar, Sunidhi Tandel
+  - Publish Date: 2025.10.12
+  - Task: Planning
+  - Datasets: [nuPlan](https://www.nuscenes.org/nuplan)
+  - Summary：
+    - Align2Act, a motion planning framework that transforms instruction-tuned LLMs into interpretable planners aligned with human behavior, using structured driving instructions based on human reasoning and traffic rules.
+    - The Align2ActChain module guides step-by-step reasoning to produce an interpretable rationale and a safe trajectory, fine-tuned on LLaMA-2-7B with LoRA using the nuPlan dataset.
+    - Demonstrates improved planning quality and human-likeness on the real-world nuPlan closed-loop benchmark, with structured reasoning significantly improving performance over baseline LLM planners.
+
+- [LinguaSim: Interactive Multi-Vehicle Testing Scenario Generation via Natural Language Instruction Based on Large Language Models](https://arxiv.org/abs/2510.08046)
+  - Qingyuan Shi, Qingwen Meng, Hao Cheng, Qing Xu, Jianqiang Wang
+  - Publish Date: 2025.10.09
+  - Task: Simulation
+  - Summary：
+    - LinguaSim, an LLM-based framework that converts natural language into realistic, interactive 3D scenarios for autonomous vehicle testing and training, ensuring both dynamic vehicle interactions and faithful alignment between input descriptions and generated scenarios.
+    - A feedback calibration module refines generation precision, improving fidelity to user intent and reducing excessive aggressiveness (crash rate from 46.9% to 6.3%).
+    - The framework bridges the gap between natural language and closed-loop, interactive simulations, constraining adversarial vehicle behaviors using both the scenario description and the autonomous driving model.
+
+- [GTR-Bench: Evaluating Geo-Temporal Reasoning in Vision-Language Models](https://arxiv.org/abs/2510.07791)
+  - Qinghongbing Xie, Zhaoyuan Xia, Feng Zhu, Lijun Gong, Ziyue Li, Rui Zhao, Long Zeng
+  - Publish Date: 2025.10.09
+  - Code: [GTR-Bench](https://github.com/X-Luffy/GTR-Bench)
+  - Task: Reasoning
+  - Summary：
+    - Introduces GTR-Bench, a novel benchmark for evaluating geographic temporal reasoning of moving targets in a large-scale camera network, requiring perspective switches between maps and videos and joint reasoning across non-overlapping video views.
+    - Evaluations show a significant performance gap between state-of-the-art VLMs and human performance on geo-temporal reasoning, revealing key deficiencies in context utilization, temporal forecasting, and map-video alignment.
+    - The benchmark provides insights into spatial-temporal intelligence for applications like autonomous driving and embodied AI, with the code and benchmark to be released publicly.
+
+- [Work Zones challenge VLM Trajectory Planning: Toward Mitigation and Robust Autonomous Driving](https://arxiv.org/abs/2510.02803)
+  - Yifan Liao, Zhen Sun, Xiaoyun Qiu, Zixiao Zhao, Wenbing Tang, Xinlei He, Xinhu Zheng, Tianwei Zhang, Xinyi Huang, Xingshuo Han
+  - Publish Date: 2025.10.03
+  - Task: Planning
+  - Datasets: [ROADWork](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Conducts the first systematic study of Visual Language Models (VLMs) for trajectory planning in work zones, revealing a 68.0% failure rate for mainstream VLMs and identifying 8 common failure patterns.
+    - Proposes REACT-Drive, a trajectory planning framework integrating VLMs with Retrieval-Augmented Generation (RAG) to convert prior failures into constraint rules and retrieve similar patterns for guidance.
+    - Demonstrates REACT-Drive's effectiveness, reducing average displacement error by ~3x compared to VLM baselines and achieving the lowest inference time (0.58s) in experiments on the ROADWork dataset and 15 real-world work zone scenarios.
+
+- [Nav-EE: Navigation-Guided Early Exiting for Efficient Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2510.01795)
+  - Haibo Hu, Lianming Huang, Xinyu Wang, Yufei Cui, Shangyu Wu, Nan Guan, Chun Jason Xue
+  - Publish Date: 2025.10.02
+  - Code: [Nav-EE](https://anonymous.4open.science/r/Nav-EE-BBC4)
+  - Task: Navigation
+  - Datasets: [CODA](https://github.com/OpenDriveLab/CODA), [Waymo](https://waymo.com/open/), [BOSCH](https://www.bosch-mobility.com/en/solutions/automated-driving/)
+  - Summary：
+    - Proposes Nav-EE, a navigation-guided early-exit framework for Vision-Language Models (VLMs) in autonomous driving, which precomputes task-specific exit layers offline and applies them dynamically online based on navigation priors.
+    - Achieves accuracy comparable to full inference while reducing latency by up to 63.9%, with real-vehicle integration demonstrating reduced inference latency from 600ms to 300ms.
+
+- [Strategic Fusion of Vision Language Models: Shapley-Credited Context-Aware Dawid-Skene for Multi-Label Tasks in Autonomous Driving](https://arxiv.org/abs/2510.01126)
+  - Yuxiang Feng, Keyang Zhang, Hassane Ouchouid, Ashwil Kaniamparambil, Ioannis Souflas, Panagiotis Angeloudis
+  - Publisher: Imperial College London
+  - Publish Date: 2025.10.01
+  - Task: Perception, Reasoning
+  - Datasets: [HDD](https://usa.honda-ri.com/hdd)
+  - Summary：
+    - Presents a game-theoretic fusion method, Shapley-credited Context-Aware Dawid-Skene with Agreement, for multi-label understanding of dashcam video to address VLM hallucination in AV pipelines.
+    - Curates a specialized dataset of 1,000 real-world dashcam clips with structured annotations using an automatic pipeline that fuses HDD ground truth, vehicle kinematics, and object tracking.
+    - The method achieves significant improvements over single models, including a 23% reduction in Hamming distance and over 47% improvement in F1 scores, providing a calibrated and robust decision-support component.
+
 - [NuRisk: A Visual Question Answering Dataset for Agent-Level Risk Assessment in Autonomous Driving](https://arxiv.org/abs/2509.25944)
   - Yuan Gao, Mattia Piccinini, Roberto Brusnicki, Yuchen Zhang, Johannes Betz
   - Publisher: Technical University of Munich
