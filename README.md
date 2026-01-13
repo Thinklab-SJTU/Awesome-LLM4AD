@@ -9,7 +9,7 @@ Welcome to follow and star! If you find any related materials could be helpful, 
 ## Citation
 Our survey paper is at https://arxiv.org/abs/2311.01043 which includes more detailed discussions and will be continuously updated. 
 
-**The GitHub Pages was updated on July 03, 2025.**
+**The GitHub Pages was updated on Jan 12, 2026.**
 
 **The Survey Paper latest version was updated on August 12, 2024.**
 
