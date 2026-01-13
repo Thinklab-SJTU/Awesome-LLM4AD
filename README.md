@@ -61,6 +61,13 @@ format:
   - summary
   - metrics
 ```
+- [Efficient Visual Question Answering Pipeline for Autonomous Driving via Scene Region Compression](https://arxiv.org/abs/2601.07092)
+  - Yuliang Cai, Dongqiangzi Ye, Zitian Chen, Chongruo Wu
+  - Publish Date: 2026.01.11
+  - Task: VQA
+  - Summary：
+    - Proposes SRC-Pipeline, an efficient VLM framework for autonomous driving VQA that compresses early frame tokens into a small number of high-level tokens while keeping full tokens for recent frames.
+    - Achieves a 66% reduction in FLOPs while maintaining comparable performance, enabling more effective real-time operation in safety-critical driving settings.
 
 - [Modular Autonomy with Conversational Interaction: An LLM-driven Framework for Decision Making in Autonomous Driving](https://arxiv.org/abs/2601.05806)
   - Marvin Seegert, Korbinian Moller, Johannes Betz
