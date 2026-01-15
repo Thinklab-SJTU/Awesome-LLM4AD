@@ -62,6 +62,49 @@ format:
   - metrics
 ```
 - [Efficient Visual Question Answering Pipeline for Autonomous Driving via Scene Region Compression](https://arxiv.org/abs/2601.07092)
+- [MAD: Motion Appearance Decoupling for efficient Driving World Models](https://arxiv.org/abs/2601.09452)
+  - Ahmad Rahimi, Valentin Gerard, Eloi Zablocki, Matthieu Cord, Alexandre Alahi
+  - Publisher: EPFL VITA
+  - Publish Date: 2026.01.14
+  - Project Page: [MAD-World-Model](https://vita-epfl.github.io/MAD-World-Model/)
+  - Task: Prediction
+  - Summary：
+    - Proposes an efficient adaptation framework that converts generalist video diffusion models into controllable driving world models by decoupling motion learning from appearance synthesis.
+    - Introduces a two-stage reasoning-rendering paradigm: first inferring dynamics via skeletonized agent videos, then rendering realistic RGB appearance, achieving state-of-the-art performance with significantly less compute.
+
+- [SoC: Semantic Orthogonal Calibration for Test-Time Prompt Tuning](https://arxiv.org/abs/2601.08617)
+  - Leo Fillioux, Omprakash Chakraborty, Ismail Ben Ayed, Paul-Henry Cournède, Stergios Christodoulidis, Maria Vakalopoulou, Jose Dolz
+  - Publisher: Université Paris-Saclay, Polytechnique Montréal, Mila, Université de Montréal
+  - Publish Date: 2026.01.13
+  - Task: Perception
+  - Summary：
+    - Proposes Semantic Orthogonal Calibration (SoC), a Huber-based regularizer for test-time prompt tuning of vision-language models to improve uncertainty calibration.
+    - Theoretically and empirically shows that prior fully orthogonal constraints can harm calibration by pushing semantically related classes apart, making models overconfident.
+    - Demonstrates that SoC consistently improves calibration performance while maintaining competitive discriminative capabilities across comprehensive empirical validation.
+
+- [Semantic Misalignment in Vision-Language Models under Perceptual Degradation](https://arxiv.org/abs/2601.08355)
+  - Guo Cheng
+  - Publish Date: 2026.01.13
+  - Task: Perception
+  - Datasets: [Cityscapes](https://www.cityscapes-dataset.com/)
+  - Summary：
+    - A systematic study of semantic misalignment in Vision-Language Models (VLMs) under controlled degradation of upstream visual perception, using semantic segmentation as a representative module.
+    - Introduces perception-realistic corruptions that cause moderate drops in segmentation metrics but lead to severe VLM failures like object hallucination and safety-critical omissions.
+    - Proposes language-level misalignment metrics to quantify hallucination, critical omission, and safety misinterpretation, revealing a disconnect between pixel-level robustness and multimodal semantic reliability.
+
+- [Leveraging 3D Representation Alignment and RGB Pretrained Priors for LiDAR Scene Generation](https://arxiv.org/abs/2601.07692)
+  - Nicolas Sereyjol-Garros, Ellington Kirby, Victor Besnier, Nermin Samet
+  - Publisher: Valeo
+  - Publish Date: 2026.01.12
+  - Project Page: [R3DPA](https://github.com/valeoai/R3DPA)
+  - Code: [R3DPA](https://github.com/valeoai/R3DPA)
+  - Task: Perception
+  - Datasets: [KITTI-360](https://www.cvlibs.net/datasets/kitti-360/)
+  - Summary：
+    - R3DPA, a LiDAR scene generation method that unlocks image-pretrained priors for LiDAR point clouds and leverages self-supervised 3D representations.
+    - It aligns intermediate generative features with self-supervised 3D features to improve quality and transfers knowledge from large-scale image-pretrained models to mitigate limited LiDAR data.
+    - Enables point cloud control at inference for object inpainting and scene mixing with an unconditional model, achieving state-of-the-art performance on KITTI-360.
+
   - Yuliang Cai, Dongqiangzi Ye, Zitian Chen, Chongruo Wu
   - Publish Date: 2026.01.11
   - Task: VQA
