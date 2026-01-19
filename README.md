@@ -64,12 +64,14 @@ format:
 
 - [Generative Scenario Rollouts for End-to-End Autonomous Driving](https://arxiv.org/abs/2601.11475)
   - Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, Apratim Bhattacharyya, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai
+  - Publisher: Qualcomm AI Research
   - Publish Date: 2026.01.16
-  - Task: Planning,Generation
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
   - Summary：
-    - Proposes Generative Scenario Rollouts (GeRo), a plug-and-play framework for Vision-Language-Action (VLA) models that jointly performs planning and generation of language-grounded future traffic scenes through an autoregressive rollout strategy.
-    - Employs a rollout-consistency loss to stabilize predictions and mitigate drift, enabling temporally consistent, language-grounded rollouts for long-horizon reasoning and multi-agent planning.
-    - Integrates reinforcement learning with generative rollouts, achieving state-of-the-art closed-loop and open-loop performance on Bench2Drive and demonstrating strong zero-shot robustness.
+    - Proposes Generative Scenario Rollouts (GeRo), a plug-and-play framework for Vision-Language-Action (VLA) models that jointly performs planning and generation of language-grounded future traffic scenes via autoregressive rollouts.
+    - Employs a rollout-consistency loss to stabilize predictions and preserve text-action alignment, enabling temporally consistent, language-grounded rollouts for long-horizon reasoning and multi-agent planning.
+    - Integrates reinforcement learning with generative rollouts, achieving state-of-the-art closed-loop and open-loop performance on Bench2Drive with strong zero-shot robustness.
 
 - [MAD: Motion Appearance Decoupling for efficient Driving World Models](https://arxiv.org/abs/2601.09452)
   - Ahmad Rahimi, Valentin Gerard, Eloi Zablocki, Matthieu Cord, Alexandre Alahi
@@ -80,25 +82,6 @@ format:
   - Summary：
     - Proposes an efficient adaptation framework to convert generalist video diffusion models into controllable driving world models by decoupling motion learning from appearance synthesis.
     - Uses a two-stage reasoning-rendering paradigm: first inferring dynamics via skeletonized agent videos, then rendering realistic RGB appearance, achieving state-of-the-art performance with less than 6% of prior compute.
-
-- [SoC: Semantic Orthogonal Calibration for Test-Time Prompt Tuning](https://arxiv.org/abs/2601.08617)
-  - Leo Fillioux, Omprakash Chakraborty, Ismail Ben Ayed, Paul-Henry Cournède, Stergios Christodoulidis, Maria Vakalopoulou, Jose Dolz
-  - Publish Date: 2026.01.13
-  - Task: Perception
-  - Summary：
-    - Proposes Semantic Orthogonal Calibration (SoC), a Huber-based regularizer for test-time prompt tuning of vision-language models that improves uncertainty calibration.
-    - Theoretically and empirically shows that prior fully orthogonal constraints can make models overconfident by pushing semantically related classes apart.
-    - SoC enforces smooth prototype separation while preserving semantic proximity, leading to better calibration while maintaining competitive discriminative performance.
-
-- [Semantic Misalignment in Vision-Language Models under Perceptual Degradation](https://arxiv.org/abs/2601.08355)
-  - Guo Cheng
-  - Publish Date: 2026.01.13
-  - Task: Perception
-  - Datasets: [Cityscapes](https://www.cityscapes-dataset.com/)
-  - Summary：
-    - Systematically studies semantic misalignment in Vision-Language Models (VLMs) under controlled degradation of upstream visual perception, using semantic segmentation as a representative module.
-    - Introduces perception-realistic corruptions that cause moderate drops in segmentation metrics but lead to severe downstream VLM failures like hallucinations and safety-critical omissions.
-    - Proposes language-level misalignment metrics to quantify hallucination, critical omission, and safety misinterpretation, revealing a disconnect between pixel-level robustness and multimodal semantic reliability.
 
 - [Leveraging 3D Representation Alignment and RGB Pretrained Priors for LiDAR Scene Generation](https://arxiv.org/abs/2601.07692)
   - Nicolas Sereyjol-Garros, Ellington Kirby, Victor Besnier, Nermin Samet
