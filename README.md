@@ -65,7 +65,7 @@ format:
 - [Generative Scenario Rollouts for End-to-End Autonomous Driving](https://arxiv.org/abs/2601.11475)
   - Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, Apratim Bhattacharyya, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai
   - Publish Date: 2026.01.16
-  - Task: Planning
+  - Task: Planning,Generation
   - Summary：
     - Proposes Generative Scenario Rollouts (GeRo), a plug-and-play framework for Vision-Language-Action (VLA) models that jointly performs planning and generation of language-grounded future traffic scenes through an autoregressive rollout strategy.
     - Employs a rollout-consistency loss to stabilize predictions and mitigate drift, enabling temporally consistent, language-grounded rollouts for long-horizon reasoning and multi-agent planning.
@@ -76,7 +76,7 @@ format:
   - Publisher: EPFL VITA
   - Publish Date: 2026.01.14
   - Project Page: [MAD-World-Model](https://vita-epfl.github.io/MAD-World-Model/)
-  - Task: Prediction
+  - Task: Generation
   - Summary：
     - Proposes an efficient adaptation framework to convert generalist video diffusion models into controllable driving world models by decoupling motion learning from appearance synthesis.
     - Uses a two-stage reasoning-rendering paradigm: first inferring dynamics via skeletonized agent videos, then rendering realistic RGB appearance, achieving state-of-the-art performance with less than 6% of prior compute.
@@ -106,7 +106,7 @@ format:
   - Publish Date: 2026.01.12
   - Project Page: [R3DPA](https://github.com/valeoai/R3DPA)
   - Code: [R3DPA](https://github.com/valeoai/R3DPA)
-  - Task: Perception
+  - Task: Generation
   - Datasets: [KITTI-360](https://www.cvlibs.net/datasets/kitti-360/)
   - Summary：
     - R3DPA, a LiDAR scene generation method that unlocks image-pretrained priors for LiDAR point clouds and leverages self-supervised 3D representations for state-of-the-art results.
