@@ -149,7 +149,7 @@ format:
   - Publish Date: 2026.01.07
   - Project Page: [UniDrive-WM](https://unidrive-wm.github.io/UniDrive-WM)
   - Task: Planning, Generation
-  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - UniDrive-WM, a unified VLM-based world model that jointly performs driving-scene understanding, trajectory planning, and trajectory-conditioned future image generation within a single architecture.
     - The model's predicted trajectory conditions a VLM-based image generator to produce plausible future frames, providing supervisory signals that enhance understanding and iteratively refine trajectory generation.
@@ -250,7 +250,7 @@ format:
   - Zhongyu Xia, Wenhao Chen, Yongtao Wang, Ming-Hsuan Yang
   - Publish Date: 2025.12.23
   - Task: Planning
-  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://bench2drive.github.io/)
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Proposes KnowVal, an autonomous driving system integrating visual-language reasoning with a comprehensive driving knowledge graph and an LLM-based retrieval mechanism.
     - Develops a human-preference dataset and a Value Model to guide interpretable, value-aligned trajectory assessment.
@@ -319,9 +319,9 @@ format:
 - [MindDrive: A Vision-Language-Action Model for Autonomous Driving via Online Reinforcement Learning](https://arxiv.org/abs/2512.13636)
   - Haoyu Fu, Diankun Zhang, Zongchuang Zhao, Jianfeng Cui, Hongwei Xie, Bing Wang, Guang Chen, Dingkang Liang, Xiang Bai
   - Publish Date: 2025.12.15
-  - Project Page: [ReCogDrive](https://xiaomi-mlab.github.io/MindDrive/)
+  - Project Page: [MindDrive](https://xiaomi-mlab.github.io/MindDrive/)
   - Task: Planning
-  - Datasets: [MindDrive](https://github.com/OpenDriveLab/Bench2Drive)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - MindDrive, a Vision-Language-Action (VLA) framework for autonomous driving that uses online reinforcement learning to address limitations of Imitation Learning like distribution shift.
     - It features an LLM with two LoRA parameter sets: a Decision Expert for reasoning and an Action Expert to map decisions to trajectories, enabling trial-and-error learning over discrete linguistic decisions.
@@ -673,7 +673,7 @@ format:
   - Haibo HU, Lianming Huang, Nan Guan, Chun Jason Xue
   - Publish Date: 2025.11.25
   - Task: Planning
-  - Datasets: [Bench2Drive](https://github.com/OpenDriveLab/Bench2Drive)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - DeeAD, a training-free, action-guided early-exit framework that accelerates VLA planning by evaluating the physical feasibility of intermediate trajectories against lightweight planning priors.
     - Introduces a multi-hop controller to adaptively skip redundant transformer layers based on score change rates, achieving up to 28% layer sparsity and 29% latency reduction.
@@ -733,7 +733,7 @@ format:
   - Publish Date: 2025.11.24
   - Code: [GuideFlow](https://github.com/liulin815/GuideFlow)
   - Task: Planning
-  - Datasets: [Bench2Drive](), [NuScenes](), [NAVSIM](https://github.com/autonomousvision/navsim), [ADV-NuScenes]()
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/), [NuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim), [ADV-NuScenes]()
   - Summary：
     - GuideFlow, a novel planning framework for End-to-End Autonomous Driving that leverages Constrained Flow Matching to explicitly model the flow matching process, mitigating multimodal trajectory mode collapse.
     - The framework directly enforces explicit constraints within the flow matching generation process and unifies training with an Energy-Based Model (EBM) to robustly satisfy physical constraints.
@@ -776,7 +776,7 @@ format:
   - Jack Qin, Zhitao Wang, Yinan Zheng, Keyu Chen, Yang Zhou, Yuanxin Zhong, Siyuan Cheng
   - Publish Date: 2025.11.18
   - Task: End-to-End
-  - Datasets: [Bench2Drive](https://github.com/bench2drive/bench2drive)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Introduces Risk Semantic Distillation (RSD), a framework that leverages Vision-Language Models (VLMs) to enhance End-to-End Autonomous Driving backbones by providing risk attention for key objects to improve generalization.
     - Proposes RiskHead, a plug-in module that distills causal risk estimates from VLMs into Bird's-Eye-View (BEV) features to generate interpretable risk-attention maps, enabling richer spatial and risk representations.
@@ -886,7 +886,7 @@ format:
   - Publisher: Massachusetts Institute of Technology
   - Publish Date: 2025.11.06
   - Task: Planning
-  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - A unified shared autonomy framework that integrates human input and autonomous planners at a high level of abstraction using Vision Language Models (VLMs) to infer driver intent.
     - The framework synthesizes coherent strategies to mediate between human and autonomous control, achieving strong alignment in human-subject surveys and improved performance on the Bench2Drive benchmark.
@@ -1303,7 +1303,7 @@ format:
   - Publish Date: 2025.09.19
   - Code: [CoReVLA](https://github.com/FanGShiYuu/CoReVLA)
   - Task: End-to-End
-  - Datasets: [Bench2Drive](https://github.com/FanGShiYuu/CoReVLA)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - CoReVLA, a continual learning end-to-end autonomous driving framework that improves performance in long-tail, safety-critical scenarios via a dual-stage process of data Collection and behavior Refinement.
     - The framework is fine-tuned on driving QA data, collects driver takeover data in CAVE simulation, and is refined via Direct Preference Optimization (DPO) to learn from human preferences and avoid reward hacking.
