@@ -67,7 +67,7 @@ format:
   - Publisher: Qualcomm AI Research
   - Publish Date: 2026.01.16
   - Task: Planning
-  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Proposes Generative Scenario Rollouts (GeRo), a plug-and-play framework for Vision-Language-Action (VLA) models that jointly performs planning and generation of language-grounded future traffic scenes via autoregressive rollouts.
     - Employs a rollout-consistency loss to stabilize predictions and preserve text-action alignment, enabling temporally consistent, language-grounded rollouts for long-horizon reasoning and multi-agent planning.
