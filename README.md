@@ -310,7 +310,7 @@ format:
   - Zhenguo Zhang, Haohan Zheng, Yishen Wang, Le Xu, Tianchen Deng, Xuefeng Chen, Qu Chen, Bo Zhang, Wuxiong Huang
   - Publish Date: 2025.12.16
   - Task: End-to-End
-  - Datasets: [DriveLMM-o1](https://github.com/OpenDriveLab/DriveLMM)
+  - Datasets: [DriveLMM-o1](https://github.com/ayesha-ishaq/DriveLMM-o1)
   - Summary：
     - OmniDrive-R1, an end-to-end VLM framework for autonomous driving, introduces an interleaved Multi-modal Chain-of-Thought (iMCoT) mechanism to unify perception and reasoning.
     - The core innovation is a Reinforcement-driven visual grounding capability, enabled by a two-stage RL pipeline and the Clip-GRPO algorithm, which uses an annotation-free, process-based grounding reward.
@@ -473,7 +473,7 @@ format:
   - Karthik Mohan, Sonam Singh, Amit Arvind Kale
   - Publish Date: 2025.12.05
   - Task: VQA
-  - Datasets: [NuScenes-QA](https://www.nuscenes.org/), [DriveLM](https://drivelm.github.io/)
+  - Datasets: [NuScenes-QA](https://www.nuscenes.org/), [DriveLM](https://github.com/OpenDriveLab/DriveLM)
   - Summary：
     - BeLLA, an end-to-end architecture connecting unified 360° BEV representations with a large language model for question answering in autonomous driving.
     - Outperforms existing approaches on tasks requiring spatial reasoning, such as relative object positioning and behavioral understanding, achieving up to +9.3% absolute improvement.
@@ -524,7 +524,7 @@ format:
   - Haicheng Liao, Huanming Shen, Bonan Wang, Yongkang Li, Yihong Tang, Chengyue Wang, Dingyi Zhuang, Kehua Chen, Hai Yang, Chengzhong Xu, Zhenning Li
   - Publish Date: 2025.12.03
   - Task: Perception
-  - Datasets: [Talk2Car](https://github.com/talk2car/Talk2Car), [DrivePilot](https://github.com/), [MoCAD](https://github.com/), [RefCOCO/+/g](https://github.com/)
+  - Datasets: [Talk2Car](https://github.com/talk2car/Talk2Car)
   - Summary：
     - Proposes ThinkDeeper, a framework for visual grounding in autonomous driving that uses a Spatial-Aware World Model (SA-WM) to reason about future spatial states for disambiguating context-dependent instructions.
     - Introduces DrivePilot, a multi-source visual grounding dataset for autonomous driving, with semantic annotations generated via a RAG and Chain-of-Thought prompted LLM pipeline.
@@ -587,15 +587,6 @@ format:
     - Introduces RoboDriveBench, the first robustness benchmark for VLM-based end-to-end autonomous driving, evaluating 11 simulated scenarios with sensor and prompt corruptions.
     - Proposes RoboDriveVLM, a novel VLM-based framework that enhances robustness by mapping multimodal data (e.g., lidar, radar) into a unified latent space.
     - Introduces a Test-Time Adaptation method based on cross-modal knowledge distillation to improve system robustness for real-world deployment.
-
-- [Seeing before Observable: Potential Risk Reasoning in Autonomous Driving via Vision Language Models](https://arxiv.org/abs/2511.22928)
-  - Jiaxin Liu, Xiangyu Yan, Liang Peng, Lei Yang, Lingjun Zhang, Yuechen Luo, Yueming Tao, Ashton Yu Xuan Tan, Mu Li, Lei Zhang, Ziqi Zhan, Sai Guo, Hong Wang, Jun Li
-  - Publish Date: 2025.11.28
-  - Task: Reasoning
-  - Datasets: [PotentialRiskQA](https://arxiv.org/abs/2511.22928)
-  - Summary：
-    - Introduces PotentialRiskQA, a novel vision-language dataset for reasoning about potential risks in driving before they become observable, with structured annotations of scene descriptions, precursors, and inferred outcomes.
-    - Proposes PR-Reasoner, a vision-language-model-based framework tailored for onboard potential risk reasoning, which shows significant performance gains when fine-tuned on the new dataset.
 
 - [CoT4AD: A Vision-Language-Action Model with Explicit Chain-of-Thought Reasoning for Autonomous Driving](https://arxiv.org/abs/2511.22532)
   - Zhaohui Wang, Tengbo Yu, Hao Tang
@@ -692,7 +683,7 @@ format:
   - Dapeng Zhang, Zhenlong Yuan, Zhangquan Chen, Chih-Ting Liao, Yinda Chen, Fei Shen, Qingguo Zhou, Tat-Seng Chua
   - Publish Date: 2025.11.25
   - Task: End-to-End
-  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/), [KITTI](http://www.cvlibs.net/datasets/kitti/), [Argoverse](https://www.argoverse.org/), [BDD100K](https://bdd-data.berkeley.edu/), [CARLA](https://carla.org/)
+  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/), [KITTI](http://www.cvlibs.net/datasets/kitti/), [Argoverse](https://www.argoverse.org/), [BDD100K](https://opendatalab.org.cn/OpenDataLab/BDD100K), [CARLA](https://carla.org/)
   - Summary：
     - A general and fast Vision-Language-Action (VLA) framework for autonomous driving that uses learnable action queries interacting with reasoning-enhanced features to generate continuous trajectories in parallel.
     - Consolidates eight public autonomous driving datasets into a standardized, Chain-of-Thought reasoning-based format for training.
@@ -1087,6 +1078,7 @@ format:
 - [Flow Matching-Based Autonomous Driving Planning with Advanced Interactive Behavior Modeling](https://arxiv.org/abs/2510.11083)
   - Tianyi Tan, Yinan Zheng, Ruiming Liang, Zexu Wang, Kexin Zheng, Jinliang Zheng, Jianxiong Li, Xianyuan Zhan, Jingjing Liu
   - Publish Date: 2025.10.13
+  - Code:[Flow-Planner](https://github.com/DiffusionAD/Flow-Planner)
   - Task: Planning
   - Datasets: [nuPlan](https://www.nuscenes.org/nuplan), [interPlan](https://github.com/autonomousvision/interplan)
   - Summary：
@@ -1456,7 +1448,7 @@ format:
   - Minhao Xiong, Zichen Wen, Zhuangcheng Gu, Xuyang Liu, Rui Zhang, Hengrui Kang, Jiabing Yang, Junyuan Zhang, Weijia Li, Conghui He, Yafei Wang, Linfeng Zhang
   - Publish Date: 2025.08.18
   - Task: End-to-End
-  - Datasets: [DriveLM](https://github.com/OpenDriveLab/DriveLM), [DriveLMM-o1](https://github.com/OpenDriveLab/DriveLM)
+  - Datasets: [DriveLM](https://github.com/OpenDriveLab/DriveLM), [DriveLMM-o1](https://github.com/ayesha-ishaq/DriveLMM-o1)
   - Summary：
     - Prune2Drive, a plug-and-play visual token pruning framework for multi-view VLMs in autonomous driving, addressing computational overhead from high-resolution, multi-view images.
     - Introduces a diversity-aware token selection mechanism inspired by farthest point sampling and a view-adaptive pruning controller to learn optimal pruning ratios per camera view.
@@ -1476,7 +1468,7 @@ format:
   - Nan Song, Bozhou Zhang, Xiatian Zhu, Jiankang Deng, Li Zhang
   - Publish Date: 2025.08.17
   - Task: End-to-End
-  - Datasets: [DriveLM](https://github.com/DrivelM/DriveLM), [nuScenes-QA](https://www.nuscenes.org/nuscenes#download)
+  - Datasets: [DriveLM](https://github.com/OpenDriveLab/DriveLM), [nuScenes-QA](https://www.nuscenes.org/nuscenes#download)
   - Summary：
     - Proposes LMAD, a novel vision-language framework for autonomous driving that emulates modern end-to-end paradigms with comprehensive scene understanding and a task-specialized VLM structure.
     - Introduces preliminary scene interaction and specialized expert adapters within the driving task structure to better align VLMs with autonomous driving scenarios.
@@ -1490,17 +1482,6 @@ format:
   - Summary：
     - ImagiDrive, a novel end-to-end autonomous driving framework that integrates a VLM-based driving agent with a DWM-based scene imaginer in a unified imagination-and-planning loop.
     - Introduces an early stopping mechanism and a trajectory selection strategy to address efficiency and predictive accuracy challenges in the integration of action-level decisions with high-fidelity pixel-level predictions.
-
-- [STRIDE-QA: Visual Question Answering Dataset for Spatiotemporal Reasoning in Urban Driving Scenes](https://arxiv.org/abs/2508.10427)
-  - Keishi Ishihara, Kento Sasaki, Tsubasa Takahashi, Daiki Shiono, Yu Yamaguchi
-  - Publish Date: 2025.08.14
-  - Project Page: [STRIDE-QA](https://turingmotors.github.io/stride-qa/)
-  - Task: VQA
-  - Datasets: [STRIDE-QA](https://arxiv.org/abs/2508.10427)
-  - Summary：
-    - STRIDE-QA, a large-scale visual question answering (VQA) dataset for physically grounded spatiotemporal reasoning from an ego-centric perspective, constructed from 100 hours of multi-sensor driving data in Tokyo.
-    - The dataset offers 16 million QA pairs over 285K frames with dense, automatically generated annotations, supporting object-centric and ego-centric reasoning through three novel QA tasks requiring spatial localization and temporal prediction.
-    - Benchmarks show VLMs fine-tuned on STRIDE-QA achieve dramatic performance gains (55% spatial localization, 28% prediction consistency) compared to near-zero scores from general-purpose VLMs, establishing a foundation for reliable VLMs in autonomous systems.
 
 - [VISTA: Vision-Language Imitation of Situational Thinking and Attention for Human-Like Driver Focus in Dynamic Environments](https://arxiv.org/abs/2508.05852)
   - Kaiser Hamid, Khandakar Ashrafi Akbar, Nade Liang
@@ -1807,17 +1788,6 @@ format:
     - The framework extracts scene features and intentions, generates trajectories, predicts future states in latent space, and uses a selector module to choose the best trajectory via self-supervised alignment.
     - Achieves state-of-the-art performance on nuScenes and NavSim benchmarks with significant reductions in L2 error and collision rate, and faster training convergence.
 
-- [Box-QAymo: Box-Referring VQA Dataset for Autonomous Driving](https://arxiv.org/abs/2507.00525)
-  - Djamahl Etchegaray, Yuxia Fu, Zi Huang, Yadan Luo
-  - Publish Date: 2025.07.01
-  - Project Page: [Box-QAymo](https://djamahl99.github.io/qaymo-pages/)
-  - Task: VQA
-  - Datasets: [Box-QAymo](https://djamahl99.github.io/qaymo-pages/)
-  - Summary：
-    - Introduces Box-QAymo, a box-referring VQA dataset and benchmark for evaluating and finetuning VLMs on spatial and temporal reasoning over user-specified objects in driving scenes.
-    - Proposes a hierarchical evaluation protocol covering binary sanity checks, attribute prediction, motion understanding, and spatiotemporal reasoning over inter-object dynamics.
-    - Provides a foundation for developing more robust and interpretable autonomous driving systems that can communicate effectively with users under real-world conditions.
-
 - [When Digital Twins Meet Large Language Models: Realistic, Interactive, and Editable Simulation for Autonomous Driving](https://arxiv.org/abs/2507.00319)
   - Tanmay Vilas Samak, Chinmay Vilas Samak, Bing Li, Venkat Krovi
   - Publish Date: 2025.06.30
@@ -1830,8 +1800,9 @@ format:
 - [StyleDrive: Towards Driving-Style Aware Benchmarking of End-To-End Autonomous Driving](https://arxiv.org/abs/2506.23982)
   - Ruiyang Hao, Bowen Jing, Haibao Yu, Zaiqing Nie
   - Publish Date: 2025.06.30
-  - Task: End-to-End
-  - Datasets: [StyleDrive](https://arxiv.org/abs/2506.23982)
+  - Project Page: [StyleDrive](https://styledrive.github.io/)
+  - Task: Evaluation
+  - Datasets: [StyleDrive](https://huggingface.co/datasets/Ryhn98/StyleDrive-Dataseta)
   - Summary：
     - Introduces the first large-scale real-world dataset explicitly curated for personalized end-to-end autonomous driving (E2EAD), integrating scene topology with dynamic context and semantics via a fine-tuned vision-language model.
     - Proposes a hybrid annotation pipeline combining behavioral analysis, heuristics, and VLM reasoning, refined through human-in-the-loop verification.
@@ -1935,7 +1906,7 @@ format:
   - Project Page: [AutoVLA](https://autovla.github.io/)
   - Code: [AutoVLA](https://github.com/ucla-mobility/AutoVLA)
   - Task: Planning
-  - Datasets: nuPlan, [nuScenes](https://www.nuscenes.org/nuscenes), Waymo, [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive)(Using [CARLA-Garage Dataset](https://github.com/autonomousvision/carla_garage) for Training)
+  - Datasets: [nuPlan](https://www.nuscenes.org/nuplan), [nuScenes](https://www.nuscenes.org/nuscenes), [Waymo](https://waymo.com/open), [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive)(Using [CARLA-Garage Dataset](https://github.com/autonomousvision/carla_garage) for Training)
   - Summary:
     - AutoVLA is an end-to-end autonomous driving framework leveraging a pretrained VLM backbone integrated with physical discrete action tokens.
     - Use GRPO to enable adaptive reasoning and further enhance the model’s performance on end-to-end driving tasks.
@@ -3525,6 +3496,15 @@ format:
   - experiment environments or tasks
 ```
 
+- [Seeing before Observable: Potential Risk Reasoning in Autonomous Driving via Vision Language Models](https://arxiv.org/abs/2511.22928)
+  - Jiaxin Liu, Xiangyu Yan, Liang Peng, Lei Yang, Lingjun Zhang, Yuechen Luo, Yueming Tao, Ashton Yu Xuan Tan, Mu Li, Lei Zhang, Ziqi Zhan, Sai Guo, Hong Wang, Jun Li
+  - Publish Date: 2025.11.28
+  - Task: Reasoning
+  - Datasets: [PotentialRiskQA](https://arxiv.org/abs/2511.22928)
+  - Summary：
+    - Introduces PotentialRiskQA, a novel vision-language dataset for reasoning about potential risks in driving before they become observable, with structured annotations of scene descriptions, precursors, and inferred outcomes.
+    - Proposes PR-Reasoner, a vision-language-model-based framework tailored for onboard potential risk reasoning, which shows significant performance gains when fine-tuned on the new dataset.
+
 - [CARScenes: Semantic VLM Dataset for Safe Autonomous Driving](https://arxiv.org/abs/2511.10701)
   - Yuankai He, Weisong Shi
   - Publisher: University of Delaware
@@ -3535,6 +3515,28 @@ format:
     - CAR-Scenes is a frame-level semantic dataset for training and evaluating Vision-Language Models (VLMs) for interpretable, scene-level understanding in autonomous driving.
     - The dataset provides 5,192 annotated images with a 28-category knowledge base, covering 350+ attributes related to environment, road users, and vehicle behavior, annotated via a GPT-4o-assisted pipeline with human verification.
     - It includes tools for semantic retrieval, risk-aware scenario mining, and reproducible baselines, releasing annotation and analysis scripts to support explainable, data-centric workflows for intelligent vehicles.
+
+- [STRIDE-QA: Visual Question Answering Dataset for Spatiotemporal Reasoning in Urban Driving Scenes](https://arxiv.org/abs/2508.10427)
+  - Keishi Ishihara, Kento Sasaki, Tsubasa Takahashi, Daiki Shiono, Yu Yamaguchi
+  - Publish Date: 2025.08.14
+  - Project Page: [STRIDE-QA](https://turingmotors.github.io/stride-qa/)
+  - Task: VQA
+  - Datasets: [STRIDE-QA](https://arxiv.org/abs/2508.10427)
+  - Summary：
+    - STRIDE-QA, a large-scale visual question answering (VQA) dataset for physically grounded spatiotemporal reasoning from an ego-centric perspective, constructed from 100 hours of multi-sensor driving data in Tokyo.
+    - The dataset offers 16 million QA pairs over 285K frames with dense, automatically generated annotations, supporting object-centric and ego-centric reasoning through three novel QA tasks requiring spatial localization and temporal prediction.
+    - Benchmarks show VLMs fine-tuned on STRIDE-QA achieve dramatic performance gains (55% spatial localization, 28% prediction consistency) compared to near-zero scores from general-purpose VLMs, establishing a foundation for reliable VLMs in autonomous systems.
+
+- [Box-QAymo: Box-Referring VQA Dataset for Autonomous Driving](https://arxiv.org/abs/2507.00525)
+  - Djamahl Etchegaray, Yuxia Fu, Zi Huang, Yadan Luo
+  - Publish Date: 2025.07.01
+  - Project Page: [Box-QAymo](https://djamahl99.github.io/qaymo-pages/)
+  - Task: VQA
+  - Datasets: [Box-QAymo](https://djamahl99.github.io/qaymo-pages/)
+  - Summary：
+    - Introduces Box-QAymo, a box-referring VQA dataset and benchmark for evaluating and finetuning VLMs on spatial and temporal reasoning over user-specified objects in driving scenes.
+    - Proposes a hierarchical evaluation protocol covering binary sanity checks, attribute prediction, motion understanding, and spatiotemporal reasoning over inter-object dynamics.
+    - Provides a foundation for developing more robust and interpretable autonomous driving systems that can communicate effectively with users under real-world conditions.
 
 - [CoVLA: Comprehensive Vision-Language-Action Dataset for Autonomous Driving](https://arxiv.org/pdf/2408.10845)
   - Hidehisa Arai, Keita Miwa, Kento Sasaki, Yu Yamaguchi, Kohei Watanabe, Shunsuke Aoki, Issei Yamamoto **WACV 2025 Oral**
