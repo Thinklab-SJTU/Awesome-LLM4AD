@@ -62,6 +62,15 @@ format:
   - metrics
 ```
 
+- [VILTA: A VLM-in-the-Loop Adversary for Enhancing Driving Policy Robustness](https://arxiv.org/abs/2601.12672)
+  - Qimao Chen, Fang Li, Shaoqing Xu, Zhiyi Lai, Zixun Xie, Yuechen Luo, Shengyin Jiang, Hanbing Li, Long Chen, Bing Wang, Yi Zhang, Zhi-Xin Yang
+  - Publish Date: 2026.01.19
+  - Task: Planning
+  - Summary：
+    - Introduces VILTA (VLM-In-the-Loop Trajectory Adversary), a novel framework that integrates a Vision Language Model (VLM) directly into the closed-loop training of autonomous driving agents.
+    - The VLM actively comprehends the dynamic environment and strategically generates challenging, long-tail scenarios by directly editing surrounding agents' future trajectories.
+    - This approach leverages the VLM's generalization to create a diverse curriculum of plausible critical scenarios, substantially enhancing the safety and robustness of the resulting driving policy.
+
 - [Generative Scenario Rollouts for End-to-End Autonomous Driving](https://arxiv.org/abs/2601.11475)
   - Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, Apratim Bhattacharyya, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai
   - Publisher: Qualcomm AI Research
