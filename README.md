@@ -62,6 +62,16 @@ format:
   - metrics
 ```
 
+- [AutoDriDM: An Explainable Benchmark for Decision-Making of Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2601.14702)
+  - Zecong Tang, Zixu Wang, Yifei Wang, Weitong Lian, Tianjian Gao, Haoran Li, Tengju Ru, Lingyi Meng, Zhejun Cui, Yichen Zhu, Qi Kang, Kaixuan Wang, Yu Zhang
+  - Publish Date: 2026.01.21
+  - Task: VQA
+  - Datasets: [AutoDriDM](https://arxiv.org/abs/2601.14702)
+  - Summary：
+    - AutoDriDM, a decision-centric, progressive benchmark for evaluating Vision-Language Models (VLMs) in autonomous driving, containing 6,650 questions across Object, Scene, and Decision dimensions.
+    - The benchmark evaluates mainstream VLMs to delineate the perception-to-decision capability boundary, revealing weak alignment between perception and decision-making performance.
+    - It includes explainability analyses of models' reasoning processes, identifying key failure modes, and introduces an analyzer model to automate large-scale annotation.
+
 - [VILTA: A VLM-in-the-Loop Adversary for Enhancing Driving Policy Robustness](https://arxiv.org/abs/2601.12672)
   - Qimao Chen, Fang Li, Shaoqing Xu, Zhiyi Lai, Zixun Xie, Yuechen Luo, Shengyin Jiang, Hanbing Li, Long Chen, Bing Wang, Yi Zhang, Zhi-Xin Yang
   - Publish Date: 2026.01.19
