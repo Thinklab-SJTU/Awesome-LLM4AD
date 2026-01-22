@@ -65,7 +65,7 @@ format:
 - [AutoDriDM: An Explainable Benchmark for Decision-Making of Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2601.14702)
   - Zecong Tang, Zixu Wang, Yifei Wang, Weitong Lian, Tianjian Gao, Haoran Li, Tengju Ru, Lingyi Meng, Zhejun Cui, Yichen Zhu, Qi Kang, Kaixuan Wang, Yu Zhang
   - Publish Date: 2026.01.21
-  - Task: VQA
+  - Task: Evaluation
   - Datasets: [AutoDriDM](https://arxiv.org/abs/2601.14702)
   - Summary：
     - AutoDriDM, a decision-centric, progressive benchmark for evaluating Vision-Language Models (VLMs) in autonomous driving, containing 6,650 questions across Object, Scene, and Decision dimensions.
