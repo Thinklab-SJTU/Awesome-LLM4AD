@@ -62,6 +62,16 @@ format:
   - metrics
 ```
 
+- [ScenePilot-Bench: A Large-Scale Dataset and Benchmark for Evaluation of Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2601.19582)
+  - Yujin Wang, Yutong Zheng, Wenxian Fan, Tianyi Wang, Hongqing Chu, Daxin Tian, Bingzhao Gao, Jianqiang Wang, Hong Chen
+  - Publish Date: 2026.01.27
+  - Task: VQA
+  - Datasets: [ScenePilot-4K](https://arxiv.org/abs/2601.19582)
+  - Summary：
+    - Introduces ScenePilot-Bench, a large-scale first-person driving benchmark built on the diverse ScenePilot-4K dataset (3,847 hours of driving videos with multi-granularity annotations).
+    - Features a four-axis evaluation suite assessing VLM capabilities in scene understanding, spatial perception, motion planning, and GPT-Score, with safety-aware metrics and cross-region generalization settings.
+    - Provides empirical analyses benchmarking representative VLMs to clarify performance boundaries and identify gaps for driving-oriented reasoning in safety-critical contexts.
+
 - [AutoDriDM: An Explainable Benchmark for Decision-Making of Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2601.14702)
   - Zecong Tang, Zixu Wang, Yifei Wang, Weitong Lian, Tianjian Gao, Haoran Li, Tengju Ru, Lingyi Meng, Zhejun Cui, Yichen Zhu, Qi Kang, Kaixuan Wang, Yu Zhang
   - Publish Date: 2026.01.21
