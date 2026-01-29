@@ -66,7 +66,6 @@ format:
   - Yujin Wang, Yutong Zheng, Wenxian Fan, Tianyi Wang, Hongqing Chu, Daxin Tian, Bingzhao Gao, Jianqiang Wang, Hong Chen
   - Publish Date: 2026.01.27
   - Task: Evaluation
-  - Datasets: [ScenePilot-4K](https://arxiv.org/abs/2601.19582)
   - Summary：
     - Introduces ScenePilot-Bench, a large-scale first-person driving benchmark built on the diverse ScenePilot-4K dataset (3,847 hours of driving videos with multi-granularity annotations).
     - Features a four-axis evaluation suite assessing VLM capabilities in scene understanding, spatial perception, motion planning, and GPT-Score, with safety-aware metrics and cross-region generalization settings.
