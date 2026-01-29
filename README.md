@@ -65,7 +65,7 @@ format:
 - [ScenePilot-Bench: A Large-Scale Dataset and Benchmark for Evaluation of Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2601.19582)
   - Yujin Wang, Yutong Zheng, Wenxian Fan, Tianyi Wang, Hongqing Chu, Daxin Tian, Bingzhao Gao, Jianqiang Wang, Hong Chen
   - Publish Date: 2026.01.27
-  - Task: VQA
+  - Task: Evaluation
   - Datasets: [ScenePilot-4K](https://arxiv.org/abs/2601.19582)
   - Summary：
     - Introduces ScenePilot-Bench, a large-scale first-person driving benchmark built on the diverse ScenePilot-4K dataset (3,847 hours of driving videos with multi-granularity annotations).
