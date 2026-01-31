@@ -62,10 +62,40 @@ format:
   - metrics
 ```
 
+- [Drive-JEPA: Video JEPA Meets Multimodal Trajectory Distillation for End-to-End Driving](https://arxiv.org/abs/2601.22032)
+  - Linhan Wang, Zichong Yang, Chen Bai, Guoxiang Zhang, Xiaotong Liu, Xiaoyin Zheng, Xiao-Xiao Long, Chang-Tien Lu, Cheng Lu
+  - Publish Date: 2026.01.29
+  - Task: End-to-End
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes Drive-JEPA, a framework integrating Video Joint-Embedding Predictive Architecture (V-JEPA) with multimodal trajectory distillation for end-to-end autonomous driving.
+    - Adapts V-JEPA to pretrain a ViT encoder on driving videos for predictive representations aligned with planning, and introduces a proposal-centric planner that distills diverse simulator and human trajectories.
+    - Achieves state-of-the-art performance on NAVSIM, with the V-JEPA representation outperforming prior methods and the full framework setting new benchmarks.
+
+- [LLM-Driven Scenario-Aware Planning for Autonomous Driving](https://arxiv.org/abs/2601.21876)
+  - He Li, Zhaowei Chen, Rui Gao, Guoliang Li, Qi Hao, Shuai Wang, Chengzhong Xu
+  - Publish Date: 2026.01.29
+  - Task: Planning
+  - Summary：
+    - Proposes LAP, an LLM-driven adaptive planning method that switches between high-speed and precise driving modes for autonomous vehicles.
+    - Achieves this by leveraging an LLM for scene understanding and integrating its inference into a joint optimization of mode configuration and motion planning, solved with tree-search MPC and alternating minimization.
+    - Implementation in ROS shows superior performance in simulation compared to benchmarks in terms of driving time and success rate.
+
+- [Drive-KD: Multi-Teacher Distillation for VLMs in Autonomous Driving](https://arxiv.org/abs/2601.21288)
+  - Weitong Lian, Zecong Tang, Haoran Li, Tianjian Gao, Yifei Wang, Zixu Wang, Lingyi Meng, Tengju Ru, Zhejun Cui, Yichen Zhu, Hangshuo Cao, Qi Kang, Tianxing Chen, Yusen Qin, Kaixuan Wang, Yu Zhang
+  - Publish Date: 2026.01.29
+  - Task: Planning
+  - Datasets: [DriveBench](https://github.com/wayveai/drivebench)
+  - Summary：
+    - Drive-KD, a framework that decomposes autonomous driving into a "perception-reasoning-planning" triad and transfers these capabilities via knowledge distillation.
+    - Introduces layer-specific attention as the distillation signal to construct capability-specific single-teacher models and a multi-teacher framework with asymmetric gradient projection to mitigate gradient conflicts.
+    - The distilled InternVL3-1B model achieves better overall performance than the pretrained 78B model on DriveBench and surpasses GPT-5.1 on planning, with significantly reduced GPU memory and higher throughput.
+
 - [ScenePilot-Bench: A Large-Scale Dataset and Benchmark for Evaluation of Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2601.19582)
   - Yujin Wang, Yutong Zheng, Wenxian Fan, Tianyi Wang, Hongqing Chu, Daxin Tian, Bingzhao Gao, Jianqiang Wang, Hong Chen
   - Publish Date: 2026.01.27
-  - Task: Evaluation
+  - Task: VQA
+  - Datasets: [ScenePilot-4K](https://arxiv.org/abs/2601.19582)
   - Summary：
     - Introduces ScenePilot-Bench, a large-scale first-person driving benchmark built on the diverse ScenePilot-4K dataset (3,847 hours of driving videos with multi-granularity annotations).
     - Features a four-axis evaluation suite assessing VLM capabilities in scene understanding, spatial perception, motion planning, and GPT-Score, with safety-aware metrics and cross-region generalization settings.
