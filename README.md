@@ -85,7 +85,6 @@ format:
   - Weitong Lian, Zecong Tang, Haoran Li, Tianjian Gao, Yifei Wang, Zixu Wang, Lingyi Meng, Tengju Ru, Zhejun Cui, Yichen Zhu, Hangshuo Cao, Qi Kang, Tianxing Chen, Yusen Qin, Kaixuan Wang, Yu Zhang
   - Publish Date: 2026.01.29
   - Task: Planning
-  - Datasets: [DriveBench](https://github.com/wayveai/drivebench)
   - Summary：
     - Drive-KD, a framework that decomposes autonomous driving into a "perception-reasoning-planning" triad and transfers these capabilities via knowledge distillation.
     - Introduces layer-specific attention as the distillation signal to construct capability-specific single-teacher models and a multi-teacher framework with asymmetric gradient projection to mitigate gradient conflicts.
