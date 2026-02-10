@@ -195,7 +195,7 @@ format:
 - [UniDriveDreamer: A Single-Stage Multimodal World Model for Autonomous Driving](https://arxiv.org/abs/2602.02002)
   - Guosheng Zhao, Yaozeng Wang, Xiaofeng Wang, Zheng Zhu, Tingdong Yu, Guan Huang, Yongchen Zai, Ji Jiao, Changliang Xue, Xiaole Wang, Zhen Yang, Futang Zhu, Xingang Wang
   - Publish Date: 2026.02.02
-  - Task: Prediction
+  - Task: Generation
   - Summary：
     - UniDriveDreamer, a single-stage unified multimodal world model for autonomous driving that directly generates multimodal future observations (multi-camera video and LiDAR sequences) without intermediate representations or cascaded modules.
     - Introduces a LiDAR-specific VAE and a video VAE, with a proposed Unified Latent Anchoring (ULA) method to align their latent distributions for cross-modal compatibility and training stability.
