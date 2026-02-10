@@ -97,7 +97,6 @@ format:
   - Ruturaj Reddy, Hrishav Bakul Barua, Junn Yong Loo, Thanh Thi Nguyen, Ganesh Krishnasamy
   - Publish Date: 2026.02.07
   - Task: Perception
-  - Datasets: [MFNet](https://github.com/yoqim/MFNet)
   - Summary：
     - Proposes CLARITY, a framework for RGB-Thermal semantic segmentation that dynamically adapts its fusion strategy based on detected scene conditions using vision-language model (VLM) priors.
     - Introduces mechanisms to preserve valid dark-object semantics often discarded by noise-suppression methods and a hierarchical decoder to enforce structural consistency for sharper object boundaries.
@@ -106,7 +105,6 @@ format:
 - [DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving](https://arxiv.org/abs/2602.06521)
   - Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia, Hangjun Ye, Xiaoshuai Hao, Long Chen
   - Publish Date: 2026.02.06
-  - Project Page: [DriveWorld-VLA](https://github.com/liulin815/DriveWorld-VLA.git)
   - Code: [DriveWorld-VLA](https://github.com/liulin815/DriveWorld-VLA.git)
   - Task: Planning
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
