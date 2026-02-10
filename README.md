@@ -77,7 +77,6 @@ format:
   - Publisher: Stanford University
   - Publish Date: 2026.02.09
   - Task: Reasoning
-  - Datasets: [Franka Panda](https://github.com/), [WidowX](https://github.com/)
   - Summary：
     - Introduces R&B-EnCoRe, a method enabling models to bootstrap embodied reasoning from internet-scale knowledge through self-supervised refinement without external rewards or human annotation.
     - Treats reasoning as a latent variable within importance-weighted variational inference to generate and distill a refined, embodiment-specific reasoning training dataset.
