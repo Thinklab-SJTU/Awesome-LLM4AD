@@ -162,7 +162,7 @@ format:
   - Zhuoran Yang, Xi Guo, Chenjing Ding, Chiyu Wang, Wei Wu, Yanyong Zhang
   - Publish Date: 2026.02.03
   - Project Page: [InstaDrive](https://shanpoyang654.github.io/InstaDrive/page.html)
-  - Task: Perception
+  - Task: Generation
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - InstaDrive, a novel framework for generating realistic driving videos, addresses instance-level temporal consistency and spatial geometric fidelity in world models.
@@ -173,7 +173,7 @@ format:
   - Zhuoran Yang, Yanyong Zhang
   - Publish Date: 2026.02.03
   - Project Page: [ConsisDrive](https://shanpoyang654.github.io/ConsisDrive/page.html)
-  - Task: Perception
+  - Task: Generation
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Introduces ConsisDrive, an identity-preserving driving world model designed to enforce temporal consistency at the instance level to prevent identity drift in generated videos.
