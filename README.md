@@ -189,7 +189,7 @@ format:
   - Lu Tao, Jinxuan Luo, Yousuke Watanabe, Zhengshu Zhou, Yuhuan Lu, Shen Ying, Pan Zhang, Fei Zhao, Hiroaki Takada
   - Publish Date: 2026.02.12
   - Task: Reasoning
-  - Datasets: [VRC-QA](https://github.com/autonomousvision/navsim)
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - Talk2DM, a plug-and-play module that extends Vehicle-Road-Cloud Dynamic Map (VRC-DM) systems with natural-language-supported querying and commonsense reasoning capabilities.
     - Built upon a novel chain-of-prompt (CoP) mechanism that integrates human-defined rules with the commonsense knowledge of large language models (LLMs).
