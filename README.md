@@ -96,8 +96,7 @@ format:
   - Jie Wang, Guang Li, Zhijian Huang, Chenxu Dang, Hangjun Ye, Yahong Han, Long Chen
   - Publisher: (Inferred from authors/context)
   - Publish Date: 2026.02.24
-  - Task: Perception, Prediction, Planning
-  - Datasets: (Mentions multiple benchmarks, specific datasets not listed)
+  - Task: Perception, Planning
   - Summary：
     - Proposes VGGDrive, a novel architecture that empowers Vision-Language Models (VLMs) with cross-view geometric grounding for autonomous driving by bridging 3D geometric features from frozen 3D models.
     - Introduces a plug-and-play Cross-View 3D Geometric Enabler (CVGE) that decouples the base VLM and injects 3D features through a hierarchical adaptive mechanism.
@@ -106,22 +105,12 @@ format:
 - [Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion](https://arxiv.org/abs/2602.20577)
   - Jiaru Zhang, Manav Gagvani, Can Cui, Juntong Peng, Ruqi Zhang, Ziran Wang
   - Publish Date: 2026.02.24
-  - Task: Planning
+  - Task: Perception, Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Proposes MVLAD-AD, a masked vision-language-action diffusion framework for autonomous driving that bridges efficient planning and semantic explainability.
     - Introduces a discrete action tokenization strategy to create a compact codebook of kinematically feasible waypoints from real-world driving distributions.
     - Employs geometry-aware embedding learning and an action-priority decoding strategy to improve planning precision and provide high-fidelity, explainable reasoning.
-
-- [An interactive enhanced driving dataset for autonomous driving](https://arxiv.org/abs/2602.20575)
-  - Haojie Feng, Peizhi Zhang, Mengjie Tian, Xinrui Zhang, Zhuoren Li, Junpeng Huang, Xiurong Wang, Junfan Zhu, Jianzhou Wang, Dongxiao Yin, Lu Xiong
-  - Publish Date: 2026.02.24
-  - Task: VQA
-  - Datasets: [IEDD](https://arxiv.org/abs/2602.20575)
-  - Summary：
-    - Proposes the Interactive Enhanced Driving Dataset (IEDD) to address the sparsity of interactive scenarios and inadequate multimodal alignment for Vision-Language-Action (VLA) models in autonomous driving.
-    - Develops a scalable pipeline to mine million-level interactive segments from naturalistic driving data and constructs the IEDD-VQA dataset with synthetic BEV videos where semantic actions are strictly aligned with structured language.
-    - Provides benchmark results evaluating ten mainstream Vision Language Models (VLMs) to demonstrate the dataset's reuse value for assessing and fine-tuning the reasoning capabilities of autonomous driving models.
 
 - [MeanFuser: Fast One-Step Multi-Modal Trajectory Generation and Adaptive Reconstruction via MeanFlow for End-to-End Autonomous Driving](https://arxiv.org/abs/2602.20060)
   - Junli Wang, Xueyi Liu, Yinan Zheng, Zebing Xing, Pengfei Li, Guang Li, Kun Ma, Guang Chen, Hangjun Ye, Zhongpu Xia, Long Chen, Qichao Zhang
@@ -157,7 +146,7 @@ format:
 - [OODBench: Out-of-Distribution Benchmark for Large Vision-Language Models](https://arxiv.org/abs/2602.18094)
   - Ling Lin, Yang Bai, Heng Su, Congcong Zhu, Yaoxing Wang, Yang Zhou, Huazhu Fu, Jingrun Chen
   - Publish Date: 2026.02.20
-  - Task: VQA
+  - Task: Evaluation
   - Datasets: [OODBench](https://arxiv.org/abs/2602.18094)
   - Summary：
     - Proposes OODBench, a predominantly automated method for constructing benchmarks to evaluate Vision-Language Models (VLMs) on out-of-distribution (OOD) data, containing 40K instance-level OOD instance-category pairs.
@@ -167,32 +156,12 @@ format:
 - [Conditional Flow Matching for Continuous Anomaly Detection in Autonomous Driving on a Manifold-Aware Spectral Space](https://arxiv.org/abs/2602.17586)
   - Antonio Guillen-Perez
   - Publish Date: 2026.02.19
-  - Task: Prediction
+  - Task: Perception
   - Datasets: [Waymo Open Motion Dataset](https://waymo.com/open/)
   - Summary：
     - Presents Deep-Flow, an unsupervised safety-critical anomaly detection framework using Optimal Transport Conditional Flow Matching (OT-CFM) to model the probability density of expert driving.
     - Introduces a low-rank spectral manifold via PCA for kinematic smoothness and stable log-likelihood estimation, and an Early Fusion Transformer with goal conditioning for multi-modal junctions.
     - Identifies a predictability gap between kinematic danger and semantic non-compliance, surfacing overlooked out-of-distribution behaviors like lane violations to enable data-driven safety validation.
-
-- [ThermEval: A Structured Benchmark for Evaluation of Vision-Language Models on Thermal Imagery](https://arxiv.org/abs/2602.14989)
-  - Ayush Shrivastava, Kirtan Gangani, Laksh Jain, Mayank Goel, Nipun Batra
-  - Publish Date: 2026.02.16
-  - Task: VQA
-  - Datasets: [ThermEval-B](https://arxiv.org/abs/2602.14989), [ThermEval-D](https://arxiv.org/abs/2602.14989)
-  - Summary：
-    - Introduces ThermEval-B, a structured benchmark of ~55,000 thermal visual question answering pairs to assess foundational primitives for thermal vision-language understanding.
-    - Presents ThermEval-D, the first dataset with dense per-pixel temperature maps and semantic body-part annotations across diverse environments.
-    - Evaluates 25 VLMs, finding they fail at temperature-grounded reasoning, degrade under colormap changes, and show only marginal gains from prompting or fine-tuning, highlighting the need for dedicated thermal evaluation.
-
-- [DM0: An Embodied-Native Vision-Language-Action Model towards Physical AI](https://arxiv.org/abs/2602.14974)
-  - En Yu, Haoran Lv, Jianjian Sun, Kangheng Lin, Ruitao Zhang, Yukang Shi, Yuyang Chen, Ze Chen, Ziheng Zhang, Fan Jia, Kaixin Liu, Meng Zhang, Ruitao Hao, Saike Huang, Songhan Xie, Yu Liu, Zhao Wu, Bin Xie, Pengwei Zhang, Qi Yang, Xianchi Deng, Yunfei Wei, Enwen Zhang, Hongyang Peng, Jie Zhao, Kai Liu, Wei Sun, Yajun Wei, Yi Yang, Yunqiao Zhang, Ziwei Yan, Haitao Yang, Hao Liu, Haoqiang Fan, Haowei Zhang, Junwen Huang, Yang Chen, Yunchao Ma, Yunhuan Yang, Zhengyuan Du, Ziming Liu, Jiahui Niu, Yucheng Zhao, Daxin Jiang, Wenbin Tang, Xiangyu Zhang, Zheng Ge, Erjin Zhou, Tiancai Wang
-  - Publish Date: 2026.02.16
-  - Task: Navigation
-  - Datasets: [RoboChallenge](https://github.com/OpenRobotLab/RoboChallenge)
-  - Summary：
-    - DM0, an Embodied-Native Vision-Language-Action (VLA) framework designed for Physical AI, which unifies embodied manipulation and navigation by learning from heterogeneous data sources from the onset.
-    - It employs a three-stage pipeline (Pretraining, Mid-Training, Post-Training) and a hybrid training strategy to reconcile high-level reasoning with low-level control.
-    - Introduces an Embodied Spatial Scaffolding strategy to construct spatial Chain-of-Thought (CoT) reasoning, achieving state-of-the-art performance on the RoboChallenge benchmark.
 
 - [DriveFine: Refining-Augmented Masked Diffusion VLA for Precise and Robust Driving](https://arxiv.org/abs/2602.14577)
   - Chenxu Dang, Sining Ang, Yongkang Li, Haochen Tian, Jie Wang, Guang Li, Hangjun Ye, Jie Ma, Long Chen, Yan Wang
@@ -3920,10 +3889,20 @@ format:
   - experiment environments or tasks
 ```
 
+- [An interactive enhanced driving dataset for autonomous driving](https://arxiv.org/abs/2602.20575)
+  - Haojie Feng, Peizhi Zhang, Mengjie Tian, Xinrui Zhang, Zhuoren Li, Junpeng Huang, Xiurong Wang, Junfan Zhu, Jianzhou Wang, Dongxiao Yin, Lu Xiong
+  - Publish Date: 2026.02.24
+  - Task: VQA
+  - Datasets: [IEDD](https://arxiv.org/abs/2602.20575)
+  - Summary：
+    - Proposes the Interactive Enhanced Driving Dataset (IEDD) to address the sparsity of interactive scenarios and inadequate multimodal alignment for Vision-Language-Action (VLA) models in autonomous driving.
+    - Develops a scalable pipeline to mine million-level interactive segments from naturalistic driving data and constructs the IEDD-VQA dataset with synthetic BEV videos where semantic actions are strictly aligned with structured language.
+    - Provides benchmark results evaluating ten mainstream Vision Language Models (VLMs) to demonstrate the dataset's reuse value for assessing and fine-tuning the reasoning capabilities of autonomous driving models.
+    - 
 - [Seeing before Observable: Potential Risk Reasoning in Autonomous Driving via Vision Language Models](https://arxiv.org/abs/2511.22928)
   - Jiaxin Liu, Xiangyu Yan, Liang Peng, Lei Yang, Lingjun Zhang, Yuechen Luo, Yueming Tao, Ashton Yu Xuan Tan, Mu Li, Lei Zhang, Ziqi Zhan, Sai Guo, Hong Wang, Jun Li
   - Publish Date: 2025.11.28
-  - Task: Reasoning
+  - Task: VQA
   - Datasets: [PotentialRiskQA](https://arxiv.org/abs/2511.22928)
   - Summary：
     - Introduces PotentialRiskQA, a novel vision-language dataset for reasoning about potential risks in driving before they become observable, with structured annotations of scene descriptions, precursors, and inferred outcomes.
