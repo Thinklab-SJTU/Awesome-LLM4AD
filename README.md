@@ -199,7 +199,6 @@ format:
   - Seo Hyun Kim, Jin Bok Park, Do Yeon Koo, Ho Gun Park, Il Yong Chun
   - Publish Date: 2026.02.12
   - Task: End-to-End
-  - Datasets: [LangAuto](https://github.com/autonomousvision/langauto)
   - Summary：
     - Proposes SToRM, the first Supervised Token Reduction framework for multi-modal LLMs to enable efficient End-to-End autonomous driving while maintaining performance comparable to using all visual tokens.
     - The framework uses a lightweight importance predictor, a supervised training approach with pseudo-supervision from an all-token LLM, and an anchor-context merging module to reduce token redundancy.
@@ -220,7 +219,6 @@ format:
   - Krishna Kanth Nakka, Vedasri Nakka
   - Publish Date: 2026.02.11
   - Task: VQA, Perception, Planning
-  - Datasets: [CyclingVQA](https://arxiv.org/abs/2602.10771)
   - Summary：
     - Introduces CyclingVQA, a diagnostic benchmark to evaluate Vision-Language Models (VLMs) on cyclist-centric perception, spatio-temporal understanding, and traffic-rule-to-lane reasoning.
     - Evaluates 31+ VLMs, finding current models show encouraging capabilities but have clear gaps in cyclist-specific reasoning, with driving-specialized models often underperforming strong generalist VLMs in this domain.
@@ -240,7 +238,6 @@ format:
   - Yansong Qu, Zihao Sheng, Zilin Huang, Jiancong Chen, Yuhao Luo, Tianyi Wang, Yiheng Feng, Samuel Labi, Sikai Chen
   - Publisher: Purdue University
   - Publish Date: 2026.02.11
-  - Project Page: [Found-RL](https://github.com/ys-qu/found-rl)
   - Code: [Found-RL](https://github.com/ys-qu/found-rl)
   - Task: End-to-End
   - Datasets: [CARLA](https://carla.org/)
@@ -253,7 +250,6 @@ format:
   - Publisher: Northeastern University
   - Publish Date: 2026.02.10
   - Project Page: [Flow Matching for Self-Driving](https://flow-matching-self-driving.github.io/)
-  - Code: [Flow Matching for Self-Driving](https://flow-matching-self-driving.github.io/)
   - Task: Planning
   - Datasets: [Waymo Open Motion Dataset](https://waymo.com/open/)
   - Summary：
@@ -285,7 +281,6 @@ format:
   - Ruturaj Reddy, Hrishav Bakul Barua, Junn Yong Loo, Thanh Thi Nguyen, Ganesh Krishnasamy
   - Publish Date: 2026.02.07
   - Task: Perception
-  - Datasets: [MFNet](https://github.com/yoqim/MFNet)
   - Summary：
     - Proposes CLARITY, a framework for RGB-Thermal semantic segmentation that dynamically adapts its fusion strategy based on detected scene conditions using vision-language model (VLM) priors.
     - Introduces mechanisms to preserve valid dark-object semantics often discarded by noise-suppression methods and a hierarchical decoder to enforce structural consistency for sharper object boundaries.
@@ -294,7 +289,6 @@ format:
 - [DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving](https://arxiv.org/abs/2602.06521)
   - Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia, Hangjun Ye, Xiaoshuai Hao, Long Chen
   - Publish Date: 2026.02.06
-  - Project Page: [DriveWorld-VLA](https://github.com/liulin815/DriveWorld-VLA.git)
   - Code: [DriveWorld-VLA](https://github.com/liulin815/DriveWorld-VLA.git)
   - Task: Planning
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
