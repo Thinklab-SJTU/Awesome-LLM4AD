@@ -72,16 +72,6 @@ format:
     - Leverages a world model to predict consequences of candidate actions and selects low-risk actions through explicit risk evaluation, enhanced by a risk-aware interaction strategy.
     - Introduces a self-evaluation distillation method to distill risk-avoidance capabilities from the world model into a generative action proposal network.
 
-- [PanoEnv: Exploring 3D Spatial Intelligence in Panoramic Environments with Reinforcement Learning](https://arxiv.org/abs/2602.21992)
-  - Zekai Lin, Xu Zheng
-  - Publish Date: 2026.02.25
-  - Task: VQA
-  - Datasets: [PanoEnv-QA](https://arxiv.org/abs/2602.21992)
-  - Summary：
-    - Introduces PanoEnv, a large-scale VQA benchmark built from synthetic 3D environments for 3D spatial reasoning on panoramic images, containing 14.8K questions across five categories.
-    - Proposes a reinforcement learning post-training framework based on Group Relative Policy Optimization (GRPO) with a ground-truth-guided reward and a two-stage curriculum to enhance 3D reasoning in VLMs.
-    - Achieves state-of-the-art performance with a 7B model, improving overall accuracy to 52.93% and open-ended accuracy to 14.83% on the benchmark.
-
 - [MindDriver: Introducing Progressive Multimodal Reasoning for Autonomous Driving](https://arxiv.org/abs/2602.21952)
   - Lingjun Zhang, Yujian Yuan, Changjie Wu, Xinyuan Chang, Xin Cai, Shuang Zeng, Linzhe Shi, Sijin Wang, Hang Zhang, Mu Xu
   - Publish Date: 2026.02.25
@@ -312,17 +302,6 @@ format:
     - Introduces a rich language interface between a high-level VLM and a low-level VLA policy to ground reasoning in control outputs, using a VLM to augment driving data with detailed language annotations.
     - Evaluated on a challenging closed-loop benchmark, outperforming state-of-the-art methods by 4.77 points in overall driving score and by 8.04 points on a long-tail subset.
 
-- [Self-Supervised Bootstrapping of Action-Predictive Embodied Reasoning](https://arxiv.org/abs/2602.08167)
-  - Milan Ganai, Katie Luo, Jonas Frey, Clark Barrett, Marco Pavone
-  - Publisher: Stanford University
-  - Publish Date: 2026.02.09
-  - Task: Reasoning
-  - Datasets: [Franka Panda](https://github.com/), [WidowX](https://github.com/)
-  - Summary：
-    - Introduces R&B-EnCoRe, a method enabling models to bootstrap embodied reasoning from internet-scale knowledge through self-supervised refinement without external rewards or human annotation.
-    - Treats reasoning as a latent variable within importance-weighted variational inference to generate and distill a refined, embodiment-specific reasoning training dataset.
-    - Validated across manipulation, legged navigation, and autonomous driving embodiments, achieving significant gains in success rates and reductions in collision rates over models reasoning indiscriminately.
-
 - [Vision and language: Novel Representations and Artificial intelligence for Driving Scene Safety Assessment and Autonomous Vehicle Planning](https://arxiv.org/abs/2602.07680)
   - Ross Greer, Maitrayee Keskar, Angel Martinez-Sanchez, Parthib Roy, Shashank Shriram, Mohan Trivedi
   - Publish Date: 2026.02.07
@@ -355,21 +334,11 @@ format:
     - Enables the VLA planner to benefit directly from holistic scene-evolution modeling and assess how candidate actions impact future scene evolution, reducing reliance on dense annotated supervision.
     - Achieves state-of-the-art performance on NAVSIM and nuScenes benchmarks, supporting controllable, action-conditioned imagination at the feature level.
 
-- [Thinking with Geometry: Active Geometry Integration for Spatial Reasoning](https://arxiv.org/abs/2602.06037)
-  - Haoyuan Li, Qihang Cao, Tao Tang, Kun Xiang, Zihan Guo, Jianhua Han, Hang Xu, Xiaodan Liang
-  - Publish Date: 2026.02.05
-  - Code: [GeoThinker](https://github.com/Li-Hao-yuan/GeoThinker)
-  - Task: Reasoning
-  - Summary：
-    - Proposes GeoThinker, a framework that shifts spatial reasoning from passive geometry fusion to active perception, enabling models to selectively retrieve geometric evidence based on internal reasoning demands.
-    - Achieves state-of-the-art spatial intelligence with a peak score of 72.6 on VSI-Bench and demonstrates robust generalization in complex downstream scenarios like embodied referring and autonomous driving.
-    - Implements Spatial-Grounded Fusion with Importance Gating, where semantic visual priors selectively query and integrate task-relevant geometry via frame-strict cross-attention.
-
 - [ROMAN: Reward-Orchestrated Multi-Head Attention Network for Autonomous Driving System Testing](https://arxiv.org/abs/2602.05629)
   - Jianlei Chi, Yuzhen Wu, Jiaxuan Hou, Xiaodong Zhang, Ming Fan, Suhui Sun, Weijun Dai, Bo Li, Jianguo Sun, Jun Sun
   - Publisher: Baidu
   - Publish Date: 2026.02.05
-  - Task: Testing
+  - Task: Generation
   - Datasets: [CARLA](https://carla.org/)
   - Summary：
     - ROMAN, a novel scenario generation approach for ADS testing that combines a multi-head attention network with a traffic law weighting mechanism to generate high-risk violation scenarios.
@@ -402,7 +371,7 @@ format:
   - Zhuoran Yang, Xi Guo, Chenjing Ding, Chiyu Wang, Wei Wu, Yanyong Zhang
   - Publish Date: 2026.02.03
   - Project Page: [InstaDrive](https://shanpoyang654.github.io/InstaDrive/page.html)
-  - Task: Perception
+  - Task: Generation
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - InstaDrive, a novel framework for generating realistic driving videos, addresses instance-level temporal consistency and spatial geometric fidelity in world models.
@@ -413,7 +382,7 @@ format:
   - Zhuoran Yang, Yanyong Zhang
   - Publish Date: 2026.02.03
   - Project Page: [ConsisDrive](https://shanpoyang654.github.io/ConsisDrive/page.html)
-  - Task: Perception
+  - Task: Generation
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Introduces ConsisDrive, an identity-preserving driving world model designed to enforce temporal consistency at the instance level to prevent identity drift in generated videos.
@@ -435,7 +404,7 @@ format:
 - [UniDriveDreamer: A Single-Stage Multimodal World Model for Autonomous Driving](https://arxiv.org/abs/2602.02002)
   - Guosheng Zhao, Yaozeng Wang, Xiaofeng Wang, Zheng Zhu, Tingdong Yu, Guan Huang, Yongchen Zai, Ji Jiao, Changliang Xue, Xiaole Wang, Zhen Yang, Futang Zhu, Xingang Wang
   - Publish Date: 2026.02.02
-  - Task: Prediction
+  - Task: Prediction, Generation
   - Summary：
     - UniDriveDreamer, a single-stage unified multimodal world model for autonomous driving that directly generates multimodal future observations (multi-camera video and LiDAR sequences) without intermediate representations or cascaded modules.
     - Introduces a LiDAR-specific VAE and a video VAE, with a proposed Unified Latent Anchoring (ULA) method to align their latent distributions for cross-modal compatibility and training stability.
@@ -445,7 +414,7 @@ format:
   - Shuai Liu, Siheng Ren, Xiaoyao Zhu, Quanmin Liang, Zefeng Li, Qiang Li, Xin Hu, Kai Huang
   - Publish Date: 2026.02.02
   - Code: [UniDWM](https://github.com/Say2L/UniDWM)
-  - Task: Planning
+  - Task: Perception, Prediction, Planning, Generation
   - Summary：
     - UniDWM, a unified driving world model that advances autonomous driving through multifaceted representation learning, constructing a structure- and dynamic-aware latent world representation.
     - The model uses a joint reconstruction pathway and a collaborative generation framework with a conditional diffusion transformer to forecast future world evolution.
