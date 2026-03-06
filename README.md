@@ -127,7 +127,7 @@ format:
   - Yuechen Luo, Fang Li, Shaoqing Xu, Yang Ji, Zehan Zhang, Bing Wang, Yuannan Shen, Jianwei Cui, Long Chen, Guang Chen, Hangjun Ye, Zhi-Xin Yang, Fuxi Wen
   - Publish Date: 2026.03.02
   - Task: Planning
-  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [SURDS](), [NuDynamics]()
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - LaST-VLA, a framework shifting reasoning from discrete symbolic processing to a physically grounded Latent Spatio-Temporal Chain-of-Thought to address semantic-perceptual decoupling in Vision-Language-Action models.
     - Implements a dual-feature alignment mechanism to distill geometric constraints from 3D foundation models and dynamic foresight from world models into the latent space.
@@ -164,7 +164,6 @@ format:
 - [Wild-Drive: Off-Road Scene Captioning and Path Planning via Robust Multi-modal Routing and Efficient Large Language Model](https://arxiv.org/abs/2603.00694)
   - Zihang Wang, Xu Li, Benwu Wang, Wenkai Zhu, Xieyuanli Chen, Dong Kong, Kailin Lyu, Yinan Du, Yiming Peng, Haoyang Che
   - Publish Date: 2026.02.28
-  - Project Page: [Wild-Drive](https://github.com/wangzihanggg/Wild-Drive)
   - Code: [Wild-Drive](https://github.com/wangzihanggg/Wild-Drive)
   - Task: Planning
   - Datasets: [OR-C2P Benchmark](https://github.com/wangzihanggg/Wild-Drive)
