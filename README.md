@@ -76,7 +76,7 @@ format:
   - Yi Zhang, Xian Zhang, Saisi Zhao, Yinglei Song, Chengdong Wu, Nenad Petrovic, Alois Knoll
   - Publisher: Technical University of Munich
   - Publish Date: 2026.03.04
-  - Task: Reasoning
+  - Task: Perception, Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - PRAM-R, a unified Perception-Reasoning-Action-Memory framework with LLM-Guided Modality Routing for adaptive autonomous driving, featuring an asynchronous dual-loop design.
