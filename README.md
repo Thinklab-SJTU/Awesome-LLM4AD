@@ -133,20 +133,10 @@ format:
     - Implements a dual-feature alignment mechanism to distill geometric constraints from 3D foundation models and dynamic foresight from world models into the latent space.
     - Employs a progressive SFT training strategy and GRPO reinforcement learning, setting new records on NAVSIM benchmarks and excelling in spatial-temporal reasoning.
 
-- [VidDoS: Universal Denial-of-Service Attack on Video-based Large Language Models](https://arxiv.org/abs/2603.01454)
-  - Duoxun Tang, Dasen Dai, Jiyao Wang, Xiao Yang, Jianyu Wang, Siqi Cai
-  - Publish Date: 2026.03.02
-  - Task: VQA, Planning
-  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/), [KITTI](https://www.cvlibs.net/datasets/kitti/)
-  - Summary：
-    - VidDoS, the first universal Energy-Latency Attack (ELA) framework for Video-LLMs, using instance-agnostic triggers to degrade performance without inference-time gradients.
-    - The method employs masked teacher forcing, a refusal penalty, and early-termination suppression to override model conciseness, causing extreme token expansion and latency.
-    - Testing on autonomous driving and VQA scenarios shows attacks induce over 205x token expansion and 15x latency increase, leading to critical safety violations in real-time streams.
-
 - [Unifying Language-Action Understanding and Generation for Autonomous Driving](https://arxiv.org/abs/2603.01441)
   - Xinyang Wang, Qian Liu, Wenjie Ding, Zhao Yang, Wei Li, Chang Liu, Bailin Li, Kun Zhan, Xianpeng Lang, Wei Chen
   - Publish Date: 2026.03.02
-  - Task: End-to-End
+  - Task: End-to-End, Generation
   - Summary：
     - Introduces LinkVLA, a novel Vision-Language-Action (VLA) architecture for autonomous driving that unifies language and action tokens into a shared discrete codebook to enforce cross-modal consistency.
     - Proposes an auxiliary action understanding objective to create a deep semantic link by training the model to generate captions from trajectories, fostering bidirectional language-action mapping.
