@@ -106,7 +106,7 @@ format:
 - [AnchorDrive: LLM Scenario Rollout with Anchor-Guided Diffusion Regeneration for Safety-Critical Scenario Generation](https://arxiv.org/abs/2603.02542)
   - Zhulin Jiang, Zetao Li, Cheng Wang, Ziwen Wang, Chen Xiong
   - Publish Date: 2026.03.03
-  - Task: Planning
+  - Task: Generation
   - Datasets: [highD](https://www.highd-dataset.com/)
   - Summary：
     - AnchorDrive, a two-stage safety-critical scenario generation framework combining an LLM for controllable generation and a diffusion model for realistic trajectory regeneration.
@@ -116,7 +116,7 @@ format:
 - [LLM-MLFFN: Multi-Level Autonomous Driving Behavior Feature Fusion via Large Language Model](https://arxiv.org/abs/2603.02528)
   - Xiangyu Li, Tianyi Wang, Xi Cheng, Rakesh Chowdary Machineni, Zhaomiao Guo, Sikai Chen, Junfeng Jiao, Christian Claudel
   - Publish Date: 2026.03.03
-  - Task: Prediction
+  - Task: Perception
   - Datasets: [Waymo](https://waymo.com/open/)
   - Summary：
     - LLM-MLFFN, a novel LLM-enhanced multi-level feature fusion network for autonomous driving behavior classification, integrating priors from large-scale pre-trained models.
