@@ -62,6 +62,147 @@ format:
   - metrics
 ```
 
+- [K-Gen: A Multimodal Language-Conditioned Approach for Interpretable Keypoint-Guided Trajectory Generation](https://arxiv.org/abs/2603.04868)
+  - Mingxuan Mu, Guo Yang, Lei Chen, Ping Wu, Jianxun Cui
+  - Publish Date: 2026.03.05
+  - Task: Prediction
+  - Datasets: [WOMD](https://waymo.com/open/data/motion/), [nuPlan](https://www.nuscenes.org/nuplan)
+  - Summary：
+    - K-Gen, an interpretable keypoint-guided multimodal framework that leverages MLLMs to unify rasterized BEV map inputs with textual scene descriptions for trajectory generation.
+    - Instead of directly predicting full trajectories, K-Gen generates interpretable keypoints along with reasoning that reflects agent intentions, which are refined into accurate trajectories.
+    - The method applies T-DAPO, a trajectory-aware reinforcement fine-tuning algorithm, to enhance keypoint generation, outperforming baselines on WOMD and nuPlan.
+
+- [PRAM-R: A Perception-Reasoning-Action-Memory Framework with LLM-Guided Modality Routing for Adaptive Autonomous Driving](https://arxiv.org/abs/2603.04222)
+  - Yi Zhang, Xian Zhang, Saisi Zhao, Yinglei Song, Chengdong Wu, Nenad Petrovic, Alois Knoll
+  - Publisher: Technical University of Munich
+  - Publish Date: 2026.03.04
+  - Task: Reasoning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - PRAM-R, a unified Perception-Reasoning-Action-Memory framework with LLM-Guided Modality Routing for adaptive autonomous driving, featuring an asynchronous dual-loop design.
+    - The framework uses an LLM router to select and weight modalities based on environmental context and sensor diagnostics, paired with a hierarchical memory module for temporal consistency.
+    - Evaluation shows an 87.2% reduction in routing oscillations via hysteresis-based stabilization and a 6.22% modality reduction while maintaining trajectory accuracy comparable to full-modality baselines on nuScenes.
+
+- [Real-Time Generative Policy via Langevin-Guided Flow Matching for Autonomous Driving](https://arxiv.org/abs/2603.02613)
+  - Tianze Zhu, Yinuo Wang, Wenjun Zou, Tianyi Zhang, Likun Wang, Letian Tao, Feihong Zhang, Yao Lyu, Shengbo Eben Li
+  - Publish Date: 2026.03.03
+  - Task: Planning
+  - Datasets: [DeepMind Control Suite](https://github.com/deepmind/dm_control)
+  - Summary：
+    - Proposes DACER-F, a diffusion actor-critic method using flow matching for online RL, enabling single-step inference for real-time decision-making in autonomous driving.
+    - Introduces a method that leverages Langevin dynamics and Q-function gradients to dynamically optimize actions toward a target distribution balancing high Q-value and exploration.
+    - Demonstrates superior performance in complex driving simulations and scalability on the DeepMind Control Suite, achieving high scores with ultra-low inference latency.
+
+- [VLMFusionOcc3D: VLM Assisted Multi-Modal 3D Semantic Occupancy Prediction](https://arxiv.org/abs/2603.02609)
+  - A. Enes Doruk, Hasan F. Ates
+  - Publish Date: 2026.03.03
+  - Task: Perception
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [SemanticKITTI](http://www.semantic-kitti.org/)
+  - Summary：
+    - VLMFusionOcc3D, a robust multimodal framework for dense 3D semantic occupancy prediction, leveraging Vision-Language Models (VLMs) to anchor ambiguous voxel features to stable semantic concepts.
+    - Introduces Instance-driven VLM Attention (InstVLM) to inject high-level semantic priors into 3D voxels and Weather-Aware Adaptive Fusion (WeathFusion) to dynamically re-weight sensor contributions based on environmental reliability.
+    - Employs a Depth-Aware Geometric Alignment (DAGA) loss for structural consistency and demonstrates performance improvements on state-of-the-art baselines, especially in challenging weather scenarios.
+
+- [AnchorDrive: LLM Scenario Rollout with Anchor-Guided Diffusion Regeneration for Safety-Critical Scenario Generation](https://arxiv.org/abs/2603.02542)
+  - Zhulin Jiang, Zetao Li, Cheng Wang, Ziwen Wang, Chen Xiong
+  - Publish Date: 2026.03.03
+  - Task: Planning
+  - Datasets: [highD](https://www.highd-dataset.com/)
+  - Summary：
+    - AnchorDrive, a two-stage safety-critical scenario generation framework combining an LLM for controllable generation and a diffusion model for realistic trajectory regeneration.
+    - The first stage uses an LLM driver agent with a plan assessor for semantically controllable scenario generation under natural language constraints.
+    - The second stage extracts anchor points from LLM trajectories to guide a diffusion model, regenerating trajectories with improved realism while preserving user intent.
+
+- [LLM-MLFFN: Multi-Level Autonomous Driving Behavior Feature Fusion via Large Language Model](https://arxiv.org/abs/2603.02528)
+  - Xiangyu Li, Tianyi Wang, Xi Cheng, Rakesh Chowdary Machineni, Zhaomiao Guo, Sikai Chen, Junfeng Jiao, Christian Claudel
+  - Publish Date: 2026.03.03
+  - Task: Prediction
+  - Datasets: [Waymo](https://waymo.com/open/)
+  - Summary：
+    - LLM-MLFFN, a novel LLM-enhanced multi-level feature fusion network for autonomous driving behavior classification, integrating priors from large-scale pre-trained models.
+    - The framework comprises a multi-level feature extraction module, a semantic description module using LLMs, and a dual-channel feature fusion network with weighted attention.
+    - Evaluation on the Waymo dataset shows superior performance, achieving over 94% classification accuracy and demonstrating the value of combining structured feature modeling with semantic abstraction.
+
+- [LaST-VLA: Thinking in Latent Spatio-Temporal Space for Vision-Language-Action in Autonomous Driving](https://arxiv.org/abs/2603.01928)
+  - Yuechen Luo, Fang Li, Shaoqing Xu, Yang Ji, Zehan Zhang, Bing Wang, Yuannan Shen, Jianwei Cui, Long Chen, Guang Chen, Hangjun Ye, Zhi-Xin Yang, Fuxi Wen
+  - Publish Date: 2026.03.02
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [SURDS](), [NuDynamics]()
+  - Summary：
+    - LaST-VLA, a framework shifting reasoning from discrete symbolic processing to a physically grounded Latent Spatio-Temporal Chain-of-Thought to address semantic-perceptual decoupling in Vision-Language-Action models.
+    - Implements a dual-feature alignment mechanism to distill geometric constraints from 3D foundation models and dynamic foresight from world models into the latent space.
+    - Employs a progressive SFT training strategy and GRPO reinforcement learning, setting new records on NAVSIM benchmarks and excelling in spatial-temporal reasoning.
+
+- [VidDoS: Universal Denial-of-Service Attack on Video-based Large Language Models](https://arxiv.org/abs/2603.01454)
+  - Duoxun Tang, Dasen Dai, Jiyao Wang, Xiao Yang, Jianyu Wang, Siqi Cai
+  - Publish Date: 2026.03.02
+  - Task: VQA, Planning
+  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/), [KITTI](https://www.cvlibs.net/datasets/kitti/)
+  - Summary：
+    - VidDoS, the first universal Energy-Latency Attack (ELA) framework for Video-LLMs, using instance-agnostic triggers to degrade performance without inference-time gradients.
+    - The method employs masked teacher forcing, a refusal penalty, and early-termination suppression to override model conciseness, causing extreme token expansion and latency.
+    - Testing on autonomous driving and VQA scenarios shows attacks induce over 205x token expansion and 15x latency increase, leading to critical safety violations in real-time streams.
+
+- [Unifying Language-Action Understanding and Generation for Autonomous Driving](https://arxiv.org/abs/2603.01441)
+  - Xinyang Wang, Qian Liu, Wenjie Ding, Zhao Yang, Wei Li, Chang Liu, Bailin Li, Kun Zhan, Xianpeng Lang, Wei Chen
+  - Publish Date: 2026.03.02
+  - Task: End-to-End
+  - Summary：
+    - Introduces LinkVLA, a novel Vision-Language-Action (VLA) architecture for autonomous driving that unifies language and action tokens into a shared discrete codebook to enforce cross-modal consistency.
+    - Proposes an auxiliary action understanding objective to create a deep semantic link by training the model to generate captions from trajectories, fostering bidirectional language-action mapping.
+    - Replaces auto-regressive generation with a two-step coarse-to-fine (C2F) method, reducing inference time by 86% while improving instruction following accuracy and driving performance in closed-loop benchmarks.
+
+- [Unleashing VLA Potentials in Autonomous Driving via Explicit Learning from Failures](https://arxiv.org/abs/2603.01063)
+  - Yuechen Luo, Qimao Chen, Fang Li, Shaoqing Xu, Jaxin Liu, Ziying Song, Zhi-xin Yang, Fuxi Wen
+  - Publish Date: 2026.03.01
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes ELF-VLA, a framework that augments RL with structured diagnostic feedback to address performance plateaus in Vision-Language-Action models for autonomous driving.
+    - Generates detailed, interpretable failure reports to identify specific failure modes, enabling targeted Feedback-Guided Refinement and improved training.
+    - Achieves state-of-the-art performance on the NAVSIM benchmark for PDMS, EPDMS score, and high-level planning accuracy.
+
+- [DriveCode: Domain Specific Numerical Encoding for LLM-Based Autonomous Driving](https://arxiv.org/abs/2603.00919)
+  - Zhiye Wang, Yanbo Jiang, Rui Zhou, Bo Zhang, Fang Zhang, Zhenhua Xu, Yaqin Zhang, Jianqiang Wang
+  - Publish Date: 2026.03.01
+  - Task: End-to-End
+  - Summary：
+    - Introduces DriveCode, a novel numerical encoding method for LLM-based autonomous driving that represents numbers as dedicated embeddings rather than discrete text tokens to improve numerical reasoning and precision.
+    - Employs a number projector to map numbers into the language model's hidden space, enabling seamless integration with visual and textual features in a unified multimodal sequence.
+    - Demonstrates superior performance in trajectory prediction and control signal generation on OmniDrive, DriveGPT4, and DriveGPT4-V2 datasets.
+
+- [Wild-Drive: Off-Road Scene Captioning and Path Planning via Robust Multi-modal Routing and Efficient Large Language Model](https://arxiv.org/abs/2603.00694)
+  - Zihang Wang, Xu Li, Benwu Wang, Wenkai Zhu, Xieyuanli Chen, Dong Kong, Kailin Lyu, Yinan Du, Yiming Peng, Haoyang Che
+  - Publish Date: 2026.02.28
+  - Project Page: [Wild-Drive](https://github.com/wangzihanggg/Wild-Drive)
+  - Code: [Wild-Drive](https://github.com/wangzihanggg/Wild-Drive)
+  - Task: Planning
+  - Datasets: [OR-C2P Benchmark](https://github.com/wangzihanggg/Wild-Drive)
+  - Summary：
+    - Proposes Wild-Drive, an efficient framework for off-road scene captioning and path planning, addressing vulnerability to sensor degradations like rain, fog, and darkness.
+    - Introduces MoRo-Former, a task-conditioned modality-routing bridge, to adaptively aggregate reliable multimodal information under degraded sensing conditions.
+    - Integrates an efficient LLM with a planning token and GRU decoder to generate structured captions and predict future trajectories, and releases the OR-C2P Benchmark for evaluation.
+
+- [ReMoT: Reinforcement Learning with Motion Contrast Triplets](https://arxiv.org/abs/2603.00461)
+  - Cong Wan, Zeyu Guo, Jiangyang Li, SongLin Dong, Yifan Bai, Lin Peng, Zhiheng Ma, Yihong Gong
+  - Publish Date: 2026.02.28
+  - Task: Reasoning
+  - Summary：
+    - ReMoT, a unified training paradigm to address spatio-temporal consistency shortcomings in VLMs for navigation, robotics, and autonomous driving.
+    - Introduces a rule-based framework generating ReMoT-16K, a large-scale motion-contrast dataset, and Group Relative Policy Optimization for efficient contrastive reasoning learning.
+    - Achieves state-of-the-art performance on a new fine-grained motion contrast benchmark and standard VLM benchmarks, with a 25.1% leap on spatio-temporal reasoning tasks.
+
+- [PointAlign: Feature-Level Alignment Regularization for 3D Vision-Language Models](https://arxiv.org/abs/2603.00412)
+  - Yuanhao Su, Shaofeng Zhang, Xiaosong Jia, Qi Fan
+  - Publish Date: 2026.02.28
+  - Code: [PointAlign](https://github.com/yharoldsu0627/PointAlign)
+  - Task: Perception
+  - Datasets: [ModelNet40](https://modelnet.cs.princeton.edu/), [Objaverse](https://objaverse.allenai.org/)
+  - Summary：
+    - Proposes PointAlign, a feature-level alignment regularization method for 3D Vision-Language Models (VLMs) to address data scarcity and geometric information degradation.
+    - Introduces a consistency loss to align intermediate point cloud tokens with visual input tokens, preserving fine-grained 3D geometric-semantic information during language modeling.
+    - Achieves significant performance improvements on 3D classification and captioning tasks with minimal computational overhead by training only a lightweight alignment projector and LoRA adapters.
+
 - [Risk-Aware World Model Predictive Control for Generalizable End-to-End Autonomous Driving](https://arxiv.org/abs/2602.23259)
   - Jiangxin Sun, Feng Xue, Teng Long, Chang Liu, Jian-Fang Hu, Wei-Shi Zheng, Nicu Sebe
   - Publisher: University of Macau, University of Chinese Academy of Sciences, University of Trento
