@@ -65,7 +65,7 @@ format:
 - [K-Gen: A Multimodal Language-Conditioned Approach for Interpretable Keypoint-Guided Trajectory Generation](https://arxiv.org/abs/2603.04868)
   - Mingxuan Mu, Guo Yang, Lei Chen, Ping Wu, Jianxun Cui
   - Publish Date: 2026.03.05
-  - Task: Prediction
+  - Task: Planning
   - Datasets: [WOMD](https://waymo.com/open/data/motion/), [nuPlan](https://www.nuscenes.org/nuplan)
   - Summary：
     - K-Gen, an interpretable keypoint-guided multimodal framework that leverages MLLMs to unify rasterized BEV map inputs with textual scene descriptions for trajectory generation.
