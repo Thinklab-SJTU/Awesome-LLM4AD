@@ -62,6 +62,157 @@ format:
   - metrics
 ```
 
+- [Risk-Controllable Multi-View Diffusion for Driving Scenario Generation](https://arxiv.org/abs/2603.11534)
+  - Hongyi Lin, Wenxiu Shi, Heye Huang, Dingyi Zhuang, Song Zhang, Yang Liu, Xiaobo Qu, Jinhua Zhao
+  - Publish Date: 2026.03.12
+  - Task: Prediction
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes RiskMV-DPO, a pipeline for physically-informed, risk-controllable multi-view driving scenario generation to synthesize diverse long-tail, high-stakes situations.
+    - Introduces a geometry-appearance alignment module and a region-aware direct preference optimization (RA-DPO) strategy to ensure spatial-temporal coherence and geometric fidelity in generated scenes.
+    - Demonstrates state-of-the-art performance on nuScenes, improving 3D detection mAP and reducing FID, shifting world models from passive prediction to proactive, controllable synthesis.
+
+- [DriveXQA: Cross-modal Visual Question Answering for Adverse Driving Scene Understanding](https://arxiv.org/abs/2603.11380)
+  - Mingzhe Tao, Ruiping Liu, Junwei Zheng, Yufan Chen, Kedi Ying, M. Saquib Sarfraz, Kailun Yang, Jiaming Zhang, Rainer Stiefelhagen
+  - Publish Date: 2026.03.11
+  - Task: VQA
+  - Datasets: [DriveXQA](https://arxiv.org/abs/2603.11380)
+  - Summary：
+    - Proposes DriveXQA, a multimodal dataset for autonomous driving VQA with 102,505 QA pairs across three levels (global scene, allocentric, ego-vehicle centric), four visual modalities, and various sensor failure cases and weather conditions.
+    - Introduces MVX-LLM, a token-efficient architecture with a Dual Cross-Attention (DCA) projector to fuse multiple complementary visual modalities, showing improved performance in challenging conditions like fog.
+
+- [DynVLA: Learning World Dynamics for Action Reasoning in Autonomous Driving](https://arxiv.org/abs/2603.11041)
+  - Shuyao Shang, Bing Zhan, Yunfei Yan, Yuqi Wang, Yingyan Li, Yasong An, Xiaoman Wang, Jierui Liu, Lu Hou, Lue Fan, Zhaoxiang Zhang, Tieniu Tan
+  - Publisher: Chinese Academy of Sciences, Institute of Automation
+  - Publish Date: 2026.03.11
+  - Task: Planning, Reasoning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [Bench2Drive](https://bench2drive.github.io/)
+  - Summary：
+    - DynVLA, a driving Vision-Language-Action (VLA) model, introduces a new Chain-of-Thought (CoT) paradigm termed Dynamics CoT, which forecasts compact world dynamics before action generation for more informed and physically grounded decision-making.
+    - The model introduces a Dynamics Tokenizer to compress future evolution into a small set of dynamics tokens and decouples ego-centric and environment-centric dynamics for more accurate world modeling in interaction-intensive scenarios.
+    - DynVLA is trained to generate dynamics tokens before actions via Supervised Fine-Tuning (SFT) and Reinforcement Fine-Tuning (RFT), improving decision quality while maintaining latency-efficient inference, and outperforms Textual CoT and Visual CoT methods across multiple benchmarks.
+
+- [A Survey of Reasoning in Autonomous Driving Systems: Open Challenges and Emerging Paradigms](https://arxiv.org/abs/2603.11093)
+  - Kejin Yu, Yuhan Sun, Taiqiang Wu, Ruixu Zhang, Zhiqiang Lin, Yuxin Meng, Junjie Wang, Yujiu Yang
+  - Publish Date: 2026.03.11
+  - Task: Reasoning
+  - Summary：
+    - Provides a comprehensive review arguing for elevating reasoning from a modular component to the cognitive core of autonomous driving systems.
+    - Proposes a novel Cognitive Hierarchy to decompose the driving task and systematizes seven core reasoning challenges.
+    - Identifies a fundamental tension between LLM-based reasoning latency and safety-critical control demands, suggesting future work on verifiable neuro-symbolic architectures.
+
+- [RESBev: Making BEV Perception More Robust](https://arxiv.org/abs/2603.09529)
+  - Lifeng Zhuo, Kefan Jin, Zhe Liu, Hesheng Wang
+  - Publish Date: 2026.03.10
+  - Task: Perception
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes RESBev, a resilient and plug-and-play BEV perception method to enhance robustness against sensor degradation and adversarial attacks.
+    - Reframes perception robustness as a latent semantic prediction problem, using a latent world model to learn BEV state transitions and predict clean features.
+    - Operates at the semantic feature level of the Lift-Splat-Shoot pipeline, enabling recovery that generalizes across disturbances without modifying the backbone.
+
+- [Probing the Reliability of Driving VLMs: From Inconsistent Responses to Grounded Temporal Reasoning](https://arxiv.org/abs/2603.09512)
+  - Chun-Peng Chang, Chen-Yu Wang, Holger Caesar, Alain Pagani
+  - Publish Date: 2026.03.10
+  - Task: Reasoning
+  - Datasets: [FutureVQA](https://arxiv.org/abs/2603.09512)
+  - Summary：
+    - Investigates the reliability of Vision-Language Models (VLMs) as driving assistants, focusing on challenges of response inconsistency and limited temporal reasoning.
+    - Introduces FutureVQA, a human-annotated benchmark dataset for assessing future scene reasoning in driving contexts.
+    - Proposes a self-supervised tuning approach with chain-of-thought reasoning to improve model consistency and temporal reasoning without requiring temporal labels.
+
+- [StyleVLA: Driving Style-Aware Vision Language Action Model for Autonomous Driving](https://arxiv.org/abs/2603.09482)
+  - Yuan Gao, Dengyuan Hua, Mattia Piccinini, Finn Rasmus Schäfer, Korbinian Moller, Lin Li, Johannes Betz
+  - Publisher: Technical University of Munich
+  - Publish Date: 2026.03.10
+  - Task: Planning
+  - Summary：
+    - StyleVLA, a physics-informed Vision Language Action (VLA) framework for generating diverse and physically plausible driving behaviors adapted to specific styles (e.g., sporty, comfortable).
+    - Introduces a hybrid loss combining a kinematic consistency constraint with a continuous regression head to improve trajectory feasibility.
+    - Trained on a large-scale instruction dataset with over 1.2k scenarios and 118k samples, built upon Qwen3-VL-4B, and outperforms proprietary and state-of-the-art models on a composite driving score.
+
+- [Comparative Analysis of Patch Attack on VLM-Based Autonomous Driving Architectures](https://arxiv.org/abs/2603.08897)
+  - David Fernandez, Pedram MohajerAnsari, Amir Salarpour, Long Cheng, Abolfazl Razi, Mert D. Pesé
+  - Publish Date: 2026.03.09
+  - Task: Perception
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - Presents a systematic framework for comparative adversarial evaluation across three VLM architectures for autonomous driving: Dolphins, OmniDrive (Omni-L), and LeapVAD.
+    - Evaluates physically realizable patch attacks using black-box optimization with semantic homogenization in CARLA simulation, revealing severe vulnerabilities and sustained multi-frame failures.
+    - Analysis exposes distinct architectural vulnerability patterns, demonstrating that current VLM designs inadequately address adversarial threats in safety-critical applications.
+
+- [ALOOD: Exploiting Language Representations for LiDAR-based Out-of-Distribution Object Detection](https://arxiv.org/abs/2603.08180)
+  - Michael Kösel, Marcel Schreiber, Michael Ulrich, Claudius Gläser, Klaus Dietmayer
+  - Publisher: University of Ulm
+  - Publish Date: 2026.03.09
+  - Code: [ALOOD](https://github.com/uulm-mrm/mmood3d)
+  - Task: Perception
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - ALOOD, a novel approach for LiDAR-based Out-of-Distribution (OOD) object detection by incorporating language representations from a vision-language model (VLM).
+    - Aligns object detector features to the VLM's feature space, enabling OOD detection as a zero-shot classification task.
+    - Demonstrates competitive performance on the nuScenes OOD benchmark, establishing a new language-based method for OOD detection in 3D LiDAR.
+
+- [SAMoE-VLA: A Scene Adaptive Mixture-of-Experts Vision-Language-Action Model for Autonomous Driving](https://arxiv.org/abs/2603.08113)
+  - Zihan You, Hongwei Liu, Chenxu Dang, Zhe Wang, Sining Ang, Aoqi Wang, Yan Wang
+  - Publish Date: 2026.03.09
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - SAMoE-VLA, a scene-adaptive Vision-Language-Action framework that conditions expert selection on structured scene representations (BEV features) instead of token embeddings for stable autonomous driving.
+    - Introduces a Conditional Cross-Modal Causal Attention mechanism to integrate world state, linguistic intent, and action history into a unified causal reasoning process.
+    - Achieves state-of-the-art performance on nuScenes and LangAuto benchmarks, outperforming prior VLA-based and world-model-based approaches with fewer parameters.
+
+- [NaviDriveVLM: Decoupling High-Level Reasoning and Motion Planning for Autonomous Driving](https://arxiv.org/abs/2603.07901)
+  - Ximeng Tao, Pardis Taghavi, Dimitar Filev, Reza Langari, Gaurav Pandey
+  - Publisher: Texas A&M University
+  - Publish Date: 2026.03.09
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - NaviDriveVLM, a decoupled framework for autonomous driving that separates high-level reasoning from motion planning using a large-scale Navigator and a lightweight trainable Driver.
+    - This design preserves strong reasoning ability while reducing training cost and provides an explicit, interpretable intermediate representation for downstream planning.
+    - Experiments on the nuScenes benchmark show NaviDriveVLM outperforms large VLM baselines in end-to-end motion planning.
+
+- [Kinematics-Aware Latent World Models for Data-Efficient Autonomous Driving](https://arxiv.org/abs/2603.07264)
+  - Jiazhuo Li, Linjiang Cao, Qi Liu, Xi Xiong
+  - Publish Date: 2026.03.07
+  - Task: Planning
+  - Summary：
+    - Proposes a kinematics-aware latent world model framework for autonomous driving, building upon the Recurrent State-Space Model (RSSM) to incorporate vehicle kinematic information and geometry-aware supervision.
+    - The structured latent dynamics improve long-horizon imagination fidelity and stabilize policy optimization, demonstrating gains in sample efficiency and driving performance over model-free and pixel-based world-model baselines.
+
+- [Perception-Aware Multimodal Spatial Reasoning from Monocular Images](https://arxiv.org/abs/2603.06985)
+  - Yanchun Cheng, Rundong Wang, Xulei Yang, Alok Prakash, Daniela Rus, Marcelo H Ang, ShiJie Li
+  - Publisher: Massachusetts Institute of Technology
+  - Publish Date: 2026.03.07
+  - Task: Reasoning
+  - Datasets: [SURDS](https://surds-benchmark.github.io/)
+  - Summary：
+    - Proposes a perception-aware multimodal reasoning framework that equips Vision-Language Models (VLMs) with explicit object-centric grounding using Visual Reference Tokens (VRTs) for joint visual-textual reasoning.
+    - Introduces a Multimodal Chain-of-Thought (MM-CoT) dataset and a deterministic ordering strategy to supervise unordered VRT sets, enabling effective training via standard supervised fine-tuning.
+    - Achieves substantial improvements on the SURDS benchmark for spatial reasoning in monocular driving scenarios, outperforming prior methods including RL-based approaches.
+
+- [BEVLM: Distilling Semantic Knowledge from LLMs into Bird's-Eye View Representations](https://arxiv.org/abs/2603.06576)
+  - Thomas Monninger, Shaoyuan Xie, Qi Alfred Chen, Sihao Ding
+  - Publish Date: 2026.03.06
+  - Task: End-to-End
+  - Summary：
+    - BEVLM, a framework connecting spatially consistent, semantically distilled Bird's-Eye View (BEV) representations with Large Language Models (LLMs) for autonomous driving.
+    - The method enables more effective LLM reasoning in cross-view driving scenes, improving accuracy by 46% by using BEV features as unified inputs.
+    - Distilling semantic knowledge from LLMs into BEV representations significantly improves closed-loop end-to-end driving performance by 29% in safety-critical scenarios.
+
+- [NOVA: Next-step Open-Vocabulary Autoregression for 3D Multi-Object Tracking in Autonomous Driving](https://arxiv.org/abs/2603.06254)
+  - Kai Luo, Xu Wang, Rui Fan, Kailun Yang
+  - Publish Date: 2026.03.06
+  - Code: [NOVA](https://github.com/xifen523/NOVA)
+  - Task: Perception
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [V2X-Seq-SPD](https://github.com/ucla-mobility/V2X-Seq), [KITTI](http://www.cvlibs.net/datasets/kitti/)
+  - Summary：
+    - NOVA, a novel paradigm for 3D Multi-Object Tracking that shifts from traditional distance-based matching to generative spatio-temporal semantic modeling using autoregressive Large Language Models.
+    - It reformulates 3D trajectories as structured spatio-temporal semantic sequences, enabling simultaneous encoding of physical motion continuity and deep linguistic priors for identity consistency.
+    - Achieves significant performance gains on novel categories, with a 20.21% absolute improvement in AMOTA on nuScenes, using a compact 0.5B parameter model.
+
 - [K-Gen: A Multimodal Language-Conditioned Approach for Interpretable Keypoint-Guided Trajectory Generation](https://arxiv.org/abs/2603.04868)
   - Mingxuan Mu, Guo Yang, Lei Chen, Ping Wu, Jianxun Cui
   - Publish Date: 2026.03.05
