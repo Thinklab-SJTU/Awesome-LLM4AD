@@ -76,7 +76,6 @@ format:
   - Mingzhe Tao, Ruiping Liu, Junwei Zheng, Yufan Chen, Kedi Ying, M. Saquib Sarfraz, Kailun Yang, Jiaming Zhang, Rainer Stiefelhagen
   - Publish Date: 2026.03.11
   - Task: VQA
-  - Datasets: [DriveXQA]
   - Summary：
     - Proposes DriveXQA, a multimodal dataset for autonomous driving VQA with 102,505 QA pairs across three levels (global scene, allocentric, ego-vehicle centric), four visual modalities, and various sensor failure cases and weather conditions.
     - Introduces MVX-LLM, a token-efficient architecture with a Dual Cross-Attention (DCA) projector to fuse multiple complementary visual modalities, showing improved performance in challenging conditions like fog.
@@ -106,7 +105,6 @@ format:
   - Chun-Peng Chang, Chen-Yu Wang, Holger Caesar, Alain Pagani
   - Publish Date: 2026.03.10
   - Task: Reasoning
-  - Datasets: [FutureVQA](https://arxiv.org/abs/2603.09512)
   - Summary：
     - Investigates the reliability of Vision-Language Models (VLMs) as driving assistants, focusing on challenges of response inconsistency and limited temporal reasoning.
     - Introduces FutureVQA, a human-annotated benchmark dataset for assessing future scene reasoning in driving contexts.
