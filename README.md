@@ -164,7 +164,6 @@ format:
   - Publisher: Massachusetts Institute of Technology
   - Publish Date: 2026.03.07
   - Task: Perception
-  - Datasets: [SURDS](https://surds-benchmark.github.io/)
   - Summary：
     - Proposes a perception-aware multimodal reasoning framework that equips Vision-Language Models (VLMs) with explicit object-centric grounding using Visual Reference Tokens (VRTs) for joint visual-textual reasoning.
     - Introduces a Multimodal Chain-of-Thought (MM-CoT) dataset and a deterministic ordering strategy to supervise unordered VRT sets, enabling effective training via standard supervised fine-tuning.
