@@ -65,7 +65,7 @@ format:
 - [Risk-Controllable Multi-View Diffusion for Driving Scenario Generation](https://arxiv.org/abs/2603.11534)
   - Hongyi Lin, Wenxiu Shi, Heye Huang, Dingyi Zhuang, Song Zhang, Yang Liu, Xiaobo Qu, Jinhua Zhao
   - Publish Date: 2026.03.12
-  - Task: Prediction
+  - Task: Generation
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Proposes RiskMV-DPO, a pipeline for physically-informed, risk-controllable multi-view driving scenario generation to synthesize diverse long-tail, high-stakes situations.
@@ -92,15 +92,6 @@ format:
     - The model introduces a Dynamics Tokenizer to compress future evolution into a small set of dynamics tokens and decouples ego-centric and environment-centric dynamics for more accurate world modeling in interaction-intensive scenarios.
     - DynVLA is trained to generate dynamics tokens before actions via Supervised Fine-Tuning (SFT) and Reinforcement Fine-Tuning (RFT), improving decision quality while maintaining latency-efficient inference, and outperforms Textual CoT and Visual CoT methods across multiple benchmarks.
 
-- [A Survey of Reasoning in Autonomous Driving Systems: Open Challenges and Emerging Paradigms](https://arxiv.org/abs/2603.11093)
-  - Kejin Yu, Yuhan Sun, Taiqiang Wu, Ruixu Zhang, Zhiqiang Lin, Yuxin Meng, Junjie Wang, Yujiu Yang
-  - Publish Date: 2026.03.11
-  - Task: Reasoning
-  - Summary：
-    - Provides a comprehensive review arguing for elevating reasoning from a modular component to the cognitive core of autonomous driving systems.
-    - Proposes a novel Cognitive Hierarchy to decompose the driving task and systematizes seven core reasoning challenges.
-    - Identifies a fundamental tension between LLM-based reasoning latency and safety-critical control demands, suggesting future work on verifiable neuro-symbolic architectures.
-
 - [RESBev: Making BEV Perception More Robust](https://arxiv.org/abs/2603.09529)
   - Lifeng Zhuo, Kefan Jin, Zhe Liu, Hesheng Wang
   - Publish Date: 2026.03.10
@@ -125,7 +116,7 @@ format:
   - Yuan Gao, Dengyuan Hua, Mattia Piccinini, Finn Rasmus Schäfer, Korbinian Moller, Lin Li, Johannes Betz
   - Publisher: Technical University of Munich
   - Publish Date: 2026.03.10
-  - Task: Planning
+  - Task: Perception, Planning
   - Summary：
     - StyleVLA, a physics-informed Vision Language Action (VLA) framework for generating diverse and physically plausible driving behaviors adapted to specific styles (e.g., sporty, comfortable).
     - Introduces a hybrid loss combining a kinematic consistency constraint with a continuous regression head to improve trajectory feasibility.
@@ -141,22 +132,10 @@ format:
     - Evaluates physically realizable patch attacks using black-box optimization with semantic homogenization in CARLA simulation, revealing severe vulnerabilities and sustained multi-frame failures.
     - Analysis exposes distinct architectural vulnerability patterns, demonstrating that current VLM designs inadequately address adversarial threats in safety-critical applications.
 
-- [ALOOD: Exploiting Language Representations for LiDAR-based Out-of-Distribution Object Detection](https://arxiv.org/abs/2603.08180)
-  - Michael Kösel, Marcel Schreiber, Michael Ulrich, Claudius Gläser, Klaus Dietmayer
-  - Publisher: University of Ulm
-  - Publish Date: 2026.03.09
-  - Code: [ALOOD](https://github.com/uulm-mrm/mmood3d)
-  - Task: Perception
-  - Datasets: [nuScenes](https://www.nuscenes.org/)
-  - Summary：
-    - ALOOD, a novel approach for LiDAR-based Out-of-Distribution (OOD) object detection by incorporating language representations from a vision-language model (VLM).
-    - Aligns object detector features to the VLM's feature space, enabling OOD detection as a zero-shot classification task.
-    - Demonstrates competitive performance on the nuScenes OOD benchmark, establishing a new language-based method for OOD detection in 3D LiDAR.
-
 - [SAMoE-VLA: A Scene Adaptive Mixture-of-Experts Vision-Language-Action Model for Autonomous Driving](https://arxiv.org/abs/2603.08113)
   - Zihan You, Hongwei Liu, Chenxu Dang, Zhe Wang, Sining Ang, Aoqi Wang, Yan Wang
   - Publish Date: 2026.03.09
-  - Task: Planning
+  - Task: Perception, Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - SAMoE-VLA, a scene-adaptive Vision-Language-Action framework that conditions expert selection on structured scene representations (BEV features) instead of token embeddings for stable autonomous driving.
@@ -167,7 +146,7 @@ format:
   - Ximeng Tao, Pardis Taghavi, Dimitar Filev, Reza Langari, Gaurav Pandey
   - Publisher: Texas A&M University
   - Publish Date: 2026.03.09
-  - Task: End-to-End
+  - Task: Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - NaviDriveVLM, a decoupled framework for autonomous driving that separates high-level reasoning from motion planning using a large-scale Navigator and a lightweight trainable Driver.
@@ -177,7 +156,7 @@ format:
 - [Kinematics-Aware Latent World Models for Data-Efficient Autonomous Driving](https://arxiv.org/abs/2603.07264)
   - Jiazhuo Li, Linjiang Cao, Qi Liu, Xi Xiong
   - Publish Date: 2026.03.07
-  - Task: Planning
+  - Task: Perception
   - Summary：
     - Proposes a kinematics-aware latent world model framework for autonomous driving, building upon the Recurrent State-Space Model (RSSM) to incorporate vehicle kinematic information and geometry-aware supervision.
     - The structured latent dynamics improve long-horizon imagination fidelity and stabilize policy optimization, demonstrating gains in sample efficiency and driving performance over model-free and pixel-based world-model baselines.
@@ -186,7 +165,7 @@ format:
   - Yanchun Cheng, Rundong Wang, Xulei Yang, Alok Prakash, Daniela Rus, Marcelo H Ang, ShiJie Li
   - Publisher: Massachusetts Institute of Technology
   - Publish Date: 2026.03.07
-  - Task: Reasoning
+  - Task: Perception
   - Datasets: [SURDS](https://surds-benchmark.github.io/)
   - Summary：
     - Proposes a perception-aware multimodal reasoning framework that equips Vision-Language Models (VLMs) with explicit object-centric grounding using Visual Reference Tokens (VRTs) for joint visual-textual reasoning.
@@ -196,7 +175,7 @@ format:
 - [BEVLM: Distilling Semantic Knowledge from LLMs into Bird's-Eye View Representations](https://arxiv.org/abs/2603.06576)
   - Thomas Monninger, Shaoyuan Xie, Qi Alfred Chen, Sihao Ding
   - Publish Date: 2026.03.06
-  - Task: End-to-End
+  - Task: Perception
   - Summary：
     - BEVLM, a framework connecting spatially consistent, semantically distilled Bird's-Eye View (BEV) representations with Large Language Models (LLMs) for autonomous driving.
     - The method enables more effective LLM reasoning in cross-view driving scenes, improving accuracy by 46% by using BEV features as unified inputs.
