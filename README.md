@@ -76,7 +76,7 @@ format:
   - Mingzhe Tao, Ruiping Liu, Junwei Zheng, Yufan Chen, Kedi Ying, M. Saquib Sarfraz, Kailun Yang, Jiaming Zhang, Rainer Stiefelhagen
   - Publish Date: 2026.03.11
   - Task: VQA
-  - Datasets: [DriveXQA](https://arxiv.org/abs/2603.11380)
+  - Datasets: [DriveXQA]
   - Summary：
     - Proposes DriveXQA, a multimodal dataset for autonomous driving VQA with 102,505 QA pairs across three levels (global scene, allocentric, ego-vehicle centric), four visual modalities, and various sensor failure cases and weather conditions.
     - Introduces MVX-LLM, a token-efficient architecture with a Dual Cross-Attention (DCA) projector to fuse multiple complementary visual modalities, showing improved performance in challenging conditions like fog.
@@ -186,7 +186,7 @@ format:
   - Publish Date: 2026.03.06
   - Code: [NOVA](https://github.com/xifen523/NOVA)
   - Task: Perception
-  - Datasets: [nuScenes](https://www.nuscenes.org/), [V2X-Seq-SPD](https://github.com/ucla-mobility/V2X-Seq), [KITTI](http://www.cvlibs.net/datasets/kitti/)
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [KITTI](http://www.cvlibs.net/datasets/kitti/)
   - Summary：
     - NOVA, a novel paradigm for 3D Multi-Object Tracking that shifts from traditional distance-based matching to generative spatio-temporal semantic modeling using autoregressive Large Language Models.
     - It reformulates 3D trajectories as structured spatio-temporal semantic sequences, enabling simultaneous encoding of physical motion continuity and deep linguistic priors for identity consistency.
