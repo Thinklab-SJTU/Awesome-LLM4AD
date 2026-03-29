@@ -7,11 +7,7 @@ This is a collection of research papers about **LLM-for-Autonomous-Driving(LLM4A
 Welcome to follow and star! If you find any related materials could be helpful, feel free to contact us (yangzhenjie@sjtu.edu.cn or jiaxiaosong@sjtu.edu.cn) or make a PR.
 
 ## Citation
-Our survey paper is at https://arxiv.org/abs/2311.01043 which includes more detailed discussions and will be continuously updated. 
-
-**The GitHub Pages was updated on Mar 29, 2026.**
-
-**The Survey Paper latest version was updated on August 12, 2024.**
+Our survey paper is at https://arxiv.org/abs/2311.01043 which includes more detailed discussions and will be continuously updated.
 
 If you find our repo is helpful, please consider cite it.
 ```BibTeX
