@@ -9,7 +9,7 @@ Welcome to follow and star! If you find any related materials could be helpful, 
 ## Citation
 Our survey paper is at https://arxiv.org/abs/2311.01043 which includes more detailed discussions and will be continuously updated. 
 
-**The GitHub Pages was updated on Jan 12, 2026.**
+**The GitHub Pages was updated on Mar 29, 2026.**
 
 **The Survey Paper latest version was updated on August 12, 2024.**
 
@@ -2636,7 +2636,7 @@ format:
     - VL-SAFE, a world model-based safe RL framework with Vision-Language model (VLM)-as safety guidance paradigm, designed for offline safe policy learning.
 
 - [DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving](https://arxiv.org/abs/2505.16278)
-  - Zhenjie Yang, Yilin Chai, Xiaosong Jia, Qifeng Li, Yuqian Shao, Xuekai Zhu, Haisheng Su, Junchi Yan
+  - Zhenjie Yang, Yilin Chai, Xiaosong Jia, Qifeng Li, Yuqian Shao, Xuekai Zhu, Haisheng Su, Junchi Yan **CVPR 2026**
   - Publisher: Shanghai Jiao Tong University
   - Publish Date: 2025.05.22
   - Project Pages: [DriveMoE](https://thinklab-sjtu.github.io/DriveMoE/)
