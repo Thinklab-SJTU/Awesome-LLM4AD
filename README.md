@@ -72,7 +72,7 @@ format:
   - Zehao Wang, Huaide Jiang, Shuaiwu Dong, Yuping Wang, Hang Qiu, Jiachen Li
   - Publish Date: 2026.03.26
   - Project Page: [Drive My Way](https://dmw-cvpr.github.io/)
-  - Code: [Drive My Way](https://dmw-cvpr.github.io/)
+  - Code: [Drive My Way](https://github.com/tasl-lab/DMW)
   - Task: Planning
   - Datasets: [Bench2Drive](https://github.com/OpenDriveLab/Bench2Drive)
   - Summary：
