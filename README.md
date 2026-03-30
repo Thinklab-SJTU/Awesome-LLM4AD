@@ -93,7 +93,7 @@ format:
 - [Learning Rollout from Sampling:An R1-Style Tokenized Traffic Simulation Model](https://arxiv.org/abs/2603.24989)
   - Ziyan Wang, Peng Chen, Ding Li, Chiwei Li, Qichao Zhang, Zhongpu Xia, Guizhen Yu
   - Publish Date: 2026.03.26
-  - Task: Simulation
+  - Task: Generation
   - Datasets: [Waymo Sim Agent](https://waymo.com/open/)
   - Summary：
     - R1Sim, a novel tokenized traffic simulation policy, explores reinforcement learning based on motion token entropy patterns for learning diverse and high-fidelity traffic simulations.
@@ -104,7 +104,6 @@ format:
   - Xuepeng Jing, Wenhuan Lu, Hao Meng, Zhizhi Yu, Jianguo Wei
   - Publish Date: 2026.03.26
   - Task: Prediction
-  - Datasets: [ETH/UCY](https://github.com/agrimgupta92/sgan), [SDD](https://cvgl.stanford.edu/projects/uav_data/)
   - Summary：
     - TIGFlow-GRPO, a two-stage generative framework for human trajectory forecasting that aligns flow-based generation with behavioral rules.
     - The first stage uses a CFM-based predictor with a Trajectory-Interaction-Graph (TIG) module to model fine-grained visual-spatial interactions.
@@ -123,8 +122,8 @@ format:
 - [Latent-WAM: Latent World Action Modeling for End-to-End Autonomous Driving](https://arxiv.org/abs/2603.24581)
   - Linbo Wang, Yupeng Zheng, Qiang Chen, Shiwei Li, Yichen Zhang, Zebin Xing, Qichao Zhang, Xiang Li, Deheng Qian, Pengxuan Yang, Yihang Dong, Ce Hao, Xiaoqing Ye, Junyu han, Yifeng Pan, Dongbin Zhao
   - Publish Date: 2026.03.25
-  - Task: Planning
-  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [HUGSIM](https://github.com/autonomousvision/hugsim)
+  - Task: Prediction, Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - Latent-WAM, an efficient end-to-end autonomous driving framework that achieves strong trajectory planning through spatially-aware and dynamics-informed latent world representations.
     - It introduces a Spatial-Aware Compressive World Encoder (SCWE) to distill geometric knowledge and compress multi-view images, and a Dynamic Latent World Model (DLWM) to predict future world states.
@@ -135,7 +134,7 @@ format:
   - Publisher: Huazhong University of Science and Technology, Xiaomi EV
   - Publish Date: 2026.03.25
   - Project Page: [PhyGenesis](https://wm-research.github.io/PhyGenesis/)
-  - Task: Prediction
+  - Task: Generation
   - Datasets: [CARLA](https://carla.org/)
   - Summary：
     - Proposes PhyGenesis, a world model for generating driving videos with high visual fidelity and strong physical consistency, especially under challenging or counterfactual trajectories.
@@ -158,8 +157,8 @@ format:
   - Ye Tian, Jingyi Zhang, Zihao Wang, Xiaoyuan Ren, Xiaofan Yu, Onat Gungor, Tajana Rosing
   - Publisher: University of California San Diego
   - Publish Date: 2026.03.22
-  - Task: Reasoning
-  - Datasets: [NuScenes-QA](https://www.nuscenes.org/), [GVQA](https://github.com/wayveai/gvqa)
+  - Task: VQA
+  - Datasets: [NuScenes-QA](https://github.com/qiantianwen/NuScenes-QA)
   - Summary：
     - KLDrive, a knowledge-graph-augmented LLM reasoning framework for fine-grained question answering in autonomous driving, combining an energy-based scene fact construction module with an LLM agent for fact-grounded reasoning.
     - The framework uses structured prompting and few-shot in-context exemplars to adapt to diverse reasoning tasks without heavy task-specific fine-tuning, reducing hallucinations and improving reliability.
@@ -202,16 +201,6 @@ format:
     - DriveTok, an efficient 3D driving scene tokenizer for unified multi-view reconstruction and understanding, designed to address inefficiency and inconsistency in multi-view driving scenes.
     - It transforms semantically rich visual features into scene tokens using 3D deformable cross-attention and employs a multi-view transformer for reconstruction of RGB, depth, and semantics, with an added 3D head for semantic occupancy prediction.
 
-- [Bridging Network Fragmentation: A Semantic-Augmented DRL Framework for UAV-aided VANETs](https://arxiv.org/abs/2603.18871)
-  - Gaoxiang Cao, Wenke Yuan, Huasen He, Yunpeng Hou, Xiaofeng Jiang, Shuangwu Chen, Jian Yang
-  - Publisher: (Inferred from context: Network/Vehicular Communication Research)
-  - Publish Date: 2026.03.19
-  - Task: Navigation
-  - Summary：
-    - Proposes the Semantic-Augmented DRL (SA-DRL) framework, integrating a Large Language Model (LLM) with Deep Reinforcement Learning to guide UAV deployment for bridging connectivity gaps in Vehicular Ad-hoc Networks (VANETs).
-    - Introduces a fragmentation quantification method using Road Topology Graphs (RTG) and Dual Connected Graphs (DCG), and a pipeline to adapt a general-purpose LLM into a domain-specific topology expert.
-    - Presents the SA-PPO algorithm, which uses a Logit Fusion mechanism to inject the LLM's semantic reasoning as a policy prior, achieving state-of-the-art performance with high sample efficiency and significant improvements in connectivity metrics and energy consumption.
-
 - [DriveVLM-RL: Neuroscience-Inspired Reinforcement Learning with Vision-Language Models for Safe and Deployable Autonomous Driving](https://arxiv.org/abs/2603.18315)
   - Zilin Huang, Zihao Sheng, Zhengyang Wan, Yansong Qu, Junwei You, Sicong Jiang, Sikai Chen
   - Publish Date: 2026.03.18
@@ -228,7 +217,6 @@ format:
   - Mohammad Qazim Bhat, Yufan Huang, Niket Agarwal, Hao Wang, Michael Woods, John Kenyon, Tsung-Yi Lin, Xiaodong Yang, Ming-Yu Liu, Kevin Xie
   - Publish Date: 2026.03.18
   - Task: Perception
-  - Datasets: [Nexar](https://www.getnexar.com/)
   - Summary：
     - VLM-AutoDrive, a modular post-training framework for adapting pretrained Vision-Language Models (VLMs) to high-fidelity anomaly detection in driving.
     - The framework integrates metadata captions, LLM descriptions, VQA pairs, and chain-of-thought reasoning for domain-aligned, interpretable learning.
@@ -238,7 +226,7 @@ format:
   - Chaokang Jiang, Desen Zhou, Jiuming Liu, Kevin Li Sun
   - Publish Date: 2026.03.18
   - Code: [VectorWorld](https://github.com/jiangchaokang/VectorWorld)
-  - Task: Prediction
+  - Task: Prediction, Generation
   - Datasets: [Waymo Open Motion Dataset](https://waymo.com/open/data/motion/), [nuPlan](https://www.nuscenes.org/nuplan)
   - Summary：
     - VectorWorld, a streaming world model for autonomous driving that generates ego-centric lane-agent vector-graph tiles incrementally during rollout to enable closed-loop evaluation.
@@ -253,15 +241,6 @@ format:
     - DriveFix, a novel multi-view restoration framework that ensures spatio-temporal coherence for driving scenes using an interleaved diffusion transformer architecture.
     - The approach explicitly models temporal dependencies and cross-camera spatial consistency, enforcing restored views to adhere to a unified 3D geometry.
     - Demonstrates state-of-the-art performance in reconstruction and novel view synthesis on Waymo, nuScenes, and PandaSet datasets.
-
-- [HIPO: Instruction Hierarchy via Constrained Reinforcement Learning](https://arxiv.org/abs/2603.16152)
-  - Keru Chen, Jun Luo, Sen Lin, Yingbin Liang, Alvaro Velasquez, Nathaniel Bastian, Shaofeng Zou
-  - Publish Date: 2026.03.17
-  - Task: Reasoning
-  - Summary：
-    - Introduces HIPO, a novel alignment framework that formulates Hierarchical Instruction Following (HIF) as a Constrained Markov Decision Process, elevating system prompts to strict algorithmic boundaries.
-    - Uses a primal-dual safe reinforcement learning approach to dynamically enforce system prompt compliance as an explicit constraint, maximizing user utility within this feasible region.
-    - Demonstrates significant improvements in system compliance and user utility across diverse model architectures, with mechanistic analysis showing a shift in model attention toward long-range system tokens.
 
 - [Safety Case Patterns for VLA-based driving systems: Insights from SimLingo](https://arxiv.org/abs/2603.16013)
   - Gerhard Yu, Fuyuki Ishikawa, Oluwafemi Odu, Alvine Boaye Belle
@@ -287,7 +266,6 @@ format:
   - Publisher: (Inferred from context: University of Minho, University of Aveiro)
   - Publish Date: 2026.03.16
   - Task: Reasoning
-  - Datasets: [NHTSA Incident Database](https://www.nhtsa.gov/)
   - Summary：
     - Introduces CRASH, an LLM-based agent that automates reasoning over real-world AV incident reports from the NHTSA database to generate summaries, attribute primary causes, and assess AV contribution.
     - Analysis of 2,168 incidents shows 64% attributed to perception or planning failures and ~50% involve rear-end collisions, highlighting persistent challenges.
@@ -306,7 +284,7 @@ format:
 - [Bridging Scene Generation and Planning: Driving with World Model via Unifying Vision and Motion Representation](https://arxiv.org/abs/2603.14948)
   - Xingtai Gui, Meijie Zhang, Tianyi Yan, Wencheng Han, Jiahao Gong, Feiyang Tan, Cheng-zhong Xu, Jianbing Shen
   - Publish Date: 2026.03.16
-  - Task: Planning
+  - Task: Planning, Generation
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - WorldDrive, a holistic framework that couples scene generation and real-time planning via unifying vision and motion representation.
@@ -317,7 +295,7 @@ format:
   - Yinfeng Gao, Qichao Zhang, Deqing Liu, Zhongpu Xia, Guang Li, Kun Ma, Guang Chen, Hangjun Ye, Long Chen, Da-Wei Ding, Dongbin Zhao
   - Publish Date: 2026.03.16
   - Task: End-to-End
-  - Datasets: [Bench2Drive](https://bench2drive.github.io/), [DOS](https://github.com/opendrivelab/DOS)
+  - Datasets: [Bench2Drive](https://bench2drive.github.io/), [DOS](https://github.com/opendilab/DOS)
   - Summary：
     - Proposes PerlAD, a novel Pseudo-simulation-based RL method for closed-loop end-to-end autonomous driving that operates in vector space for efficient, rendering-free training.
     - Introduces a prediction world model to generate reactive agent trajectories and a hierarchical decoupled planner combining IL for lateral path generation and RL for longitudinal speed optimization.
