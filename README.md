@@ -62,10 +62,10 @@ format:
   - Yongkang Li, Lijun Zhou, Sixu Yan, Bencheng Liao, Tianyi Yan, Kaixin Xiong, Long Chen, Hongwei Xie, Bing Wang, Guang Chen, Hangjun Ye, Wenyu Liu, Haiyang Sun, Xinggang Wang
   - Publisher: Xiaomi Research
   - Publish Date: 2026.04.02
-  - Project Page: [UniDriveVLA](https://github.com/xiaomi-research/unidrivevla)
+  - Project Page: [UniDriveVLA](https://xiaomi-research.github.io/unidrivevla/)
   - Code: [UniDriveVLA](https://github.com/xiaomi-research/unidrivevla)
-  - Task: End-to-End
-  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://bench2drive.github.io/)
+  - Task: Perception, Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - UniDriveVLA, a Unified Driving Vision-Language-Action model based on Mixture-of-Transformers that decouples experts for driving understanding, scene perception, and action planning to overcome the perception-reasoning conflict.
     - It employs a sparse perception paradigm and a three-stage progressive training strategy to enhance spatial perception while preserving the semantic reasoning capability of VLMs.
@@ -74,7 +74,7 @@ format:
 - [Causal Scene Narration with Runtime Safety Supervision for Vision-Language-Action Driving](https://arxiv.org/abs/2604.01723)
   - Yun Li, Yidu Zhang, Simon Thompson, Ehsan Javanmardi, Manabu Tsukada
   - Publish Date: 2026.04.02
-  - Task: End-to-End
+  - Task: Perception
   - Datasets: [CARLA](https://carla.org/)
   - Summary：
     - Introduces Causal Scene Narration (CSN), a method to restructure VLA text inputs through intent-constraint alignment, quantitative grounding, and structured separation at inference time with zero GPU cost.
@@ -105,7 +105,7 @@ format:
 - [Bench2Drive-VL: Benchmarks for Closed-Loop Autonomous Driving with Vision-Language Models](https://arxiv.org/abs/2604.01259)
   - Xiaosong Jia, Yuqian Shao, Zhenjie Yang, Qifeng Li, Zhiyuan Zhang, Junchi Yan
   - Publish Date: 2026.04.01
-  - Task: VQA
+  - Task: Evaluation
   - Datasets: [CARLA](https://carla.org/)
   - Summary：
     - Bench2Drive-VL, a benchmark extending Bench2Drive to bring closed-loop evaluation to Vision-Language Model (VLM)-based autonomous driving.
@@ -148,7 +148,7 @@ format:
   - Tianran Liu, Shengwen Zhao, Mozhgan Pourkeshavarz, Weican Li, Nicholas Rhinehart
   - Publisher: University of California, Berkeley
   - Publish Date: 2026.03.30
-  - Task: Simulation
+  - Task: Generation
   - Summary：
     - OccSim, the first occupancy world model-driven 3D simulator, which can generate over 3,000 continuous frames (over 4 kilometers) from a single initial frame and future ego-actions, an >80x improvement in stable generation length.
     - Powered by a W-DiT based static occupancy world model and a Layout Generator, enabling the synthesis of massive, diverse simulation streams without reliance on pre-recorded logs or HD maps.
@@ -158,7 +158,7 @@ format:
   - Yuqi Ye, Zijian Zhang, Junhong Lin, Shangkun Sun, Changhao Peng, Wei Gao
   - Publish Date: 2026.03.30
   - Code: [$AutoDrive\text{-}P^3$](https://github.com/haha-yuki-haha/AutoDrive-P3)
-  - Task: Planning
+  - Task: Perception, Prediction, Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - Proposes $AutoDrive\text{-}P^3$, a novel framework integrating Perception, Prediction, and Planning via structured reasoning to address the lack of synergy in current VLM-based autonomous driving approaches.
