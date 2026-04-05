@@ -58,6 +58,123 @@ format:
   - metrics
 ```
 
+- [UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving](https://arxiv.org/abs/2604.02190)
+  - Yongkang Li, Lijun Zhou, Sixu Yan, Bencheng Liao, Tianyi Yan, Kaixin Xiong, Long Chen, Hongwei Xie, Bing Wang, Guang Chen, Hangjun Ye, Wenyu Liu, Haiyang Sun, Xinggang Wang
+  - Publisher: Xiaomi Research
+  - Publish Date: 2026.04.02
+  - Project Page: [UniDriveVLA](https://github.com/xiaomi-research/unidrivevla)
+  - Code: [UniDriveVLA](https://github.com/xiaomi-research/unidrivevla)
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://bench2drive.github.io/)
+  - Summary：
+    - UniDriveVLA, a Unified Driving Vision-Language-Action model based on Mixture-of-Transformers that decouples experts for driving understanding, scene perception, and action planning to overcome the perception-reasoning conflict.
+    - It employs a sparse perception paradigm and a three-stage progressive training strategy to enhance spatial perception while preserving the semantic reasoning capability of VLMs.
+    - The model achieves state-of-the-art performance in open-loop (nuScenes) and closed-loop (Bench2Drive) evaluations and demonstrates strong performance across perception, prediction, and understanding tasks.
+
+- [Causal Scene Narration with Runtime Safety Supervision for Vision-Language-Action Driving](https://arxiv.org/abs/2604.01723)
+  - Yun Li, Yidu Zhang, Simon Thompson, Ehsan Javanmardi, Manabu Tsukada
+  - Publish Date: 2026.04.02
+  - Task: End-to-End
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - Introduces Causal Scene Narration (CSN), a method to restructure VLA text inputs through intent-constraint alignment, quantitative grounding, and structured separation at inference time with zero GPU cost.
+    - Complements CSN with Simplex-based runtime safety supervision and training-time alignment via Plackett-Luce DPO with NLL regularization.
+    - Multi-town CARLA evaluation shows CSN improves Driving Score by +31.1% on original LMDrive, with causal structure accounting for 39.1% of the gain, and confirms robustness to realistic sensing errors.
+
+- [DLWM: Dual Latent World Models enable Holistic Gaussian-centric Pre-training in Autonomous Driving](https://arxiv.org/abs/2604.00969)
+  - Yiyao Zhu, Ying Xue, Haiming Zhang, Guangfeng Jiang, Wending Zhou, Xu Yan, Jiantao Gao, Yingjie Cai, Bingbing Liu, Zhen Li, Shaojie Shen
+  - Publisher: The Chinese University of Hong Kong, Shanghai Jiao Tong University, Shanghai AI Laboratory
+  - Publish Date: 2026.04.01
+  - Task: Perception, Prediction, Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Introduces DLWM, a novel paradigm with Dual Latent World Models designed for holistic gaussian-centric pre-training in autonomous driving using a two-stage approach.
+    - In the first stage, predicts 3D Gaussians by self-supervised reconstruction of multi-view semantic and depth images. In the second stage, trains two separate latent world models for temporal feature learning.
+    - Demonstrates significant performance gains across Gaussian-centric 3D occupancy perception, 4D occupancy forecasting, and motion planning tasks on SurroundOcc and nuScenes benchmarks.
+
+- [DVGT-2: Vision-Geometry-Action Model for Autonomous Driving at Scale](https://arxiv.org/abs/2604.00813)
+  - Sicheng Zuo, Zixun Xie, Wenzhao Zheng, Shaoqing Xu, Fang Li, Hanbing Li, Long Chen, Zhi-Xin Yang, Jiwen Lu
+  - Publish Date: 2026.04.01
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Proposes DVGT-2, a streaming Driving Visual Geometry Transformer for online dense 3D geometry reconstruction and trajectory planning, using temporal causal attention and feature caching.
+    - Introduces a Vision-Geometry-Action (VGA) paradigm as an alternative to Vision-Language-Action, arguing dense 3D geometry is the critical cue for driving decision-making.
+    - The model supports efficient on-the-fly inference with a sliding-window streaming strategy and generalizes across diverse camera configurations without fine-tuning.
+
+- [Bench2Drive-VL: Benchmarks for Closed-Loop Autonomous Driving with Vision-Language Models](https://arxiv.org/abs/2604.01259)
+  - Xiaosong Jia, Yuqian Shao, Zhenjie Yang, Qifeng Li, Zhiyuan Zhang, Junchi Yan
+  - Publish Date: 2026.04.01
+  - Task: VQA
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - Bench2Drive-VL, a benchmark extending Bench2Drive to bring closed-loop evaluation to Vision-Language Model (VLM)-based autonomous driving.
+    - Introduces DriveCommenter, a closed-loop generator for diverse, behavior-grounded question-answer pairs, and a unified protocol allowing VLMs to be plugged into the Bench2Drive environment.
+
+- [C-TRAIL: A Commonsense World Framework for Trajectory Planning in Autonomous Driving](https://arxiv.org/abs/2603.29908)
+  - Zhihong Cui, Haoran Tang, Tianyi Li, Yushuai Li, Peiyuan Guan, Amir Taherkordi, Tor Skeie
+  - Publish Date: 2026.03.31
+  - Code: [C-TRAIL](https://github.com/ZhihongCui/CTRAIL)
+  - Task: Planning
+  - Datasets: [highD](https://www.highd-dataset.com/), [rounD](https://www.round-dataset.com/)
+  - Summary：
+    - C-TRAIL, a framework for trajectory planning that couples LLM-derived commonsense with a trust mechanism to address the unreliability of LLM outputs in safety-critical applications.
+    - The framework operates through a closed-loop Recall, Plan, and Update cycle, using a dual-trust mechanism and trust-weighted commonsense injected into Monte Carlo Tree Search (MCTS).
+    - Experiments on simulated and real-world datasets show C-TRAIL outperforms baselines, significantly reducing ADE and FDE while improving success rate.
+
+- [AutoWorld: Scaling Multi-Agent Traffic Simulation with Self-Supervised World Models](https://arxiv.org/abs/2603.28963)
+  - Mozhgan Pourkeshavatz, Tianran Liu, Nicholas Rhinehart
+  - Publisher: University of California, Berkeley
+  - Publish Date: 2026.03.30
+  - Project Page: [AutoWorld](https://auto-world.github.io)
+  - Code: [AutoWorld](https://github.com/auto-world/autoworld)
+  - Task: Prediction
+  - Datasets: [WOSAC](https://waymo.com/open/data/motion/)
+  - Summary：
+    - AutoWorld, a traffic simulation framework that learns a world model from unlabeled LiDAR occupancy data to improve multi-agent motion generation.
+    - The method uses a cascaded Determinantal Point Process to guide sampling for diversity and a motion-aware latent supervision objective to enhance scene dynamics representation.
+    - Experiments show AutoWorld achieves state-of-the-art realism on the WOSAC benchmark and demonstrates improved performance with increased unlabeled data, enabling scalable simulation without additional labeling.
+
+- [A Semantic Observer Layer for Autonomous Vehicles: Pre-Deployment Feasibility Study of VLMs for Low-Latency Anomaly Detection](https://arxiv.org/abs/2603.28888)
+  - Kunal Runwal, Swaraj Gajare, Daniel Adejumo, Omkar Ankalkope, Siddhant Baroth, Aliasghar Arab
+  - Publish Date: 2026.03.30
+  - Task: Perception
+  - Summary：
+    - Proposes a semantic observer layer: a quantized vision-language model (VLM) running alongside the primary AV control loop to monitor for semantic edge cases and trigger fail-safe handoffs.
+    - Achieves ~500 ms inference, a ~50x speedup over an unoptimized baseline, by using Nvidia Cosmos-Reason1-7B with NVFP4 quantization and FlashAttention2.
+    - Benchmarks accuracy, latency, and quantization behavior, identifying NF4 recall collapse as a hard deployment constraint and mapping performance metrics to safety goals.
+
+- [OccSim: Multi-kilometer Simulation with Long-horizon Occupancy World Models](https://arxiv.org/abs/2603.28887)
+  - Tianran Liu, Shengwen Zhao, Mozhgan Pourkeshavarz, Weican Li, Nicholas Rhinehart
+  - Publisher: University of California, Berkeley
+  - Publish Date: 2026.03.30
+  - Task: Simulation
+  - Summary：
+    - OccSim, the first occupancy world model-driven 3D simulator, which can generate over 3,000 continuous frames (over 4 kilometers) from a single initial frame and future ego-actions, an >80x improvement in stable generation length.
+    - Powered by a W-DiT based static occupancy world model and a Layout Generator, enabling the synthesis of massive, diverse simulation streams without reliance on pre-recorded logs or HD maps.
+    - Data from OccSim can pre-train 4D semantic occupancy forecasting models, achieving up to 74% zero-shot performance on unseen data, outperforming previous asset-based simulators by 22.1%.
+
+- [$AutoDrive\text{-}P^3$: Unified Chain of Perception-Prediction-Planning Thought via Reinforcement Fine-Tuning](https://arxiv.org/abs/2603.28116)
+  - Yuqi Ye, Zijian Zhang, Junhong Lin, Shangkun Sun, Changhao Peng, Wei Gao
+  - Publish Date: 2026.03.30
+  - Code: [$AutoDrive\text{-}P^3$](https://github.com/haha-yuki-haha/AutoDrive-P3)
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes $AutoDrive\text{-}P^3$, a novel framework integrating Perception, Prediction, and Planning via structured reasoning to address the lack of synergy in current VLM-based autonomous driving approaches.
+    - Introduces the $P^3\text{-}CoT$ dataset for coherent reasoning and the $P^3\text{-}GRPO$ hierarchical reinforcement learning algorithm for progressive supervision across all three tasks.
+    - Features dual thinking modes (detailed and fast) to balance inference efficiency with performance, achieving state-of-the-art results on nuScenes and NAVSIM benchmarks.
+
+- [Uni-World VLA: Interleaved World Modeling and Planning for Autonomous Driving](https://arxiv.org/abs/2603.27287)
+  - Qiqi Liu, Huan Xu, Jingyu Li, Bin Sun, Zhihui Hao, Dangen She, Xiatian Zhu, Li Zhang
+  - Publish Date: 2026.03.28
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Uni-World VLA, a unified vision-language-action (VLA) model that tightly interleaves future frame prediction and trajectory planning in a step-by-step, closed-loop manner.
+    - The model alternates between predicting future frames and ego actions, enabling planning decisions to be continuously conditioned on imagined future observations for more adaptive decision-making.
+    - Incorporates monocular depth information into frames to provide stronger geometric cues, improving long-horizon scene prediction and achieving competitive performance on the NAVSIM benchmark.
+
 - [Vega: Learning to Drive with Natural Language Instructions](https://arxiv.org/abs/2603.25741)
   - Sicheng Zuo, Yuxuan Li, Wenzhao Zheng, Zheng Zhu, Jie Zhou, Jiwen Lu
   - Publish Date: 2026.03.26
