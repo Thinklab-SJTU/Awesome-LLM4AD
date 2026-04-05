@@ -62,7 +62,6 @@ format:
   - Sicheng Zuo, Yuxuan Li, Wenzhao Zheng, Zheng Zhu, Jie Zhou, Jiwen Lu
   - Publish Date: 2026.03.26
   - Task: Planning
-  - Datasets: [InstructScene](https://github.com/)
   - Summary：
     - Vega, a unified Vision-Language-World-Action model for instruction-based generation and planning in autonomous driving, employing autoregressive and diffusion paradigms.
     - Constructs a large-scale driving dataset (InstructScene) with around 100,000 scenes annotated with diverse driving instructions and corresponding trajectories.
