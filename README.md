@@ -73,7 +73,7 @@ format:
   - Project Page: [Drive My Way](https://dmw-cvpr.github.io/)
   - Code: [Drive My Way](https://github.com/tasl-lab/DMW)
   - Task: Planning
-  - Datasets: [Bench2Drive](https://github.com/OpenDriveLab/Bench2Drive)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Drive My Way (DMW), a personalized Vision-Language-Action (VLA) driving framework that aligns with users' long-term driving habits and adapts to real-time user instructions.
     - DMW learns a user embedding from a personalized driving dataset and conditions the policy on this embedding for planning, with natural language instructions providing short-term guidance.
