@@ -58,6 +58,150 @@ format:
   - metrics
 ```
 
+- [CrashSight: A Phase-Aware, Infrastructure-Centric Video Benchmark for Traffic Crash Scene Understanding and Reasoning](https://arxiv.org/abs/2604.08457)
+  - Rui Gan, Junyi Ma, Pei Li, Xingyou Yang, Kai Chen, Sikai Chen, Bin Ran
+  - Publish Date: 2026.04.09
+  - Project Page: [CrashSight](https://mcgrche.github.io/crashsight/)
+  - Task: Reasoning
+  - Datasets: [CrashSight](https://mcgrche.github.io/crashsight/)
+  - Summary：
+    - CrashSight, a large-scale vision-language benchmark for roadway crash understanding using real-world roadside camera data, comprising 250 crash videos with 13K annotated multiple-choice question-answer pairs.
+    - The benchmark features a two-tier taxonomy: Tier 1 evaluates visual grounding of scene context and involved parties, while Tier 2 probes higher-level reasoning like crash mechanics, causal attribution, and temporal progression.
+    - It benchmarks 8 state-of-the-art VLMs, showing that current models struggle with temporal and causal reasoning in safety-critical scenarios, and provides a standardized evaluation framework for infrastructure-assisted perception in cooperative autonomous driving.
+
+- [Orion-Lite: Distilling LLM Reasoning into Efficient Vision-Only Driving Models](https://arxiv.org/abs/2604.08266)
+  - Jing Gu, Niccolò Cavagnero, Gijs Dubbelman
+  - Publish Date: 2026.04.09
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
+  - Summary：
+    - Orion-Lite, an efficient vision-only student model that distills reasoning knowledge from a massive Vision-Language-Action (VLA) teacher LLM for autonomous driving.
+    - Achieves state-of-the-art performance on the Bench2Drive benchmark with a Driving Score of 80.6, surpassing its teacher model through latent feature distillation and trajectory supervision.
+    - Demonstrates the significant untapped potential of vision-only architectures for high-performance reactive planning in complex, interactive closed-loop scenarios.
+
+- [Open-Ended Instruction Realization with LLM-Enabled Multi-Planner Scheduling in Autonomous Vehicles](https://arxiv.org/abs/2604.08031)
+  - Jiawei Liu, Xun Gong, Fen Fang, Muli Yang, Bohao Qu, Yunfeng Hu, Hong Chen, Xulei Yang, Qing Guo
+  - Publish Date: 2026.04.09
+  - Task: Planning
+  - Summary：
+    - Proposes an instruction-realization framework that uses an LLM to interpret open-ended passenger instructions and schedules multiple MPC-based motion planners to generate control signals.
+    - Introduces a decoupled, scheduling-centric design for a transparent decision-making chain and a new benchmark for evaluating open-ended instruction realization in closed-loop autonomous driving.
+
+- [MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models](https://arxiv.org/abs/2604.07991)
+  - Zile Guo, Zhan Chen, Enze Zhu, Kan Wei, Yongkang Zou, Xiaoxuan Liu, Lei Wang
+  - Publish Date: 2026.04.09
+  - Project Page: [MotionScape](https://github.com/Thelegendzz/MotionScape)
+  - Code: [MotionScape](https://github.com/Thelegendzz/MotionScape)
+  - Task: Prediction
+  - Datasets: [MotionScape](https://github.com/Thelegendzz/MotionScape)
+  - Summary：
+    - Introduces MotionScape, a large-scale real-world UAV-view video dataset with highly dynamic 6-DoF motion for world modeling, containing over 30 hours of 4K videos.
+    - Features semantically and geometrically aligned training samples, coupling videos with accurate 6-DoF camera trajectories and fine-grained natural language descriptions.
+    - Demonstrates that the dataset improves existing world models' ability to simulate complex 3D dynamics and handle large viewpoint shifts, benefiting UAV decision-making and planning.
+
+- [On-Policy Distillation of Language Models for Autonomous Vehicle Motion Planning](https://arxiv.org/abs/2604.07944)
+  - Amirhossein Afsharrad, Amirhesam Abedsoltan, Ahmadreza Moradipari, Sanjay Lall
+  - Publish Date: 2026.04.09
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Studies knowledge distillation for LLM-based motion planning, transferring capabilities from a large teacher model to a smaller, more deployable student model.
+    - Introduces on-policy generalized knowledge distillation (GKD), which trains the student on its own outputs using dense token-level feedback from the teacher.
+    - Demonstrates that GKD substantially outperforms a dense-feedback RL baseline and approaches teacher-level performance on nuScenes despite a 5x reduction in model size.
+
+- [ParkSense: Where Should a Delivery Driver Park? Leveraging Idle AV Compute and Vision-Language Models](https://arxiv.org/abs/2604.07912)
+  - Die Hu, Henan Li
+  - Publisher: (Inferred from context: Autonomous Driving/Logistics Research)
+  - Publish Date: 2026.04.09
+  - Task: Planning
+  - Summary：
+    - Proposes ParkSense, a framework that repurposes idle compute during low-risk autonomous vehicle states to run a Vision-Language Model on pre-cached imagery for precise parking-spot selection relative to merchant entrances.
+    - Formalizes the Delivery-Aware Precision Parking (DAPP) problem and demonstrates a quantized 7B VLM can complete inference in 4-8 seconds on existing AV hardware, estimating significant potential income gains for drivers.
+
+- [How Well Do Vision-Language Models Understand Sequential Driving Scenes? A Sensitivity Study](https://arxiv.org/abs/2604.06750)
+  - Roberto Brusnicki, Mattia Piccinini, Johannes Betz
+  - Publisher: Technical University of Munich
+  - Publish Date: 2026.04.08
+  - Project Page: [VENUSS](https://V3NU55.github.io)
+  - Task: VQA
+  - Datasets: [nuScenes](https://www.nuscenes.org)
+  - Summary：
+    - Introduces VENUSS (VLM Evaluation oN Understanding Sequential Scenes), a framework for systematic sensitivity analysis of VLM performance on sequential driving scenes.
+    - Evaluates 25+ VLMs across 2,600+ scenarios, revealing top models achieve only 57% accuracy and struggle with understanding vehicle dynamics and temporal relations.
+    - Provides the first systematic analysis of how input image configurations affect VLM performance on sequential driving scenes.
+
+- [Evolution of Video Generative Foundations](https://arxiv.org/abs/2604.06339)
+  - Teng Hu, Jiangning Zhang, Hongrui Huang, Ran Yi, Zihan Su, Jieyu Weng, Zhucun Xue, Lizhuang Ma, Ming-Hsuan Yang, Dacheng Tao
+  - Publisher: Shanghai Jiao Tong University, University of California, Merced, University of Sydney
+  - Publish Date: 2026.04.07
+  - Project Page: [Awesome-Video-Foundations](https://github.com/sjtuplayer/Awesome-Video-Foundations)
+  - Code: [Awesome-Video-Foundations](https://github.com/sjtuplayer/Awesome-Voundations)
+  - Summary：
+    - A comprehensive survey on the evolution of video generation technology, tracing its development from early GANs to dominant diffusion models and emerging Auto-Regressive (AR) and multimodal techniques.
+    - Provides an in-depth analysis of foundational principles, key advancements, and comparative strengths/limitations of different video generation approaches.
+    - Explores emerging trends in multimodal video generation and discusses applications in virtual/augmented reality, personalized education, autonomous driving simulations, digital entertainment, and advanced world models.
+
+- [ICR-Drive: Instruction Counterfactual Robustness for End-to-End Language-Driven Autonomous Driving](https://arxiv.org/abs/2604.05378)
+  - Kaiser Hamid, Can Cui, Nade Liang
+  - Publish Date: 2026.04.07
+  - Task: End-to-End
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - Introduces ICR-Drive, a diagnostic framework for instruction counterfactual robustness in end-to-end language-conditioned autonomous driving.
+    - Generates controlled instruction variants across four perturbation families (Paraphrase, Ambiguity, Noise, Misleading) to isolate performance changes due to language.
+    - Experiments on LMDrive and BEVDriver reveal substantial performance drops from minor instruction changes, highlighting a reliability gap for safety-critical deployment.
+
+- [The Blind Spot of Adaptation: Quantifying and Mitigating Forgetting in Fine-tuned Driving Models](https://arxiv.org/abs/2604.04857)
+  - Runhao Mao, Hanshi Wang, Yixiang Yang, Qianli Ma, Jingmeng Zhou, Zhipeng Zhang
+  - Publish Date: 2026.04.06
+  - Task: End-to-End
+  - Datasets: [FidelityDrivingBench](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Introduces a new large-scale dataset of 180K scenes to benchmark catastrophic forgetting in autonomous driving, revealing significant knowledge degradation in existing methods.
+    - Proposes the Drive Expert Adapter (DEA), a novel framework that shifts adaptation from weight space to prompt space to enhance driving-task performance without corrupting foundational model parameters.
+
+- [Multimodal Backdoor Attack on VLMs for Autonomous Driving via Graffiti and Cross-Lingual Triggers](https://arxiv.org/abs/2604.04630)
+  - Jiancheng Wang, Lidan Liang, Yong Wang, Zengzhen Su, Haifeng Xia, Yuanting Yan, Wei Wang
+  - Publish Date: 2026.04.06
+  - Task: End-to-End
+  - Datasets: [DriveVLM](https://github.com/OpenDriveLab/DriveVLM)
+  - Summary：
+    - GLA introduces a multimodal backdoor attack for VLMs in autonomous driving, using graffiti-based visual triggers generated via stable diffusion inpainting and cross-language text triggers.
+    - The attack achieves a 90% Attack Success Rate with only a 10% poisoning ratio and a 0% False Positive Rate on DriveVLM, while not degrading and even improving performance on clean tasks.
+
+- [DriveVA: Video Action Models are Zero-Shot Drivers](https://arxiv.org/abs/2604.04198)
+  - Mengmeng Liu, Diankun Zhang, Jiuming Liu, Jianfeng Cui, Hongwei Xie, Guang Chen, Hangjun Ye, Michael Ying Yang, Francesco Nex, Hao Cheng
+  - Publish Date: 2026.04.05
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), nuScenes, Bench2drive
+  - Summary：
+    - DriveVA, a novel autonomous driving world model that jointly decodes future visual forecasts and action sequences in a shared latent generative process for tighter alignment between planning and scene evolution.
+    - The model inherits rich priors from large-scale video generation models to capture spatiotemporal evolution and employs a DiT-based decoder with a video continuation strategy for long-duration rollout consistency.
+    - Demonstrates strong zero-shot and cross-domain generalization, achieving a 90.9 PDM score on NAVSIM and significantly reducing L2 error and collision rates on nuScenes and Bench2drive compared to state-of-the-art planners.
+
+- [Sim2Real-AD: A Modular Sim-to-Real Framework for Deploying VLM-Guided Reinforcement Learning in Real-World Autonomous Driving](https://arxiv.org/abs/2604.03497)
+  - Zilin Huang, Zhengyang Wan, Zihao Sheng, Boyue Wang, Junwei You, Yue Leng, Sikai Chen
+  - Publish Date: 2026.04.03
+  - Project Page: [Sim2Real-AD](https://zilin-huang.github.io/Sim2Real-AD-website/)
+  - Code: [Sim2Real-AD](https://zilin-huang.github.io/Sim2Real-AD-website/)
+  - Task: Planning
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - Sim2Real-AD, a modular framework for zero-shot sim-to-real transfer of CARLA-trained VLM-guided RL policies to full-scale vehicles without any real-world RL training data.
+    - The framework decomposes the transfer problem into four components: a Geometric Observation Bridge (GOB), a Physics-Aware Action Mapping (PAM), a Two-Phase Progressive Training (TPT) strategy, and a Real-time Deployment Pipeline (RDP).
+    - Zero-shot deployment on a full-scale Ford E-Transit achieves high success rates in car-following, obstacle avoidance, and stop-sign interaction scenarios.
+
+- [ExploreVLA: Dense World Modeling and Exploration for End-to-End Autonomous Driving](https://arxiv.org/abs/2604.02714)
+  - Zihao Sheng, Xin Ye, Jingru Luo, Sikai Chen, Liu Ren
+  - Publish Date: 2026.04.03
+  - Project Page: [ExploreVLA](https://zihaosheng.github.io/ExploreVLA/)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), nuScenes
+  - Summary：
+    - Proposes a unified understanding-and-generation framework for end-to-end autonomous driving that leverages world modeling for exploration and dense supervision.
+    - Augments trajectory prediction with future RGB and depth image generation to learn fine-grained visual and geometric representations for planning.
+    - Uses the world model's prediction uncertainty as an intrinsic reward for safety-gated policy exploration, optimized via Group Relative Policy Optimization (GRPO).
+
 - [UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving](https://arxiv.org/abs/2604.02190)
   - Yongkang Li, Lijun Zhou, Sixu Yan, Bencheng Liao, Tianyi Yan, Kaixin Xiong, Long Chen, Hongwei Xie, Bing Wang, Guang Chen, Hangjun Ye, Wenyu Liu, Haiyang Sun, Xinggang Wang
   - Publisher: Xiaomi Research
