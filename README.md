@@ -58,6 +58,44 @@ format:
   - metrics
 ```
 
+- [Unveiling the Surprising Efficacy of Navigation Understanding in End-to-End Autonomous Driving](https://arxiv.org/abs/2604.12208)
+  - Zhihua Hua, Junli Wang, Pengfei LI, Qihao Jin, Bo Zhang, Kehua Sheng, Yilun Chen, Zhongxue Gan, Wenchao Ding
+  - Publish Date: 2026.04.14
+  - Project Page: [SNG-VLA](https://sng-vla.github.io/)
+  - Task: Planning
+  - Datasets: [SNG-QA](https://sng-qa.github.io/)
+  - Summary：
+    - Proposes the Sequential Navigation Guidance (SNG) framework, an efficient representation of global navigation information based on real-world patterns, including navigation paths and turn-by-turn information.
+    - Introduces the SNG-QA dataset, a visual question answering dataset based on SNG to align global and local planning.
+    - Presents the SNG-VLA model that fuses local and global planning, achieving state-of-the-art performance through precise navigation modeling without auxiliary perception losses.
+
+- [SignReasoner: Compositional Reasoning for Complex Traffic Sign Understanding via Functional Structure Units](https://arxiv.org/abs/2604.10436)
+  - Ruibin Wang, Zhenyu Lin, Xinhai Zhao
+  - Publish Date: 2026.04.12
+  - Task: Reasoning
+  - Datasets: [TrafficSignEval](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - SignReasoner, a novel paradigm that transforms general Vision Language Models (VLMs) into expert traffic sign reasoners via Functional Structure Units (FSUs).
+    - Introduces a two-stage VLM post-training pipeline: Iterative Caption-FSU Distillation and FSU-GRPO, using Tree Edit Distance as reward to boost compositional reasoning.
+
+- [Learning Vision-Language-Action World Models for Autonomous Driving](https://arxiv.org/abs/2604.09059)
+  - Guoqing Wang, Pin Tang, Xiangxuan Ren, Guodongfang Zhao, Bailan Feng, Chao Ma
+  - Publish Date: 2026.04.10
+  - Project Page: [VLA-World](https://vlaworld.github.io)
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Presents VLA-World, a Vision-Language-Action world model that unifies predictive imagination with reflective reasoning to improve driving foresight and safety.
+    - Introduces a three-stage training strategy (pretraining, supervised fine-tuning, reinforcement learning) and the nuScenes-GR-20K dataset for generative reasoning.
+
+- [LMGenDrive: Bridging Multimodal Understanding and Generative World Modeling for End-to-End Driving](https://arxiv.org/abs/2604.08719)
+  - Hao Shao, Letian Wang, Yang Zhou, Yuxuan Hu, Zhuofan Zong, Steven L. Waslander, Wei Zhan, Hongsheng Li
+  - Publish Date: 2026.04.09
+  - Task: End-to-End
+  - Summary：
+    - LMGenDrive, the first framework that combines LLM-based multimodal understanding with generative world models for end-to-end closed-loop driving, generating both future driving videos and control signals.
+    - It features a progressive three-stage training strategy, from vision pretraining to multi-step long-horizon driving, to improve stability and performance, supporting both low-latency online planning and autoregressive offline video generation.
+
 - [CrashSight: A Phase-Aware, Infrastructure-Centric Video Benchmark for Traffic Crash Scene Understanding and Reasoning](https://arxiv.org/abs/2604.08457)
   - Rui Gan, Junyi Ma, Pei Li, Xingyou Yang, Kai Chen, Sikai Chen, Bin Ran
   - Publish Date: 2026.04.09
