@@ -61,9 +61,8 @@ format:
 - [Unveiling the Surprising Efficacy of Navigation Understanding in End-to-End Autonomous Driving](https://arxiv.org/abs/2604.12208)
   - Zhihua Hua, Junli Wang, Pengfei LI, Qihao Jin, Bo Zhang, Kehua Sheng, Yilun Chen, Zhongxue Gan, Wenchao Ding
   - Publish Date: 2026.04.14
-  - Project Page: [SNG-VLA](https://sng-vla.github.io/)
+  - Project Page: [SNG-VLA](https://fudan-magic-lab.github.io/SNG-VLA-web/)
   - Task: Planning
-  - Datasets: [SNG-QA](https://sng-qa.github.io/)
   - Summary：
     - Proposes the Sequential Navigation Guidance (SNG) framework, an efficient representation of global navigation information based on real-world patterns, including navigation paths and turn-by-turn information.
     - Introduces the SNG-QA dataset, a visual question answering dataset based on SNG to align global and local planning.
@@ -72,8 +71,7 @@ format:
 - [SignReasoner: Compositional Reasoning for Complex Traffic Sign Understanding via Functional Structure Units](https://arxiv.org/abs/2604.10436)
   - Ruibin Wang, Zhenyu Lin, Xinhai Zhao
   - Publish Date: 2026.04.12
-  - Task: Reasoning
-  - Datasets: [TrafficSignEval](https://github.com/autonomousvision/navsim)
+  - Task: Perception
   - Summary：
     - SignReasoner, a novel paradigm that transforms general Vision Language Models (VLMs) into expert traffic sign reasoners via Functional Structure Units (FSUs).
     - Introduces a two-stage VLM post-training pipeline: Iterative Caption-FSU Distillation and FSU-GRPO, using Tree Edit Distance as reward to boost compositional reasoning.
