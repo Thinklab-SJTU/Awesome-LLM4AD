@@ -58,10 +58,110 @@ format:
   - metrics
 ```
 
+- [X-Cache: Cross-Chunk Block Caching for Few-Step Autoregressive World Models Inference](https://arxiv.org/abs/2604.20289)
+  - Yixiao Zeng, Jianlei Zheng, Chaoda Zheng, Shijia Chen, Mingdian Liu, Tongping Liu, Tengwei Luo, Yu Zhang, Boyang Wang, Linkun Xu, Siyuan Lu, Bo Tian, Xianming Liu
+  - Publish Date: 2026.04.22
+  - Task: End-to-End
+  - Summary：
+    - X-Cache, a training-free acceleration method for autoregressive world models, caches per-block residuals across consecutive generation chunks rather than across denoising steps.
+    - It uses a dual-metric gating mechanism over a structure- and action-aware block-input fingerprint to decide block recomputation or reuse, and cuts off error propagation by forcing full computation on KV update chunks.
+    - Implemented on X-world, a production multi-camera driving world model, X-Cache achieves 71% block skip rate and 2.6x speedup with minimal degradation.
+
+- [From Scene to Object: Text-Guided Dual-Gaze Prediction](https://arxiv.org/abs/2506.08052)
+  - Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, Qingwen Meng, Heye Huang, Jianqiang Wang
+  - Publisher: Tsinghua University
+  - Publish Date: 2026.04.22
+  - Task: Prediction
+  - Datasets: [W3DA](https://github.com/zehongke/W3DA)
+  - Summary：
+    - Proposes DualGaze-VLM, a dual-branch gaze prediction framework that decouples macroscopic heatmaps into object-level masks using SAM3 and a multimodal large language model.
+    - Constructs G-W3DA, an object-level driver attention dataset, and achieves up to 17.8% improvement in Similarity under safety-critical scenarios.
+
+- [SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model](https://arxiv.org/abs/2604.19710)
+  - Zewei Zhou, Ruining Yang, Xuewei, Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma
+  - Publisher: Not specified
+  - Publish Date: 2026.04.21
+  - Code: [Code](https://github.com/spanvla)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - SpanVLA integrates an autoregressive reasoning and flow-matching action expert for efficient end-to-end autonomous driving.
+    - It introduces a GRPO-based post-training method to learn from both positive samples and negative-recovery behaviors.
+    - The model is evaluated on NAVSIM (v1 and v2) demonstrating competitive planning performance and robustness.
+
+- [ST-Prune: Training-Free Spatio-Temporal Token Pruning for Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2604.19145)
+  - Lin Sha, Haiyun Guo, Tao Wang, Cong Zhang, Min Huang, Jinqiao Wang, Qinghai Miao
+  - Publisher: Chinese Academy of Sciences
+  - Publish Date: 2026.04.21
+  - Task: Perception, Prediction, Planning
+  - Summary：
+    - ST-Prune is a training-free, plug-and-play framework for spatio-temporal token pruning in VLMs for autonomous driving, consisting of Motion-aware Temporal Pruning (MTP) and Ring-view Spatial Pruning (RSP).
+    - MTP reduces temporal redundancy by prioritizing dynamic trajectories and current-frame content, while RSP eliminates spatial redundancy via ring-view camera geometry and bilateral cross-view similarity penalization.
+    - The method achieves near-lossless performance at 90% token reduction across perception, prediction, and planning benchmarks, with inference speeds comparable to existing pruning approaches.
+
+- [OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation](https://arxiv.org/abs/2604.18486)
+  - Jinghui Lu, Jiayi Guan, Zhijian Huang, Jinlong Li, Guang Li, Lingdong Kong, Yingyan Li, Han Wang, Shaoqing Xu, Yuechen Luo, Fang Li, Chenxu Dang, Junli Wang, Tao Xu, Jing Wu, Jianhua Wu, Xiaoshuai Hao, Wen Zhang, Tianyi Jiang, Lingfeng Zhang, Lei Zhou, Yingbo Tang, Jie Wang, Yinfeng Gao, Xizhou Bu, Haochen Tian, Yihang Qiu, Feiyang Jia, Lin Liu, Yigu Ge, Hanbing Li, Yuannan Shen, Jianwei Cui, Hongwei Xie, Bing Wang, Haiyang Sun, Jingwei Zhao, Jiahui Huang, Pei Liu, Zeyu Zhu, Yuncheng Jiang, Zibin Guo, Chuhong Gong, Hanchao Leng, Kun Ma, Naiyang Wang, Guang Chen, Kuiyuan Yang, Hangjun Ye, Long Chen
+  - Publisher: Xiaomi
+  - Publish Date: 2026.04.20
+  - Project Page: [OneVL](https://xiaomi-embodied-intelligence.github.io/OneVL)
+  - Task: Planning
+  - Summary：
+    - OneVL introduces a unified VLA and World Model framework that routes reasoning through compact latent tokens supervised by dual auxiliary decoders.
+    - A visual world model decoder predicts future-frame tokens, forcing the latent space to internalize causal dynamics of driving.
+    - OneVL is the first latent CoT method to surpass explicit CoT, delivering state-of-the-art accuracy at answer-only latency.
+
+- [OneDrive: Unified Multi-Paradigm Driving with Vision-Language-Action Models](https://arxiv.org/abs/2604.17915)
+  - Yiwei Zhang, Xuesong Chen, Jin Gao, Hanshi Wang, Fudong Ge, Weiming Hu, Shaoshuai Shi, Zhipeng Zhang
+  - Publisher: Unknown
+  - Publish Date: 2026.04.20
+  - Code: [OneDrive](https://github.com/Z1zyw/OneDrive)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - OneDrive unifies heterogeneous decoding behaviors (autoregressive language, object detection, trajectory regression) into a single transformer decoder built upon a pretrained VLM.
+    - The framework enables structured trajectory queries to share the pretrained attention backbone with images and perception tokens for joint optimization.
+    - Achieves state-of-the-art performance on nuScenes open-loop (0.28 L2, 0.18 collision rate) and NAVSIM closed-loop (86.8 PDMS) benchmarks with approximately 40% lower latency in efficient inference mode.
+
+- [M100: An Orchestrated Dataflow Architecture Powering General AI Computing](https://arxiv.org/abs/2604.17862)
+  - Yan Xie, Changkui Mao, Changsong Wu, Chao Lu, Chao Suo, Cheng Qian, Chun Yang, Danyang Zhu, Hengchang Xiong, Hongzhan Lu, Hongzhen Liu, Jiafu Liu, Jie Chen, Jie Dai, Junfeng Tang, Kai Liu, Kun Li, Lipeng Ge, Meng Sun, Min Luo, Peng Chen, Peng Wang, Shaodong Yang, Shibin Tang, Shibo Chen, Weikang Zhang, Xiao Ling, Xiaobo Du, Xin Wu, Yang Liu, Yi Jiang, Yihua Jin, Yin Huang, Yuli Zhang, Zhen Yuan, Zhiyuan Man, Zhongxiao Yao
+  - Publisher: Li Auto
+  - Publish Date: 2026.04.20
+  - Task: Planning
+  - Summary：
+    - M100 is a dataflow parallel architecture designed for general AI inference in Autonomous Driving, Large Language Models, and intelligent human interactions.
+    - It employs compiler-architecture co-design to orchestrate data movement, largely eliminating caching and improving efficiency and scalability.
+    - M100 demonstrates general AI computing capability across diverse inference applications, outperforming GPGPU architectures in AD applications with higher utilization.
+
+- [Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception](https://arxiv.org/abs/2604.17651)
+  - Siyuan Meng, Chengbo Ai
+  - Publisher: Not specified
+  - Publish Date: 2026.04.19
+  - Task: Perception
+  - Summary：
+    - Proposes a vision for Infrastructure-centric World Models (I-WM) that leverage the bird's-eye, multi-sensor, persistent viewpoint of roadside systems.
+    - Presents a three-phase framework: generative scene understanding, physics-informed predictive dynamics, and collaborative world models for V2X communication.
+    - Introduces Infrastructure VLA (I-VLA) as a unification of roadside perception, language commands, and traffic control actions.
+
+- [RISC-V Functional Safety for Autonomous Automotive Systems: An Analytical Framework and Research Roadmap for ML-Assisted Certification](https://arxiv.org/abs/2604.17391)
+  - Nick Andreasyan, Mikhail Struve, Alexey Popov, Maksim Nikolaev, Vadim Vashkelis
+  - Publisher: Not specified
+  - Publish Date: 2026.04.19
+  - Task: Planning
+  - Summary：
+    - Analyzes RISC-V functional safety for autonomous driving, focusing on certification economics and ISO 26262/ISO 21448/ISO/SAE 21434 compliance.
+    - Presents an analytical framework and research roadmap for ML-assisted certification workflows, including LLM-assisted FMEDA, knowledge-graph safety case automation, RL for fault injection, and GNN for diagnostic coverage.
+
+- [Harness as an Asset: Enforcing Determinism via the Convergent AI Agent Framework (CAAF)](https://arxiv.org/abs/2604.17025)
+  - Tianbao Zhang
+  - Publisher: Not specified
+  - Publish Date: 2026.04.18
+  - Task: Reasoning
+  - Summary：
+    - Introduces the Convergent AI Agent Framework (CAAF) to enforce determinism in LLM-based agentic workflows via Recursive Atomic Decomposition, Harness as an Asset, and Structured Semantic Gradients.
+    - Achieves 100% paradox detection in SAE Level 3 autonomous driving and pharmaceutical reactor design tasks using a single commodity model, outperforming monolithic and multi-agent baselines.
+
 - [Unveiling the Surprising Efficacy of Navigation Understanding in End-to-End Autonomous Driving](https://arxiv.org/abs/2604.12208)
-  - Zhihua Hua, Junli Wang, Pengfei LI, Qihao Jin, Bo Zhang, Kehua Sheng, Yilun Chen, Zhongxue Gan, Wenchao Ding
-  - Publish Date: 2026.04.14
-  - Project Page: [SNG-VLA](https://fudan-magic-lab.github.io/SNG-VLA-web/)
+  - Zhihua Hua, Junli Wang, Pengfei LI, Qihao Jin, Bo Zhang, Kehua Sheng, Yilun C  - Project Page: [SNG-VLA](https://fudan-magic-lab.github.io/SNG-VLA-web/)
   - Task: Planning
   - Summary：
     - Proposes the Sequential Navigation Guidance (SNG) framework, an efficient representation of global navigation information based on real-world patterns, including navigation paths and turn-by-turn information.
@@ -72,6 +172,7 @@ format:
   - Ruibin Wang, Zhenyu Lin, Xinhai Zhao
   - Publish Date: 2026.04.12
   - Task: Perception
+ - Datasets: [TrafficSignEval](https://github.com/autonomousvision/navsim)
   - Summary：
     - SignReasoner, a novel paradigm that transforms general Vision Language Models (VLMs) into expert traffic sign reasoners via Functional Structure Units (FSUs).
     - Introduces a two-stage VLM post-training pipeline: Iterative Caption-FSU Distillation and FSU-GRPO, using Tree Edit Distance as reward to boost compositional reasoning.
