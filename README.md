@@ -58,6 +58,105 @@ format:
   - metrics
 ```
 
+- [X-Cache: Cross-Chunk Block Caching for Few-Step Autoregressive World Models Inference](https://arxiv.org/abs/2604.20289)
+  - Yixiao Zeng, Jianlei Zheng, Chaoda Zheng, Shijia Chen, Mingdian Liu, Tongping Liu, Tengwei Luo, Yu Zhang, Boyang Wang, Linkun Xu, Siyuan Lu, Bo Tian, Xianming Liu
+  - Publisher: Not specified
+  - Publish Date: 2026.04.22
+  - Task: Planning
+  - Summary：
+    - X-Cache is a training-free acceleration method that caches across consecutive generation chunks rather than across denoising steps for few-step autoregressive world models.
+    - It uses a dual-metric gating mechanism and identifies KV update chunks to prevent error propagation, achieving 71% block skip rate and 2.6x speedup on the X-world driving world model.
+
+- [From Scene to Object: Text-Guided Dual-Gaze Prediction](https://arxiv.org/abs/2604.20191)
+  - Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, Qingwen Meng, Heye Huang, Jianqiang Wang
+  - Publisher: Tsinghua University
+  - Publish Date: 2026.04.22
+  - Task: Prediction
+  - Datasets: [W3DA](https://w3datasets.com)
+  - Summary：
+    - Proposes a dual-branch gaze prediction framework with object-level attention, overcoming text-vision decoupling and visual-bias hallucinations in VLMs.
+    - Constructs G-W3DA dataset using a multimodal large language model and SAM3 for object-level masks, and introduces DualGaze-VLM with a Condition-Aware SE-Gate for intent-driven spatial anchoring.
+
+- [SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model](https://arxiv.org/abs/2604.19710)
+  - Zewei Zhou, Ruining Yang, Xuewei, Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma
+  - Publish Date: 2026.04.21
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - SpanVLA integrates an autoregressive reasoning and a flow-matching action expert, introducing an efficient bridge to leverage VLM guidance for planning future trajectories, reducing inference time.
+    - Proposes a GRPO-based post-training method that enables learning from positive samples, avoiding negative behaviors, and learning recovery behaviors.
+    - Introduces mReasoning, a real-world driving reasoning dataset focused on complex scenarios and negative-recovery samples, with competitive performance on NAVSIM.
+
+- [ST-Prune: Training-Free Spatio-Temporal Token Pruning for Vision-Language Models in Autonomous Driving](https://arxiv.org/abs/2604.19145)
+  - Lin Sha, Haiyun Guo, Tao Wang, Cong Zhang, Min Huang, Jinqiao Wang, Qinghai Miao
+  - Publisher: Chinese Academy of Sciences
+  - Publish Date: 2026.04.21
+  - Task: Perception, Prediction, Planning
+  - Summary：
+    - ST-Prune is a training-free, plug-and-play framework for spatio-temporal token pruning in Vision-Language Models (VLMs) for autonomous driving.
+    - It consists of Motion-aware Temporal Pruning (MTP) and Ring-view Spatial Pruning (RSP) to exploit redundancies in multi-view, multi-frame inputs.
+    - At 90% token reduction, ST-Prune achieves near-lossless performance with inference speeds comparable to existing pruning methods.
+
+- [OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation](https://arxiv.org/abs/2604.18486)
+  - Jinghui Lu, Jiayi Guan, Zhijian Huang, Jinlong Li, Guang Li, Lingdong Kong, Yingyan Li, Han Wang, Shaoqing Xu, Yuechen Luo, Fang Li, Chenxu Dang, Junli Wang, Tao Xu, Jing Wu, Jianhua Wu, Xiaoshuai Hao, Wen Zhang, Tianyi Jiang, Lingfeng Zhang, Lei Zhou, Yingbo Tang, Jie Wang, Yinfeng Gao, Xizhou Bu, Haochen Tian, Yihang Qiu, Feiyang Jia, Lin Liu, Yigu Ge, Hanbing Li, Yuannan Shen, Jianwei Cui, Hongwei Xie, Bing Wang, Haiyang Sun, Jingwei Zhao, Jiahui Huang, Pei Liu, Zeyu Zhu, Yuncheng Jiang, Zibin Guo, Chuhong Gong, Hanchao Leng, Kun Ma, Naiyang Wang, Guang Chen, Kuiyuan Yang, Hangjun Ye, Long Chen
+  - Publisher: Xiaomi
+  - Publish Date: 2026.04.20
+  - Project Page: [OneVL](https://xiaomi-embodied-intelligence.github.io/OneVL)
+  - Task: Planning
+  - Summary：
+    - OneVL, a unified VLA and World Model framework that routes reasoning through compact latent tokens supervised by dual auxiliary decoders for one-step latent reasoning and planning.
+    - It introduces a visual world model decoder that predicts future-frame tokens, forcing the latent space to internalize causal dynamics, achieving state-of-the-art accuracy at answer-only latency.
+
+- [OneDrive: Unified Multi-Paradigm Driving with Vision-Language-Action Models](https://arxiv.org/abs/2604.17915)
+  - Yiwei Zhang, Xuesong Chen, Jin Gao, Hanshi Wang, Fudong Ge, Weiming Hu, Shaoshuai Shi, Zhipeng Zhang
+  - Publisher: Unknown
+  - Publish Date: 2026.04.20
+  - Code: [OneDrive](https://github.com/Z1zyw/OneDrive)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - OneDrive is a unified autonomous driving framework built upon a pretrained VLM, reconciling heterogeneous decoding behaviors (autoregressive language generation, parallel object detection, trajectory regression) within a single transformer decoder.
+    - Trajectory planning is realized in the same causal LLM decoder by introducing structured trajectory queries, enabling planning to share the pretrained attention backbone with images and perception tokens.
+    - The model achieves state-of-the-art performance on nuScenes (0.28 L2, 0.18 collision rate) and NAVSIM (86.8 PDMS), with an efficient inference mode reducing latency by approximately 40%.
+
+- [M100: An Orchestrated Dataflow Architecture Powering General AI Computing](https://arxiv.org/abs/2604.17862)
+  - Yan Xie, Changkui Mao, Changsong Wu, Chao Lu, Chao Suo, Cheng Qian, Chun Yang, Danyang Zhu, Hengchang Xiong, Hongzhan Lu, Hongzhen Liu, Jiafu Liu, Jie Chen, Jie Dai, Junfeng Tang, Kai Liu, Kun Li, Lipeng Ge, Meng Sun, Min Luo, Peng Chen, Peng Wang, Shaodong Yang, Shibin Tang, Shibo Chen, Weikang Zhang, Xiao Ling, Xiaobo Du, Xin Wu, Yang Liu, Yi Jiang, Yihua Jin, Yin Huang, Yuli Zhang, Zhen Yuan, Zhiyuan Man, Zhongxiao Yao
+  - Publisher: Li Auto
+  - Publish Date: 2026.04.20
+  - Task: Reasoning
+  - Summary：
+    - M100 is a dataflow parallel architecture for general AI inference, targeting Autonomous Driving, Large Language Models, and intelligent human interactions.
+    - It employs compiler-architecture co-design to orchestrate data movement, largely eliminating caches and using tensors as the fundamental data element for efficiency and scalability.
+    - Benchmarks show M100 outperforms GPGPU architectures in AD applications with higher utilization, representing a promising direction for future general AI computing.
+
+- [Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception](https://arxiv.org/abs/2604.17651)
+  - Siyuan Meng, Chengbo Ai
+  - Publisher: Unknown
+  - Publish Date: 2026.04.19
+  - Task: Perception
+  - Summary：
+    - Proposes Infrastructure-centric World Models (I-WM) leveraging roadside sensors' bird's-eye, multi-sensor, persistent viewpoint for autonomous driving.
+    - Introduces a dual-layer architecture and phased sensor strategy, along with Infrastructure VLA (I-VLA) as a novel unification of roadside perception, language commands, and traffic control actions.
+
+- [RISC-V Functional Safety for Autonomous Automotive Systems: An Analytical Framework and Research Roadmap for ML-Assisted Certification](https://arxiv.org/abs/2604.17391)
+  - Nick Andreasyan, Mikhail Struve, Alexey Popov, Maksim Nikolaev, Vadim Vashkelis
+  - Publisher: Not specified
+  - Publish Date: 2026.04.19
+  - Task: Safety Certification
+  - Summary：
+    - Analyzes RISC-V's role in automotive functional safety, focusing on ISA openness, formal verifiability, and vendor-independent qualification.
+    - Presents an analytical framework and research roadmap with certification economics as the primary optimization objective.
+    - Discusses ML methods (LLM-assisted FMEDA, knowledge-graph safety case automation, RL for fault injection, GNNs for diagnostic coverage) to support certification workflows.
+
+- [Harness as an Asset: Enforcing Determinism via the Convergent AI Agent Framework (CAAF)](https://arxiv.org/abs/2604.17025)
+  - Tianbao Zhang
+  - Publisher: Unknown
+  - Publish Date: 2026.04.18
+  - Task: Reasoning
+  - Summary：
+    - Introduces the Convergent AI Agent Framework (CAAF) to enforce Fail-Safe Determinism in LLM-based agentic workflows via Recursive Atomic Decomposition, Harness as an Asset, and Structured Semantic Gradients.
+    - Demonstrates 100% paradox detection in SAE Level 3 autonomous driving and pharmaceutical reactor design benchmarks, isolating the Unified Assertion Interface (UAI) as the core contribution.
+
 - [Unveiling the Surprising Efficacy of Navigation Understanding in End-to-End Autonomous Driving](https://arxiv.org/abs/2604.12208)
   - Zhihua Hua, Junli Wang, Pengfei LI, Qihao Jin, Bo Zhang, Kehua Sheng, Yilun Chen, Zhongxue Gan, Wenchao Ding
   - Publish Date: 2026.04.14
