@@ -58,6 +58,61 @@ format:
   - metrics
 ```
 
+- [Cross-Stage Coherence in Hierarchical Driving VQA: Explicit Baselines and Learned Gated Context Projectors](https://arxiv.org/abs/2604.22560)
+  - Gautam Kumar Jain, Carsten Markgraf, Julian Stähler
+  - Publisher: Not specified
+  - Publish Date: 2026.04.24
+  - Task: VQA
+  - Datasets: [DriveLM-nuScenes](https://www.drivelm.com/)
+  - Summary：
+    - Presents a comparative study of cross-stage context passing in hierarchical driving VQA using explicit prompt-based conditioning and implicit gated context projectors.
+    - Explicit variant reduces NLI contradiction by up to 42.6% without additional training; implicit variant achieves 34% reduction in planning-stage contradiction and 50% increase in cross-stage entailment.
+
+- [OccDirector: Language-Guided Behavior and Interaction Generation in 4D Occupancy Space](https://arxiv.org/abs/2604.22240)
+  - Zhuding Liang, Tianyi Yan, Dubing Chen, Jiasen Zheng, Huan Zheng, Cheng-zhong Xu, Yida Wang, Kun Zhan, Jianbing Shen
+  - Publisher: University of Macau, Beijing Institute of Technology
+  - Publish Date: 2026.04.24
+  - Task: Prediction
+  - Datasets: [OccInteract-85k](https://arxiv.org/abs/2604.22240)
+  - Summary：
+    - OccDirector, a pioneering framework that generates 4D occupancy dynamics conditioned solely on natural language, operating as a "scenario director".
+    - It employs a VLM-driven Spatio-Temporal MMDiT with a history-prefix anchoring strategy for long-horizon interaction consistency.
+    - Introduces OccInteract-85k dataset and achieves state-of-the-art generation quality with unprecedented instruction-following capabilities.
+
+- [Frozen LLMs as Map-Aware Spatio-Temporal Reasoners for Vehicle Trajectory Prediction](https://arxiv.org/abs/2604.21479)
+  - Yanjiao Liu, Jiawei Liu, Xun Gong, Zifei Nie
+  - Publish Date: 2026.04.23
+  - Task: Prediction
+
+- [Reasoning About Traversability: Language-Guided Off-Road 3D Trajectory Planning](https://arxiv.org/abs/2604.21249)
+  - Byounggun Park, Soonmin Hwang
+  - Publish Date: 2026.04.23
+  - Task: Planning
+  - Summary：
+    - Proposes a language refinement framework that restructures off-road dataset annotations into action-aligned pairs, enabling a VLM to generate refined scene descriptions and 3D future trajectories from a single image.
+    - Introduces a preference optimization strategy with geometry-aware hard negatives to penalize trajectories inconsistent with local elevation profiles, improving terrain-aware planning.
+    - Defines off-road-specific metrics for traversability compliance and elevation consistency, achieving reduced trajectory error and improved robustness on the ORAD-3D benchmark.
+
+- [X-Cache: Cross-Chunk Block Caching for Few-Step Autoregressive World Models Inference](https://arxiv.org/abs/2604.20289)
+  - Yixiao Zeng, Jianlei Zheng, Chaoda Zheng, Shijia Chen, Mingdian Liu, Tongping Liu, Tengwei Luo, Yu Zhang, Boyang Wang, Linkun Xu, Siyuan Lu, Bo Tian, Xianming Liu
+  - Publish Date: 2026.04.22
+  - Task: Planning
+  - Summary：
+    - X-Cache, a training-free acceleration method for autoregressive world models that caches across consecutive generation chunks rather than across denoising steps.
+    - It maintains per-block residual caches with a dual-metric gating mechanism to decide block recomputation or reuse, and identifies KV update chunks to prevent error propagation.
+    - Implemented on X-world, a production multi-camera driving world model, achieving 71% block skip rate and 2.6x wall-clock speedup with minimal degradation.
+
+- [From Scene to Object: Text-Guided Dual-Gaze Prediction](https://arxiv.org/abs/2604.20191)
+  - Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, Qingwen Meng, Heye Huang, Jianqiang Wang
+  - Publisher: Tsinghua University
+  - Publish Date: 2026.04.22
+  - Task: Prediction
+  - Datasets: [W3DA](https://github.com/zehongke/W3DA)
+  - Summary：
+    - Proposes a dual-branch gaze prediction framework (DualGaze-VLM) for object-level driver attention, establishing a complete paradigm from data construction to model architecture.
+    - Constructs G-W3DA, an object-level driver attention dataset, using a multimodal large language model and SAM3 to decouple macroscopic heatmaps into object-level masks.
+    - Achieves up to 17.8% improvement in SIM under safety-critical scenarios, and 88.22% human evaluators perceive generated heatmaps as authentic in a visual Turing test.
+
 - [SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model](https://arxiv.org/abs/2604.19710)
   - Zewei Zhou, Ruining Yang, Xuewei, Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma
   - Publish Date: 2026.04.21
