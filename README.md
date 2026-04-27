@@ -58,6 +58,60 @@ format:
   - metrics
 ```
 
+- [Cross-Stage Coherence in Hierarchical Driving VQA: Explicit Baselines and Learned Gated Context Projectors](https://arxiv.org/abs/2604.22560)
+  - Gautam Kumar Jain, Carsten Markgraf, Julian Stähler
+  - Publish Date: 2026.04.24
+  - Task: VQA
+  - Datasets: [DriveLM-nuScenes](https://github.com/ldynx/DriveLM)
+  - Summary：
+    - Proposes two complementary mechanisms for cross-stage context passing in hierarchical driving VQA: explicit prompt-based conditioning (training-free) and implicit gated context projectors (training-efficient, ~0.5% parameters).
+    - The explicit variant reduces NLI contradiction by up to 42.6% on a domain-adapted 4B VLM, while the implicit variant achieves 34% reduction in planning-stage contradiction and 50% increase in cross-stage entailment on an 8B VLM.
+    - Planning language quality improves (CIDEr +30.3%) but lexical overlap degrades due to absence of driving-domain pretraining, highlighting the need for domain adaptation.
+
+- [OccDirector: Language-Guided Behavior and Interaction Generation in 4D Occupancy Space](https://arxiv.org/abs/2604.22240)
+  - Zhuding Liang, Tianyi Yan, Dubing Chen, Jiasen Zheng, Huan Zheng, Cheng-zhong Xu, Yida Wang, Kun Zhan, Jianbing Shen
+  - Publish Date: 2026.04.24
+  - Task: Planning
+  - Datasets: OccInteract-85k
+  - Summary：
+    - OccDirector, a framework that generates 4D occupancy dynamics conditioned solely on natural language, operating as a ``scenario director'' without requiring geometric priors.
+    - It employs a VLM-driven Spatio-Temporal MMDiT with a history-prefix anchoring strategy to ensure long-horizon interaction consistency, and introduces the OccInteract-85k dataset with multi-level language instructions.
+
+- [Frozen LLMs as Map-Aware Spatio-Temporal Reasoners for Vehicle Trajectory Prediction](https://arxiv.org/abs/2604.21479)
+  - Yanjiao Liu, Jiawei Liu, Xun Gong, Zifei Nie
+  - Publish Date: 2026.04.23
+  - Task: Prediction
+  - Summary：
+    - Introduces a framework using frozen LLMs as reasoning engines for vehicle trajectory prediction, incorporating both dynamic traffic agent features and static map semantics.
+    - Employs a traffic encoder and a lightweight CNN to extract scene-level and map features, then transforms them into LLM-compatible tokens via a reprogramming adapter.
+    - Achieves strong generalizability across diverse LLM architectures with minimal adaptation, enabling quantitative analysis of map semantics' impact on prediction accuracy.
+
+- [Reasoning About Traversability: Language-Guided Off-Road 3D Trajectory Planning](https://arxiv.org/abs/2604.21249)
+  - Byounggun Park, Soonmin Hwang
+  - Publish Date: 2026.04.23
+  - Task: Planning
+  - Datasets: ORAD-3D
+  - Summary：
+    - Proposes a language refinement framework that restructures annotations into action-aligned pairs, enabling a VLM to generate refined scene descriptions and 3D future trajectories from a single image.
+    - Introduces a preference optimization strategy with geometry-aware hard negatives that penalizes trajectories inconsistent with local elevation, along with off-road-specific metrics for traversability and elevation consistency.
+    - Experiments on the ORAD-3D benchmark show reductions in average trajectory error and elevation inconsistency, and improvements in traversability compliance.
+
+- [X-Cache: Cross-Chunk Block Caching for Few-Step Autoregressive World Models Inference](https://arxiv.org/abs/2604.20289)
+  - Yixiao Zeng, Jianlei Zheng, Chaoda Zheng, Shijia Chen, Mingdian Liu, Tongping Liu, Tengwei Luo, Yu Zhang, Boyang Wang, Linkun Xu, Siyuan Lu, Bo Tian, Xianming Liu
+  - Publish Date: 2026.04.22
+  - Task: Planning
+  - Summary：
+    - X-Cache is a training-free acceleration method for autoregressive world models that caches across consecutive generation chunks rather than across denoising steps.
+    - It uses a dual-metric gating mechanism and identifies KV update chunks to prevent error propagation, achieving 71% block skip rate and 2.6x wall-clock speedup with minimal degradation.
+
+- [From Scene to Object: Text-Guided Dual-Gaze Prediction](https://arxiv.org/abs/2604.20191)
+  - Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, Qingwen Meng, Heye Huang, Jianqiang Wang
+  - Publish Date: 2026.04.22
+  - Task: Prediction
+  - Summary：
+    - Proposes a novel dual-branch gaze prediction framework (DualGaze-VLM) and constructs a object-level driver attention dataset G-W3DA.
+    - Achieves state-of-the-art performance with up to 17.8% improvement in similarity under safety-critical scenarios, and attention heatmaps are perceived as authentic by 88.22% of human evaluators.
+
 - [SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model](https://arxiv.org/abs/2604.19710)
   - Zewei Zhou, Ruining Yang, Xuewei, Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma
   - Publish Date: 2026.04.21
