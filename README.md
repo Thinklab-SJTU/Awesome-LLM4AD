@@ -58,6 +58,54 @@ format:
   - metrics
 ```
 
+- [Cross-Stage Coherence in Hierarchical Driving VQA: Explicit Baselines and Learned Gated Context Projectors](https://arxiv.org/abs/2604.22560)
+  - Gautam Kumar Jain, Carsten Markgraf, Julian Stähler
+  - Publish Date: 2026.04.24
+  - Task: VQA
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - This paper presents a comparative study of cross-stage context passing for hierarchical driving visual question answering (VQA), introducing explicit prompt-based conditioning strategies and implicit gated context projectors.
+    - The explicit baseline uses three conditioning strategies on a domain-adapted VLM without additional training, reducing NLI contradiction by up to 42.6%.
+    - The implicit variant introduces gated context projectors, trained with QLoRA adapters, achieving a 34% reduction in planning-stage NLI contradiction and a 50% increase in cross-stage entailment.
+
+- [OccDirector: Language-Guided Behavior and Interaction Generation in 4D Occupancy Space](http://arxiv.org/abs/2604.22240v1)
+  - Zhuding Liang, Tianyi Yan, Dubing Chen, Jiasen Zheng, Huan Zheng, Cheng-zhong Xu, Yida Wang, Kun Zhan, Jianbing Shen
+  - Publish Date: 2026.04.24
+  - Task: Planning
+  - Summary：
+    - 
+
+- [Frozen LLMs as Map-Aware Spatio-Temporal Reasoners for Vehicle Trajectory Prediction](https://arxiv.org/abs/2604.21479)
+  - Yanjiao Liu, Jiawei Liu, Xun Gong, Zifei Nie
+  - Publish Date: 2026.04.23
+  - Task: Prediction
+  - Summary：
+    - Introduces a framework that leverages frozen LLMs as reasoning engines for trajectory prediction, using a reprogramming adapter to integrate traffic and map features.
+    - Enables quantitative analysis of map semantics' impact on prediction accuracy and demonstrates strong generalizability across diverse LLM architectures.
+
+- [Reasoning About Traversability: Language-Guided Off-Road 3D Trajectory Planning](http://arxiv.org/abs/2604.21249v1)
+  - Byounggun Park, Soonmin Hwang
+  - Publish Date: 2026.04.23
+  - Task: Planning
+  - Summary：
+    - 
+
+- [X-Cache: Cross-Chunk Block Caching for Few-Step Autoregressive World Models Inference](https://arxiv.org/abs/2604.20289)
+  - Yixiao Zeng, Jianlei Zheng, Chaoda Zheng, Shijia Chen, Mingdian Liu, Tongping Liu, Tengwei Luo, Yu Zhang, Boyang Wang, Linkun Xu, Siyuan Lu, Bo Tian, Xianming Liu
+  - Publish Date: 2026.04.22
+  - Task: Prediction
+  - Summary：
+    - X-Cache is a training-free acceleration method that caches residual computations across consecutive generation chunks, unlike existing methods that cache across denoising steps.
+    - It employs per-block residual caches with a dual-metric gating mechanism and identifies KV update chunks to prevent error propagation in autoregressive inference.
+    - Applied to the X-world driving world model, X-Cache achieves a 71% block skip rate and 2.6× wall-clock speedup with minimal degradation.
+
+- [From Scene to Object: Text-Guided Dual-Gaze Prediction](http://arxiv.org/abs/2604.20191v1)
+  - Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, Qingwen Meng, Heye Huang, Jianqiang Wang
+  - Publish Date: 2026.04.22
+  - Task: Planning
+  - Summary：
+    - 
+
 - [SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model](https://arxiv.org/abs/2604.19710)
   - Zewei Zhou, Ruining Yang, Xuewei, Qi, Yiluan Guo, Sherry X. Chen, Tao Feng, Kateryna Pistunova, Yishan Shen, Lili Su, Jiaqi Ma
   - Publish Date: 2026.04.21
