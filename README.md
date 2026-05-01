@@ -80,7 +80,6 @@ format:
   - Byounggun Park, Soonmin Hwang
   - Publish Date: 2026.04.23
   - Task: Planning
-  - Datasets: ORAD-3D
   - Summary：
     - Proposes a language refinement framework that restructures annotations into action-aligned pairs, enabling a VLM to generate refined scene descriptions and 3D future trajectories from a single image.
     - Introduces a preference optimization strategy with geometry-aware hard negatives that penalizes trajectories inconsistent with local elevation, along with off-road-specific metrics for traversability and elevation consistency.
