@@ -62,7 +62,7 @@ format:
   - Xin Zhou, Dingkang Liang, Xiwu Chen, Feiyang Tan, Dingyuan Zhang, Hengshuang Zhao, Xiang Bai
   - Publish Date: 2026.04.30
   - Code: [HERMESV2](https://github.com/H-EmbodVis/HERMESV2)
-  - Task: Prediction
+  - Task: Generation
   - Summary：
     - HERMES++ is a unified driving world model that integrates 3D scene understanding and future geometry prediction within a single framework.
     - It utilizes BEV representation, LLM-enhanced world queries, a Current-to-Future Link, and Joint Geometric Optimization to achieve strong performance.
@@ -78,15 +78,6 @@ format:
     - GSDrive exploits 3D Gaussian Splatting for differentiable, physics-based reward shaping in end-to-end driving policy improvement.
     - It incorporates a flow matching-based trajectory predictor for multi-mode trajectory probing, providing immediate dense feedback instead of sparse catastrophic events.
 
-- [Towards Neuro-symbolic Causal Rule Synthesis, Verification, and Evaluation Grounded in Legal and Safety Principles](https://arxiv.org/abs/2604.28087)
-  - Zainab Rehan, Christian Medeiros Adriano, Sona Ghahremani, Holger Giese
-  - Publish Date: 2026.04.30
-  - Task: Reasoning
-  - Summary：
-    - Extends a neuro-symbolic causal framework with a meta-level layer to mitigate goal misspecification and support scalable rule maintenance.
-    - Introduces a synthesis pipeline using LLMs to decompose goals, consolidate semantics, translate into first-order rules, and compose necessary and sufficient causal sets.
-    - Includes a verification pipeline performing syntax, logical consistency, and safety checks, validated in two autonomous driving scenarios.
-
 - [Understanding Adversarial Transferability in Vision-Language Models for Autonomous Driving: A Cross-Architecture Analysis](https://arxiv.org/abs/2604.27414)
   - David Fernandez, Pedram MohajerAnsari, Amir Salarpour, Mert D. Pese
   - Publish Date: 2026.04.30
@@ -100,7 +91,7 @@ format:
   - Lijin Yang, Jianing Huang, Zhongzhan Huang, Shu Liu, Hao Yang
   - Publish Date: 2026.04.30
   - Task: Planning
-  - Datasets: Bench2Drive
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Proposes CriticVLA, a two-stage framework that first generates a rough trajectory and then refines it using a VLA-based critic, enhancing driving quality.
     - Constructs a large-scale synthetic dataset of 12.9 million annotated trajectories to improve the critic's reasoning and refinement abilities.
@@ -120,19 +111,9 @@ format:
   - Bowen Jian, Rongjie Yu, Hong Wang, Liqiang Wang, Zihang Zou
   - Publish Date: 2026.04.27
   - Task: Reasoning
-  - Datasets: OnSite
   - Summary：
     - Proposes a pipeline that grounds LLM reasoning in a traffic scenario taxonomy through node-wise anchors, improving law-scenario matching by 29.1%.
     - Demonstrates real-world applicability by constructing a law-compliance layer for AV navigation and an onboard compliance monitor.
-
-- [Grammar-Constrained Refinement of Safety Operational Rules Using Language in the Loop: What Could Go Wrong](https://arxiv.org/abs/2604.23523)
-  - Khouloud Gaaloul, Zaid Ghazal, Madhu Latha Pulimi, Sam Emmanuel Kathiravan
-  - Publish Date: 2026.04.26
-  - Task: Reasoning
-  - Summary：
-    - Proposes a framework that combines counterfactual reasoning with a grammar-constrained refinement loop to refine operational rules in cyber-physical systems.
-    - Applied to an autonomous driving control system, successfully resolved inconsistencies in an operational rule while remaining grammar compliant.
-    - Empirical LLM study revealed model-dependent refinement quality and safety lessons.
 
 - [Cross-Stage Coherence in Hierarchical Driving VQA: Explicit Baselines and Learned Gated Context Projectors](https://arxiv.org/abs/2604.22560)
   - Gautam Kumar Jain, Carsten Markgraf, Julian Stähler
