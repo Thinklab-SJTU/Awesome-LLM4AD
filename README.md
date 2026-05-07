@@ -58,6 +58,27 @@ format:
   - metrics
 ```
 
+- [FlowDIS: Language-Guided Dichotomous Image Segmentation with Flow Matching](https://arxiv.org/abs/2605.05077)
+  - Andranik Sargsyan, Shant Navasardyan
+  - Publisher: Picsart AI Research
+  - Publish Date: 2026.05.06
+  - Code: [FlowDIS](https://github.com/Picsart-AI-Research/FlowDIS)
+  - Task: Perception
+  - Summary：
+    - FlowDIS introduces a novel dichotomous image segmentation method based on the flow matching framework, learning a time-dependent vector field to transform image distribution into mask distribution with optional text prompt conditioning.
+    - A Position-Aware Instance Pairing (PAIP) training strategy enables strong controllability via text prompts, achieving precise pixel-level object segmentation.
+    - Extensive experiments show significant improvements over prior state-of-the-art DIS methods, obtaining 5.5% higher \(F_\beta^\omega\) and 43% lower MAE on the DIS-TE test set.
+
+- [Information Coordination as a Bridge: A Neuro-Symbolic Architecture for Reliable Autonomous Driving Scene Understanding](https://arxiv.org/abs/2605.04475)
+  - Shuo Liu, Lei Shi, Haowen Liu, Jing Xu, Yufei Gao, Yucheng Shi
+  - Publish Date: 2026.05.06
+  - Task: Reasoning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Waymo](https://waymo.com/open/)
+  - Summary：
+    - Proposes InfoCoordiBridge, a BEV-centric neuro-symbolic architecture that inserts an explicit coordination bridge between perception and language reasoning for reliable autonomous driving scene understanding.
+    - Comprises three modules: a unified multi-agent perception layer, an ICA module for aligning and fusing multi-source outputs into a single SceneSummary, and an SSRE module for SceneSummary-grounded reasoning with verification.
+    - Experiments on nuScenes and Waymo show that ICA improves fusion consistency and reduces redundancy, while SSRE reduces hallucinated entity mentions compared to VLM and agentic baselines.
+
 - [HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation](https://arxiv.org/abs/2604.28196)
   - Xin Zhou, Dingkang Liang, Xiwu Chen, Feiyang Tan, Dingyuan Zhang, Hengshuang Zhao, Xiang Bai
   - Publish Date: 2026.04.30
