@@ -58,21 +58,10 @@ format:
   - metrics
 ```
 
-- [FlowDIS: Language-Guided Dichotomous Image Segmentation with Flow Matching](https://arxiv.org/abs/2605.05077)
-  - Andranik Sargsyan, Shant Navasardyan
-  - Publisher: Picsart AI Research
-  - Publish Date: 2026.05.06
-  - Code: [FlowDIS](https://github.com/Picsart-AI-Research/FlowDIS)
-  - Task: Perception
-  - Summary：
-    - FlowDIS introduces a novel dichotomous image segmentation method based on the flow matching framework, learning a time-dependent vector field to transform image distribution into mask distribution with optional text prompt conditioning.
-    - A Position-Aware Instance Pairing (PAIP) training strategy enables strong controllability via text prompts, achieving precise pixel-level object segmentation.
-    - Extensive experiments show significant improvements over prior state-of-the-art DIS methods, obtaining 5.5% higher \(F_\beta^\omega\) and 43% lower MAE on the DIS-TE test set.
-
 - [Information Coordination as a Bridge: A Neuro-Symbolic Architecture for Reliable Autonomous Driving Scene Understanding](https://arxiv.org/abs/2605.04475)
   - Shuo Liu, Lei Shi, Haowen Liu, Jing Xu, Yufei Gao, Yucheng Shi
   - Publish Date: 2026.05.06
-  - Task: Reasoning
+  - Task: Perception
   - Datasets: [nuScenes](https://www.nuscenes.org/), [Waymo](https://waymo.com/open/)
   - Summary：
     - Proposes InfoCoordiBridge, a BEV-centric neuro-symbolic architecture that inserts an explicit coordination bridge between perception and language reasoning for reliable autonomous driving scene understanding.
