@@ -58,6 +58,141 @@ format:
   - metrics
 ```
 
+- [Revealing Interpretable Failure Modes of VLMs](https://arxiv.org/abs/2605.12674)
+  - Isha Chaudhary, Vedaant V Jain, Kavya Sachdeva, Sayan Ranu, Gagandeep Singh
+  - Publish Date: 2026.05.12
+  - Task: Reasoning
+  - Summary：
+    - REVELIO systematically uncovers interpretable failure modes in VLMs by searching over a combinatorial space of concepts.
+    - Combines diversity-aware beam search and Gaussian-process Thompson Sampling to efficiently map the failure landscape and explore complex failure modes.
+    - Applied to autonomous driving and indoor robotics, revealing previously unreported vulnerabilities such as weak spatial grounding and excessive conservatism.
+
+- [MindVLA-U1: VLA Beats VA with Unified Streaming Architecture for Autonomous Driving](https://arxiv.org/abs/2605.12624)
+  - Yuzhou Huang, Benjin Zhu, Hengtong Lu, Victor Shea-Jay Huang, Haiming Zhang, Wei Chen, Jifeng Dai, Yan Xie, Hongsheng Li
+  - Publish Date: 2026.05.12
+  - Task: Planning
+  - Datasets: [WOD-E2E](https://waymo.com/open/)
+  - Summary：
+    - First unified streaming VLA architecture for autonomous driving, producing autoregressive language tokens and flow-matching continuous action trajectories in a single forward pass over a shared representation.
+    - Streaming design processes driving video framewise with a learned memory channel for temporal context, enabling smooth trajectory evolution without redundant multi-frame VLM modeling.
+    - Surpasses experienced human drivers on the long-tail WOD-E2E benchmark for the first time (8.20 RFS vs. 8.13 GT RFS) and achieves state-of-the-art planning ADEs over prior VA/VLA methods with throughput matching VA-class models.
+
+- [Action Emergence from Streaming Intent](https://arxiv.org/abs/2605.12622)
+  - Pengfei Jing, Victor Shea-Jay Huang, Hengtong Lu, Jifeng Dai, Xie Yan, Benjin Zhu
+  - Publish Date: 2026.05.12
+  - Task: Planning
+  - Datasets: [Waymo](https://waymo.com/open/)
+  - Summary：
+    - Formalizes action emergence as generating physically feasible, semantically appropriate, safety-compliant actions via scene-conditioned reasoning, rather than retrieval or interpolation.
+    - Introduces Streaming Intent, a mechanism with continuous chain-of-thought and temporal streaming across clips, realized in the SI model using autoregressive intent decoding and flow-matching action head.
+    - Achieves competitive performance on the Waymo End-to-End benchmark (RFS 7.96 val, 7.74 test) and demonstrates intent-faithful controllability without pre-built trajectory banks.
+
+- [OOM-Free Alpamayo via CPU-GPU Memory Swapping for Vision-Language-Action Models](https://arxiv.org/abs/2605.11678)
+  - Seungwoo Roh, Huiyeong Kim, Jong-Chan Kim
+  - Publish Date: 2026.05.12
+  - Task: End-to-End
+  - Summary：
+    - Introduces a framework for memory-efficient VLA inference on VRAM-constrained GPUs through system-level optimization without model modification.
+    - Proposes a three-stage technique: Sequential Demand Layering, Pipelined Demand Layering, and GPU-Resident Layer Decision Policy, along with a performance prediction model.
+    - Achieves up to 3.55x speedup over Accelerate offloading on an RTX 5070Ti (16GB) while maintaining full BF16 precision.
+
+- [The DAWN of World-Action Interactive Models](https://arxiv.org/abs/2605.11550)
+  - Hongbo Lu, Liang Yao, Chenghao He, Haoyu Wang, Xiang Gu, Xianfei Li, Wenlong Liao, Tao He, Pai Peng
+  - Publish Date: 2026.05.12
+  - Task: Planning
+  - Summary：
+    - Proposes World-Action Interactive Models (WAIMs) that treat world prediction and action generation as a reciprocal process.
+    - Instantiates with DAWN, a latent generative model coupling a World Predictor and a World-Conditioned Action Denoiser.
+    - Demonstrates strong planning performance and safety across multiple autonomous driving benchmarks.
+
+- [C-CoT: Counterfactual Chain-of-Thought with Vision-Language Models for Safe Autonomous Driving](https://arxiv.org/abs/2605.10744)
+  - Kefei Tian, Yuansheng Lian, Kai Yang, Xiangdong Chen, Shen Li
+  - Publish Date: 2026.05.11
+  - Task: Planning
+  - Datasets: [DeepAccident-CCoT](https://deepaccident.github.io/)
+  - Summary：
+    - Proposes a counterfactual chain-of-thought (C-CoT) framework that decomposes driving decisions into five stages, including counterfactual risk reasoning with a meta-action evaluation tree.
+    - Achieves risk prediction recall of 81.9%, reduces collision rate to 3.52%, and lowers L2 error to 1.98 m on the DeepAccident-CCoT dataset.
+
+- [DeepSight: Long-Horizon World Modeling via Latent States Prediction for End-to-End Autonomous Driving](https://arxiv.org/abs/2605.10564)
+  - Lingjun Zhang, Changjie Wu, Linzhe Shi, Jiangyang Li, Jiaxin Liu, Lei Yang, Hang Zhang, Mu Xu, Hong Wang
+  - Publish Date: 2026.05.11
+  - Code: [DeepSight](https://github.com/hotdogcheesewhite/DeepSight)
+  - Task: Planning
+  - Summary：
+    - DeepSight proposes a driving world model that performs parallel prediction of latent semantic features in BEV space for consecutive future frames, enabling long-horizon world modeling.
+    - It introduces an efficient and adaptive text reasoning mechanism that leverages social knowledge and reasoning to improve driving performance in challenging long-tail scenarios.
+    - The approach achieves state-of-the-art results on the closed-loop Bench2drive benchmark.
+
+- [CoWorld-VLA: Thinking in a Multi-Expert World Model for Autonomous Driving](https://arxiv.org/abs/2605.10426)
+  - Minqing Huang, Yujiao Xiang, Zihan Liang, Jiajie Huang, Jingqi Wang, Zhi Xu, Feiyang Tan, Hangning Zhou, Mu Yang, Gong Che
+  - Publish Date: 2026.05.11
+  - Code: [CoWorld-VLA](https://github.com/AFARI-Research/CoWorld-VLA)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - CoWorld-VLA proposes a multi-expert world reasoning framework for autonomous driving, where world representations serve as explicit conditions to guide action planning.
+    - It extracts complementary world information through multi-source supervision and encodes it into four types of expert tokens: semantic interaction, geometric structure, dynamic evolution, and ego trajectory tokens.
+    - A diffusion-based hierarchical multi-expert fusion planner is employed to generate continuous ego trajectories, achieving competitive results on the NAVSIM benchmark.
+
+- [Temporal Sampling Frequency Matters: A Capacity-Aware Study of End-to-End Driving Trajectory Prediction](https://arxiv.org/abs/2605.10388)
+  - Yumao Liu, Tao Liu, Xiangyu Li, Jiaxiang Li, Ke Ma
+  - Publish Date: 2026.05.11
+  - Task: Prediction
+  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/), [PAVE](https://pave-dataset.github.io/)
+  - Summary：
+    - Investigates temporal sampling frequency as an explicit training design variable for end-to-end driving trajectory prediction, challenging the default use of highest available frequency.
+    - Demonstrates model-dependent frequency responses: smaller models benefit from lower or intermediate frequencies, while a larger VLA-style model achieves best performance at the highest frequency across three datasets.
+    - Provides capacity-aware analysis showing that sparse sampling may miss cues while dense sampling adds redundant visual content, and that iteration-matched controls rule out unequal training updates as the sole explanation.
+
+- [DriveFuture: Future-Aware Latent World Models for Autonomous Driving](https://arxiv.org/abs/2605.09701)
+  - Yufeng Hong, Xiaotian Zhou, Yingyan Li, Xiangpo Zhou, Lin Liu, Yadan Luo, Shaoqing Xu, Lei Yang, Ziying Song
+  - Publish Date: 2026.05.10
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - DriveFuture explicitly conditions current latent state modeling on future world states to learn planning-oriented foresight.
+    - It uses cross-attention to refine predicted future latent states and a diffusion-based trajectory planner, achieving state-of-the-art performance on NAVSIM benchmarks.
+
+- [VECTOR-Drive: Tightly Coupled Vision-Language and Trajectory Expert Routing for End-to-End Autonomous Driving](https://arxiv.org/abs/2605.08830)
+  - Rui Zhao, Jianlin Yu, Zhenhai Gao, Jiaqiao Liu, Fei Gao
+  - Publish Date: 2026.05.09
+  - Task: Planning
+  - Datasets: Bench2Drive
+  - Summary：
+    - Proposes VECTOR-DRIVE, a tightly coupled vision-language-action (VLA) framework that keeps all tokens coupled via shared self-attention and routes feed-forward computation by token semantics, coupling vision-language reasoning and trajectory prediction.
+    - Achieves 88.91 Driving Score on Bench2Drive, outperforming representative end-to-end and VLA-based baselines, and validates the benefits of shared attention, semantic-aware expert routing, progressive training, and flow-based action decoding.
+
+- [Large Language Models over Networks: Collaborative Intelligence under Resource Constraints](https://arxiv.org/abs/2605.08626)
+  - Liangqi Yuan, Wenzhi Fang, Shiqiang Wang, H. Vincent Poor, Christopher G. Brinton
+  - Publish Date: 2026.05.09
+  - Task: Reasoning
+  - Summary：
+    - Proposes a collaborative intelligence paradigm where multiple LLMs across device and cloud endpoints collaborate at task level through natural language or structured messages.
+    - Presents two complementary dimensions: vertical device-cloud collaboration and horizontal multi-agent collaboration, which can be combined into hybrid topologies.
+    - Identifies open research challenges including scaling under resource heterogeneity and trustworthy collaborative intelligence.
+
+- [GEM: Generating LiDAR World Model via Deformable Mamba](https://arxiv.org/abs/2605.07326v1)
+  - Yang Wu, Zhaojiang Liu, Qiang Meng, Youquan Liu, Renliang Weng, Jianjun Qian, Jian Yang, Jin Xie
+  - Publish Date: 2026.05.08
+  - Project Page: [GitHub](https://github.com/wuyang98/GEM)
+  - Code: [GitHub](https://github.com/wuyang98/GEM)
+  - Task: Prediction
+  - Summary：
+    - Proposes GEM, a generative LiDAR world model using deformable Mamba architecture for improved fidelity and imagination.
+    - Introduces a LiDAR scene tokenizer and dynamic-static separator for unsupervised disentanglement of features.
+    - Achieves state-of-the-art performance on diverse benchmarks, with optional integration for autonomous rollout and what-if scenarios.
+
+- [See Tomorrow, Act Today: Foresight-Driven Autonomous Driving](https://arxiv.org/abs/2605.07195)
+  - Bozhou Zhang, Nan Song, Yuang Wang, Jiankang Deng, Xiatian Zhu, Li Zhang
+  - Publish Date: 2026.05.08
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - ForeSight introduces a foresight-driven planning framework for autonomous driving, using a world model to generate future scenes before planning actions.
+    - The framework shifts from reactive to anticipatory decision-making by conditioning actions on imagined future observations.
+    - Experiments on NAVSIM and nuScenes demonstrate state-of-the-art performance compared to previous reactive methods.
+
 - [Information Coordination as a Bridge: A Neuro-Symbolic Architecture for Reliable Autonomous Driving Scene Understanding](https://arxiv.org/abs/2605.04475)
   - Shuo Liu, Lei Shi, Haowen Liu, Jing Xu, Yufei Gao, Yucheng Shi
   - Publish Date: 2026.05.06
