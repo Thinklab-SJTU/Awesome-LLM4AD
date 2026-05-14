@@ -58,15 +58,6 @@ format:
   - metrics
 ```
 
-- [Revealing Interpretable Failure Modes of VLMs](https://arxiv.org/abs/2605.12674)
-  - Isha Chaudhary, Vedaant V Jain, Kavya Sachdeva, Sayan Ranu, Gagandeep Singh
-  - Publish Date: 2026.05.12
-  - Task: Reasoning
-  - Summary：
-    - REVELIO systematically uncovers interpretable failure modes in VLMs by searching over a combinatorial space of concepts.
-    - Combines diversity-aware beam search and Gaussian-process Thompson Sampling to efficiently map the failure landscape and explore complex failure modes.
-    - Applied to autonomous driving and indoor robotics, revealing previously unreported vulnerabilities such as weak spatial grounding and excessive conservatism.
-
 - [MindVLA-U1: VLA Beats VA with Unified Streaming Architecture for Autonomous Driving](https://arxiv.org/abs/2605.12624)
   - Yuzhou Huang, Benjin Zhu, Hengtong Lu, Victor Shea-Jay Huang, Haiming Zhang, Wei Chen, Jifeng Dai, Yan Xie, Hongsheng Li
   - Publish Date: 2026.05.12
@@ -87,24 +78,6 @@ format:
     - Introduces Streaming Intent, a mechanism with continuous chain-of-thought and temporal streaming across clips, realized in the SI model using autoregressive intent decoding and flow-matching action head.
     - Achieves competitive performance on the Waymo End-to-End benchmark (RFS 7.96 val, 7.74 test) and demonstrates intent-faithful controllability without pre-built trajectory banks.
 
-- [OOM-Free Alpamayo via CPU-GPU Memory Swapping for Vision-Language-Action Models](https://arxiv.org/abs/2605.11678)
-  - Seungwoo Roh, Huiyeong Kim, Jong-Chan Kim
-  - Publish Date: 2026.05.12
-  - Task: End-to-End
-  - Summary：
-    - Introduces a framework for memory-efficient VLA inference on VRAM-constrained GPUs through system-level optimization without model modification.
-    - Proposes a three-stage technique: Sequential Demand Layering, Pipelined Demand Layering, and GPU-Resident Layer Decision Policy, along with a performance prediction model.
-    - Achieves up to 3.55x speedup over Accelerate offloading on an RTX 5070Ti (16GB) while maintaining full BF16 precision.
-
-- [The DAWN of World-Action Interactive Models](https://arxiv.org/abs/2605.11550)
-  - Hongbo Lu, Liang Yao, Chenghao He, Haoyu Wang, Xiang Gu, Xianfei Li, Wenlong Liao, Tao He, Pai Peng
-  - Publish Date: 2026.05.12
-  - Task: Planning
-  - Summary：
-    - Proposes World-Action Interactive Models (WAIMs) that treat world prediction and action generation as a reciprocal process.
-    - Instantiates with DAWN, a latent generative model coupling a World Predictor and a World-Conditioned Action Denoiser.
-    - Demonstrates strong planning performance and safety across multiple autonomous driving benchmarks.
-
 - [C-CoT: Counterfactual Chain-of-Thought with Vision-Language Models for Safe Autonomous Driving](https://arxiv.org/abs/2605.10744)
   - Kefei Tian, Yuansheng Lian, Kai Yang, Xiangdong Chen, Shen Li
   - Publish Date: 2026.05.11
@@ -119,6 +92,7 @@ format:
   - Publish Date: 2026.05.11
   - Code: [DeepSight](https://github.com/hotdogcheesewhite/DeepSight)
   - Task: Planning
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - DeepSight proposes a driving world model that performs parallel prediction of latent semantic features in BEV space for consecutive future frames, enabling long-horizon world modeling.
     - It introduces an efficient and adaptive text reasoning mechanism that leverages social knowledge and reasoning to improve driving performance in challenging long-tail scenarios.
@@ -127,7 +101,6 @@ format:
 - [CoWorld-VLA: Thinking in a Multi-Expert World Model for Autonomous Driving](https://arxiv.org/abs/2605.10426)
   - Minqing Huang, Yujiao Xiang, Zihan Liang, Jiajie Huang, Jingqi Wang, Zhi Xu, Feiyang Tan, Hangning Zhou, Mu Yang, Gong Che
   - Publish Date: 2026.05.11
-  - Code: [CoWorld-VLA](https://github.com/AFARI-Research/CoWorld-VLA)
   - Task: Planning
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
@@ -139,7 +112,7 @@ format:
   - Yumao Liu, Tao Liu, Xiangyu Li, Jiaxiang Li, Ke Ma
   - Publish Date: 2026.05.11
   - Task: Prediction
-  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/), [PAVE](https://pave-dataset.github.io/)
+  - Datasets: [Waymo](https://waymo.com/open/), [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Investigates temporal sampling frequency as an explicit training design variable for end-to-end driving trajectory prediction, challenging the default use of highest available frequency.
     - Demonstrates model-dependent frequency responses: smaller models benefit from lower or intermediate frequencies, while a larger VLA-style model achieves best performance at the highest frequency across three datasets.
@@ -158,26 +131,16 @@ format:
   - Rui Zhao, Jianlin Yu, Zhenhai Gao, Jiaqiao Liu, Fei Gao
   - Publish Date: 2026.05.09
   - Task: Planning
-  - Datasets: Bench2Drive
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Proposes VECTOR-DRIVE, a tightly coupled vision-language-action (VLA) framework that keeps all tokens coupled via shared self-attention and routes feed-forward computation by token semantics, coupling vision-language reasoning and trajectory prediction.
     - Achieves 88.91 Driving Score on Bench2Drive, outperforming representative end-to-end and VLA-based baselines, and validates the benefits of shared attention, semantic-aware expert routing, progressive training, and flow-based action decoding.
 
-- [Large Language Models over Networks: Collaborative Intelligence under Resource Constraints](https://arxiv.org/abs/2605.08626)
-  - Liangqi Yuan, Wenzhi Fang, Shiqiang Wang, H. Vincent Poor, Christopher G. Brinton
-  - Publish Date: 2026.05.09
-  - Task: Reasoning
-  - Summary：
-    - Proposes a collaborative intelligence paradigm where multiple LLMs across device and cloud endpoints collaborate at task level through natural language or structured messages.
-    - Presents two complementary dimensions: vertical device-cloud collaboration and horizontal multi-agent collaboration, which can be combined into hybrid topologies.
-    - Identifies open research challenges including scaling under resource heterogeneity and trustworthy collaborative intelligence.
-
 - [GEM: Generating LiDAR World Model via Deformable Mamba](https://arxiv.org/abs/2605.07326v1)
   - Yang Wu, Zhaojiang Liu, Qiang Meng, Youquan Liu, Renliang Weng, Jianjun Qian, Jian Yang, Jin Xie
   - Publish Date: 2026.05.08
-  - Project Page: [GitHub](https://github.com/wuyang98/GEM)
   - Code: [GitHub](https://github.com/wuyang98/GEM)
-  - Task: Prediction
+  - Task: Generation
   - Summary：
     - Proposes GEM, a generative LiDAR world model using deformable Mamba architecture for improved fidelity and imagination.
     - Introduces a LiDAR scene tokenizer and dynamic-static separator for unsupervised disentanglement of features.
