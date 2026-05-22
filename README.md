@@ -62,7 +62,7 @@ format:
   - Xiaodong Mei, Diankun Zhang, Hongwei Xie, Guang Chen, Hangjun Ye, Dan Xu
   - Publish Date: 2026.05.21
   - Task: Planning
-  - Datasets: Bench2Drive
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Introduces a future scene prediction task entirely in high-level latent space under auxiliary supervision from a pretrained vision backbone, avoiding inefficient pixel-level reconstruction.
     - Jointly models future scene and motion prediction within a unified embedding space, processed in a single forward pass for future-aware reasoning.
@@ -71,7 +71,7 @@ format:
 - [Lost in Fog: Sensor Perturbations Expose Reasoning Fragility in Driving VLAs](https://arxiv.org/abs/2605.21446)
   - Abhinaw Priyadershi, Jelena Frtunikj
   - Publish Date: 2026.05.20
-  - Task: Planning
+  - Task: Perception
   - Summary：
     - Conducted a controlled perturbation study of Vision-Language-Action robustness in autonomous driving, evaluating across 1,996 scenarios under eight sensor perturbations.
     - Found that reasoning consistency (Chain-of-Causation) is a high-fidelity indicator of trajectory reliability, with trajectory deviation spiking 5.3× when explanations change.
@@ -90,7 +90,7 @@ format:
 - [Bridging Structure and Language: Graph-Based Visual Reasoning for Autonomous Road Understanding](https://arxiv.org/abs/2605.20942)
   - Lena Wild, Katie Z Luo, Marco Pavone
   - Publish Date: 2026.05.20
-  - Task: Reasoning
+  - Task: Perception
   - Summary：
     - Introduces Combined Road Substrate (CRS), a graph-grounded framework that integrates geometric road structure and open-vocabulary semantics for structured road reasoning.
     - Demonstrates that training small vision-language models with as few as 20-80 CRS-enriched scenes yields stable gains in compositional reasoning, revealing that structured supervision is key rather than model scale.
@@ -107,7 +107,7 @@ format:
 - [Beyond Imitation: Learning Safe End-to-End Autonomous Driving from Hard Negatives](https://arxiv.org/abs/2605.19771)
   - Junli Wang, Zhihua Hua, Xueyi Liu, Zebin Xing, Haochen Tian, Kun Ma, Hangjun Ye, Guang Chen, Long Chen, Qichao Zhang
   - Publish Date: 2026.05.19
-  - Task: Planning
+  - Task: Perception, Planning
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [HUGSIM](https://hugsim.github.io/)
   - Summary：
     - BeyondDrive, a failure-aware imitation learning framework for end-to-end autonomous driving that jointly learns from successful and failed driving behaviors.
@@ -118,7 +118,7 @@ format:
   - Hoonhee Cho, Giwon Lee, Jae-Young Kang, Hyemin Yang, Heejun Park, Kuk-Jin Yoon
   - Publish Date: 2026.05.19
   - Task: Planning
-  - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim), [Waymo](https://waymo.com/open/)
+  - Datasets: [nuScenes](https://www.nuscenes.org), [NAVSIM](https://github.com/autonomousvision/navsim), [Waymo](https://waymo.com/open/)
   - Summary：
     - Proposes a trajectory-driven learning paradigm that organizes training around planning trajectories to capture domain-invariant representations of driving intent.
     - Incorporates a world model that predicts future latent features conditioned on ego actions, improving feature consistency and mitigating domain-induced biases.
@@ -127,8 +127,8 @@ format:
 - [SafeAlign-VLA: A Negative-Enhanced Safe Alignment Framework for Risk-Aware Autonomous Driving](https://arxiv.org/abs/2605.19524)
   - Kefei Tian, Yuansheng Lian, Kai Yang, Xiangdong Chen, Shen Li
   - Publish Date: 2026.05.19
-  - Task: Planning
-  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [DeepAccident](https://github.com/DeepAccident/DeepAccident)
+  - Task: Perception
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - SafeAlign-VLA introduces a negative-enhanced safe alignment framework for Vision-Language-Action (VLA) models, incorporating negative data into both supervised fine-tuning and reinforcement learning.
     - A counterfactual safety pairing paradigm generates structured safety labels and counterfactual positive trajectories from risky scenarios, enabling the model to understand risky behaviors and safety boundaries.
@@ -138,7 +138,7 @@ format:
   - Lijun Zhou, Hongcheng Luo, Zhenxin Zhu, Cheng Chi, Mingfei Tu, Kaixin Xiong, Lei Gong, Zhanqian Wu, Zehan Zhang, Fangzhen Li, Hao Li, Yingying Shen, Jiale He, Haohui Zhu, Shan Zhao, Kai Wang, Zhiwei Zhan, Yuechuan Pu, Kaiyuan Tan, Ruiling Yang, Xianqi Wang, Tianyi Yan, Jiawei Zhou, Lei Zhang, Jingyang Zhao, Xi Zhou, Chitian Sun, Chenming Wu, Jiong Deng, Hongwei Xie, Ming Lu, Kun Ma, Long Chen, Guang Chen, Hangjun Ye, Bing Wang, Haiyang Sun
   - Publisher: Xiaomi EV
   - Publish Date: 2026.05.18
-  - Task: End-to-End
+  - Task: Generation
   - Summary：
     - Proposes a unified technical system for world models in autonomous driving, comprising world representation (WorldRec) and world generation (WorldGen).
     - WorldRec uses feed-forward reconstruction with sparse scene queries to produce compact 3D Gaussian scene representations, while WorldGen enables high-quality causal video generation with few denoising steps.
@@ -147,7 +147,7 @@ format:
 - [GEM: Gaussian Evolution Model for Occupancy Forecasting and Motion Planning](https://arxiv.org/abs/2605.17682)
   - Cheng Chen, Hao Huang, Saurabh Bagchi
   - Publish Date: 2026.05.17
-  - Task: Planning
+  - Task: Prediction, Planning
   - Summary：
     - Proposes GEM, a Gaussian Evolution Model for non-autoregressive occupancy world modeling, representing driving scenes as explicit continuous 4D Gaussian primitives with learned dynamics.
     - Enables direct querying of Gaussian world representation at arbitrary timestamps for efficient full-horizon forecasting and supports motion planning by predicting future ego trajectories.
@@ -167,7 +167,7 @@ format:
   - Chuancheng Zhang, Zhenhao Wang, Kaizheng Li, Yaran Lin, Qiang Guo, Bin Jiang
   - Publish Date: 2026.05.15
   - Project Page: [PCASim](https://zhenhaooo.github.io/PCASim.github.io/)
-  - Task: Planning
+  - Task: Generation
   - Summary：
     - PCASim introduces a promptable closed-loop adversarial simulation framework for urban traffic, integrating rule-based filtering, knowledge retrieval, and large language models to generate safety-critical scenarios.
     - The framework employs reinforcement learning to train diverse vehicle behaviors, enriching scenario diversity and realism, achieving improvements in domain-specific language accuracy, scenario transformation success rate, and obstacle-avoidance capability.
@@ -195,7 +195,7 @@ format:
   - Rajeev Yasarla, Deepti Hegde, Hsin-Pai Cheng, Shizhong Han, Yunxiao Shi, Meysam Sadeghigooghari, Hanno Ackermann, Litian Liu, Pranav Desai, Fatih Porikli, Mohammad Ghavamzadeh, Hong Cai
   - Publish Date: 2026.05.13
   - Task: Planning
-  - Datasets: Bench2Drive
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - MAPLE introduces a latent-space multi-agent rollout framework for reactive, closed-loop training of VLA-based end-to-end motion planners, enabling independent control of ego and traffic agents over multi-step horizons.
     - The two-stage training pipeline combines supervised fine-tuning on latent rollouts with reinforcement learning using global/agent-specific rewards and diversity rewards, achieving state-of-the-art performance on Bench2Drive without external simulators.
