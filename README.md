@@ -58,6 +58,148 @@ format:
   - metrics
 ```
 
+- [LVDrive: Latent Visual Representation Enhanced Vision-Language-Action Autonomous Driving Model](https://arxiv.org/abs/2605.22089)
+  - Xiaodong Mei, Diankun Zhang, Hongwei Xie, Guang Chen, Hangjun Ye, Dan Xu
+  - Publish Date: 2026.05.21
+  - Task: Planning
+  - Datasets: Bench2Drive
+  - Summary：
+    - Introduces a future scene prediction task entirely in high-level latent space under auxiliary supervision from a pretrained vision backbone, avoiding inefficient pixel-level reconstruction.
+    - Jointly models future scene and motion prediction within a unified embedding space, processed in a single forward pass for future-aware reasoning.
+    - Designs a two-stage trajectory decoding strategy that leverages learned latent future representations to refine trajectory generation, achieving significant improvements on the Bench2Drive benchmark.
+
+- [Lost in Fog: Sensor Perturbations Expose Reasoning Fragility in Driving VLAs](https://arxiv.org/abs/2605.21446)
+  - Abhinaw Priyadershi, Jelena Frtunikj
+  - Publish Date: 2026.05.20
+  - Task: Planning
+  - Summary：
+    - Conducted a controlled perturbation study of Vision-Language-Action robustness in autonomous driving, evaluating across 1,996 scenarios under eight sensor perturbations.
+    - Found that reasoning consistency (Chain-of-Causation) is a high-fidelity indicator of trajectory reliability, with trajectory deviation spiking 5.3× when explanations change.
+    - Established CoC consistency as a quantitative proxy for planning safety, motivating reasoning-based runtime monitoring for safer VLA deployment.
+
+- [Distill to Think, Foresee to Act: Cognitive-Physical Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/2605.21139)
+  - Yang Wu, Qiang Meng, Zhaojiang Liu, Youquan Liu, Jian Yang, Jin Xie
+  - Publish Date: 2026.05.20
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - CoPhy, a Cognitive-Physical reinforcement learning framework for autonomous driving, distilling VLM knowledge into BEV encoder and building an auto-regressive world model.
+    - It uses GRPO with a dual-reward mechanism: physical reward from BEV rollouts and cognitive reward from language-aligned scorer.
+    - Achieves state-of-the-art on NAVSIM v1 and v2 benchmarks and enables safer driving via cognitively informed scene compliance.
+
+- [Bridging Structure and Language: Graph-Based Visual Reasoning for Autonomous Road Understanding](https://arxiv.org/abs/2605.20942)
+  - Lena Wild, Katie Z Luo, Marco Pavone
+  - Publish Date: 2026.05.20
+  - Task: Reasoning
+  - Summary：
+    - Introduces Combined Road Substrate (CRS), a graph-grounded framework that integrates geometric road structure and open-vocabulary semantics for structured road reasoning.
+    - Demonstrates that training small vision-language models with as few as 20-80 CRS-enriched scenes yields stable gains in compositional reasoning, revealing that structured supervision is key rather than model scale.
+
+- [VL-DPO: Vision-Language-Guided Finetuning for Preference-Aligned Autonomous Driving](https://arxiv.org/abs/2605.20082)
+  - Zhefan Xu, Ghassen Jerfel, Marina Haliem, Qi Zhao, Jeonhyung Kang, Khaled S. Refaat
+  - Publish Date: 2026.05.19
+  - Task: Planning
+  - Datasets: [Waymo Open End-to-End Driving Dataset](https://waymo.com/open/)
+  - Summary：
+    - VL-DPO leverages a Vision-Language Model as a zero-shot reasoner to automatically generate preference pairs from a pretrained model's rollouts, then finetunes the model via Direct Preference Optimization.
+    - The framework aligns ego-vehicle motion forecasting models with human preferences, achieving an 11.94% increase in rater feedback score and a 10.01% reduction in average displacement error.
+
+- [Beyond Imitation: Learning Safe End-to-End Autonomous Driving from Hard Negatives](https://arxiv.org/abs/2605.19771)
+  - Junli Wang, Zhihua Hua, Xueyi Liu, Zebin Xing, Haochen Tian, Kun Ma, Hangjun Ye, Guang Chen, Long Chen, Qichao Zhang
+  - Publish Date: 2026.05.19
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [HUGSIM](https://hugsim.github.io/)
+  - Summary：
+    - BeyondDrive, a failure-aware imitation learning framework for end-to-end autonomous driving that jointly learns from successful and failed driving behaviors.
+    - Introduces flow matching-based negative trajectory generator to synthesize safety-critical trajectories, diversity-aware sampling to cover diverse failure modes, and Repulsive Distance Loss to establish discriminative safety boundaries.
+    - Achieves 89.7 PDMS on NAVSIMv1 closed-loop benchmark, outperforming prior state-of-the-art, and demonstrates strong zero-shot transferability on HUGSIM.
+
+- [HEAT: Heterogeneous End-to-End Autonomous Driving via Trajectory-Guided World Models](https://arxiv.org/abs/2605.19631)
+  - Hoonhee Cho, Giwon Lee, Jae-Young Kang, Hyemin Yang, Heejun Park, Kuk-Jin Yoon
+  - Publish Date: 2026.05.19
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim), [Waymo](https://waymo.com/open/)
+  - Summary：
+    - Proposes a trajectory-driven learning paradigm that organizes training around planning trajectories to capture domain-invariant representations of driving intent.
+    - Incorporates a world model that predicts future latent features conditioned on ego actions, improving feature consistency and mitigating domain-induced biases.
+    - Demonstrates that a single unified model can be trained on heterogeneous datasets (nuScenes, NAVSIM, Waymo) while maintaining strong performance within each domain.
+
+- [SafeAlign-VLA: A Negative-Enhanced Safe Alignment Framework for Risk-Aware Autonomous Driving](https://arxiv.org/abs/2605.19524)
+  - Kefei Tian, Yuansheng Lian, Kai Yang, Xiangdong Chen, Shen Li
+  - Publish Date: 2026.05.19
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [DeepAccident](https://github.com/DeepAccident/DeepAccident)
+  - Summary：
+    - SafeAlign-VLA introduces a negative-enhanced safe alignment framework for Vision-Language-Action (VLA) models, incorporating negative data into both supervised fine-tuning and reinforcement learning.
+    - A counterfactual safety pairing paradigm generates structured safety labels and counterfactual positive trajectories from risky scenarios, enabling the model to understand risky behaviors and safety boundaries.
+    - Two-stage training is employed: negative-enhanced supervised fine-tuning for failure feedback and trajectory correction, followed by anchor-based group relative policy optimization (AGRO) that uses positive and negative trajectories as contrastive anchors to penalize high-risk behaviors.
+
+- [Xiaomi EV World Model: A Joint World Model Integrating Reconstruction and Generation for Autonomous Driving](https://arxiv.org/abs/2605.18137)
+  - Lijun Zhou, Hongcheng Luo, Zhenxin Zhu, Cheng Chi, Mingfei Tu, Kaixin Xiong, Lei Gong, Zhanqian Wu, Zehan Zhang, Fangzhen Li, Hao Li, Yingying Shen, Jiale He, Haohui Zhu, Shan Zhao, Kai Wang, Zhiwei Zhan, Yuechuan Pu, Kaiyuan Tan, Ruiling Yang, Xianqi Wang, Tianyi Yan, Jiawei Zhou, Lei Zhang, Jingyang Zhao, Xi Zhou, Chitian Sun, Chenming Wu, Jiong Deng, Hongwei Xie, Ming Lu, Kun Ma, Long Chen, Guang Chen, Hangjun Ye, Bing Wang, Haiyang Sun
+  - Publisher: Xiaomi EV
+  - Publish Date: 2026.05.18
+  - Task: End-to-End
+  - Summary：
+    - Proposes a unified technical system for world models in autonomous driving, comprising world representation (WorldRec) and world generation (WorldGen).
+    - WorldRec uses feed-forward reconstruction with sparse scene queries to produce compact 3D Gaussian scene representations, while WorldGen enables high-quality causal video generation with few denoising steps.
+    - The Joint World Model (JWM) integrates both modules to enhance generation stability, cross-frame consistency, and visual fidelity for closed-loop simulation and end-to-end training.
+
+- [GEM: Gaussian Evolution Model for Occupancy Forecasting and Motion Planning](https://arxiv.org/abs/2605.17682)
+  - Cheng Chen, Hao Huang, Saurabh Bagchi
+  - Publish Date: 2026.05.17
+  - Task: Planning
+  - Summary：
+    - Proposes GEM, a Gaussian Evolution Model for non-autoregressive occupancy world modeling, representing driving scenes as explicit continuous 4D Gaussian primitives with learned dynamics.
+    - Enables direct querying of Gaussian world representation at arbitrary timestamps for efficient full-horizon forecasting and supports motion planning by predicting future ego trajectories.
+    - Achieves state-of-the-art future semantic occupancy forecasting and strong motion planning performance with flexible temporal querying.
+
+- [CLAP: Contrastive Latent-space Prompt Optimization for End-to-end Autonomous Driving](https://arxiv.org/abs/2605.17284)
+  - Ruiyang Zhu, Yuehan He, Boyuan Zheng, Zesen Zhao, Ahmad Chalhoub, Qingzhao Zhang, Z. Morley Mao
+  - Publish Date: 2026.05.17
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - CLAP introduces a contrastive latent-space prompt optimization framework for end-to-end autonomous driving, enhancing performance in long-tail scenarios.
+    - The method uses per-roadblock soft prompts optimized via contrastive learning and directionally regularized optimization, improving planning error on challenging frames without regressing normal frames.
+    - Validated on NAVSIM benchmark with various VLA backbones, achieving 24% reduction in challenging scenario planning error.
+
+- [PCASim: Promptable Closed-loop Adversarial Simulation for Urban Traffic Environment](https://arxiv.org/abs/2605.15654)
+  - Chuancheng Zhang, Zhenhao Wang, Kaizheng Li, Yaran Lin, Qiang Guo, Bin Jiang
+  - Publish Date: 2026.05.15
+  - Project Page: [PCASim](https://zhenhaooo.github.io/PCASim.github.io/)
+  - Task: Planning
+  - Summary：
+    - PCASim introduces a promptable closed-loop adversarial simulation framework for urban traffic, integrating rule-based filtering, knowledge retrieval, and large language models to generate safety-critical scenarios.
+    - The framework employs reinforcement learning to train diverse vehicle behaviors, enriching scenario diversity and realism, achieving improvements in domain-specific language accuracy, scenario transformation success rate, and obstacle-avoidance capability.
+
+- [Learning Direct Control Policies with Flow Matching for Autonomous Driving](https://arxiv.org/abs/2605.14832)
+  - Marcello Ceresini, Federico Pirazzoli, Andrea Bertogalli, Lorenzo Cipelli, Filippo D'Addeo, Anthony Dell'Eva, Alessandro Paolo Capasso, Alberto Broggi
+  - Publish Date: 2026.05.14
+  - Project Page: [DirectControlFlowMatching](https://marcelloceresini.github.io/DirectControlFlowMatching)
+  - Task: Planning
+  - Summary：
+    - Presents a flow-matching planner that directly outputs control trajectories (acceleration and curvature) conditioned on a BEV raster, enabling low-latency inference via ODE integration.
+    - Trained on urban simulator data and tested in closed-loop on in-distribution and out-of-distribution scenarios (highways, unseen cities), demonstrating reliable generalization attributed to the BEV representation and flow-matching formulation.
+
+- [EponaV2: Driving World Model with Comprehensive Future Reasoning](https://arxiv.org/abs/2605.14696)
+  - Jiawei Xu, Zhizhou Zhong, Zhijian Shu, Mingkai Jia, Mingxiao Li, Jia-Wang Bian, Qian Zhang, Kaicheng Zhang, Jin Xie, Jian Yang, Wei Yin
+  - Publish Date: 2026.05.14
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes EponaV2, a driving world model that forecasts comprehensive future representations (geometry & semantics) to enhance planning without relying on expensive manual annotation.
+    - Introduces a flow matching group relative policy optimization mechanism, inspired by LLM training, to further improve planning accuracy.
+    - Achieves state-of-the-art performance on three NAVSIM benchmarks among perception-free models.
+
+- [MAPLE: Latent Multi-Agent Play for End-to-End Autonomous Driving](https://arxiv.org/abs/2605.14201)
+  - Rajeev Yasarla, Deepti Hegde, Hsin-Pai Cheng, Shizhong Han, Yunxiao Shi, Meysam Sadeghigooghari, Hanno Ackermann, Litian Liu, Pranav Desai, Fatih Porikli, Mohammad Ghavamzadeh, Hong Cai
+  - Publish Date: 2026.05.13
+  - Task: Planning
+  - Datasets: Bench2Drive
+  - Summary：
+    - MAPLE introduces a latent-space multi-agent rollout framework for reactive, closed-loop training of VLA-based end-to-end motion planners, enabling independent control of ego and traffic agents over multi-step horizons.
+    - The two-stage training pipeline combines supervised fine-tuning on latent rollouts with reinforcement learning using global/agent-specific rewards and diversity rewards, achieving state-of-the-art performance on Bench2Drive without external simulators.
+
 - [MindVLA-U1: VLA Beats VA with Unified Streaming Architecture for Autonomous Driving](https://arxiv.org/abs/2605.12624)
   - Yuzhou Huang, Benjin Zhu, Hengtong Lu, Victor Shea-Jay Huang, Haiming Zhang, Wei Chen, Jifeng Dai, Yan Xie, Hongsheng Li
   - Publish Date: 2026.05.12
