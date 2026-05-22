@@ -108,7 +108,7 @@ format:
   - Junli Wang, Zhihua Hua, Xueyi Liu, Zebin Xing, Haochen Tian, Kun Ma, Hangjun Ye, Guang Chen, Long Chen, Qichao Zhang
   - Publish Date: 2026.05.19
   - Task: Perception, Planning
-  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [HUGSIM](https://hugsim.github.io/)
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - BeyondDrive, a failure-aware imitation learning framework for end-to-end autonomous driving that jointly learns from successful and failed driving behaviors.
     - Introduces flow matching-based negative trajectory generator to synthesize safety-critical trajectories, diversity-aware sampling to cover diverse failure modes, and Repulsive Distance Loss to establish discriminative safety boundaries.
