@@ -58,6 +58,94 @@ format:
   - metrics
 ```
 
+- [SARAD: LLM-Based Safety-Aware Hybrid Reinforcement Learning with Collision Prediction for Autonomous Driving](https://arxiv.org/abs/2605.28583)
+  - Kangyu Wu, Peng Cui, Guoxi Chen, Ya Zhang
+  - Publish Date: 2026.05.27
+  - Task: Planning
+  - Summary：
+    - SARAD substitutes the random exploration of DRL with RAG-enhanced, LLM-guided decisions sourced from a dynamic expert knowledge repository.
+    - An attention discriminator is proposed to integrate the prior knowledge of LLMs into DRL policy optimization.
+    - A collision predictor module, fine-tuned with historical collision data, is further designed to improve vehicle safety.
+
+- [DriveWAM: Video Generative Priors Enable Scalable World-Action Modeling for Autonomous Driving](https://arxiv.org/abs/2605.28544)
+  - Chen Shi, Jinrui Xu, Shaoshuai Shi, Kehua Sheng, Bo Zhang, Li Jiang
+  - Publish Date: 2026.05.27
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - DriveWAM adapts a pretrained video diffusion transformer into an autoregressive video-action policy, preserving video-generation architecture for action generation.
+    - Introduces scene-evolving driving guidance with a frozen VLM for chunk-specific semantic intent, and selective KV memory for bounded long-horizon rollout.
+    - Achieves strong planning performance on NAVSIM and PhysicalAI-Autonomous-Vehicles benchmark, with data-scaling study confirming scaling potential.
+
+- [TPS-Drive: Task-Guided Representation Purification for VLM-based Autonomous Driving](https://arxiv.org/abs/2605.27038)
+  - Jiaxiang Li, Yumao Liu, Ke Ma
+  - Publish Date: 2026.05.26
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes TPS-Drive, a framework centered on Task-Guided Representation Purification to mitigate spatial hallucinations and representation interference in VLM-based autonomous driving.
+    - Introduces an Agent-Centric Tokenizer with task-guided vector quantization, supervised by a frozen 3D detection head, to reallocate codebook capacity from static backgrounds to dynamic agents.
+    - Optimized via a progressive three-stage training paradigm with reward-driven refinement, achieving state-of-the-art safety on NAVSIM benchmarks and reduced collision rates in nuScenes.
+
+- [Decision-Making with Lightweight Confidence-Aware Language Model for Autonomous Driving](https://arxiv.org/abs/2605.25393)
+  - Ruoyu Yao, Ruiguo Zhong, Pei Liu, Mingxing Peng, Rui Yang, Jun Ma
+  - Publish Date: 2026.05.25
+  - Task: Planning
+  - Datasets: [nuPlan](https://github.com/motional/nuplan-devkit)
+  - Summary：
+    - Proposes a lightweight confidence-aware language model for autonomous driving decision-making, leveraging a multi-agent collaborative workflow for demonstration generation.
+    - Employs confidence-aware fine-tuning with Retrieval Augmented Generation (RAG) to distill knowledge into a dual-head lightweight model.
+    - Achieves state-of-the-art success rates on the nuPlan benchmark while maintaining low inference latency.
+
+- [PEDESTRIANQA: A Benchmark for Vision-Language Models on Pedestrian Intention and Trajectory Prediction](https://arxiv.org/abs/2605.24562)
+  - Naman Mishra, Shankar Gangisetty, C. V. Jawahar
+  - Publish Date: 2026.05.23
+  - Task: Prediction
+  - Datasets: PedestrianQA
+  - Summary：
+    - Introduces PedestrianQA, a large-scale video-based dataset that formulates pedestrian intention and trajectory prediction as question-answering tasks with structured rationales.
+    - Demonstrates that finetuning state-of-the-art VLMs on PedestrianQA significantly improves intention classification, trajectory forecasting accuracy, and the quality of explanatory rationales.
+
+- [SparseWorld: Enhancing End-to-End Autonomous Driving via World Models with Sparse Scene Representation](https://arxiv.org/abs/2605.24354)
+  - Ruoyu Wang, Jingke Wang, Yukai Ma, Yuehao Huang, Shuangming Lei, Guanglin Xu, Aixue Ye, Yong Liu
+  - Publish Date: 2026.05.23
+  - Project Page: [SparseWorld](https://wryzju.github.io/SparseWorld/)
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/), Bench2Drive
+  - Summary：
+    - Proposes SparseWorld, a lightweight world model that predicts only critical scene layout via autoregressive rollout of future map elements and agents, reducing computational cost.
+    - Uses a Sparse Dreamer with joint temporal-spatial attention to anticipate future instances, refining motion prediction and trajectory planning.
+    - Achieves state-of-the-art open-loop planning on nuScenes (0.05% collision rate) and significantly outperforms baselines in closed-loop on Bench2Drive.
+
+- [D2-V2X: Depth-Driven Cooperative V2X Reasoning for Autonomous Driving](https://arxiv.org/abs/2605.24098)
+  - Kevin Richard, Alphin Varghese, Colin Pham, David Oh, Srijan Das
+  - Publish Date: 2026.05.22
+  - Code: [D2-V2X](https://github.com/KevinRichard1/D2-V2X)
+  - Task: Reasoning
+  - Datasets: [D2-V2X](https://github.com/KevinRichard1/D2-V2X)
+  - Summary：
+    - Introduces D2-V2X, a spatially-aware Question-Rationale-Answer (QRA) benchmark with 8,500 triplets from multimodal vehicle and infrastructure sensors.
+    - Establishes a baseline that aligns 3D LiDAR features with VLM latent space, using Chain-of-Thought rationales to explicitly articulate spatial relations, achieving 24.4% recall in identifying occluded hazards and reducing spatial estimation error by 77%.
+
+- [ChainFlow-VLA: Causal Flow Planning with Vision-Language Models](https://arxiv.org/abs/2605.23270)
+  - Xiyang Wang, Xinlin Wang, Tingguang Zhou, Gong Chen, Xingtai Gui, Zhi Xu, Xiaolei Wu, Feiyang Tan, Hangning Zhou, Mu Yang
+  - Publish Date: 2026.05.22
+  - Code: [ChainFlow-VLA](https://github.com/AFARI-Research/ChainFlow-VLA)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - ChainFlow-VLA unifies causal generation and global refinement within a unified probabilistic framework for end-to-end autonomous driving.
+    - It formulates planning as a mixture over AR-induced modes and learns VLM-conditioned residual distributions, achieving robust planning in ambiguous and long-tail scenarios.
+    - The approach achieves a state-of-the-art score of 94.85 on the NAVSIM v1 leaderboard, matching human-level performance.
+
+- [DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving](https://arxiv.org/abs/2605.23176)
+  - Hao Vo, Khoa Vo, Phu Loc Nguyen, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Gladys Gawugah, Sreevenkata Anjani Tishita Godavarthi, Chase Rainwater, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le
+  - Publish Date: 2026.05.22
+  - Task: VQA
+  - Summary：
+    - DriveSpatial is a benchmark of 15.6K human-verified QA pairs across 20 tasks from five large-scale AD datasets, evaluating four abilities: Cognitive Scene Construction, Multi-view Relational Understanding, Temporal Reasoning, and Generalization.
+    - It reveals a substantial human-model gap, with the strongest model trailing humans by 28.4 points, and shows that explicit BEV grounding consistently improves performance, indicating current VLMs lack the scene-construction ability needed for reliable spatiotemporal driving intelligence.
+
 - [LVDrive: Latent Visual Representation Enhanced Vision-Language-Action Autonomous Driving Model](https://arxiv.org/abs/2605.22089)
   - Xiaodong Mei, Diankun Zhang, Hongwei Xie, Guang Chen, Hangjun Ye, Dan Xu
   - Publish Date: 2026.05.21
