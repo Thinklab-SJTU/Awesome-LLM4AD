@@ -61,7 +61,7 @@ format:
 - [SARAD: LLM-Based Safety-Aware Hybrid Reinforcement Learning with Collision Prediction for Autonomous Driving](https://arxiv.org/abs/2605.28583)
   - Kangyu Wu, Peng Cui, Guoxi Chen, Ya Zhang
   - Publish Date: 2026.05.27
-  - Task: Planning
+  - Task: Prediction, Planning
   - Summary：
     - SARAD substitutes the random exploration of DRL with RAG-enhanced, LLM-guided decisions sourced from a dynamic expert knowledge repository.
     - An attention discriminator is proposed to integrate the prior knowledge of LLMs into DRL policy optimization.
@@ -80,7 +80,7 @@ format:
 - [TPS-Drive: Task-Guided Representation Purification for VLM-based Autonomous Driving](https://arxiv.org/abs/2605.27038)
   - Jiaxiang Li, Yumao Liu, Ke Ma
   - Publish Date: 2026.05.26
-  - Task: Planning
+  - Task: Perception, Planning
   - Datasets: [nuScenes](https://www.nuscenes.org/), [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - Proposes TPS-Drive, a framework centered on Task-Guided Representation Purification to mitigate spatial hallucinations and representation interference in VLM-based autonomous driving.
@@ -91,7 +91,7 @@ format:
   - Ruoyu Yao, Ruiguo Zhong, Pei Liu, Mingxing Peng, Rui Yang, Jun Ma
   - Publish Date: 2026.05.25
   - Task: Planning
-  - Datasets: [nuPlan](https://github.com/motional/nuplan-devkit)
+  - Datasets: [nuPlan](https://www.nuscenes.org/nuplan)
   - Summary：
     - Proposes a lightweight confidence-aware language model for autonomous driving decision-making, leveraging a multi-agent collaborative workflow for demonstration generation.
     - Employs confidence-aware fine-tuning with Retrieval Augmented Generation (RAG) to distill knowledge into a dual-head lightweight model.
@@ -100,8 +100,7 @@ format:
 - [PEDESTRIANQA: A Benchmark for Vision-Language Models on Pedestrian Intention and Trajectory Prediction](https://arxiv.org/abs/2605.24562)
   - Naman Mishra, Shankar Gangisetty, C. V. Jawahar
   - Publish Date: 2026.05.23
-  - Task: Prediction
-  - Datasets: PedestrianQA
+  - Task: Evaluation
   - Summary：
     - Introduces PedestrianQA, a large-scale video-based dataset that formulates pedestrian intention and trajectory prediction as question-answering tasks with structured rationales.
     - Demonstrates that finetuning state-of-the-art VLMs on PedestrianQA significantly improves intention classification, trajectory forecasting accuracy, and the quality of explanatory rationales.
@@ -111,7 +110,7 @@ format:
   - Publish Date: 2026.05.23
   - Project Page: [SparseWorld](https://wryzju.github.io/SparseWorld/)
   - Task: Planning
-  - Datasets: [nuScenes](https://www.nuscenes.org/), Bench2Drive
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Proposes SparseWorld, a lightweight world model that predicts only critical scene layout via autoregressive rollout of future map elements and agents, reducing computational cost.
     - Uses a Sparse Dreamer with joint temporal-spatial attention to anticipate future instances, refining motion prediction and trajectory planning.
@@ -121,8 +120,7 @@ format:
   - Kevin Richard, Alphin Varghese, Colin Pham, David Oh, Srijan Das
   - Publish Date: 2026.05.22
   - Code: [D2-V2X](https://github.com/KevinRichard1/D2-V2X)
-  - Task: Reasoning
-  - Datasets: [D2-V2X](https://github.com/KevinRichard1/D2-V2X)
+  - Task: Evaluation
   - Summary：
     - Introduces D2-V2X, a spatially-aware Question-Rationale-Answer (QRA) benchmark with 8,500 triplets from multimodal vehicle and infrastructure sensors.
     - Establishes a baseline that aligns 3D LiDAR features with VLM latent space, using Chain-of-Thought rationales to explicitly articulate spatial relations, achieving 24.4% recall in identifying occluded hazards and reducing spatial estimation error by 77%.
@@ -141,7 +139,7 @@ format:
 - [DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving](https://arxiv.org/abs/2605.23176)
   - Hao Vo, Khoa Vo, Phu Loc Nguyen, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Gladys Gawugah, Sreevenkata Anjani Tishita Godavarthi, Chase Rainwater, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le
   - Publish Date: 2026.05.22
-  - Task: VQA
+  - Task: Evaluation
   - Summary：
     - DriveSpatial is a benchmark of 15.6K human-verified QA pairs across 20 tasks from five large-scale AD datasets, evaluating four abilities: Cognitive Scene Construction, Multi-view Relational Understanding, Temporal Reasoning, and Generalization.
     - It reveals a substantial human-model gap, with the strongest model trailing humans by 28.4 points, and shows that explicit BEV grounding consistently improves performance, indicating current VLMs lack the scene-construction ability needed for reliable spatiotemporal driving intelligence.
