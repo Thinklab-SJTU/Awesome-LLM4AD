@@ -5235,3 +5235,7 @@ to obtain BEV features.
 ## License
 
 Awesome LLM for Autonomous Driving Resources is released under the Apache 2.0 license.
+
+
+- [OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor) — Real-time monitoring dashboard for OpenClaw AI agents with token tracking, session management, and 7-day trend charts. [#2](https://github.com/flik2002/openclaw-monitor)
+
