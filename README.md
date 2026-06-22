@@ -62,7 +62,7 @@ format:
   - Shihao Ji, HongXi Li, Zihui Song, Mingyu Li
   - Publish Date: 2026.06.18
   - Task: Planning
-  - Datasets: [nuScenes](https://www.nuscenes.org/), CODA
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Proposes Lagrange, an open-vocabulary computationally sparse driving framework using Masked Latent Fields, leveraging Vision-Language Models to encode class-agnostic object proposals into continuous semantic visual tokens.
     - Introduces an intent-driven masked cross-attention module that temporally filters irrelevant entities and decodes attended tokens into an implicit continuous energy field defined over spatial coordinates.
