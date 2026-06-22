@@ -58,15 +58,6 @@ format:
   - metrics
 ```
 
-- [Agentic AutoResearch for Space Autonomy: An Auditable, LLM-Driven Research Agent for Aerospace Control Problems](https://arxiv.org/abs/2606.20394v1)
-  - Amit Jain, Richard Linares
-  - Publish Date: 2026.06.18
-  - Task: Planning
-  - Summary：
-    - AutoResearch is an LLM-driven research agent that autonomously develops control policies for aerospace problems, with a built-in credibility layer that certifies each reported result against seed noise.
-    - The framework iteratively reads problem descriptions and run history, proposes single edits to training scripts, executes them, and logs outcomes, requiring results to pass three verification checks.
-    - Demonstrated on Clohessy-Wiltshire relative rendezvous and collision-avoidance docking problems, where the learned policy significantly outperforms undirected search and passes seed noise tests by many standard deviations.
-
 - [Lagrange: An Open-Vocabulary, Energy-Based Sparse Framework for Generalized End-to-End Driving](https://arxiv.org/abs/2606.20274)
   - Shihao Ji, HongXi Li, Zihui Song, Mingyu Li
   - Publish Date: 2026.06.18
@@ -77,17 +68,10 @@ format:
     - Introduces an intent-driven masked cross-attention module that temporally filters irrelevant entities and decodes attended tokens into an implicit continuous energy field defined over spatial coordinates.
     - Frames decision-making as a Lagrangian action minimization problem spanning this energy field, enforcing compliance with vehicle kinematics while executing collision avoidance.
 
-- [EventDrive: Event Cameras for Vision-Language Driving Intelligence](http://arxiv.org/abs/2606.18242v1)
-  - Dongyue Lu, Rong Li, Ao Liang, Lingdong Kong, Wei Yin, Lai Xing Ng, Benoit R. Cottereau, Camille Simon Chane, Wei Tsang Ooi
-  - Publish Date: 2026.06.16
-  - Task: Planning
-  - Summary：
-    - 
-
 - [OmniDrive: An LLM-Choreographed Multi-Agent World Model with Unified Latent Co-Compression for Multi-View Driving Video Generation](https://arxiv.org/abs/2606.17536)
   - Zijie Meng, Yufei Liu, Chengqian Ma, Zhiyu Li, Jiyuan Liu, Wenhua Nie, Bingcai Wei, Shuqin Chen, Weichen Xu, Jiquan Yuan, Miao Zhang
   - Publish Date: 2026.06.16
-  - Task: Video Generation
+  - Task: Generation
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Presents DRIVE-CHOREO, an LLM-choreographed multi-agent world model that recasts controllable multi-view video generation as latent choreography, using three Qwen2.5-VL agents for intent parsing, spatial grounding, and cross-view critique.
@@ -96,17 +80,10 @@ format:
 - [DriveJudge: Rethinking Autonomous Driving Evaluation with Vision-Language Models](https://arxiv.org/abs/2606.17362)
   - Xinglong Sun, Kevin Xie, Jenny Schmalfuss, Despoina Paschalidou, Xiuming Zhang, Sanja Fidler, Kashyap Chitta, Jose M. Alvarez
   - Publish Date: 2026.06.15
-  - Task: Reasoning
+  - Task: Evaluation
   - Summary：
     - DriveJudge is a driving evaluation agent that combines rule-grounded evaluation with Vision-Language Model (VLM) reasoning, selectively invoking physically-grounded deterministic rule functions after interpreting environmental context.
     - It introduces two human-aligned benchmark tasks: Driving Quality Classification and Trajectory Preference Selection, and outperforms existing methods like EPDMS and DriveCritic.
-
-- [Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation](http://arxiv.org/abs/2606.17030v3)
-  - Jie Zhang, Xiaoyue Chen, Anzhe Chen, Dayiheng Liu, Deqing Li, Gengze Zhou, Hale Yin, Haoqi Yuan, Haoyang Li, Jiahao Li, Jiazhao Zhang, Jingren Zhou, Kaiyuan Gao, Kun Yan, Lihan Jiang, Ningyuan Tang, Pei Lin, Qihang Peng, Shengming Yin, Tianhe Wu, Tianyi Yan, Xiao Xu, Yan Shu, Yanran Zhang, Ye Wang, Yi Wang, Yilei Chen, Yixian Xu, Yiyang Huang, Yuxiang Chen, Zekai Zhang, Zhendong Wang, Zixing Lei, Zhixuan Liang, Zihao Liu, Zikai Zhou, Chenxu Lv, Xiong-Hui Chen, Chenfei Wu
-  - Publish Date: 2026.06.15
-  - Task: Planning
-  - Summary：
-    - 
 
 - [HOLO-MPPI: Multi-Scenario Motion Planning via Hierarchical Policy Optimization](https://arxiv.org/abs/2606.16480)
   - Youngjae Min, Jovin D'sa, Faizan M. Tariq, David Isele, Navid Azizan, Sangjae Bae
@@ -121,7 +98,7 @@ format:
   - Ziying Song, Caiyan Jia, Lin Liu, Lei Yang, Shengkai Zhang, Feiyang Jia, Fengda Zhao, Peiliang Wu, Shaoqing Xu, Chen Lv, Yadan Luo
   - Publish Date: 2026.06.15
   - Task: Planning
-  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/), Bench2Drive
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Proposes GraphWorld, an E2E-AD framework that enhances long-horizon planning through latent world modeling.
     - Introduces Ego-Centric Interaction Graph and World-State-Conditioned Planning to model interactions and safety-aware trajectory planning.
@@ -136,15 +113,6 @@ format:
     - It uses a Context-Forced DMD architecture combining continuous flow-matching with a self-correcting distillation objective to achieve interactive speeds of 12 FPS.
     - It supports downstream applications: generative closed-loop evaluation, large-scale RL post-training via a Video2Reward module, and real-time human-in-the-loop simulation.
 
-- [Self-Driving Negotiator: An interactive, verifiable benchmark for social negotiation and theory of mind under hidden intent](https://arxiv.org/abs/2606.15139)
-  - Ashutosh Kumar
-  - Publish Date: 2026.06.13
-  - Task: Planning
-  - Summary：
-    - Self-Driving Negotiator is a text-only, multi-turn benchmark for social negotiation in driving, requiring hidden intent inference.
-    - Agents generate driving actions; evaluation uses privileged simulator state, not model explanations.
-    - Current models underperform: best success rate 0.68, with contested merge being challenging.
-
 - [ParkingTransformer: LLM-Enhanced End-to-End Trajectory Planning for Autonomous Parking](https://arxiv.org/abs/2606.17082)
   - Hauteng Wu, Xu Li, Dong Kong, Zihang Wang, Xieyuanli Chen, Benwu Wang, Wenkai Zhu
   - Publish Date: 2026.06.12
@@ -157,7 +125,7 @@ format:
 - [ReactSim-Bench: Benchmarking Reactive Behavior World Model Simulation in Autonomous Driving](https://arxiv.org/abs/2606.14058)
   - Zhiyuan Zhang, Yanlun Peng, Jianing Zhang, Xianda Guo, Zehan Huang, Haoran Liu, Qifeng Li, Shaofeng Zhang, Xiaosong Jia, Junchi Yan
   - Publish Date: 2026.06.12
-  - Task: Prediction
+  - Task: Evaluation
   - Summary：
     - Introduces ReactSim-Bench, a benchmark for evaluating reactive capability of behavior world model simulation in autonomous driving, with decoupled agent and AV control using AV behaviors differing from the log.
     - Evaluates safety and rule compliance through collision, map-based, and kinematic feasibility metrics.
@@ -180,45 +148,20 @@ format:
     - A comprehensive survey of multi-agent embodied autonomous driving through the lens of Shared World Models (SWMs), covering V2X communication, collaborative perception, inter-agent cognition, cooperative planning, end-to-end cooperative driving, and simulation.
     - Identifies key research priorities for multi-agent embodied autonomous driving, including verifiable shared-state maintenance, robust intent and plan alignment, and safe coordinated action under communication, latency, and deployment constraints.
 
-- [VISA: VLM-Guided Instance Semantic Auditing for 3D Occupancy World Models](https://arxiv.org/abs/2606.13460)
-  - Ruiqi Xian, Yuehan Xian, Jing Liang, Xuewei Qi, Dinesh Manocha
-  - Publish Date: 2026.06.11
-  - Task: Perception
-  - Datasets: [nuScenes](https://www.nuscenes.org/)
-  - Summary：
-    - VISA proposes a training-time semantic auditing approach for existing occupancy world models using an offline VLM to improve closed
-
-- [A Tutorial on World Models and Physical AI](https://arxiv.org/abs/2606.12783)
-  - Il-Seok Oh
-  - Publish Date: 2026.06.11
-  - Task: Reasoning
-  - Summary：
-    - Introduces explicit and implicit world models as complementary paradigms for Physical AI, enabling prediction, reasoning, and decision-making.
-    - Discusses challenges in hierarchical reasoning, long-horizon planning, and autonomous goal formation toward AGI.
-
 - [VLADriveBench: Evaluating CoT-Action Relationship in VLA for Autonomous Driving](https://arxiv.org/abs/2606.12706)
   - Thach Nguyen, Danhua Guo, Tom Lampo, Fei Wu, Burhan Yaman
   - Publish Date: 2026.06.10
-  - Task: Planning
+  - Task: Evaluation
   - Summary：
     - VLADriveBench is a framework for evaluating the relationship between chain-of-thought (CoT) reasoning and driving actions in Vision-Language-Action models.
     - It introduces observational metrics (mentioning, hallucination, contradiction, action alignment) combined with a CoT intervention protocol to provide complementary views of the CoT-action relationship.
     - Findings show that high observational alignment does not guarantee causal CoT, and visual salience gates the extent of CoT influence.
 
-- [From Imitation to Alignment: Human-Preference Flow Policies for Long-Horizon Sidewalk Navigation](https://arxiv.org/abs/2606.12603)
-  - Honglin He, Zhizheng Liu, Yukai Ma, Bolei Zhou
-  - Publish Date: 2026.06.10
-  - Task: Navigation
-  - Summary：
-    - Introduces FlowPilot, a mapless navigation policy using anchored flow matching as action representation for pre-training on large-scale robot fleet data.
-    - Proposes a human-in-the-loop preference learning scheme to align the policy with human preferences, enhancing counterfactual reasoning and social compliance on sidewalks.
-    - Achieves robust navigation performance with a monocular RGB camera, demonstrating significant improvements in success rate and reduction in intervention rates in real-world experiments.
-
 - [VLGA: Vision-Language-Geometry-Action Models for Autonomous Driving](https://arxiv.org/abs/2606.12396)
   - Jin Yao, Dhruva Dixith Kurra, Tom Lampo, Zezhou Cheng, Danhua Guo, Burhan Yaman
   - Publish Date: 2026.06.10
   - Task: Planning
-  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://bench2drive.github.io/)
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Introduces geometry as a fourth modality (per-pixel pointmap) alongside vision, language, and action, supervised via a regression loss against LiDAR.
     - Achieves state-of-the-art open-loop results on nuScenes (0.50 m L2 error, 0.18% collision rate) and closed-loop driving score of 79.08 on Bench2Drive.
@@ -227,7 +170,7 @@ format:
   - Zhongyu Xia, Wenhao Chen, Yongtao Wang, Ming-Hsuan Yang
   - Publish Date: 2026.06.10
   - Task: Planning
-  - Datasets: [nuScenes](https://www.nuscenes.org/), Bench2Drive
+  - Datasets: [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - Proposes DrivingAgent, a novel agent framework with two phases: a design phase that automates module development by interpreting system architecture and generating code, and a scheduling phase that uses a lightweight LLM trained with reinforcement learning for dynamic real-time orchestration supported by structured memory.
     - Achieves a superior speed-accuracy trade-off on both the nuScenes and Bench2Drive benchmarks, demonstrating effective system design and scheduling for autonomous driving.
@@ -236,27 +179,10 @@ format:
   - Everett Richards
   - Publish Date: 2026.06.10
   - Task: Perception
-  - Datasets: [BDD100K](https://bdd100k.com/)
   - Summary：
     - Studies the relationship between corruption-induced embedding drift and task-aligned hazard score (margin drift) using CLIP-based VLMs for autonomous driving hazard detection.
     - Finds that the correlation is corruption-dependent, with some corruptions causing hazardous decision instability despite small embedding changes.
     - Highlights asymmetric failure modes: most corruptions lead to false negatives (missed hazards), while occlusion triggers false alarms, emphasizing the need for task-aligned robustness benchmarks.
-
-- [AutoMine Solution for AV2 2026 Scenario Mining Challenge](https://arxiv.org/abs/2606.11874)
-  - Songliang Cao, Jiele Zhao, Yuru Wang, Hao Li, Daqi Liu, Zehan Zhang, Fangzhen Li, Yu Wang, Yue Zhang, Bing Wang, Guang Chen, Hao Lu, Hangjun Ye
-  - Publish Date: 2026.06.10
-  - Datasets: [Argoverse 2](https://www.argoverse.org/)
-  - Summary：
-    - AutoMine, a robust self-refining scenario mining method based on LLMs and VLMs, designed for extracting high-value, safety-critical scenarios from large-scale driving logs.
-    - Uses semantics-preserving prompt augmentation, combines robust trajectory atomic functions with VLM-based functions, and refines code through execution feedback from real logs.
-    - Achieves HOTA-Temporal score of 36.38 and Timestamp BA score of 77.21 on the Argoverse 2 Scenario Mining Competition at CVPR 2026.
-
-- [Monte Carlo Pass Search: Using Trajectory Generation for 3D Counterfactual Pass Evaluation in Football](http://arxiv.org/abs/2606.11120v1)
-  - Andrew Kang, Priya Narasimhan
-  - Publish Date: 2026.06.09
-  - Task: Planning
-  - Summary：
-    - 
 
 - [Language-Driven Cost Optimization for Autonomous Driving](https://arxiv.org/abs/2606.10974)
   - Diego Martinez-Baselga, Khaled Mustafa, Javier Alonso-Mora
@@ -269,7 +195,7 @@ format:
 - [Where Does the Answer Come From? Benchmarking View-Level Visual Evidence Identification in Multi-View MLLMs for Autonomous Driving](https://arxiv.org/abs/2606.09644)
   - Yimu Wang, Yee Man Choi, Barry Zhang, Mozhgan Nasr Azadani, Sean Sedwards, Krzysztof Czarnecki
   - Publish Date: 2026.06.08
-  - Task: Reasoning
+  - Task: Generation
   - Datasets: [nuScenes](https://www.nuscenes.org/)
   - Summary：
     - Introduces a benchmark for evaluating evidence-source identification in multi-view MLLMs for autonomous driving, requiring models to identify the supporting camera view and answer the question.
@@ -290,7 +216,7 @@ format:
   - Publish Date: 2026.06.07
   - Code: [BLUE](https://github.com/George-Ling3/BLUE)
   - Task: Planning
-  - Datasets: [Bench2Drive](https://bench2drive.org/), [Longest6 v2](https://leaderboard.carla.org/)
+  - Datasets: [Bench2Drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
     - BLUE employs a lightweight gate that decides per frame whether to generate language or predict actions, reducing unnecessary computation.
     - It achieves state-of-the-art performance on Bench2Drive (76.2% success rate) and Longest6 v2 (36 driving score) with a 2.54x inference speedup.
@@ -299,7 +225,7 @@ format:
 - [DriveReward: A Comprehensive Dataset and Generative Vision-Language Reward Model for Autonomous Driving](https://arxiv.org/abs/2606.08525)
   - Qimao Chen, Fang Li, Yuechen Luo, Zehan Zhang, Haiyang Sun, Fangzhen Li, Bing Wang, Guang Chen, Yang Ji, Jiong Deng, Hongwei Xie, Hangjun Ye, Long Chen, Yi Zhang
   - Publish Date: 2026.06.07
-  - Task: Planning
+  - Task: Evaluation
   - Summary：
     - Introduces DriveReward, a reasoning trajectory evaluation dataset with counterfactual driving behaviors for autonomous driving.
     - Proposes a specialized 1B Vision-Language Reward Model that outperforms larger VLMs on task-specific reward alignment.
@@ -308,7 +234,7 @@ format:
 - [LUNA-AD: Lightweight Uncertainty-Aware Language Model with Lifelong Learning for Autonomous Driving](https://arxiv.org/abs/2606.08470)
   - Ruoyu Yao, Pei Liu, Ruiguo Zhong, Mingxing Peng, Rui Yang, Jun Ma
   - Publish Date: 2026.06.07
-  - Task: Planning
+  - Task: Perception
   - Datasets: [nuPlan](https://www.nuplan.org/)
   - Summary：
     - Proposes LUNA-AD, a lightweight uncertainty-aware language model with lifelong learning for autonomous driving, featuring a tri-system architecture that reconciles complex multimodal behavioral reasoning, efficient deployment, and continual refinement.
@@ -333,23 +259,6 @@ format:
     - Jointly trains world modeling, world-policy modeling, and policy modeling through multi-task and multi-stage pretraining, enabling action-conditioned future prediction to support policy generation.
     - Decomposes policy generation into hierarchical decision prediction and parallel action-token editing, achieving strong planning performance with support for controllable future generation, counterfactual evaluation, and efficient parallel decoding.
 
-- [Output Type Before Quality: A Standards-Derived XAI Admissibility Rubric for Autonomous-Driving Safety](https://arxiv.org/abs/2606.05461)
-  - Abhinaw Priyadershi, Mandar Pitale, Jelena Frtunikj, Maria Spence
-  - Publish Date: 2026.06.03
-  - Task: Reasoning
-  - Summary：
-    - Introduces a standards-derived rubric with 19 testable evidentiary criteria across 7 lifecycle stages to evaluate XAI methods for autonomous driving safety.
-    - Identifies causal XAI as structurally required for three stages (hazard identification, incident investigation, data management) and demonstrates the evidence-type gap with a case study.
-    - Provides a proof-of-concept on real-world driving clips, showing consistency between predicted and observed output types.
-
-- [OVO-S-Bench: A Hierarchical Benchmark for Streaming Spatial Intelligence in Multimodal LLMs](https://arxiv.org/abs/2606.03890)
-  - Yifei Li, Pengyiang Liu, Yuhang Zang, Zhongyue Shi, Qi Fu, Hongye Hao, Jiwen Lu
-  - Publish Date: 2026.06.02
-  - Task: Reasoning
-  - Summary：
-    - Introduces OVO-S-Bench, a fully human-annotated benchmark for streaming spatial intelligence, comprising 1,680 questions over 348 source videos with 804 person-hours of quality assurance.
-    - Evaluates 38 open-source and proprietary MLLMs, revealing a 27-point gap to human experts (59.2 vs. 86.6), with allocentric mapping as the dominant bottleneck.
-
 - [EvoDrive: Pareto Evolution for Safety-Critical Autonomous Driving via Self-Improving LLM Agents](https://arxiv.org/abs/2606.03678)
   - Tong Nie, Yuewen Mei, Yihong Tang, Junlin He, Jie Deng, Jian Sun, Wei Ma
   - Publish Date: 2026.06.02
@@ -362,7 +271,7 @@ format:
   - NVIDIA, :, Aarti Basant, Amlan Kar, Despoina Paschalidou, Fangyin Wei, Francesco Ferroni, Guillermo Garcia Cobo, Haithem Turki, Huan Ling, Jaewoo Seo, James Lucas, Jay Zhangjie Wu, Jialiang Wang, Jonathan Lorraine, Jun Gao, Kai He, Katarina Tothova, Kevin Xie, Michał Tyszkiewicz, Qi Wu, Riccardo de Lutio, Ruilong Li, Sanja Fidler, Seung Wook Kim, Tianchang Shen, Tianshi Cao, Tobias Pfaff, William Lew, Xindi Wu, Xuanchi Ren, Yifan Lu, Yuxuan Zhang, Zan Gojcic, Zian Wang
   - Publisher: NVIDIA
   - Publish Date: 2026.06.02
-  - Task: Simulation
+  - Task: Generation
   - Summary：
     - OmniDreams is a foundation generative world model mid- and post-trained from the Cosmos diffusion model to autoregressively generate action-conditioned videos in real time for closed-loop autonomous vehicle simulation.
     - It synthesizes complex unobserved phenomena such as extreme weather and unpredictable dynamic agent behaviors, and acts as a responsive, reactive environment for training and evaluating driving policies.
@@ -370,8 +279,7 @@ format:
 - [GeoDrive-Bench: Benchmarking Region-Specific Multimodal Reasoning in Autonomous Driving](https://arxiv.org/abs/2606.02774)
   - Yingzi Ma, Chaowei Xiao, Ming Jiang
   - Publish Date: 2026.06.01
-  - Task: Reasoning
-  - Datasets: GeoDrive-Bench
+  - Task: Evaluation
   - Summary：
     - Introduces GeoDrive-Bench, a benchmark with 5,053 human-validated QA pairs across six countries to evaluate VLMs' geo-culturally grounded driving reasoning.
     - Covers four driving tasks: perception, prediction, planning, and region reasoning, requiring models to infer correct behavior from visual evidence and local conventions.
@@ -380,22 +288,11 @@ format:
 - [Unified Driving Tokens: Representation- and Geometry-Guided Discrete Tokenizer for Driving World Models and Planning](https://arxiv.org/abs/2606.01935)
   - Ziyang Yao, Zeyu Zhu, YunCheng Jiang, Zibin Guo, Huijing Zhao
   - Publish Date: 2026.06.01
-  - Task: Planning
+  - Task: Perception, Planning
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - Presents a representation-guided and geometry-enhanced discrete tokenizer for driving world models and planning, learning tokens under joint supervision.
     - Aligns discrete bottleneck with frozen DINO features for representation consistency while preserving appearance, and injects geometric cues via depth and pose supervision.
-
-- [Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends](https://arxiv.org/abs/2606.01164)
-  - Jiuming Liu, Chaojun Ni, Mengmeng Liu, Chensheng Peng, Fangjinhua Wang, Sitian Shen, Marc Pollefeys, Masayoshi Tomizuka, Ayush Tewari, Per Ola Kristensson
-  - Publish Date: 2026.05.31
-  - Project Page: [Awesome-Interactive-World-Model](https://github.com/liujiuming123/Awesome-Interactive-World-Model)
-  - Code: [Awesome-Interactive-World-Model](https://github.com/liujiuming123/Awesome-Interactive-World-Model)
-  - Task: Prediction
-  - Summary：
-    - Provides a systematic review of interactive world modeling, covering recent trends, technical developments, and evaluation benchmarks.
-    - Discusses key challenges including action-conditioned controllability, long-horizon interactions and memory, and real-time interactivity.
-    - Highlights applications in open-world exploration, game engines, autonomous driving, and robotics.
 
 - [DriveAnchor: Progressive Anchor-based Flow Learning for Autonomous Driving Planning](https://arxiv.org/abs/2606.00519)
   - Limin Yan, Haoyun Tang, Yutao Qiu, Hongqing Liu, Haoyu Xu
@@ -410,7 +307,7 @@ format:
   - Junwon Seo, Sushant Veer, Ran Tian, Wenhao Ding, Apoorva Sharma, Karen Leung, Edward Schmerling, Marco Pavone, Andrea Bajcsy
   - Publish Date: 2026.05.29
   - Project Page: [StressDream](https://junwon.me/StressDream/)
-  - Task: Planning
+  - Task: Evaluation
   - Summary：
     - StressDream steers video world model imaginations toward high-impact yet plausible outcomes by optimizing initial noise of diffusion-based world models.
     - It uses a semantic objective with a Vision-Language Model and a plausibility objective to avoid out-of-distribution noise.
@@ -428,7 +325,7 @@ format:
 - [IDOL: Inverse-Dynamics-Guided Future Prediction for End-to-End Autonomous Driving](https://arxiv.org/abs/2605.31476)
   - Chenghao Zhang, Timin Li, Dongmei Li
   - Publish Date: 2026.05.29
-  - Task: Planning
+  - Task: Prediction
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - IDOL proposes an inverse-dynamics-guided future prediction framework for world-model-based end-to-end planning in latent BEV space.
@@ -438,7 +335,7 @@ format:
 - [Before Parc Fermé: RL-Time Pruning for Efficient Embodied LLMs in Autonomous Driving](https://arxiv.org/abs/2605.31256)
   - Luca Benfenati, Ali Azimi, Matteo Risso, Fabio Carapellese, Daniele Jahier Pagliari, Alessio Burrello
   - Publish Date: 2026.05.29
-  - Task: Planning
+  - Task: Reasoning
   - Summary：
     - Proposes BPF, a pruning strategy performed during reinforcement learning to compress embodied LLM controllers, allowing pruning decisions to account for task-specific supervision and closed-loop feedback.
     - Introduces two variants: BPF-RL and BPF-SFT/RL, which iteratively prune at different training stages to achieve target compression ratios.
@@ -447,7 +344,7 @@ format:
 - [Does Visual Information Play a Decisive Role in Vision-Language-Action Model Driving Behavior?](https://arxiv.org/abs/2605.31041)
   - Jingtao He, Hongliang Lu, Xiaoyun Qiu, Yixuan Wang, Xinhu Zheng
   - Publish Date: 2026.05.29
-  - Task: Planning
+  - Task: Perception
   - Summary：
     - Introduces a structured multi-level visual perturbation framework to analyze visual-behavior dependency in VLA-based driving models.
     - Framework organizes controlled visual perturbations along three complementary dimensions: channel-level degradation, information-level disruption, and structure-level modification.
