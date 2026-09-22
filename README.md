@@ -941,9 +941,10 @@ format:
     - GLA introduces a multimodal backdoor attack for VLMs in autonomous driving, using graffiti-based visual triggers generated via stable diffusion inpainting and cross-language text triggers.
     - The attack achieves a 90% Attack Success Rate with only a 10% poisoning ratio and a 0% False Positive Rate on DriveVLM, while not degrading and even improving performance on clean tasks.
 
-- [DriveVA: Video Action Models are Zero-Shot Drivers](https://arxiv.org/abs/2604.04198)
-  - Mengmeng Liu, Diankun Zhang, Jiuming Liu, Jianfeng Cui, Hongwei Xie, Guang Chen, Hangjun Ye, Michael Ying Yang, Francesco Nex, Hao Cheng
+- [DriveVA: Video Action Models are Zero-Shot Drivers](https://link.springer.com/chapter/10.1007/978-3-032-37718-0_19)
+  - Mengmeng Liu, Diankun Zhang, Jiuming Liu, Jianfeng Cui, Hongwei Xie, Guang Chen, Hangjun Ye, Michael Ying Yang, Francesco Nex, Hao Cheng **ECCV 2026**
   - Publish Date: 2026.04.05
+  - Code: [DriveVA](https://github.com/xiaomi-mlab/DriveVA)
   - Task: Planning
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org), [Bench2drive](https://thinklab-sjtu.github.io/Bench2Drive/)
   - Summary：
