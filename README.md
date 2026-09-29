@@ -162,7 +162,7 @@ format:
 - [Evaluation Is All You Need for Multi-Modal Autonomous Driving](https://arxiv.org/abs/2609.30818)
   - Zeyu He, Shiqi Liu, Ke Chen, Yun Yan, Jinzi Wu, Dianqiao Lei, Sirui Wang, ShuRui Peng, Tao Chen, Zhuo Huang, Yu Wu, Yadong Shao, Zhichao Li, Ke Sun, Yang Guan, Keqiang Li, Shengbo Eben Li
   - Publish Date: 2026.09.25
-  - Task: Planning
+  - Task: Evaluation
   - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - iDriveVLA is a multi-modal planning framework that improves the candidate trajectory space while enabling reliable and context-aware trajectory evaluation.
