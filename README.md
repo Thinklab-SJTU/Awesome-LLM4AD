@@ -149,15 +149,6 @@ format:
     - It constructs causal scene graphs over nuScenes to distinguish causally active, dormant, and distractor entities, covering all four rungs of PCH and containing 7,285 verified causal QA pairs and 1,000 counterfactual trajectories.
     - Evaluating 10 driving-specific VLAs and 3 general-purpose VLMs shows that causal QA accuracy remains limited, driving fine-tuning incurs variable costs on causal QA, and causal QA and trajectory accuracy are statistically uncorrelated across models.
 
-- [Open Vocabulary Domain Unlearning](https://arxiv.org/abs/2609.31356)
-  - Sumanth Udupa, Mehrtash Harandi, Yadan Luo, Mahsa Baktashmotlagh
-  - Publish Date: 2026.09.25
-  - Datasets: [PACS](https://domingos108.github.io/PACS/), [OfficeHome](https://www.hep.man.ac.uk/projects/officehome.html), [DomainNet](http://ai.bu.edu/M3SDA/)
-  - Summary：
-    - Proposes Open-Vocabulary Domain Unlearning (OVDU), a rigorous protocol requiring domain forgetting to transfer to held-out classes, addressing the closed-vocabulary assumption in existing Approximate Domain Unlearning methods.
-    - Introduces a surgical parameter-editing framework with a Fisher Information mask to protect zero-shot generalization and a Targeted Manifold Scattering (TMS) objective that uses preference-based mining to locally scatter the forget domain's stylistic geometry.
-    - Achieves substantial improvements in open-vocabulary generalization on PACS, OfficeHome, and DomainNet, and demonstrates exceptional sample efficiency by outperforming peak 8-shot baselines with only 4 shots.
-
 - [DriveHierarchy: A Benchmark for Diagnosing VLM Driving Capabilities from Open-Loop Understanding to Closed-Loop Execution](https://arxiv.org/abs/2609.31814)
   - Chengkai Xu, Jiaqi Liu, Yicheng Guo, Peng Hang, Jian Sun
   - Publish Date: 2026.09.25
