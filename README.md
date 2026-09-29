@@ -1035,12 +1035,12 @@ format:
     - It provides a chatbot interface for interactive scenario refinement and integrates Retrieval-augmented Generation (RAG) to ground scenario generation in regulatory knowledge and DSL syntax.
     - It introduces an open benchmark of 123 scenarios from NHTSA and United Nations Vehicle Regulations, achieving 76.42% CSR and 58.17% FA, outperforming existing methods.
 
-- [M$^\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Streaming](https://arxiv.org/abs/2607.14005)
+- [M4World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Streaming](https://arxiv.org/abs/2607.14005)
   - Ke Cheng, Hanqiao Ye, Lei Shi, Yahui Liu, Yunhan Shen, Jingtao Dong, Zhenke Wang, Wenxuan Ao, Weixiang Xu, Kaining Huang, Shuhan Shen
   - Publish Date: 2026.07.15
   - Task: Prediction
   - Summary：
-    - M$^\text{4}$World is a multi-view multimodal driving world model that synthesizes future surround-view video and synchronized LiDAR scans while supporting interactive object manipulation and stable minute-long streaming.
+    - M4World is a multi-view multimodal driving world model that synthesizes future surround-view video and synchronized LiDAR scans while supporting interactive object manipulation and stable minute-long streaming.
     - It achieves fine-grained object manipulation through a flexible conditioning interface and stable minute-long streaming via a multi-stage training framework with online causal generation in only four denoising steps.
     - It introduces an automated VLM-based judging pipeline for controllability evaluation and demonstrates potential for controllable, scalable driving simulation.
 
@@ -1087,7 +1087,7 @@ format:
   - Shihao Zhang, Jing Yang, Ziyu Song, Zheng Lin, Sunil Prajapat, Zhaochen Xia, Hemant Ghayvat, Haitao Ding, Lip Yee Por, Ashok Kumar Das
   - Publish Date: 2026.07.11
   - Task: Planning
-  - Datasets: [nuPlan](https://www.nuplan.org/), [CARLA](https://carla.org/)
+  - Datasets: [nuPlan](https://www.nuplan.org/)
   - Summary：
     - Proposes an LLM-enhanced differentiable trajectory planning framework for IoT-enabled autonomous driving, addressing imitation learning limitations in long-tail interactions, constrained refinement, and real-time semantic utilization.
     - Introduces surrounding-agent-centric data augmentation and a complexity-aware asynchronous LLM-based semantic enhancement module to improve training distribution and extract high-level scene semantics with controlled overhead.
@@ -1107,7 +1107,7 @@ format:
   - Kaicong Huang, Meng Ma, Ruimin Ke
   - Publish Date: 2026.07.08
   - Task: Planning
-  - Datasets: [Waymo Open Dataset](https://waymo.com/open/), [CARLA](https://carla.org/)
+  - Datasets: [Waymo Open Dataset](https://waymo.com/open/)
   - Summary：
     - CARLA-GS is a modular corner-case synthesis pipeline that decouples visual representation, semantic reasoning, and physics-based execution while maintaining tight cross-module coupling.
     - It reconstructs an editable Gaussian scene from real driving data with geometry-consistent constraints, uses a multi-agent LLM for scene-level reasoning and intent-level waypoint generation, and delegates low-level motion control to CARLA with a PID controller for kinematic and dynamic feasibility.
@@ -1147,7 +1147,6 @@ format:
   - Publish Date: 2026.07.06
   - Code: [VLM-CASE](https://github.com/ytj254/VLM-CASE)
   - Task: Planning
-  - Datasets: [CARLA](https://carla.org/)
   - Summary：
     - VLM-CASE is a framework that gives autonomous vehicles anticipatory capacity, using a LoRA fine-tuned vision-language model to reason about road surface and visibility conditions from front-camera images while motion stays bounded by a formal safety model.
     - The VLM output parametrizes a context-adaptive safety envelope (CASE) derived from physical limits and responsibility-sensitive safety guarantees, coupling braking and steering through a shared friction budget, with a model predictive controller driving freely within the envelope while the VLM runs asynchronously.
@@ -1198,7 +1197,6 @@ format:
   - Publish Date: 2026.07.05
   - Code: [CritiqueDriveVLM](https://github.com/MICLAB-BUPT/CritiqueDriveVLM)
   - Task: Reasoning
-  - Datasets: [DriveLMM-01](https://github.com/MICLAB-BUPT/DriveLMM-01)
   - Summary：
     - CritiqueDriveVLM is a unified three-stage framework that internalizes reasoning directly into a VLM to resolve the reliability-efficiency trade-off in autonomous driving.
     - It introduces Critique-Driven Multi-Turn Reinforcement Learning guided by a multi-dimensional verifier, training a robust System-2 Teacher without fragile external tools.
