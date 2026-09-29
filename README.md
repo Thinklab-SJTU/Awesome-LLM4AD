@@ -73,7 +73,7 @@ format:
   - Publish Date: 2026.09.28
   - Code: [CAR-VLA](https://github.com/chenxl124578/CAR-VLA.git)
   - Task: Planning
-  - Datasets: [NAVSIM v1](https://github.com/autonomousvision/navsim), [NAVSIM v2](https://github.com/autonomousvision/navsim), [Navhard](https://github.com/autonomousvision/navsim)
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [Navhard](https://github.com/autonomousvision/navsim)
   - Summary：
     - CAR-VLA is a unified driving VLA model that jointly considers scene complexity and dynamic risk to guide reasoning depth, urgency, and focus.
     - It maps four complexity-risk categories to three reasoning modes: Fast Intuition, Slow Thinking, and Reflex Response, with high-risk scenarios centered on the most critical hazard and immediate safe response.
