@@ -153,7 +153,7 @@ format:
   - Chengkai Xu, Jiaqi Liu, Yicheng Guo, Peng Hang, Jian Sun
   - Publish Date: 2026.09.25
   - Code: [DriveHierarchy](https://github.com/PerfectXu88/DriveHierarchy)
-  - Task: End-to-End
+  - Task: Evaluation
   - Summary：
     - DriveHierarchy is a hierarchical benchmark that organizes VLM-based autonomous driving into four ranks: perceptual grounding, contextual memory, mental reasoning, and closed-loop execution.
     - It integrates multiple open-source autonomous-driving datasets into a unified open-loop benchmark with 76,798 question-answer pairs over 84,279 frames, and develops a closed-loop simulation platform with 100 interactive scenarios.
@@ -179,15 +179,6 @@ format:
     - It uses a dual-branch trajectory autoencoder and systematically studies JEPA-based latent learning and REPA-style feature alignment for trajectory-only representation learning.
     - On NAVSIM, WALT improves PDMS from 89.4 to 89.8 on NAVSIMv1 and EPDMS from 87.3 to 87.9 on NAVSIMv2 while reducing trajectory planner FLOPs by 30.5%.
 
-- [Retrieve-to-Localize: Bridging Large Language Models and LiDAR Geometry for Spatial Grounding](https://arxiv.org/abs/2609.29835)
-  - Byounggun Park, Giyong Moon, Jusung Kim, Soonmin Hwang
-  - Publish Date: 2026.09.24
-  - Task: VQA
-  - Summary：
-    - Introduces SpatialLiDAR-QA, a dataset combining single- and multi-step relational grounding with complementary spatial understanding tasks.
-    - Proposes SpatialLiDAR-LM, which aligns LiDAR point features with an LLM and grounds target coordinates via language-conditioned, position-aware proposal retrieval and local point refinement.
-    - Derives target coordinates directly from local LiDAR geometry rather than textual language decoding, demonstrating substantial improvements on precise coordinate prediction.
-
 - [Sim-to-Real Aware End-to-End Learning Environment for Micromobility](https://arxiv.org/abs/2609.28969)
   - Shouma Amano, Takuya Azumi
   - Publish Date: 2026.09.24
@@ -196,16 +187,6 @@ format:
     - Proposes a sim-to-real-aware, vehicle-specific end-to-end learning environment for the WHILL Model CR on AWSIM and ROS 2.
     - Optimizes physical parameters via Bayesian optimization using real-world data to reduce the sim-to-real gap and trajectory errors across various driving scenarios.
     - Introduces a synchronized architecture for stable training of world model-based agents, with a DreamerV3 policy achieving obstacle avoidance and direct sim-to-real transfer to the physical vehicle without fine-tuning.
-
-- [AnchorReasoning: A Visual Grounding and Causal Reasoning Dataset in Long-Tail Autonomous Driving Scenarios](https://arxiv.org/abs/2609.28366)
-  - Zhipeng Bao, Wenjie Zhao, Tianle Zhu, Haohua Que, Chence Yang, Geng Yuan, Qianwen Li
-  - Publish Date: 2026.09.23
-  - Task: Reasoning
-  - Datasets: [WOD-E2E](https://waymo.com/open/)
-  - Summary：
-    - AnchorReasoning is a visually grounded reasoning dataset built on WOD-E2E, containing 416,119 annotated frames and 395,379 decision-critical elements across four major categories and 19 fine-grained types.
-    - Each frame is organized as a visually grounded chain-of-thought (VG-CoT) linking decision-critical element identification and localization, element attributes and implications, driving-action rationale, and action/trajectory planning.
-    - A curriculum supervised fine-tuning strategy and object-size-aware grounding metric are introduced; experiments across eight backbones show improved grounded reasoning and trajectory prediction while reducing reasoning tokens and inference latency.
 
 - [Less Language, More Latents: Annotation-Efficient VLAs for Driving](https://arxiv.org/abs/2609.27747)
   - Alexey Zakharov, Kemal Oksuz, Puneet K. Dokania
@@ -6781,6 +6762,14 @@ format:
   - keyword
   - experiment environments or tasks
 ```
+- [AnchorReasoning: A Visual Grounding and Causal Reasoning Dataset in Long-Tail Autonomous Driving Scenarios](https://arxiv.org/abs/2609.28366)
+  - Zhipeng Bao, Wenjie Zhao, Tianle Zhu, Haohua Que, Chence Yang, Geng Yuan, Qianwen Li
+  - Publish Date: 2026.09.23
+  - Summary：
+    - AnchorReasoning is a visually grounded reasoning dataset built on WOD-E2E, containing 416,119 annotated frames and 395,379 decision-critical elements across four major categories and 19 fine-grained types.
+    - Each frame is organized as a visually grounded chain-of-thought (VG-CoT) linking decision-critical element identification and localization, element attributes and implications, driving-action rationale, and action/trajectory planning.
+    - A curriculum supervised fine-tuning strategy and object-size-aware grounding metric are introduced; experiments across eight backbones show improved grounded reasoning and trajectory prediction while reducing reasoning tokens and inference latency.
+
 - [CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios](https://arxiv.org/abs/2608.19380)
   - Sparsh Garg, Yi-Wen Chen, Vijay Kumar B G, Abhishek Aich
   - Publisher: NEC Labs America
