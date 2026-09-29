@@ -73,7 +73,7 @@ format:
   - Publish Date: 2026.09.28
   - Code: [CAR-VLA](https://github.com/chenxl124578/CAR-VLA.git)
   - Task: Planning
-  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [Navhard](https://github.com/autonomousvision/navsim)
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary：
     - CAR-VLA is a unified driving VLA model that jointly considers scene complexity and dynamic risk to guide reasoning depth, urgency, and focus.
     - It maps four complexity-risk categories to three reasoning modes: Fast Intuition, Slow Thinking, and Reflex Response, with high-risk scenarios centered on the most critical hazard and immediate safe response.
@@ -103,8 +103,7 @@ format:
 - [VehDyn: A Driving World Model Benchmark for Vehicle Dynamics](https://arxiv.org/abs/2609.33264)
   - Tianyi Wang, Wangsheng Du, Jiazhou Chen, Tianyi Zeng, Xiangyu Li, Jiseop Byeon, Yujin Wang, Yiming Xu, Yangyang Wang, Bingzhao Gao, Sikai Chen, Zhaomiao Guo, Junfeng Jiao, Christian Claudel, Alexandre Bayen
   - Publish Date: 2026.09.27
-  - Task: Prediction
-  - Datasets: VehDyn, [CARLA](https://carla.org/), [CarSim](https://www.carsim.com/)
+  - Task: Evaluation
   - Summary：
     - VehDyn is a driving world model benchmark for vehicle dynamics, built on a CARLA-CarSim co-simulation platform that couples photorealistic rendering with a validated multi-body dynamics model.
     - It contains 10,080 configurations from a full factorial design over vehicle types, tire-road friction coefficients, maneuvers, target speeds, scenes, and illuminations, each paired with synchronized position, velocity, and attitude sequences.
@@ -114,7 +113,6 @@ format:
   - Lianqing Zheng, Xiaokai Bai, Yixuan Luo, Runwei Guan, Minghao Liu, Zhiqiang Wei, Hui-liang Shen, Xichan Zhu, Zhixiong Ma
   - Publish Date: 2026.09.26
   - Task: Planning
-  - Datasets: Cap4DR, OmniHD-QA
   - Summary：
     - RCVLA is a radar-camera vision-language-action framework with a radar-grounded semantic reasoning stage (RCVLA-Sem) and a trajectory arbitration stage (RCVLA-Phys).
     - It constructs Cap4DR with 86,016 radar-image-text samples for alignment pretraining and OmniHD-QA with 520,161 question-answer pairs for instruction tuning across scene description, key-object reasoning, occupancy understanding, and trajectory planning.
@@ -228,15 +226,6 @@ format:
     - Uses a latent action model with a vector-quantised bottleneck to build a compact codebook of high-level vehicle intents, and trains a vision-language translator on a small language-annotated subset.
     - Trains a driving VLA on observation-latent-action pairs over the full unlabelled corpus, achieving 87.98 Driving Score and 70.46% Success Rate on Bench2Drive with fewer than 5% language annotations.
 
-- [Teach-to-Crash: A Closed-Loop Student-Teacher LLM Framework for Collision-Inducing Test Scenario Generation](https://arxiv.org/abs/2609.27296)
-  - Zaid Ghazal, Khouloud Gaaloul, Bruce Maxim
-  - Publish Date: 2026.09.23
-  - Datasets: [CARLA](https://carla.org/)
-  - Summary：
-    - Teach-to-Crash is a closed-loop testing framework for Autonomous Driving Systems (ADS) that combines a constrained ego-centric scenario representation, stagnation-aware search control, and a dual-LLM architecture for adaptive failure discovery.
-    - A high-reasoning Teacher LLM acts as an adaptive search controller while a low-reasoning Student LLM emits simulator-executable scenarios in strict JSON schema, intervening only when rolling collision rate and time-to-collision metrics stagnate.
-    - In a CARLA case study, it achieves the highest Collision Hit Rate (90.79%), shortest mean Time-to-Collision (18.31 s), competitive Collision Discovery Rate (136.21), highest diversity (0.547), and highest avoidability-based usefulness proxy (60.04%) among compared methods.
-
 - [ForeDrive: Foresight-Guided End-to-End Autonomous Driving with a Planning-Relevant Latent World Model](https://arxiv.org/abs/2609.26299)
   - Sinuo Wang, Zichong Gu, Yuhan Huang, Wenxin Wen, Xun Yang, Yiqing Zhang, Xingyu Zhang, Ningyu Che, Jie Ling, Qiankun Yu, Wei Liu, Jing Xu, Xinggang Wang
   - Publish Date: 2026.09.22
@@ -257,16 +246,6 @@ format:
     - The Run phase focuses on progress to escape conservative bias and discover high-progress modes, while the subsequent Walk phase introduces endpoint and safety strategies to repair unsafe behaviors, overcoming the conservatism of Walk-first methods and the unsafe progress-seeking of joint optimization.
     - Validated on NAVSIMv1, NAVSIMv2, Navhard, and nuScenes with various VLM-based planners, demonstrating improved driving performance while requiring 40--50% fewer RL training epochs than baselines.
 
-- [D-JEPA: A Decision-Aligned Latent World Model](https://arxiv.org/abs/2609.24749)
-  - Shuaijun Liu, Chengyu Wu, Qifu Wen, Feiyang You, Chenglong Zhang, Shuyang Hao, Xi Lin, Ningxin Su
-  - Publish Date: 2026.09.21
-  - Task: Planning
-  - Datasets: [PushT](https://github.com/huggingface/gym-pusht), [RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)
-  - Summary：
-    - D-JEPA is a decision-aligned latent world model that learns decision-relevant relations among candidate futures from executed outcomes, addressing a decision-local prediction gap where accurate prediction does not guarantee that latent distance reflects the candidate that will execute successfully.
-    - It employs a bounded, permutation-equivariant operator over goal-relative predictive features and ordinal evidence, with restricted predictor adaptation and a shared ordinal interface to extend alignment across complementary predictive geometries.
-    - D-JEPA realizes the learned decision structure in JEPA-compatible future representations, enabling native latent-distance planning and improving action selection across latent control, manipulation, pretrained action-producing models, physical robots, and autonomous driving, including 87.89% success on PushT, a 15.04-point average gain on RoboTwin, and a 17-point gain on physical robot tasks.
-
 - [Relationally Grounded Latent World Models for Autonomous Driving](https://arxiv.org/abs/2609.24626)
   - Fabian Schmidt, Markus Enzweiler, Abhinav Valada
   - Publish Date: 2026.09.21
@@ -276,18 +255,6 @@ format:
     - Investigates whether traffic scene graphs can serve as privileged semantic supervision for latent world representations in autonomous driving.
     - Constructs actor-centric scene graphs from nuScenes 3D annotations, encodes their serialized relational structure with a frozen text embedding model, and aligns visual latent representations with this semantic target during training.
     - Removes the supervision branch at inference and, on nuScenes, reduces average trajectory L2 error from 0.661 to 0.622 and collision rate from 0.456 to 0.217, outperforming an unstructured caption-style semantic target.
-
-- [ME-VLM: A Unified VLM for Embodied Cognition and Agent Coordination](https://arxiv.org/abs/2609.24526)
-  - Foundation Model, Li Auto Inc
-  - Publisher: Li Auto Inc
-  - Publish Date: 2026.09.21
-  - Project Page: [ME-VLM](https://machembodied.com/ME-Brain/ME-VLM.html)
-  - Code: [ME-VLM](https://github.com/MachEmbodied/ME-VLM)
-  - Task: Reasoning
-  - Summary：
-    - ME-VLM is a unified vision-language model with 4B and 35B-A3B variants for embodied cognition and multimodal agent capabilities.
-    - It emphasizes physical perception, spatiotemporal reasoning, planning, interaction, and outcome assessment, and is trained via embodied capability injection, separate reinforcement learning of experts, and multi-teacher on-policy distillation.
-    - It achieves competitive performance on embodied, agent, autonomous-driving, and embodied-navigation benchmarks, with edge deployment optimizations reducing prefill latency from 400 ms to 188 ms on M100.
 
 - [PRIME: Perception Feedback with Situational Memory Embeddings in VLA Models](https://arxiv.org/abs/2609.22040)
   - Erik Deinzer, Naya Baslan, Luca Paparusso, Narunas Vaskevicius, Peter Knott, Luigi Palmieri
@@ -302,7 +269,7 @@ format:
 - [ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation](https://arxiv.org/abs/2609.21712)
   - Boni Hu, Xiong Wei, Haoming Huang, Yong Huang, Chenbo Wang, Yi Yang, Jiancheng Wang, Ruicheng Zhu, Zhimin Yang, Guanglai Liu, Qiaowan Jin, Dongzhuo Wang, Haiwei Kuang, Jiajun Fan, Yue Wu, Jiaxin Wei, Hao Sun, Feihong Yan, Yuyao Zhou, Wei Bi, Kaixuan Wang, Zichao Guo, Xiaozhi Chen
   - Publish Date: 2026.09.18
-  - Task: End-to-End
+  - Task: Generation
   - Summary：
     - ZYT-World is a real-time controllable world model that natively generates four fisheye views with field of view > 180° and three pinhole views for closed-loop autonomous-driving simulation.
     - It combines projection-specific Plücker adapters, ego-motion adaptive layer normalization, and a lightweight pixel-aligned layout to control global motion and instance-level traffic participants and signals.
@@ -358,14 +325,6 @@ format:
     - It freezes a trajectory-conditioned normal predictor and trains a correction decoder with a learned gate to produce bounded feature updates, using corrected future features for candidate-specific trajectory scoring.
     - Evaluated on all 12,146 NAVSIM navtest scenes, it reduces future-feature MSE by 5.35% over Normal with improvements in 83.54% of scenes and achieves 91.05 EPDMS.
 
-- [World Models for Embodied Intelligence: From Plausible to Controllable to Actionable](https://arxiv.org/abs/2609.16697)
-  - Nanjie Yao, Hao Wang, Chong Cheng, Zhikang Chen, Wenzhe Li, Jiafei Lyu, Li Shen, Peilin Zhao, Zongqing Lu, Gao Huang, Steven Hoi, Dacheng Tao, Deheng Ye
-  - Publish Date: 2026.09.15
-  - Summary：
-    - Introduces a three-level capability hierarchy for world models in embodied intelligence: Plausible, Controllable, and Actionable.
-    - Complements the hierarchy with a 3 x 4 matrix crossing geometry, physics, and action grounding with improvement loops centered on data, rewards, policies, and the model itself.
-    - Surveys manipulation, navigation, locomotion, autonomous driving, and general embodied learning, identifying challenges in long-horizon consistency, uncertainty calibration, causal intervention testing, latency, verification and recovery, and cross-embodiment transfer.
-
 - [GRAVA: Grounded Reasoning-to-Action Representation and Learning for Autonomous Driving](https://arxiv.org/abs/2609.15169)
   - Xiao Liu, Haoyu Li, Jianghao Leng, Lin Wang, Chao Sun
   - Publish Date: 2026.09.14
@@ -376,16 +335,6 @@ format:
     - It introduces an agentic GRA data construction pipeline that combines forward scene grounding with backward trajectory anchoring to build GR-NavSim with 2.2M grounded question-answer pairs and 70K GRA reasoning traces.
     - A progressive training strategy pre-trains grounded cognition, establishes the reasoning-to-action interface through imitation, and improves driving behavior via reinforcement learning; GRAVA-8B achieves state-of-the-art performance among purely autoregressive driving models on the full NAVSIM benchmark and improves long-tail key-object compliance and Closed-loop Driving Score by 19.3% and 20.5% over action-only prediction.
 
-- [World-Action Models for Robot Learning and Control: A Survey](https://arxiv.org/abs/2609.16074)
-  - Zuxing Lu, Hongjia Zhai, Guanzhi Wang, Huajian Zeng, Jiaqi Yang, Jingyu Liu, Lei Cheng, Yuantai Zhang, Yuheng Qiu, Zezhou Cheng, Ivan Laptev, Danfei Xu, Benjamin Riviere, Giuseppe Loianno, Eric Xing, Xingxing Zuo
-  - Publish Date: 2026.09.13
-  - Project Page: [Awesome World-Action Models](https://rcl-robotics.github.io/Awesome-World-Action-Models)
-  - Task: End-to-End
-  - Summary：
-    - World-Action Models (WAMs) couple future world prediction with executable action generation, and this survey provides a robotics-oriented review.
-    - It clarifies scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organizes methods through a unified taxonomy.
-    - It reviews applications in manipulation, navigation, and autonomous driving, summarizes evaluation resources, and discusses key challenges such as action alignment, world-action factorization, spatial and multi-view consistency, long-horizon memory, neural simulation, and efficient inference.
-
 - [READ: Learning Risk-Informed Fields for End-to-End Autonomous Driving](https://arxiv.org/abs/2609.12371)
   - Zhiyuan Liu, Yuanxin Tian, Zehong Ke, Jinhao Li, Hao Cheng, Zhenhua Xu, Wenhao Yu, Jianqiang Wang
   - Publish Date: 2026.09.11
@@ -395,14 +344,6 @@ format:
     - READ learns an explicit, planning-aligned risk representation from complementary geometric and behavioral constraints for end-to-end autonomous driving.
     - It instantiates this representation as a continuous spatiotemporal field, enabling differentiable queries along candidate trajectories for trajectory evaluation and refinement.
     - READ integrates with both end-to-end planners and Vision-Language-Action models, showing consistent gains on NAVSIM and competitive results on NAVSIM v2.
-
-- [Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration](https://arxiv.org/abs/2609.09418)
-  - Yiran Qiao, Feng Wang, Jing Ma
-  - Publish Date: 2026.09.08
-  - Task: Navigation
-  - Summary：
-    - Valerant is a training-free framework that transforms a pretrained action-conditioned world model into a World Action Model (WAM) for exploring and constructing 3D game maps.
-    - It couples predictive visual rollouts with SLAM-based spatial reconstruction and exploration-driven action selection, progressively turning a single image into a persistent 3D game map, extending WAM-based interaction beyond 2D visual simulation.
 
 - [PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving](https://arxiv.org/abs/2609.08965)
   - Yuan Gao, Sebastian Müller, Mattia Piccinini, Marc Kaufeld, Yuchen Zhang, Finn Rasmus Schäfer, Qunying Song, Johannes Betz
@@ -417,21 +358,10 @@ format:
   - Baojie Chen, Zijun Jia, Jing Zhong
   - Publish Date: 2026.09.08
   - Task: Reasoning
-  - Datasets: DriveLMM-o1, STSBench
   - Summary：
     - Introduces a synergistic framework that tightly couples hierarchical memory with proactive tool invocation in a closed reasoning loop for autonomous driving, addressing hallucination, weak spatio-temporal perception, and limited generalization in VLMs.
     - Proposes Hierarchical Driving Memory with scene-level short-term memory for dynamic scene state and evolving long-term memory for reusable experience and tool strategies, plus a Memory-Tool Synergistic Reasoning Framework for adaptive tool invocation and offline consolidation.
     - Uses verified memory-tool trajectories from multi-step teacher rollout for SFT and GRPO training; the 7B model achieves 80.03 overall reasoning score and 79.09% MCQ accuracy on DriveLMM-o1, surpassing the strongest baseline by 7.74 MCQ points, with ablations validating short-term memory (+24.2 STSBench accuracy) and long-term memory consolidation (+3.57 MCQ with frozen parameters).
-
-- [CASCADE: A Spatio-Temporal-Causal Reasoning Representation and Dataset for Driving](https://arxiv.org/abs/2609.07094)
-  - Jenny Schmalfuss, Despoina Paschalidou, Simon Gerstenecker, German Ros, Jose M. Alvarez
-  - Publish Date: 2026.09.07
-  - Task: Reasoning
-  - Datasets: [CASCADE](https://huggingface.co/datasets/nvidia/cascade)
-  - Summary：
-    - Introduces CASCADE (Causal Spatio-Temporal Analysis of Driving Environments), a structured scene representation and human-annotated dataset for machine-verifiable reasoning in driving scenes.
-    - Records frame-by-frame actions, locations, and causal dependencies for every interacting actor, enabling reasoning predictions to be scored element by element without relying on (M)LLM judges.
-    - Provides comprehensive human annotations for 2,066 PhysicalAI driving clips, including 8.6K time-stamped ego and agent actions, 3.7K causal links, 2.9K potential influences, and 6.1K annotations for agents, objects, traffic lights, and environments.
 
 - [CoLMIN: LLM-based Multi-Decision Path Negotiation for Cooperative Autonomous Driving](https://arxiv.org/abs/2609.04807)
   - Zhe Huang, Zhaoxin Fan, Shuo Wang, Wenjun Wu, Xuan Zhao, Min Liu
@@ -505,7 +435,7 @@ format:
 - [CrashDiffuser: VLM-Guided Collision Intent Reasoning for Fine-Grained Safety-Critical Traffic Scenario Generation](https://arxiv.org/abs/2609.02270)
   - Shucheng Zhang, Yuang Zhang, Bingzhang Wang, Muhammad Monjurul Karim, Kehua Chen, Yinhai Wang
   - Publish Date: 2026.09.02
-  - Task: Reasoning
+  - Task: Generation
   - Datasets: [WOMD](https://waymo.com/open/)
   - Summary：
     - CrashDiffuser is a closed-loop VLM-guided diffusion framework for fine-grained safety-critical traffic scenario generation, decoupling semantic collision reasoning from continuous trajectory synthesis.
@@ -546,7 +476,7 @@ format:
   - Dong Hu, Chao Huang, Carman K. M. Lee, Dimitrios Kanoulas
   - Publish Date: 2026.08.30
   - Task: Planning
-  - Datasets: [Waymo](https://waymo.com/open/), [CARLA](https://carla.org/)
+  - Datasets: [Waymo](https://waymo.com/open/)
   - Summary：
     - SAGE is an active learning framework for post-training adaptation in autonomous driving that uses a predictive world model to generate fear and curiosity signals.
     - Fear estimates short-horizon predictive risk and model uncertainty, while curiosity measures novelty through prediction error and adaptively calibrates the intervention threshold; when fear exceeds it, control transfers to an expert or fallback policy for focused imitation learning.
@@ -575,7 +505,6 @@ format:
   - Yitao Xu, Tong Wu, Yiyan Wu, Guoji Xu, Yanbo Jiang, Jiahao Wang, Zehong Ke, Junkai Jiang, Fang Zhang, Jianqiang Wang
   - Publish Date: 2026.08.21
   - Task: End-to-End
-  - Datasets: V2XBench, Chat-V2XBench
   - Summary：
     - Introduces V2XBench, a V2X simulation platform with synchronized ego-roadside sensing and closed-loop evaluation, and Chat-V2XBench, a progressively structured VQA dataset for cooperative reasoning.
     - Proposes AURORA, an end-to-end cooperative driving framework with dual-view perception and a Query-level Cross-View Query Alignment and Fusion (CQAF) module to align ego and roadside viewpoints.
@@ -618,17 +547,6 @@ format:
     - Reviews the transition from camera-to-control regression to planning-oriented end-to-end autonomous driving, covering behavior cloning, conditional imitation learning, privileged distillation, BEV and vectorized planning, unified perception-prediction-planning architectures, world-model-based planners, and vision-language-action systems.
     - Organizes existing methods along four axes: input representation, planning output, supervision signal, and evaluation protocol, and examines the benchmark shift from open-loop trajectory matching to closed-loop simulation, non-reactive real-log evaluation, long-tail testing, and human-preference-aware metrics.
     - Argues that architectural progress requires benchmark-consistent evaluation and identifies open challenges in uncertainty-aware planning, learner-expert mismatch, runtime safety assurance, language-action grounding, world-model validation, and reproducible benchmarking.
-
-- [CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios](https://arxiv.org/abs/2608.19380)
-  - Sparsh Garg, Yi-Wen Chen, Vijay Kumar B G, Abhishek Aich
-  - Publisher: NEC Labs America
-  - Publish Date: 2026.08.19
-  - Code: [CAViAR](https://github.com/nec-labs-ma/CAViAR)
-  - Task: Reasoning
-  - Summary：
-    - CAViAR is a human-annotated dashcam benchmark of 2,249 real-world accident videos from CarCrashDataset (CCD) and Nexar for fine-grained accident reasoning.
-    - It provides structured annotations for environmental conditions, accident type, causal explanation, apparent at-fault agent, affected agent, and rule-violation category.
-    - Benchmarking state-of-the-art VLMs (Cosmos-Reason2, Qwen3-VL, InternVL3) reveals a Perception-Reasoning Gap in safety-critical driving scenarios.
 
 - [DA-WAM: Decision-Aligned Future Latents for Driving World Models](https://arxiv.org/abs/2608.19085)
   - Ruiguo Zhong, Benshan Ma, Xiaolong Chen, Lang Zhang, Mingyue Feng, Yaonong Wang, Pei Liu, Jun Ma
@@ -684,7 +602,6 @@ format:
   - Meng Ma, Shuyang Li, Naigang Wang, Ruimin Ke
   - Publish Date: 2026.08.15
   - Task: Planning
-  - Datasets: [CARLA](https://carla.org/)
   - Summary：
     - Presents a risk-adaptive edge–cloud architecture where onboard traffic assessment triggers selective cloud VLM reasoning, reducing unnecessary visual uploads.
     - Uses an onboard VLM and lightweight detector for temporal traffic and path-relative hazard assessment, while keeping validation, vehicle control, and automatic emergency braking local.
@@ -694,7 +611,6 @@ format:
   - Haojie Feng, Peizhi Zhang, Xinrui Zhang, Zhuoren Li, Junpeng Huang, Xiurong Wang, Dongxiao Yin, Yuxiang Zhang, Junfan Zhu, Lu Xiong
   - Publish Date: 2026.08.14
   - Task: End-to-End
-  - Datasets: [CARLA](https://carla.org/)
   - Summary：
     - SSP (Synthetic-Simulation-Physical) is an event-matched Syn2Sim2Phy evaluation framework that anchors cross-domain comparison of autonomous driving VLA models to the same safety-critical interaction.
     - It starts from a synthetic long-tail video, builds a validated event specification preserving road topology, participant roles, relative motion, conflict evolution, passing order, response constraints, and event phases, and constructs platform-specific realizations in CARLA and on a closed proving ground with transfer audits.
@@ -800,7 +716,6 @@ format:
   - Hunter Schofield, Mohammed Elmahgiubi, Mohammad Mahdavian, Richard Shi, Jinjun Shan, Amir Rasouli, Dongfeng Bai
   - Publish Date: 2026.08.10
   - Task: Reasoning
-  - Datasets: [VSI-Bench](https://vsi-bench.github.io)
   - Summary：
     - Space Tokens is a lightweight, architecture-agnostic framework that equips VLMs with explicit continuous spatial representations without additional inference-time modules.
     - It distills scene-level 3D geometry and object-centric spatial attributes into continuous latent tokens, enabling their direct incorporation into chain-of-thought reasoning to improve spatial reasoning.
@@ -889,6 +804,7 @@ format:
 - [muSync-GS: Physics-Synchronized Driving Video Synthesis for Weather and Geometric Road Hazards](https://arxiv.org/abs/2608.04412)
   - Yang Chen, Yicheng Zhu, Tao Li, Zilin Bian
   - Publish Date: 2026.08.05
+  - Task: Generation
   - Summary：
     - muSync-GS is a physics-synchronized framework for driving video synthesis under adverse-weather and road-elevation hazards, jointly coupling road-surface condition with tire friction and road-elevation profile with axle excitation.
     - It uses a calibrated vehicle model to predict speed, slip ratio, normal loads, and pitch for constructing ego-camera trajectories and synchronized physical annotations.
@@ -1044,7 +960,6 @@ format:
   - Yueru Luo, Xu Yan, Changqing Zhou, Yiming Yang, Chao Zhan, Shuqi Mei, Chao Zheng, Zhen Li
   - Publish Date: 2026.07.27
   - Task: Reasoning
-  - Datasets: MapDR
   - Summary：
     - Proposes a reasoning-based framework that equips vision-language models with chain-of-thought capabilities for traffic regulation understanding and regulation-aware autonomous driving.
     - Introduces a scalable CoT curation pipeline that bootstraps rationales from a strong LLM via a two-round strategy and uses a VLM-based verifier to filter incorrect cases, producing high-quality (CoT, answer) pairs.
@@ -1089,15 +1004,6 @@ format:
     - A lightweight visual Arbiter estimates scene complexity before language decoding and routes each input to either fast meta-action prediction or slow structured reasoning, while a deterministic rule-based validator verifies S-CoT consistency with the final meta-action and provides rewards for Group Relative Policy Optimization (GRPO).
     - Achieves 91.8% CoT accuracy and 98.5% Logical Consistency Score in a 195-scene audit, and 80.14% planning accuracy with 97.20% LCS on 574 manually verified NAVSIM test samples while reducing average latency by 17.39% relative to applying slow reasoning to every scene.
 
-- [VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking](https://arxiv.org/abs/2607.17767)
-  - Yijian Li, Xiangru Mu, Changze Li, Hantian Shi, Jiyuan Cai, Jia Cai, Xiaoxue Liu, Yajing Sun, Ming Yang, Tong Qin
-  - Publish Date: 2026.07.20
-  - Task: Navigation
-  - Summary：
-    - VLN-AVP is a zero-shot navigation framework for Autonomous Valet Parking (AVP) that combines a Bird's-Eye-View (BEV) model with Vision-Language Models (VLMs) to eliminate pre-built map dependency, interpret semantic parking contexts, and follow natural language instructions.
-    - It introduces a hybrid memory system with short-term perception memory for semantic visual cues and long-term topological memory for stable policy learning from past experiences.
-    - The paper presents the VLN-AVP dataset and benchmark with 10 high-fidelity parking scenes and over 1,000 episodes, the first VLN benchmark for underground parking, and achieves over 25% success rate improvement over VLN methods and over 15% over other autonomous driving methods in simulation, with leading real-world performance.
-
 - [GeoWorldAD: Geometry World Action Model for Autonomous Driving](https://arxiv.org/abs/2607.17521)
   - Songyan Zhang, Jinyuan Tian, Hanbing Li, Daqi Liu, Hao Chen, Wenhui Huang, Fang Li, Guang Chen, Hangjun Ye, Long Chen, Kuiyuan Yang, Chen Lv
   - Publish Date: 2026.07.20
@@ -1107,15 +1013,6 @@ format:
     - GeoWorldAD, a geometry world action model that grounds trajectory planning in ego-aligned 3D space and anticipates short-horizon scene evolution with latent future geometry tokens.
     - It progressively aggregates multi-scale present geometry and latent future geometry through iterative trajectory refinement.
     - Experiments on NAVSIM v1 and v2 demonstrate state-of-the-art performance, highlighting the effectiveness of explicit 3D geometry grounding and future geometry world modeling for safe and efficient autonomous driving.
-
-- [Test-Time Coverage: Test-Conditioned Data Curation for Deployment-Aware Learning](https://arxiv.org/abs/2607.22697)
-  - Nadine Chang, Maying Shen, Shizhe Diao, Jialiang Wang, Jingde Chen, Thomas Breuel, Pavlo Molchanov, Rafid Mahmood, Jose M. Alvarez
-  - Publish Date: 2026.07.18
-  - Task: End-to-End
-  - Summary：
-    - Introduces TTCov (Test-Time Coverage), a data-level test-conditioned curation method that uses test-side information before training instead of updating model weights at inference.
-    - Builds a task Atlas of LLM-based atomic propositions seeded from open task knowledge and expanded with unmatched APs from unlabeled deployment samples, then instantiates matched deployment APs with frequencies into a Knowledge Atlas (K-Atlas) as a curation target.
-    - Selects a budgeted training set whose deployment AP distribution approximates the K-Atlas, improving deployment-relevant coverage, K-Atlas matching, and downstream end-to-end autonomous driving performance, with seamless adaptability to novel domains via city-to-city expansion.
 
 - [WorkDrive: Roadwork Chain of Causation for Autonomous Driving](https://arxiv.org/abs/2607.14727)
   - Tianyi Jiang, Wen Zhang, Sihan Yang, Ming Lu, Wentao Zhang
@@ -6895,6 +6792,26 @@ format:
   - keyword
   - experiment environments or tasks
 ```
+- [CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios](https://arxiv.org/abs/2608.19380)
+  - Sparsh Garg, Yi-Wen Chen, Vijay Kumar B G, Abhishek Aich
+  - Publisher: NEC Labs America
+  - Publish Date: 2026.08.19
+  - Code: [CAViAR](https://github.com/nec-labs-ma/CAViAR)
+  - Task: Reasoning
+  - Summary：
+    - CAViAR is a human-annotated dashcam benchmark of 2,249 real-world accident videos from CarCrashDataset (CCD) and Nexar for fine-grained accident reasoning.
+    - It provides structured annotations for environmental conditions, accident type, causal explanation, apparent at-fault agent, affected agent, and rule-violation category.
+    - Benchmarking state-of-the-art VLMs (Cosmos-Reason2, Qwen3-VL, InternVL3) reveals a Perception-Reasoning Gap in safety-critical driving scenarios.
+
+- [CASCADE: A Spatio-Temporal-Causal Reasoning Representation and Dataset for Driving](https://arxiv.org/abs/2609.07094)
+  - Jenny Schmalfuss, Despoina Paschalidou, Simon Gerstenecker, German Ros, Jose M. Alvarez
+  - Publish Date: 2026.09.07
+  - Task: Reasoning
+  - Datasets: [CASCADE](https://huggingface.co/datasets/nvidia/cascade)
+  - Summary：
+    - Introduces CASCADE (Causal Spatio-Temporal Analysis of Driving Environments), a structured scene representation and human-annotated dataset for machine-verifiable reasoning in driving scenes.
+    - Records frame-by-frame actions, locations, and causal dependencies for every interacting actor, enabling reasoning predictions to be scored element by element without relying on (M)LLM judges.
+    - Provides comprehensive human annotations for 2,066 PhysicalAI driving clips, including 8.6K time-stamped ego and agent actions, 3.7K causal links, 2.9K potential influences, and 6.1K annotations for agents, objects, traffic lights, and environments.
 
 - [An interactive enhanced driving dataset for autonomous driving](https://arxiv.org/abs/2602.20575)
   - Haojie Feng, Peizhi Zhang, Mengjie Tian, Xinrui Zhang, Zhuoren Li, Junpeng Huang, Xiurong Wang, Junfan Zhu, Jianzhou Wang, Dongxiao Yin, Lu Xiong
