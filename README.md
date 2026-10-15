@@ -58,6 +58,284 @@ format:
   - metrics
 ```
 
+- [SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving](https://arxiv.org/abs/2610.20609)
+  - Shaoyuan Xie, Zihan Zhang, Jingxuan Wang, Jiashu Qu, Xiaoqing Liang, Lingdong Kong, Junchi Lu, Henrik I. Christensen, Qi Alfred Chen
+  - Publish Date: 2026.10.14
+  - Task: End-to-End
+  - Datasets: [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive)
+  - Summary：
+    - Proposes SafeDriveVLA, the first driving VLA that predicts a three-level navigation-compliance mode to decouple conflict reasoning from action generation.
+    - Uses navigation-conditioned world model dreaming, imagining strict navigation following to inform safety prediction, and presents a benchmark suite for navigation following, conflict awareness, and adversarial robustness.
+    - Achieves 88.16 Driving Score and 68.64% Success Rate on Bench2Drive, lifts closed-loop language following by 49.3%, and reduces collisions under unsafe instructions from 60 to 38 compared to the best SimLingo variant.
+
+- [DriveWLA: Unifying Future Dynamics and Scene Semantics through World-Language-Action Modeling for Autonomous Driving](https://arxiv.org/abs/2610.17903)
+  - Shuzheng Wang, Haoxuan Li, Shengzhen Li, Chenxi Wu, Yajing Sun, Lu Hou, Wenyu Liu, Xinggang Wang
+  - Publish Date: 2026.10.13
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [HUGSIM](https://github.com/hugsim/hugsim), [nuScenes](https://www.nuscenes.org/), [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive)
+  - Summary：
+    - DriveWLA is a unified World-Language-Action model based on Mixture-of-Transformers (MoT) that jointly models semantic understanding, future scene dynamics, and trajectory generation, with three experts: a World Expert, a Language Expert, and an Action Expert.
+    - It introduces Cross-Expert Attention to enable controlled information flow across experts and align semantic and dynamic representations, and applies Flow-GRPO reinforcement learning post-training to refine the Action Expert.
+    - DriveWLA achieves 92.3 PDMS on NAVSIM v1 and 90.1 EPDMS on NAVSIM v2, and demonstrates strong zero-shot generalization to HUGSIM, nuScenes, and Bench2Drive.
+
+- [OccWAM: Occupancy World-Action Models with Joint Scene-to-Ego Flow Matching](https://arxiv.org/abs/2610.17688)
+  - Qihang Huang, Wenhui Huang, Collister Chua, Shiyu Fang, Zhan Chen, Songyan Zhang, Zhidong Wang, Daiying Tian, Chen Lv
+  - Publish Date: 2026.10.13
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - OccWAM is an occupancy-native world-action model that jointly generates dense future occupancy and continuous ego trajectories via flow matching conditioned on scene representations.
+    - It introduces scene-to-ego world-action flow matching, a two-stage formulation that first predicts scene-centric occupancy and an absolute ego trajectory, then re-indexes the predicted world into future ego frames for action-aligned planning.
+    - It preserves explicit semantic geometry without pixel synthesis and achieves state-of-the-art performance on Bench2Drive and nuScenes for closed-loop driving, open-loop planning, and future occupancy prediction.
+
+- [TacitVLA: Reasoning Vision-Language-Action Models Without Reasoning Latency](https://arxiv.org/abs/2610.17540)
+  - Jack Lu, Yurong You, Boyi Li, Yulong Cao, Thomas Tian, Chaowei Xiao, Xiangyu Chen, Wenjie Luo, Boris Ivanovic, Marco Pavone, Yan Wang
+  - Publish Date: 2026.10.13
+  - Project Page: [TacitVLA](https://tacitvla.github.io)
+  - Task: Reasoning
+  - Summary：
+    - TacitVLA is a reasoning Vision-Language-Action model whose action expert never attends to the reasoning it generates for the current call, showing that actions need not wait for or condition on decoding the reasoning text to benefit from reasoning supervision, since the supervision already improves the backbone representation.
+    - On long-horizon tasks where the reasoning text also serves as episodic memory, TacitVLA can generate each memory entry during action execution rather than before acting.
+    - Evaluated on four benchmarks spanning manipulation and autonomous driving (RoboMME, RMBench, LIBERO, PhysicalAI-AV), it matches its explicit-reasoning counterpart at up to 3.4x lower latency and matches the latency of the same architecture trained without reasoning at up to +17.1% success, surpassing prior best results on RoboMME Counting (82.7% vs. 66.8%) and RMBench (77.5% vs. 56.5%).
+
+- [AUGUstus: Autonomous Driving VLA Model with Unified Generation and Understanding](https://arxiv.org/abs/2610.16985)
+  - Yuqi Ye, Caigao Jiang, Zhuonan Wang, Congyuan Pei, Chao Qu, Changhao Peng, Junhong Lin, Qize Yu, Zetian Song, Guangzhao Fu, Chongruo Wu, Shiyu Huang, Shuchang Zhou, Honggou Yang, Wei Gao
+  - Publish Date: 2026.10.12
+  - Project Page: [AUGUstus](https://augustus-ad.github.io)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - AUGUstus is an autonomous-driving VLA model that unifies diffusion-based action generation and autoregressive chain-of-thought understanding in one model, with AUGUstus-mode ordering action generation before CoT for low-latency inference.
+    - It introduces AUGUstus-GRPO, a unified GRPO algorithm that jointly optimizes action and CoT, while joint CoT supervision preserves VLM spatial understanding for safer and more accurate trajectories.
+    - Experiments show state-of-the-art planning with 94.6 PDMS on NAVSIMv1 and 90.7 EPDMS on NAVSIMv2, and on nuScenes 0.27 m average L2 error and 0.05% average collision rate, achieving 12 Hz real-vehicle operation.
+
+- [Language2Drive: Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?](https://arxiv.org/abs/2610.16634)
+  - Zihan You, Zehua Fan, Wenqi Lyu, Aoqi Wang, Ni Wang, Yifei Yang, Linge Zhao, Huan Li, Sining Ang, Yuguang Yang, Jueyu Chen, Xiangyu Li, Qianshan Wei, Jieyuan Pei, Yuxin Wang, Zhiwen Chen, Jiaqi Li, Wenxuan Song, Yanyuan Qiao, Benjin Zhu, Haoang Li, Yan Wang
+  - Publish Date: 2026.10.12
+  - Task: End-to-End
+  - Summary：
+    - Language2Drive is a benchmark for testing whether Vision-Language-Action models actually follow natural-language instructions in autonomous driving, using paired counterfactual units that hold the scene fixed and change only the instruction.
+    - It evaluates instruction-following across closed-loop CARLA simulation, reconstructed real-world scenes, and open-loop driving benchmarks, including the released CARLA-Language2Drive simulator with purpose-built maps.
+    - Results reveal a mismatch between strong driving competence and weak language control: 93.2% of successful rollouts lack a successful counterpart under the alternative feasible instruction, exposing limitations of isolated success and conventional driving scores.
+
+- [Directional Pullback Regularization for Long-Horizon Rollout of Latent World Models in Autonomous Driving](https://arxiv.org/abs/2610.16139)
+  - Shatadal Mishra, Ahmadreza Moradipari, Nejib Ammar
+  - Publish Date: 2026.10.12
+  - Task: Prediction
+  - Summary：
+    - Introduces Directional Pullback Regularization (DPR), a training-time method that defines a kinematics-aware anisotropic Riemannian metric in decoded state space and pulls it back through the decoder Jacobian to the latent manifold, preserving the original encoder-dynamics-decoder backbone.
+    - DPR assigns higher cost to latent directions that decode to lateral vehicle motion, improving long-horizon latent rollout for autonomous driving.
+    - Evaluated on open-loop ego-motion rollout over a common 10-second horizon with 1-, 3-, 5-, and 10-step training rollout lengths, DPR achieves lower 10-second final displacement error than both ULR and EPR, reducing error by approximately 44% for 3-step models and yielding the strongest control-relevant tradeoff at 10 steps.
+
+- [YOUDrive: Driving Style as a Composable Direction for End-to-End Autonomous Driving](https://arxiv.org/abs/2610.14802)
+  - Guantian Zheng, Lidong Yu, Tianyu Gao, Jiaxing Chen, Jiashu Li, Chen Lv
+  - Publish Date: 2026.10.10
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - YOUDrive is a vision-language-action planner for continuous and composable driving-style control, distilling each teacher's behavior into a task vector that induces a style direction in the planner's representation.
+    - These style directions can be scaled and combined at inference without retraining the backbone, while a flow-matching decoder models a multimodal trajectory distribution and generates kinematically feasible motion alternatives.
+    - It introduces the Style Alignment Score (SAS) and, on NAVSIM navtest, demonstrates monotonic assertiveness control across six teacher-derived personas with PDMS above 0.90 and up to 0.954.
+
+- [Reflect-VLA: Internalizing Reflective Guidance via Dual-Path On-Policy Self-Distillation for Autonomous Driving](https://arxiv.org/abs/2610.13453)
+  - Yuechen Luo, He Chong, Fang Li, Shaoqing Xu, Hexin Zhang, Ruiqi Zhang, Ziying Song, Lei Yang, Zhi-Xin Yang, Fuxi Wen
+  - Publish Date: 2026.10.09
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive)
+  - Summary：
+    - Reflect-VLA internalizes Reflective Guidance as training-time privileged information via Dual-Path On-Policy Self-Distillation (Dual-OPSD), turning trajectory evaluation into explicit diagnoses and corrective instructions.
+    - Dual-OPSD uses the driving score only to route student-generated trajectories, distilling dense token-level corrective distributions from the teacher for risky trajectories while applying self-imitation to preserve reliable ones.
+    - The teacher is progressively constructed through Driving-Knowledge Pretraining, Planning-and-Refinement SFT, and Self-Refinement Rejection Sampling; at inference, Reflect-VLA generates trajectories in a single pass without explicit guidance or iterative refinement, reducing training time by over 90% compared with RL.
+
+- [ManeuverFlow: Maneuver Hypothesis Generation with Future Evidence for Trajectory Evaluation and Refinement in End-to-End Autonomous Driving](https://arxiv.org/abs/2610.13409)
+  - Yuhao Wei, Yong Chen, Chen Yang, Yingchen Wang, Delin Ouyang, Lingfeng Qi, Qi Lan, Zhanhua Zhang, Jie Li, Guofa Li
+  - Publish Date: 2026.10.09
+  - Code: [ManeuverFlow](https://github.com/wyh-autonomy/maneuverflow)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - ManeuverFlow generates trajectories for distinct driving intentions in one step using a maneuver-routed mixture-of-experts MeanFlow field and Gaussian mixture prior.
+    - It evaluates and refines candidates with current and future evidence from a world model, predicting PDM factors and local Frenet residuals for joint re-scoring.
+    - With a lightweight TransFuser-style ResNet-34 backbone, it achieves 90.6 PDMS and 90.1 EPDMS on NAVSIM v1/v2 navtest, and top PDMS* scores on WorldEngine's 3DGS closed-loop benchmark.
+
+- [PlanWAM: Planning-Shaped Future Representations for End-to-End Autonomous Driving](https://arxiv.org/abs/2610.11382)
+  - Jinchang Xu, Hongda Yu, Fengwei Dong, Wenhui Huang, Xi Wei, Yongzhi Liu, Sunan Zhang, Jirao Wang, Chen Lv, Bingbing Li, Guodong Yin, Weichao Zhuang
+  - Publish Date: 2026.10.08
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [HUGSIM](https://github.com/HUGSIM/HUGSIM)
+  - Summary：
+    - PlanWAM is a Planning-Shaped World Action Model that lets the planning task shape future-state representations so they retain the information most useful for planning.
+    - It combines a Temporal Register Pyramid for recency-aware history compression, a privileged future posterior branch shaped by trajectory-planning objectives, and Hindsight-to-Foresight Distillation to train a history-only prior.
+    - The predicted planning-shaped future latent serves as planning context to guide trajectory generation and selection, achieving 93.8 PDMS / 90.9 EPDMS on NAVSIM-v1/v2 navtest and 38.7 HD-Score on HUGSIM in zero-shot closed-loop evaluation.
+
+- [VGGTWorld-VLA: Intent-Conditioned 3D World Evolution for Autonomous Driving](https://arxiv.org/abs/2610.11161)
+  - Zhaoyang Liu, Kun Jiang, Ziying Song, Diange Yang
+  - Publish Date: 2026.10.08
+  - Task: Prediction
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - VGGTWorld-VLA extends VGGT-World with intention-conditioned 3D world evolution for autonomous driving, enabling controllable future geometry prediction under alternative ego actions.
+    - It introduces an action-semantic conditioning mechanism that injects driving semantics and ego-motion representations into the future-token stream, along with a geometry-language-action bridge for joint conditioning on historical geometry, VLA semantic features, and maneuver/trajectory representations.
+    - Evaluated on NAVSIM, the method achieves competitive geometry prediction performance, and ablation studies validate the effectiveness of semantic and action conditioning.
+
+- [AffordDrive3D: Affordance-Aware World-Action Modeling with Spatial Understanding](https://arxiv.org/abs/2610.11060)
+  - Tianhui Cai, Xinglong Sun, Chao Fang, Zhenxin Li, Rui Song, Jose M. Alvarez, Yunxiang Mao, Jiaqi Ma, Langechuan Liu
+  - Publish Date: 2026.10.08
+  - Project Page: [AffordDrive3D](https://afforddrive3d.github.io/)
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - AffordDrive3D is an affordance- and geometry-aware world-action model that jointly learns future action-relevant regions and spatial structure for autonomous driving.
+    - It forecasts drivable areas and collision-critical regions using a VLM backbone, while predicting future geometry from RGB world-model latents.
+    - On NAVSIM, it achieves state-of-the-art performance with 91.3 PDMS and 89.9 EPDMS, demonstrating the effectiveness of jointly modeling future affordances and geometry for trajectory planning.
+
+- [Explicit Geometric Chain-of-Thought for Vision-Language-Action in Autonomous Driving](https://arxiv.org/abs/2610.10390)
+  - Xingtai Gui, Yucheng Zhou, Dongqian Guo, Jiahao Gong, Feiyang Tan, Jianbing Shen
+  - Publish Date: 2026.10.07
+  - Task: Planning
+  - Summary：
+    - GeoCoTDrive is an explicit geometric chain-of-thought framework that grounds geometry in a planning-oriented manner for VLA-based autonomous driving.
+    - It follows a "think with 2D first, drive with dedicated 3D priors" paradigm, grounding decision-critical 2D regions and retrieving localized 3D priors from a geometric foundation model for trajectory generation.
+    - It introduces planning-relevant grounding and the PlanningGrounding dataset, improving safety-critical planning performance on end-to-end autonomous driving benchmarks.
+
+- [Beyond Policy Support: Interaction Constrained Offline Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/2610.09763)
+  - Mahmoud Selim, Cristina Cipriani, Karl Henrik Johansson
+  - Publish Date: 2026.10.07
+  - Project Page: [ICDP](https://mahmoud-selim.github.io/ICDP/)
+  - Task: Planning
+  - Datasets: [nuPlan](https://www.nuplan.org/)
+  - Summary：
+    - Introduces interaction distribution shift (IDS) as a failure mode in offline reinforcement learning for interactive autonomous driving, where an ego trajectory may be marginally well supported but poorly supported jointly with surrounding-agent behavior.
+    - Proposes Interaction-Constrained Drive Policy (ICDP), an offline RL framework that decomposes joint-support degradation into ego-support and residual interaction-support components, recovered via contrastive density-ratio estimation without explicit joint-density modeling, surrounding-agent prediction, or reactive rollouts.
+    - Closed-loop evaluations on nuPlan, InterPlan, and real-world truck experiments show ICDP suppresses high-value yet interaction-unsupported trajectory selections and improves performance in interaction-critical driving scenarios.
+
+- [Not All Uncertainty Matters: Simulation-in-the-Loop Fast-Slow Reasoning for Decision-Critical Autonomous Driving System](https://arxiv.org/abs/2610.09520)
+  - Jiayi Chen, Shuai Wang, Guangxu Zhu, Derrick Wing Kwan Ng, Chengzhong Xu, Kaibin Huang
+  - Publish Date: 2026.10.07
+  - Task: Planning
+  - Summary：
+    - Proposes SIGMA, a simulation-in-the-loop framework for task-oriented fast-slow collaboration that decides when cloud reasoning should influence time-critical autonomous driving decisions.
+    - Embeds the planner into uncertainty assessment and evaluates plausible scene realizations under semantic and geometric uncertainty to estimate the expected reduction in planning cost.
+    - Introduces expected planning gain (EPG) for cloud invocation, cloud-guidance integration, and request prioritization under deadline and resource constraints; CARLA experiments reduce unnecessary cloud interactions by 50%, improve navigation success by more than 6%, and cut finish time by up to 26.2% in dynamic scenarios.
+
+- [Controllable Crowd Generation through World-Model Planning](https://arxiv.org/abs/2610.09438)
+  - JunGyu Lee, Jisu Shin, Seunghyun Shin, Hae-Gon Jeon
+  - Publish Date: 2026.10.07
+  - Project Page: [Ctrl-CWM](https://jungyu0413.github.io/Ctrl-CWM)
+  - Task: Planning
+  - Summary：
+    - Ctrl-CWM is a multi-agent Controllable Crowd World Model that integrates crowd generation and run-time control by adapting world-model planning with imagined futures to crowd simulation.
+    - It consists of an encoder for human motion dynamics, an actor proposing pedestrian displacements, a critic evaluating imagined crowd trajectories, and a planner selecting actions using critic scores and user costs.
+    - Experiments show Ctrl-CWM outperforms the state-of-the-art on most crowd realism and collision metrics and adapts crowd behaviors to user-specified objectives introduced during simulation without retraining.
+
+- [Transferable Spatial Temporal Coherence Adversarial Attack on Black-Box Vision Language Models for Autonomous Driving](https://arxiv.org/abs/2610.08331)
+  - Heyam Bin Jahlan, Areej Alhothali, Abeer Alhothali
+  - Publish Date: 2026.10.06
+  - Task: Perception
+  - Datasets: [BDD100K](https://bdd-data.berkeley.edu/), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - Introduces Spatial Temporal Coherence Adversarial Attack (STCA), a novel black-box adversarial attack targeting VLM models used for autonomous driving scenes.
+    - STCA consists of three stages: modality expansion with caption-guided frame selection, spatial attack for effective perturbation, and STCA attack disrupting cross-frame temporal coherence via motion-guided masks.
+    - Experiments on BDD100K and nuScenes against Video LLaVA-7B, Qwen2.5-VL-7B, and Dolphin show high attack success rates with high SSIM, revealing VLM vulnerability and the need for robust defenses.
+
+- [Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom](https://arxiv.org/abs/2610.03948)
+  - Xiaojun Bi, Xiaoyuan Ma, Yiwen Sun, Tianren Huang, Chaoran Liu, Bokai Huang, Hao Yang, Baichuan Mo
+  - Publish Date: 2026.10.02
+  - Task: Planning
+  - Datasets: [Highway-env](https://github.com/Farama-Foundation/HighwayEnv)
+  - Summary：
+    - CPW-Drive, a closed-loop retrieval-augmented generation (RAG) framework that incorporates value guidance derived from Chinese philosophy into autonomous driving decision-making.
+    - Introduces Physics-aware Spatial Similarity Retrieval (PSSR) to retrieve physically relevant historical cases by comparing vehicle layouts and velocity-extrapolated states.
+    - Achieves success rates of 93.0%, 86.0%, and 72.0% on Highway-env's multilane highway-driving task, outperforming the strongest baseline by 8.0, 22.5, and 25.0 percentage points, while maintaining the highest collision-free step count and low lane-change frequency.
+
+- [Localized Conformal Safety Monitoring with Vision-Language Models for Autonomous Driving](https://arxiv.org/abs/2610.02765)
+  - Luís Marques, Rong Fang, Disha Kamale, Dmitry Berenson
+  - Publish Date: 2026.10.02
+  - Task: Planning
+  - Datasets: [CARLA](https://carla.org/)
+  - Summary：
+    - SLLCP is a post-hoc calibration layer over frozen VLMs that transforms unreliable predictions into probabilistically calibrated safety prediction sets.
+    - SLLCP introduces a localized procedure that upweights relevant past experience when calculating uncertainty thresholds, providing label-conditional finite-sample distribution-free coverage under exchangeability.
+    - Evaluated over 15k CARLA trajectories, SLLCP correctly flags 89.6% of collision-causing trajectories with a Qwen backbone and 88.4% with a Cosmos backbone, versus 4.6% and 39.1% for the base VLMs.
+
+- [Towards Reliable Vision-Language Models for Autonomous Driving](https://arxiv.org/abs/2610.01531)
+  - Manasa Mariam Mammen, Priyanka Mary Mammen, Zafer Kayatas, Stefan Wagner
+  - Publish Date: 2026.10.01
+  - Task: VQA
+  - Summary：
+    - Evaluates five VLMs (Qwen3.5-9B, Gemma4-E4B, LLaVA-OneVision-7B, DriveFusion/DriveFusionQA-4B, and NVIDIA Alpamayo-1.5-10B) across four driving-related QA datasets with single-frame, multi-view, multi-frame, and monocular visual input settings.
+    - Shows that visual corruption effects on accuracy and confidence reliability vary across models, datasets, and input settings, with differing impacts under degraded visual conditions.
+    - Applies Visual Evidence Augmentation (VEA), a recent inference-time method, finding inconsistent improvements in model reliability under degraded visual conditions.
+
+- [ReWAM: Reciprocal World Action Models for Interactive Autonomous Driving](https://arxiv.org/abs/2609.39245)
+  - Benshan Ma, Pei Liu, Ruiguo Zhong, Lang Zhang, Mingyue Feng, Yaonong Wang, Jun Ma
+  - Publish Date: 2026.09.30
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - ReWAM is a game-theoretic world action modeling framework that captures the reciprocal influence between the ego agent and other agents by representing them as conditional responders whose actions are mutually influenced.
+    - It instantiates a Level-k response hierarchy where role-specific ego and other action DiTs exchange compact strategy tokens through cross-agent attention while remaining grounded in a shared representation of the future driving world.
+    - Evaluated on the NAVSIM dataset, ReWAM achieves state-of-the-art performance, with particularly significant improvements in interactive scenarios, validating that modeling reciprocal responses provides a more effective foundation for interaction-aware world action generation.
+
+- [Vision-Language-Action Autonomous Driving Agent with Language-based Memory](https://arxiv.org/abs/2609.38641)
+  - Kai Yan, Xiangyu Chen, Yulong Cao, Alex Naumann, Peter Karkus, Yan Wang, Jef Packer, Alex Schwing, Yuxiong Wang, Boris Ivanovic, Wenjie Luo, Marco Pavone
+  - Publish Date: 2026.09.29
+  - Task: End-to-End
+  - Summary：
+    - AD-Memo, a general-purpose VLA driving agent with language-based memory, outputs memory as an extension of its Chain-of-Thought (CoT) to record surrounding objects critical to driving; this memory becomes part of the agent's future input.
+    - It curates memory-based datasets and trains VLAs with a two-stage recipe: Supervised Fine-Tuning (SFT) and Da Capo, a novel semi-closed-loop Reinforcement Learning (RL) algorithm that uses trajectory-level advantage for memory and step-level advantage for driving.
+    - Across scenarios such as all-way stops and general driving, AD-Memo improves driving quality, enables better question answering on driving scenes, and produces plug-and-play memory for other models.
+
+- [PhysWAM: Physically Consistent World Action Model for Autonomous Driving](https://arxiv.org/abs/2609.37970)
+  - Dhruv Parikh, Fengcheng Yu, Quankai Gao, Jiawei Yang, Junjie Ye, Maulik Bhatt, Thang Vu, Charles Ochoa, Rowan McAllister, Igor Vasiljevic, Rajgopal Kannan, Viktor Prasanna, Vitor Guizilini, Yue Wang
+  - Publish Date: 2026.09.29
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - PhysWAM is a unified world-action model for autonomous driving that co-denoises multiview video, metric depth, and ego motion within a single flow-matching transformer.
+    - It introduces Coupled Point Projection (CPP), a geometric constraint that unprojects generated depth into 3D points, transforms them using generated SE(3) ego motion, and minimizes their distance to LiDAR points transformed using recorded ego motion.
+    - PhysWAM achieves strong planning performance on NAVSIM v1 and v2, transfers zero-shot to unseen driving environments, and generates accurate metric depth and temporally coherent video, with CPP improving both planning and depth prediction.
+
+- [ExceptionDrive: A Planning-Oriented Counterfactual Corner-Case Benchmark for Autonomous Driving](https://arxiv.org/abs/2609.37871)
+  - Ziyi Luo, Zhe Sun, Yehao Lu, Lei Zhou, Lisheng Wu, Xuewei Li, Zequn Qin, Xi Li
+  - Publish Date: 2026.09.29
+  - Task: Planning
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - ExceptionDrive is a planning-oriented counterfactual corner-case benchmark that inserts safety-critical hazards into real nuScenes scenes via VLM-assisted screening, localized multi-view editing, and quality auditing.
+    - It defines 21 tasks across six safety families, with hazard/conflict regions, local safety constraints, acceptable responses, and reference-free metrics UR, HCC, HPR, and CTS to evaluate edited predictions.
+    - It reveals frequent hazard-region intrusions and insufficient clearance among seven representative planners, and introduces a Reminder Agent that converts visual evidence and a shared taxonomy into structured hazard records to guide a VLM-based decision agent, improving zero-shot strategy accuracy and reducing under-warning.
+
+- [Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving](https://arxiv.org/abs/2609.37046)
+  - Katharina Winter, Stefan Englmeier, Fabian B. Flohr
+  - Publish Date: 2026.09.29
+  - Task: Perception
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - This paper studies velocity understanding in VLMs for autonomous driving as a controlled diagnostic across surrounding-agent speed, current ego speed, and short-horizon future ego-speed proposal on nuScenes.
+    - It evaluates open-weight general-purpose and PhysicalAI VLMs, together with the driving-oriented Alpamayo-1.5 Vision-Language-Action model, using verbal evaluation, temporal perturbations, counterfactual ego-speed hints, and linear probes of hidden representations.
+    - The results reveal distinct failure modes: current ego speed is often internally accessible but poorly verbalized, multiple frames and frame order are rarely exploited, and driving specialization strengthens some motion representations without guaranteeing reliable readout or temporal grounding.
+
+- [RoXDrive: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving via Action-Faithful Rollouts](https://arxiv.org/abs/2609.36851)
+  - Hongbin Lin, Chaoda Zheng, Yiming Yang, Xiangyu Li, Shijia Chen, Jinhao Deng, Kangjie Chen, Dongbin Zhang, Jie Feng, Yu Zhang, Xianming Liu, Shuguang Cui, Boyang Wang, Zhen Li
+  - Publish Date: 2026.09.29
+  - Task: End-to-End
+  - Datasets: [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - RoXDrive is a plug-and-play closed-loop reinforcement learning framework for end-to-end autonomous driving that identifies action-faithful world-model rollouts to avoid action-vision mismatch.
+    - It uses model pre-training with an Action-Vision Faithfulness Evaluator for inverse dynamics estimation and geometry-aware auxiliary trajectory supervision, followed by action-faithful RL post-training with dense safety-aware scoring and scene-level closed-loop optimization.
+    - Experiments on nuScenes and an in-house dataset with over 130K training scenarios show consistent gains across planners, reducing safety violations by 27.6% with DiffusionDrive on nuScenes and 33.7% with Qwen3-VL on internal data.
+
+- [World4Scorer: Outcome-Grounded World Modeling for Autonomous Driving](https://arxiv.org/abs/2609.36438)
+  - Jieyuan Pei, Meiyi Lu, Sining Ang, Yubo Zhao, Zhangyi Hu, Mingwei Xu, Haokai Ding, Wei Li, Zihan You, Jianwei Zheng, Li Yu, Yifeng Pan, Ji Tao, Rongjunchen Zhang, Yan Wang
+  - Publish Date: 2026.09.29
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive), [OGBench-Cube](https://github.com/seohongpark/ogbench)
+  - Summary：
+    - World4Scorer builds a trajectory-conditioned JEPA-style scorer for generate-and-select planners, predicting a state for each candidate and reading candidate scores from that state.
+    - It supervises all candidate states with simulator outcome labels, anchors the predictor to the executed trajectory's observed future, and uses a scene-matched low-score bank plus inertial re-ranking.
+    - It achieves state-of-the-art NAVSIM-v2 performance, strong adapted closed-loop Bench2Drive results, and improves manipulation planning on OGBench-Cube with LeWM.
+
 - [RefineDrive: Reliable Failure-Guided Learning for Vision-Language-Action Driving](https://arxiv.org/abs/2609.35078)
   - Zhe Sun, Ziyi Luo, Yehao Lu, Lei Zhou, Xi Li
   - Publish Date: 2026.09.28
@@ -197,6 +475,17 @@ format:
     - Introduces Latent Action Driving Annotations (LADA), a three-stage pipeline that transforms abundant unlabelled observation-trajectory pairs into training data for language-conditioned control.
     - Uses a latent action model with a vector-quantised bottleneck to build a compact codebook of high-level vehicle intents, and trains a vision-language translator on a small language-annotated subset.
     - Trains a driving VLA on observation-latent-action pairs over the full unlabelled corpus, achieving 87.98 Driving Score and 70.46% Success Rate on Bench2Drive with fewer than 5% language annotations.
+
+- [NAVSAFE-∞: Benchmarking Closed-Loop Driving Safety in Photorealistic Environments](https://arxiv.org/abs/2609.26618)
+  - Yuxin Bao, Hongwei Ruan, Luobin Wang, Seth Z. Zhao, Ziyang Leng, Zihan Zhang, Yu Zeng, Rowan McAllister, Henrik Christensen, Bolei Zhou
+  - Publish Date: 2026.09.22
+  - Code: [NAVSAFE-∞](https://navsafe-vail.github.io/)
+  - Task: Evaluation
+  - Datasets: [NAVSAFE-∞](https://navsafe-vail.github.io/), [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary:
+    - NAVSAFE-∞ is a photorealistic closed-loop autonomous driving benchmark comprising 280 scenarios across 28 safety-critical event types in four categories, with event-specific success criteria and category-level ability scores.
+    - Built on 3D Gaussian Splatting (3DGS) and diffusion-based rendering refinement, it enables realistic policy-environment interactions and systematic evaluation of closed-loop driving safety.
+    - Evaluations of 20 E2E driving policies reveal that strong open-loop performance does not reliably translate into closed-loop safety, while passive demonstration perturbation offers limited generalization and open-loop RL fine-tuning can amplify safety failures through reward hacking.
 
 - [ForeDrive: Foresight-Guided End-to-End Autonomous Driving with a Planning-Relevant Latent World Model](https://arxiv.org/abs/2609.26299)
   - Sinuo Wang, Zichong Gu, Yuhan Huang, Wenxin Wen, Xun Yang, Yiqing Zhang, Xingyu Zhang, Ningyu Che, Jie Ling, Qiankun Yu, Wei Liu, Jing Xu, Xinggang Wang
