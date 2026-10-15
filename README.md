@@ -479,7 +479,7 @@ format:
 - [NAVSAFE-∞: Benchmarking Closed-Loop Driving Safety in Photorealistic Environments](https://arxiv.org/abs/2609.26618)
   - Yuxin Bao, Hongwei Ruan, Luobin Wang, Seth Z. Zhao, Ziyang Leng, Zihan Zhang, Yu Zeng, Rowan McAllister, Henrik Christensen, Bolei Zhou
   - Publish Date: 2026.09.22
-  - Code: [NAVSAFE-∞](https://navsafe-vail.github.io/)
+  - Project Page: [NAVSAFE-∞](https://navsafe-vail.github.io/)
   - Task: Evaluation
   - Datasets: [NAVSAFE-∞](https://navsafe-vail.github.io/), [NAVSIM](https://github.com/autonomousvision/navsim)
   - Summary:
