@@ -6127,16 +6127,17 @@ language models (LLMs).
   - Summary:
     - AgentsCoMerge, a large language model empowered collaborative decision making for ramp merging. It includes observation, planning, communication, and reinforcement training modules. Experiments demonstrate its effectiveness in improving multi-agent collaboration and efficiency.
 
-- [VLM-MPC: Vision Language Foundation Model (VLM)-Guided Model Predictive Controller (MPC) for Autonomous Driving](https://arxiv.org/abs/2408.04821)
-  - Keke Long, Haotian Shi, Jiaxi Liu, Xiaopeng Li
-  - Publisher: University of Wisconsin-Madison
-  - Task: Planning
-  - Publish Date: 2024.08.04
+- [VLM-MPC: Model predictive controller augmented vision language model for autonomous driving](https://www.sciencedirect.com/science/article/pii/S0968090X25004917)
+  - Keke Long, Haotian Shi, Jiaxi Liu, Chaowei Xiao, Xiaopeng Li **Transportation Research Part C: Emerging Technologies, 183, 105487 (2026)**
+  - Publisher: University of Wisconsin-Madison, Tongji University
+  - Task: Planning and Control
+  - Publish Date: 2024.08.09 (preprint); 2026.02 (journal)
+  - Preprint: [arXiv:2408.04821](https://arxiv.org/abs/2408.04821)
+  - Code: [VLM-MPC](https://github.com/Keke-Long/VLM-MPC)
   - Summary:
-    - It proposed a closed-loop autonomous driving controller that applies VLMs for high-level vehicle control. 
-    - The upper-level VLM uses the vehicle's front camera images, textual scenario description, and experience memory as inputs to generate control parameters needed by the lower-level MPC. 
-    - The lower-level MPC utilizes these parameters, considering vehicle dynamics with engine lag, to achieve realistic vehicle behavior and provide state feedback to the upper level. 
-    - This asynchronous two-layer structure addresses the current issue of slow VLM response speeds.
+    - VLM-MPC couples VLM-generated driving parameters with asynchronous model predictive control that accounts for engine lag in closed-loop autonomous driving.
+    - The upper-level VLM sets desired speed and headway from visual and contextual inputs; the lower-level MPC executes vehicle control and returns state feedback.
+
 
 - [SimpleLLM4AD: An End-to-End Vision-Language Model with Graph Visual Question Answering for Autonomous Driving](https://arxiv.org/abs/2407.21293)
   - Peiru Zheng, Yun Zhao, Zhan Gong, Hong Zhu, Shaohua Wu **IEIT Systems**
